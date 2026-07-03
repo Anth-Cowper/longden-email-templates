@@ -292,7 +292,6 @@
             font-size: 0.85rem;
             line-height: 1.7;
             color: #1a1a1a;
-            white-space: pre-wrap;
             word-break: break-word;
             margin-bottom: 0.9rem;
             max-height: 220px;
@@ -627,11 +626,14 @@
         if (!currentTemplate) return;
         const values = getValues();
 
-        const html = currentTemplate.body.replace(/\{([A-Z_]+)\}/g, (match, key) => {
-            const val = values[key];
-            if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
-            return `<span class="unfilled">${match}</span>`;
-        });
+        const html = currentTemplate.body
+            .split('\n')
+            .map(line => line.replace(/\{([A-Z_]+)\}/g, (match, key) => {
+                const val = values[key];
+                if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
+                return `<span class="unfilled">${match}</span>`;
+            }))
+            .join('<br>');
         document.getElementById('preview').innerHTML = html;
 
         const allFilled = (currentTemplate.placeholders || [])
@@ -750,7 +752,7 @@
                 <td><input class="td-inp" type="text" value="${esc(ph.label)}" placeholder="Label"></td>
                 <td><input class="td-inp" type="text" value="${esc(ph.hint||'')}" placeholder="e.g. Feb 2026"></td>
             `;
-            const [,lbl,hint] = tr.querySelectorAll('input');
+            const [lbl, hint] = tr.querySelectorAll('input');
             lbl.addEventListener('input',  () => { createPhs[i].label = lbl.value; });
             hint.addEventListener('input', () => { createPhs[i].hint  = hint.value; });
             tbody.appendChild(tr);
