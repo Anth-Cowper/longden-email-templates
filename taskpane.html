@@ -28,17 +28,16 @@
         /* ── Category bar ── */
         .cat-bar {
             display: flex;
+            align-items: center;
             gap: 0.4rem;
-            padding: 0.6rem 0.9rem;
-            overflow-x: auto;
+            padding: 0.5rem 0.9rem;
             background: white;
             border-bottom: 1px solid #ddd9d0;
-            scrollbar-width: none;
         }
-        .cat-bar::-webkit-scrollbar { display: none; }
 
         .cat-btn {
             white-space: nowrap;
+            flex-shrink: 0;
             padding: 0.28rem 0.7rem;
             border-radius: 20px;
             border: 1.5px solid #ccc;
@@ -49,11 +48,27 @@
             cursor: pointer;
             transition: background 0.12s, color 0.12s, border-color 0.12s;
         }
-        .cat-btn.active      { background: #111111; color: white; border-color: #111111; }
         .cat-btn.cat-fav     { border-color: #d97706; color: #d97706; }
         .cat-btn.cat-fav.active { background: #d97706; color: white; border-color: #d97706; }
         .cat-btn.cat-mine    { border-color: #2563eb; color: #2563eb; }
         .cat-btn.cat-mine.active { background: #2563eb; color: white; border-color: #2563eb; }
+
+        .cat-filter-select {
+            flex: 1;
+            min-width: 0;
+            padding: 0.26rem 0.5rem;
+            border: 1.5px solid #ccc;
+            border-radius: 20px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #555;
+            background: white;
+            font-family: inherit;
+            cursor: pointer;
+            appearance: auto;
+        }
+        .cat-filter-select:focus { outline: none; border-color: #111111; }
+        .cat-filter-select.has-value { border-color: #111111; color: #111111; }
 
         /* ── Browse list ── */
         #templateList { padding: 0.65rem 0.9rem; }
@@ -456,18 +471,44 @@
     function buildCatBar() {
         const bar = document.getElementById('catBar');
         bar.innerHTML = '';
-        const sharedCats = [...new Set(sharedTemplates.map(t => t.category))];
-        const cats = ['★ Favourites', 'Mine', 'All', ...sharedCats];
-        cats.forEach(cat => {
-            const btn = document.createElement('button');
-            btn.className = 'cat-btn'
-                + (cat === '★ Favourites' ? ' cat-fav' : '')
-                + (cat === 'Mine' ? ' cat-mine' : '')
-                + (cat === activeCat ? ' active' : '');
-            btn.textContent = cat;
-            btn.addEventListener('click', () => { activeCat = cat; buildCatBar(); renderList(); });
-            bar.appendChild(btn);
+
+        // Favourites pill
+        const favBtn = document.createElement('button');
+        favBtn.className = 'cat-btn cat-fav' + (activeCat === '★ Favourites' ? ' active' : '');
+        favBtn.textContent = '★ Favs';
+        favBtn.addEventListener('click', () => { activeCat = '★ Favourites'; buildCatBar(); renderList(); });
+        bar.appendChild(favBtn);
+
+        // Mine pill
+        const mineBtn = document.createElement('button');
+        mineBtn.className = 'cat-btn cat-mine' + (activeCat === 'Mine' ? ' active' : '');
+        mineBtn.textContent = 'Mine';
+        mineBtn.addEventListener('click', () => { activeCat = 'Mine'; buildCatBar(); renderList(); });
+        bar.appendChild(mineBtn);
+
+        // Category dropdown (All + categories in defined order)
+        const presentCats = [...new Set(sharedTemplates.map(t => t.category))];
+        const orderedCats = SHARED_CATS.filter(c => presentCats.includes(c));
+        presentCats.forEach(c => { if (!orderedCats.includes(c)) orderedCats.push(c); });
+
+        const isSpecial = activeCat === '★ Favourites' || activeCat === 'Mine';
+        const selectVal = isSpecial ? 'All' : activeCat;
+
+        const sel = document.createElement('select');
+        sel.className = 'cat-filter-select' + (!isSpecial && activeCat !== 'All' ? ' has-value' : '');
+        ['All', ...orderedCats].forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c;
+            if (c === selectVal) opt.selected = true;
+            sel.appendChild(opt);
         });
+        sel.addEventListener('change', () => {
+            activeCat = sel.value;
+            buildCatBar();
+            renderList();
+        });
+        bar.appendChild(sel);
     }
 
     // ── Template list ─────────────────────────────────────
