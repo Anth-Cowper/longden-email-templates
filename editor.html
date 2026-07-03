@@ -274,6 +274,8 @@ td:first-child {
 <div id="toast"></div>
 
 <script>
+if (location.protocol === 'file:') { location.href = 'http://localhost:3457/editor.html'; }
+
 const CATEGORIES = ['Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
 
 let templates = [];
