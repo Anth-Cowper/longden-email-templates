@@ -300,7 +300,14 @@
         }
         .preview-box .unfilled {
             color: #b91c1c;
-            font-weight: 600;
+            font-weight: 700;
+        }
+        .preview-box .filled {
+            color: #1d4ed8;
+            font-weight: 700;
+            background: #eff6ff;
+            border-radius: 2px;
+            padding: 0 2px;
         }
 
         /* ── Buttons ── */
@@ -604,9 +611,14 @@
     function updatePreview() {
         if (!currentTemplate) return;
         const values = getValues();
-        const rendered = fillTpl(currentTemplate.body, values);
-        document.getElementById('preview').innerHTML = rendered.replace(/\{[A-Z_]+\}/g,
-            m => `<span class="unfilled">${m}</span>`);
+
+        const html = currentTemplate.body.replace(/\{([A-Z_]+)\}/g, (match, key) => {
+            const val = values[key];
+            if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
+            return `<span class="unfilled">${match}</span>`;
+        });
+        document.getElementById('preview').innerHTML = html;
+
         const allFilled = (currentTemplate.placeholders || [])
             .filter(p => !p.optional)
             .every(p => (values[p.key] || '').trim() !== '');
