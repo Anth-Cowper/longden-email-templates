@@ -1,3 +1,5 @@
 @echo off
 cd /d "%~dp0"
-node server.js
+start /min "Email Templates Editor" "C:\Program Files\nodejs\node.exe" server.js
+timeout /t 1 /nobreak >nul
+start http://localhost:3457
