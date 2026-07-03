@@ -317,6 +317,7 @@ td:first-child {
 
 <div class="tab-bar" id="tabBar">
     <button class="tab active" data-cat="" onclick="setCategory('')">All</button>
+    <button class="tab" data-cat="Estimating" onclick="setCategory('Estimating')">Estimating</button>
     <button class="tab" data-cat="Scheduling" onclick="setCategory('Scheduling')">Scheduling</button>
     <button class="tab" data-cat="Project Progress" onclick="setCategory('Project Progress')">Project Progress</button>
     <button class="tab" data-cat="Delivery" onclick="setCategory('Delivery')">Delivery</button>
@@ -331,7 +332,7 @@ td:first-child {
 <script>
 if (location.protocol === 'file:') { location.href = 'http://127.0.0.1:3457/editor.html'; }
 
-const CATEGORIES = ['Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+const CATEGORIES = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
 
 let templates = [];
 let activeCategory = '';
