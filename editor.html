@@ -8,9 +8,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --brand:       #2b5a39;
-    --brand-dark:  #1e3f28;
-    --brand-faint: #eef3f0;
+    --brand:       #111111;
+    --brand-dark:  #333333;
+    --brand-faint: #f0f0f0;
     --ground:      #f2f0ec;
     --surface:     #ffffff;
     --text:        #1c1c19;
@@ -118,8 +118,8 @@ main {
     border-radius: 3px;
     transition: background 0.12s;
 }
-.card-name-input:hover { background: rgba(43,90,57,0.08); }
-.card-name-input:focus { outline: none; background: white; box-shadow: 0 0 0 2px rgba(43,90,57,0.2); }
+.card-name-input:hover { background: rgba(0,0,0,0.08); }
+.card-name-input:focus { outline: none; background: white; box-shadow: 0 0 0 2px rgba(0,0,0,0.2); }
 
 .cat-select {
     font-size: 0.72rem;
@@ -132,6 +132,8 @@ main {
     cursor: pointer;
 }
 .cat-select:focus { outline: none; border-color: var(--brand); }
+.btn-publish { background: white; color: var(--brand); }
+.btn-publish:hover:not(:disabled) { background: #eeeeee; }
 
 .btn-delete {
     background: none;
@@ -166,7 +168,7 @@ main {
     background: #fdfdfc;
     font-family: inherit;
 }
-.subject-input:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 2px rgba(43,90,57,0.1); }
+.subject-input:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 2px rgba(0,0,0,0.1); }
 
 /* Body textarea */
 .body-label { font-size: 0.68rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
@@ -185,7 +187,7 @@ textarea {
     font-family: inherit;
     transition: border-color 0.12s;
 }
-textarea:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 2px rgba(43,90,57,0.1); }
+textarea:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 2px rgba(0,0,0,0.1); }
 
 /* Placeholder table */
 .ph-section { margin-top: 0.75rem; }
@@ -276,18 +278,23 @@ const CATEGORIES = ['Scheduling', 'Project Progress', 'Delivery', 'Enquiries', '
 
 let templates = [];
 
-// ── Load ──────────────────────────────────────────────
-async function load() {
+// ── Load (retries while server warms up) ──────────────
+async function load(attempt) {
+    attempt = attempt || 1;
     try {
         const r = await fetch('/templates.json');
         if (!r.ok) throw new Error('Server error ' + r.status);
         const data = await r.json();
         templates = data.templates || [];
+        render();
     } catch (e) {
-        toast('Could not load templates: ' + e.message, 'err', 6000);
-        templates = [];
+        if (attempt < 6) {
+            setTimeout(() => load(attempt + 1), 1500);
+        } else {
+            toast('Could not load templates — make sure start-editor.bat is running.', 'err', 10000);
+            render();
+        }
     }
-    render();
 }
 
 // ── Render all ────────────────────────────────────────
@@ -446,7 +453,7 @@ function renderPlaceholders(idx, container) {
 function syncPlaceholders(idx, container) {
     const body = templates[idx].body || '';
     const found = [];
-    const regex = /\{([A-Z][A-Z0-9_]*)\}/g;
+    const regex = /\{(\w+)\}/g;
     let m;
     while ((m = regex.exec(body)) !== null) {
         if (!found.includes(m[1])) found.push(m[1]);
