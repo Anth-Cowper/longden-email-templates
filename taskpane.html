@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Templates — Longden Doors</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f0ec;
+            min-height: 100vh;
+            font-size: 14px;
+        }
+
+        header {
+            background: #2b5a39;
+            color: white;
+            padding: 0.9rem 1.1rem 0.75rem;
+        }
+
+        header h1 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 0.72rem;
+            opacity: 0.7;
+            margin-top: 0.1rem;
+        }
+
+        /* ── Category filter bar ── */
+        .cat-bar {
+            display: flex;
+            gap: 0.4rem;
+            padding: 0.65rem 0.9rem;
+            overflow-x: auto;
+            background: white;
+            border-bottom: 1px solid #ddd9d0;
+            scrollbar-width: none;
+        }
+        .cat-bar::-webkit-scrollbar { display: none; }
+
+        .cat-btn {
+            white-space: nowrap;
+            padding: 0.28rem 0.7rem;
+            border-radius: 20px;
+            border: 1.5px solid #ccc;
+            background: white;
+            color: #555;
+            font-size: 0.72rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.12s, color 0.12s, border-color 0.12s;
+        }
+
+        .cat-btn.active {
+            background: #2b5a39;
+            color: white;
+            border-color: #2b5a39;
+        }
+
+        /* ── Template list ── */
+        #templateList {
+            padding: 0.65rem 0.9rem;
+        }
+
+        .tpl-item {
+            background: white;
+            border: 1.5px solid #ddd9d0;
+            border-radius: 4px;
+            padding: 0.65rem 0.85rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: border-color 0.12s, box-shadow 0.12s;
+        }
+
+        .tpl-item:hover {
+            border-color: #2b5a39;
+            box-shadow: 0 1px 4px rgba(43,90,57,0.12);
+        }
+
+        .tpl-name {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .tpl-cat {
+            font-size: 0.67rem;
+            color: #888;
+            margin-top: 0.15rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tpl-item.has-subject .tpl-name::after {
+            content: ' ✉';
+            font-size: 0.75rem;
+            color: #2b5a39;
+        }
+
+        /* ── Fill state ── */
+        .fill-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: white;
+            border-bottom: 1px solid #ddd9d0;
+            padding: 0.6rem 0.9rem;
+        }
+
+        #backBtn {
+            background: none;
+            border: none;
+            color: #2b5a39;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            white-space: nowrap;
+            transition: background 0.12s;
+        }
+
+        #backBtn:hover { background: #eef3f0; }
+
+        #fillName {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        main { padding: 0.9rem; }
+
+        .field-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.3rem;
+        }
+
+        .text-input, .text-area {
+            width: 100%;
+            padding: 0.5rem 0.65rem;
+            border: 1.5px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            background: white;
+            font-family: inherit;
+            transition: border-color 0.12s;
+        }
+
+        .text-input:focus, .text-area:focus {
+            outline: none;
+            border-color: #2b5a39;
+            box-shadow: 0 0 0 2px rgba(43,90,57,0.12);
+        }
+
+        .field-hint {
+            font-size: 0.67rem;
+            color: #aaa;
+            margin-top: 0.2rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .form-field { margin-bottom: 0.85rem; }
+        .form-field:last-child { margin-bottom: 0; }
+
+        /* Subject section */
+        #subjectSection {
+            background: #f7f9f7;
+            border: 1.5px solid #c9ddd0;
+            border-radius: 4px;
+            padding: 0.7rem 0.85rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .check-label {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.77rem;
+            color: #444;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+
+        .check-label input[type="checkbox"] { cursor: pointer; }
+
+        /* Subject input in fill view */
+        #subjectVal {
+            width: 100%;
+            padding: 0.45rem 0.65rem;
+            border: 1.5px solid #b8d4c0;
+            border-radius: 4px;
+            font-size: 0.88rem;
+            color: #1a1a1a;
+            background: white;
+            font-family: inherit;
+            margin-top: 0.35rem;
+        }
+
+        #subjectVal:focus {
+            outline: none;
+            border-color: #2b5a39;
+            box-shadow: 0 0 0 2px rgba(43,90,57,0.12);
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: #ddd9d0;
+            margin: 0.9rem 0;
+        }
+
+        /* Preview */
+        .preview-box {
+            background: white;
+            border: 1.5px solid #ddd9d0;
+            border-radius: 4px;
+            padding: 0.75rem 0.85rem;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: #1a1a1a;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin-bottom: 0.9rem;
+            max-height: 240px;
+            overflow-y: auto;
+        }
+
+        /* Unfilled placeholder highlight */
+        .preview-box .unfilled {
+            background: #fef9c3;
+            color: #92400e;
+            border-radius: 2px;
+            padding: 0 2px;
+            font-weight: 600;
+        }
+
+        /* Actions */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 0.62rem 0.75rem;
+            font-size: 0.88rem;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            transition: background 0.12s, transform 0.1s;
+            text-align: center;
+        }
+
+        .btn:active { transform: scale(0.97); }
+        .btn:disabled { opacity: 0.4; cursor: default; transform: none; }
+
+        .btn-primary { background: #2b5a39; color: white; }
+        .btn-primary:hover:not(:disabled) { background: #224830; }
+        .btn-primary.success { background: #16a34a; }
+
+        .status {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #16a34a;
+            min-height: 1rem;
+            text-align: center;
+        }
+        .status.err { color: #b91c1c; }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Longden Doors</h1>
+    <p>Email Templates</p>
+</header>
+
+<!-- ── Browse state ── -->
+<div id="stateBrowse">
+    <div class="cat-bar" id="catBar"></div>
+    <div id="templateList"></div>
+</div>
+
+<!-- ── Fill state ── -->
+<div id="stateFill" class="hidden">
+    <div class="fill-header">
+        <button id="backBtn">← Back</button>
+        <span id="fillName"></span>
+    </div>
+    <main>
+        <div id="subjectSection" class="hidden">
+            <div class="field-label">Suggested subject</div>
+            <input id="subjectVal" type="text">
+            <label class="check-label">
+                <input type="checkbox" id="applySubject"> Also set email subject
+            </label>
+        </div>
+
+        <div id="placeholderForm"></div>
+
+        <div class="divider"></div>
+
+        <div class="field-label" style="margin-bottom:0.45rem">Preview</div>
+        <div class="preview-box" id="preview"></div>
+
+        <button class="btn btn-primary" id="insertBtn">Insert into email</button>
+        <div class="status" id="status"></div>
+    </main>
+</div>
+
+<script>
+    const CATEGORIES = ['All', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+
+    let TEMPLATES = [];
+    let currentTemplate = null;
+    let officeReady = false;
+    let activeCat = 'All';
+
+    // ── Load templates ───────────────────────────────────
+    async function loadTemplates() {
+        try {
+            const r = await fetch('templates.json?_=' + Date.now());
+            const data = await r.json();
+            TEMPLATES = data.templates || [];
+        } catch (e) {
+            TEMPLATES = [];
+        }
+        buildCatBar();
+        renderList();
+    }
+
+    // ── Category bar ─────────────────────────────────────
+    function buildCatBar() {
+        const bar = document.getElementById('catBar');
+        bar.innerHTML = '';
+        const cats = ['All', ...new Set(TEMPLATES.map(t => t.category))];
+        cats.forEach(cat => {
+            const btn = document.createElement('button');
+            btn.className = 'cat-btn' + (cat === activeCat ? ' active' : '');
+            btn.textContent = cat;
+            btn.addEventListener('click', () => {
+                activeCat = cat;
+                bar.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderList();
+            });
+            bar.appendChild(btn);
+        });
+    }
+
+    // ── Template list ─────────────────────────────────────
+    function renderList() {
+        const list = document.getElementById('templateList');
+        list.innerHTML = '';
+        const visible = activeCat === 'All' ? TEMPLATES : TEMPLATES.filter(t => t.category === activeCat);
+        if (!visible.length) {
+            list.innerHTML = '<p style="color:#888;font-size:0.82rem;padding:0.5rem 0">No templates found.</p>';
+            return;
+        }
+        visible.forEach(tpl => {
+            const item = document.createElement('div');
+            item.className = 'tpl-item' + (tpl.subject ? ' has-subject' : '');
+            item.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-cat">${tpl.category}</div>`;
+            item.addEventListener('click', () => openTemplate(tpl.id));
+            list.appendChild(item);
+        });
+    }
+
+    // ── Open template ─────────────────────────────────────
+    function openTemplate(id) {
+        currentTemplate = TEMPLATES.find(t => t.id === id);
+        if (!currentTemplate) return;
+
+        document.getElementById('fillName').textContent = currentTemplate.name;
+
+        // Subject
+        const subjSec = document.getElementById('subjectSection');
+        if (currentTemplate.subject) {
+            document.getElementById('subjectVal').value = currentTemplate.subject;
+            document.getElementById('applySubject').checked = false;
+            subjSec.classList.remove('hidden');
+        } else {
+            subjSec.classList.add('hidden');
+        }
+
+        // Placeholder form
+        const form = document.getElementById('placeholderForm');
+        form.innerHTML = '';
+        (currentTemplate.placeholders || []).forEach(p => {
+            const div = document.createElement('div');
+            div.className = 'form-field';
+            div.innerHTML = `
+                <div class="field-label">${p.label}${p.optional ? ' <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span>' : ''}</div>
+                <input type="text" class="text-input ph-input" data-key="${p.key}" autocomplete="off">
+                ${p.hint ? `<div class="field-hint">${p.hint}</div>` : ''}
+            `;
+            form.appendChild(div);
+        });
+
+        form.querySelectorAll('.ph-input').forEach(inp => inp.addEventListener('input', updatePreview));
+
+        updatePreview();
+
+        document.getElementById('stateBrowse').classList.add('hidden');
+        document.getElementById('stateFill').classList.remove('hidden');
+    }
+
+    // ── Preview ───────────────────────────────────────────
+    function updatePreview() {
+        if (!currentTemplate) return;
+        const values = getValues();
+        const rendered = fillTemplate(currentTemplate.body, values, false);
+        const previewEl = document.getElementById('preview');
+        // Highlight unfilled placeholders
+        previewEl.innerHTML = rendered.replace(/\{[A-Z_]+\}/g, m =>
+            `<span class="unfilled">${m}</span>`
+        );
+
+        const allFilled = (currentTemplate.placeholders || [])
+            .filter(p => !p.optional)
+            .every(p => (values[p.key] || '').trim() !== '');
+        document.getElementById('insertBtn').disabled = !allFilled;
+    }
+
+    function getValues() {
+        const vals = {};
+        document.querySelectorAll('.ph-input').forEach(inp => {
+            vals[inp.dataset.key] = inp.value;
+        });
+        return vals;
+    }
+
+    function fillTemplate(body, values, forInsert) {
+        return body.replace(/\{([A-Z_]+)\}/g, (match, key) => {
+            const val = values[key];
+            if (val !== undefined) return val;
+            return forInsert ? match : match;
+        });
+    }
+
+    // ── Insert ────────────────────────────────────────────
+    document.getElementById('insertBtn').addEventListener('click', async () => {
+        if (!currentTemplate) return;
+        const values = getValues();
+        const text = fillTemplate(currentTemplate.body, values, true);
+        const html = textToHtml(text);
+
+        const btn = document.getElementById('insertBtn');
+        const statEl = document.getElementById('status');
+
+        // Optionally set subject
+        if (currentTemplate.subject && document.getElementById('applySubject').checked) {
+            const subj = document.getElementById('subjectVal').value.trim();
+            if (officeReady && Office.context && Office.context.mailbox) {
+                Office.context.mailbox.item.subject.setAsync(subj, () => {});
+            }
+        }
+
+        if (officeReady && Office.context && Office.context.mailbox) {
+            Office.context.mailbox.item.body.setSelectedDataAsync(
+                html,
+                { coercionType: Office.CoercionType.Html },
+                result => {
+                    if (result.status === Office.AsyncResultStatus.Succeeded) {
+                        btn.textContent = 'Inserted!';
+                        btn.classList.add('success');
+                        setTimeout(async () => {
+                            btn.textContent = 'Insert into email';
+                            btn.classList.remove('success');
+                            try {
+                                if (Office.addin && typeof Office.addin.hide === 'function') {
+                                    await Office.addin.hide();
+                                }
+                            } catch (e) {}
+                        }, 800);
+                    } else {
+                        showStatus('Insert failed — try again.', true);
+                    }
+                }
+            );
+        } else {
+            // Fallback: copy plain text to clipboard
+            navigator.clipboard.writeText(text).then(() => {
+                showStatus('Copied to clipboard (open via Outlook to insert directly).', false);
+            });
+        }
+    });
+
+    function showStatus(msg, isErr) {
+        const el = document.getElementById('status');
+        el.textContent = msg;
+        el.className = 'status' + (isErr ? ' err' : '');
+        setTimeout(() => { el.textContent = ''; el.className = 'status'; }, 3000);
+    }
+
+    // ── Back button ───────────────────────────────────────
+    document.getElementById('backBtn').addEventListener('click', () => {
+        document.getElementById('stateFill').classList.add('hidden');
+        document.getElementById('stateBrowse').classList.remove('hidden');
+        currentTemplate = null;
+    });
+
+    // ── Text → HTML conversion ────────────────────────────
+    function textToHtml(text) {
+        function esc(s) {
+            return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+        const paragraphs = text.split(/\n\n+/);
+        return paragraphs.map(p => {
+            const lines = p.split('\n');
+            if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
+                const items = lines.map(l => '<li>' + esc(l.trim().slice(2)) + '</li>').join('');
+                return '<ul style="margin:0 0 0 1.2em;padding:0">' + items + '</ul>';
+            }
+            return '<p style="margin:0 0 0.75em 0">' + lines.map(esc).join('<br>') + '</p>';
+        }).join('');
+    }
+
+    // ── Office init ───────────────────────────────────────
+    if (typeof Office !== 'undefined') {
+        Office.onReady(() => { officeReady = true; });
+    }
+
+    loadTemplates();
+</script>
+
+</body>
+</html>
