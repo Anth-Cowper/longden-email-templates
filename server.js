@@ -66,7 +66,7 @@ const server = http.createServer((req, res) => {
 
 server.on('error', (e) => {
     if (e.code === 'EADDRINUSE') {
-        exec(`start http://localhost:${PORT}`);
+        exec(`start http://127.0.0.1:${PORT}`);
         process.exit(0);
     } else {
         throw e;
@@ -74,5 +74,5 @@ server.on('error', (e) => {
 });
 
 server.listen(PORT, '127.0.0.1', () => {
-    exec(`start http://localhost:${PORT}`);
+    exec(`start http://127.0.0.1:${PORT}`);
 });
