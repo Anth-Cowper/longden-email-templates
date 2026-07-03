@@ -502,7 +502,10 @@
         list.appendChild(addBtn);
 
         if (!personal.length) {
-            list.innerHTML += '<p class="empty-msg">No personal templates yet. Add one above.</p>';
+            const msg = document.createElement('p');
+            msg.className = 'empty-msg';
+            msg.textContent = 'No personal templates yet. Add one above.';
+            list.appendChild(msg);
             return;
         }
         personal.forEach(tpl => list.appendChild(makePersonalItem(tpl)));
