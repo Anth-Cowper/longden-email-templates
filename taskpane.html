@@ -88,10 +88,10 @@
         .tpl-btn:hover { background: #f5f5f3; }
         .tpl-btn.star         { color: #ccc; }
         .tpl-btn.star.active  { color: #d97706; }
-        .tpl-btn.edit         { color: #bbb; font-size: 0.82rem; }
-        .tpl-btn.edit:hover   { color: #2563eb; }
-        .tpl-btn.del          { color: #bbb; font-size: 0.82rem; }
-        .tpl-btn.del:hover    { color: #b91c1c; }
+        .tpl-btn.edit         { color: #2563eb; font-size: 0.7rem; font-weight: 700; border-top: 1px solid #e5e3df; }
+        .tpl-btn.edit:hover   { background: #eff6ff; }
+        .tpl-btn.del          { color: #b91c1c; font-size: 0.7rem; font-weight: 700; border-top: 1px solid #e5e3df; }
+        .tpl-btn.del:hover    { background: #fef2f2; }
 
         .add-btn {
             display: flex;
@@ -411,7 +411,6 @@
             <div id="cPhContent"><span class="ph-none">None yet — add {KEY} tokens to the body above.</span></div>
         </div>
         <button class="btn btn-blue" id="savePersonalBtn">Save template</button>
-        <button class="btn btn-secondary hidden" id="deletePersonalBtn" style="border-color:#fca5a5;color:#b91c1c">Delete template</button>
     </main>
 </div>
 
@@ -561,14 +560,27 @@
 
         const editBtn = document.createElement('button');
         editBtn.className = 'tpl-btn edit';
-        editBtn.title = 'Edit';
-        editBtn.textContent = '✎';
+        editBtn.textContent = 'Edit';
         editBtn.addEventListener('click', e => { e.stopPropagation(); openCreate(tpl); });
+
+        const delBtn = document.createElement('button');
+        delBtn.className = 'tpl-btn del';
+        delBtn.textContent = 'Delete';
+        delBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            confirmDelete(tpl.name, () => {
+                const updated = getPersonal().filter(t => t.id !== tpl.id);
+                setPersonal(updated);
+                setFavs(getFavs().filter(id => id !== tpl.id));
+                renderList();
+            });
+        });
 
         const actions = document.createElement('div');
         actions.className = 'tpl-actions';
         actions.appendChild(starBtn);
         actions.appendChild(editBtn);
+        actions.appendChild(delBtn);
 
         item.appendChild(body);
         item.appendChild(actions);
@@ -699,7 +711,6 @@
         createPhs = tpl ? (tpl.placeholders || []) : [];
         syncCreatePhs();
 
-        document.getElementById('deletePersonalBtn').classList.toggle('hidden', !tpl);
         show('stateCreate');
     }
 
@@ -777,20 +788,6 @@
         show('stateBrowse');
     });
 
-    document.getElementById('deletePersonalBtn').addEventListener('click', () => {
-        if (!editingPersonalId) return;
-        if (!confirm('Delete this personal template?')) return;
-        const personal = getPersonal().filter(t => t.id !== editingPersonalId);
-        setPersonal(personal);
-        // Also remove from favs
-        const favs = getFavs().filter(id => id !== editingPersonalId);
-        setFavs(favs);
-        activeCat = 'Mine';
-        buildCatBar();
-        renderList();
-        show('stateBrowse');
-    });
-
     document.getElementById('createBack').addEventListener('click', () => {
         buildCatBar();
         renderList();
@@ -835,6 +832,47 @@
     // ── Office init ───────────────────────────────────────
     if (typeof Office !== 'undefined') {
         Office.onReady(() => { officeReady = true; });
+    }
+
+    // ── Delete confirmation dialog ────────────────────────
+    function confirmDelete(name, onConfirm) {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999;display:flex;align-items:center;justify-content:center;padding:1.5rem';
+
+        const box = document.createElement('div');
+        box.style.cssText = 'background:white;border-radius:6px;width:100%;max-width:280px;box-shadow:0 8px 32px rgba(0,0,0,0.22);overflow:hidden';
+
+        const head = document.createElement('div');
+        head.style.cssText = 'background:#b91c1c;color:white;padding:0.7rem 1rem;font-size:0.8rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase';
+        head.textContent = 'Delete template';
+
+        const msg = document.createElement('p');
+        msg.style.cssText = 'padding:1rem;font-size:0.85rem;color:#1a1a1a;line-height:1.5';
+        msg.textContent = `Are you sure you want to delete "${name}"? This cannot be undone.`;
+
+        const foot = document.createElement('div');
+        foot.style.cssText = 'display:flex;gap:0.5rem;padding:0 1rem 1rem';
+
+        const cancelBtn = document.createElement('button');
+        cancelBtn.textContent = 'Cancel';
+        cancelBtn.style.cssText = 'flex:1;padding:0.55rem;border-radius:4px;border:1.5px solid #ccc;background:white;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:inherit';
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Yes, delete';
+        deleteBtn.style.cssText = 'flex:1;padding:0.55rem;border-radius:4px;border:none;background:#b91c1c;color:white;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:inherit';
+
+        foot.appendChild(cancelBtn);
+        foot.appendChild(deleteBtn);
+        box.appendChild(head);
+        box.appendChild(msg);
+        box.appendChild(foot);
+        overlay.appendChild(box);
+        document.body.appendChild(overlay);
+
+        const close = () => document.body.removeChild(overlay);
+        cancelBtn.addEventListener('click', close);
+        overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+        deleteBtn.addEventListener('click', () => { close(); onConfirm(); });
     }
 
     // ── Browser preview modal ─────────────────────────────
