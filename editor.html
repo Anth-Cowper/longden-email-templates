@@ -233,6 +233,52 @@ td:first-child {
 
 .opt-check { cursor: pointer; }
 
+/* ── Tab bar ── */
+.tab-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0.55rem 1.5rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 52px;
+    z-index: 90;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.tab {
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 0.28rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: transparent;
+    color: var(--muted);
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    transition: all 0.12s;
+}
+.tab:hover { border-color: var(--brand); color: var(--brand); }
+.tab.active { background: var(--brand); color: white; border-color: var(--brand); }
+
+/* ── Move buttons ── */
+.btn-move {
+    background: none;
+    border: 1px solid #ccc;
+    color: var(--muted);
+    font-size: 0.78rem;
+    cursor: pointer;
+    padding: 0.1rem 0.38rem;
+    border-radius: 3px;
+    line-height: 1.4;
+    font-family: inherit;
+    transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+.btn-move:hover:not(:disabled) { color: var(--brand); border-color: var(--brand); background: var(--brand-faint); }
+.btn-move:disabled { opacity: 0.22; cursor: default; }
+.card-head-right { display: flex; gap: 0.3rem; align-items: center; }
+
 /* ── Toast ── */
 #toast {
     position: fixed;
@@ -269,6 +315,15 @@ td:first-child {
     </div>
 </div>
 
+<div class="tab-bar" id="tabBar">
+    <button class="tab active" data-cat="" onclick="setCategory('')">All</button>
+    <button class="tab" data-cat="Scheduling" onclick="setCategory('Scheduling')">Scheduling</button>
+    <button class="tab" data-cat="Project Progress" onclick="setCategory('Project Progress')">Project Progress</button>
+    <button class="tab" data-cat="Delivery" onclick="setCategory('Delivery')">Delivery</button>
+    <button class="tab" data-cat="Enquiries" onclick="setCategory('Enquiries')">Enquiries</button>
+    <button class="tab" data-cat="Technical" onclick="setCategory('Technical')">Technical</button>
+</div>
+
 <main id="main"></main>
 
 <div id="toast"></div>
@@ -279,6 +334,7 @@ if (location.protocol === 'file:') { location.href = 'http://127.0.0.1:3457/edit
 const CATEGORIES = ['Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
 
 let templates = [];
+let activeCategory = '';
 
 // ── Load (retries while server warms up) ──────────────
 async function load(attempt) {
@@ -299,6 +355,30 @@ async function load(attempt) {
     }
 }
 
+// ── Category filter ────────────────────────────────────
+function setCategory(cat) {
+    activeCategory = cat;
+    document.querySelectorAll('#tabBar .tab').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.cat === cat);
+    });
+    render();
+}
+
+// ── Move template within its category ─────────────────
+function moveTemplate(idx, dir) {
+    const cat = templates[idx].category;
+    const catIdx = [];
+    templates.forEach((t, i) => { if (t.category === cat) catIdx.push(i); });
+    const pos = catIdx.indexOf(idx);
+    const newPos = pos + dir;
+    if (newPos < 0 || newPos >= catIdx.length) return;
+    const swapIdx = catIdx[newPos];
+    const tmp = templates[idx];
+    templates[idx] = templates[swapIdx];
+    templates[swapIdx] = tmp;
+    render();
+}
+
 // ── Render all ────────────────────────────────────────
 function render() {
     const main = document.getElementById('main');
@@ -306,6 +386,7 @@ function render() {
 
     const byCategory = {};
     templates.forEach((t, i) => {
+        if (activeCategory && t.category !== activeCategory) return;
         if (!byCategory[t.category]) byCategory[t.category] = [];
         byCategory[t.category].push({ t, i });
     });
@@ -360,12 +441,38 @@ function buildCard(t, idx) {
         }
     });
 
+    // Move buttons — position within this template's category
+    const catIdx = [];
+    templates.forEach((tt, ii) => { if (tt.category === t.category) catIdx.push(ii); });
+    const posInCat = catIdx.indexOf(idx);
+
+    const upBtn = document.createElement('button');
+    upBtn.className = 'btn-move';
+    upBtn.title = 'Move up';
+    upBtn.textContent = '↑';
+    upBtn.disabled = posInCat === 0;
+    upBtn.addEventListener('click', () => moveTemplate(idx, -1));
+
+    const downBtn = document.createElement('button');
+    downBtn.className = 'btn-move';
+    downBtn.title = 'Move down';
+    downBtn.textContent = '↓';
+    downBtn.disabled = posInCat === catIdx.length - 1;
+    downBtn.addEventListener('click', () => moveTemplate(idx, 1));
+
     const headLeft = document.createElement('div');
     headLeft.className = 'card-head-left';
     headLeft.appendChild(nameInput);
     headLeft.appendChild(catSel);
+
+    const headRight = document.createElement('div');
+    headRight.className = 'card-head-right';
+    headRight.appendChild(upBtn);
+    headRight.appendChild(downBtn);
+    headRight.appendChild(delBtn);
+
     head.appendChild(headLeft);
-    head.appendChild(delBtn);
+    head.appendChild(headRight);
 
     // Body
     const body = document.createElement('div');
@@ -487,7 +594,7 @@ function addTemplate() {
     const t = {
         id: 'template-' + Date.now(),
         name: 'New template',
-        category: 'Scheduling',
+        category: activeCategory || 'Scheduling',
         subject: '',
         body: '',
         placeholders: []
