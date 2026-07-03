@@ -20,25 +20,14 @@
             color: white;
             padding: 0.9rem 1.1rem 0.75rem;
         }
+        header h1 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+        header p  { font-size: 0.72rem; opacity: 0.7; margin-top: 0.1rem; }
 
-        header h1 {
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        header p {
-            font-size: 0.72rem;
-            opacity: 0.7;
-            margin-top: 0.1rem;
-        }
-
-        /* ── Category filter bar ── */
+        /* ── Category bar ── */
         .cat-bar {
             display: flex;
             gap: 0.4rem;
-            padding: 0.65rem 0.9rem;
+            padding: 0.6rem 0.9rem;
             overflow-x: auto;
             background: white;
             border-bottom: 1px solid #ddd9d0;
@@ -58,64 +47,82 @@
             cursor: pointer;
             transition: background 0.12s, color 0.12s, border-color 0.12s;
         }
+        .cat-btn.active      { background: #2b5a39; color: white; border-color: #2b5a39; }
+        .cat-btn.cat-fav     { border-color: #d97706; color: #d97706; }
+        .cat-btn.cat-fav.active { background: #d97706; color: white; border-color: #d97706; }
+        .cat-btn.cat-mine    { border-color: #2563eb; color: #2563eb; }
+        .cat-btn.cat-mine.active { background: #2563eb; color: white; border-color: #2563eb; }
 
-        .cat-btn.active {
-            background: #2b5a39;
-            color: white;
-            border-color: #2b5a39;
-        }
-
-        /* ── Template list ── */
-        #templateList {
-            padding: 0.65rem 0.9rem;
-        }
+        /* ── Browse list ── */
+        #templateList { padding: 0.65rem 0.9rem; }
 
         .tpl-item {
+            display: flex;
+            align-items: center;
             background: white;
             border: 1.5px solid #ddd9d0;
             border-radius: 4px;
-            padding: 0.65rem 0.85rem;
             margin-bottom: 0.5rem;
             cursor: pointer;
             transition: border-color 0.12s, box-shadow 0.12s;
+            overflow: hidden;
         }
+        .tpl-item:hover { border-color: #2b5a39; box-shadow: 0 1px 4px rgba(43,90,57,0.12); }
 
-        .tpl-item:hover {
-            border-color: #2b5a39;
-            box-shadow: 0 1px 4px rgba(43,90,57,0.12);
+        .tpl-body { flex: 1; padding: 0.62rem 0.75rem; min-width: 0; }
+        .tpl-name { font-size: 0.88rem; font-weight: 600; color: #1a1a1a; }
+        .tpl-meta { font-size: 0.67rem; color: #888; margin-top: 0.12rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+        .tpl-actions { display: flex; flex-direction: column; }
+
+        .tpl-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem 0.6rem;
+            font-size: 0.95rem;
+            line-height: 1;
+            color: #ccc;
+            transition: color 0.12s, background 0.12s;
         }
+        .tpl-btn:hover { background: #f5f5f3; }
+        .tpl-btn.star         { color: #ccc; }
+        .tpl-btn.star.active  { color: #d97706; }
+        .tpl-btn.edit         { color: #bbb; font-size: 0.82rem; }
+        .tpl-btn.edit:hover   { color: #2563eb; }
+        .tpl-btn.del          { color: #bbb; font-size: 0.82rem; }
+        .tpl-btn.del:hover    { color: #b91c1c; }
 
-        .tpl-name {
-            font-size: 0.88rem;
+        .add-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            width: 100%;
+            padding: 0.6rem 0.85rem;
+            background: #eff6ff;
+            border: 1.5px dashed #93c5fd;
+            border-radius: 4px;
+            color: #2563eb;
+            font-size: 0.82rem;
             font-weight: 600;
-            color: #1a1a1a;
+            cursor: pointer;
+            transition: background 0.12s;
+            margin-bottom: 0.5rem;
         }
+        .add-btn:hover { background: #dbeafe; }
 
-        .tpl-cat {
-            font-size: 0.67rem;
-            color: #888;
-            margin-top: 0.15rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
+        .empty-msg { font-size: 0.82rem; color: #aaa; padding: 0.5rem 0; }
 
-        .tpl-item.has-subject .tpl-name::after {
-            content: ' ✉';
-            font-size: 0.75rem;
-            color: #2b5a39;
-        }
-
-        /* ── Fill state ── */
-        .fill-header {
+        /* ── Shared fill/create header ── */
+        .pane-header {
             display: flex;
             align-items: center;
             gap: 0.6rem;
             background: white;
             border-bottom: 1px solid #ddd9d0;
-            padding: 0.6rem 0.9rem;
+            padding: 0.55rem 0.75rem;
         }
-
-        #backBtn {
+        .back-btn {
             background: none;
             border: none;
             color: #2b5a39;
@@ -126,21 +133,36 @@
             border-radius: 3px;
             white-space: nowrap;
             transition: background 0.12s;
+            flex-shrink: 0;
         }
-
-        #backBtn:hover { background: #eef3f0; }
-
-        #fillName {
+        .back-btn:hover { background: #eef3f0; }
+        .pane-title {
             font-size: 0.82rem;
             font-weight: 600;
             color: #333;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            flex: 1;
         }
+        .header-edit-btn {
+            background: none;
+            border: 1px solid #93c5fd;
+            border-radius: 3px;
+            color: #2563eb;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 0.22rem 0.55rem;
+            cursor: pointer;
+            white-space: nowrap;
+            flex-shrink: 0;
+            transition: background 0.12s;
+        }
+        .header-edit-btn:hover { background: #eff6ff; }
 
         main { padding: 0.9rem; }
 
+        /* ── Form fields ── */
         .field-label {
             font-size: 0.68rem;
             font-weight: 700;
@@ -149,8 +171,7 @@
             letter-spacing: 0.06em;
             margin-bottom: 0.3rem;
         }
-
-        .text-input, .text-area {
+        .text-input, textarea {
             width: 100%;
             padding: 0.5rem 0.65rem;
             border: 1.5px solid #ccc;
@@ -161,24 +182,29 @@
             font-family: inherit;
             transition: border-color 0.12s;
         }
-
-        .text-input:focus, .text-area:focus {
+        .text-input:focus, textarea:focus {
             outline: none;
             border-color: #2b5a39;
             box-shadow: 0 0 0 2px rgba(43,90,57,0.12);
         }
+        textarea { resize: vertical; line-height: 1.65; min-height: 110px; }
 
-        .field-hint {
-            font-size: 0.67rem;
-            color: #aaa;
-            margin-top: 0.2rem;
-            margin-bottom: 0.85rem;
+        .cat-select {
+            width: 100%;
+            padding: 0.5rem 0.65rem;
+            border: 1.5px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            background: white;
+            font-family: inherit;
         }
+        .cat-select:focus { outline: none; border-color: #2b5a39; box-shadow: 0 0 0 2px rgba(43,90,57,0.12); }
 
+        .field-hint { font-size: 0.67rem; color: #aaa; margin-top: 0.2rem; margin-bottom: 0.85rem; }
         .form-field { margin-bottom: 0.85rem; }
-        .form-field:last-child { margin-bottom: 0; }
 
-        /* Subject section */
+        /* ── Subject section ── */
         #subjectSection {
             background: #f7f9f7;
             border: 1.5px solid #c9ddd0;
@@ -186,7 +212,18 @@
             padding: 0.7rem 0.85rem;
             margin-bottom: 0.9rem;
         }
-
+        #subjectVal {
+            width: 100%;
+            padding: 0.42rem 0.65rem;
+            border: 1.5px solid #b8d4c0;
+            border-radius: 4px;
+            font-size: 0.88rem;
+            color: #1a1a1a;
+            background: white;
+            font-family: inherit;
+            margin-top: 0.35rem;
+        }
+        #subjectVal:focus { outline: none; border-color: #2b5a39; box-shadow: 0 0 0 2px rgba(43,90,57,0.12); }
         .check-label {
             display: flex;
             align-items: center;
@@ -197,35 +234,56 @@
             margin-top: 0.5rem;
         }
 
-        .check-label input[type="checkbox"] { cursor: pointer; }
+        /* ── Placeholder chips (create mode) ── */
+        .ph-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
+        .ph-chip {
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 0.68rem;
+            padding: 0.15rem 0.45rem;
+            background: #eef3f0;
+            border: 1px solid #c9ddd0;
+            border-radius: 2px;
+            color: #2b5a39;
+        }
+        .ph-none { font-size: 0.77rem; color: #bbb; font-style: italic; }
 
-        /* Subject input in fill view */
-        #subjectVal {
+        /* ── Placeholder label editor (create mode) ── */
+        .ph-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 0.4rem; }
+        .ph-table th {
+            text-align: left;
+            font-size: 0.63rem;
+            font-weight: 700;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.25rem 0.45rem;
+            background: #f5f5f3;
+            border: 1px solid #e0ddd7;
+        }
+        .ph-table td { padding: 0.22rem 0.45rem; border: 1px solid #e0ddd7; vertical-align: middle; }
+        .ph-table td:first-child {
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 0.75rem;
+            color: #2b5a39;
+            background: #eef3f0;
+            white-space: nowrap;
+            width: 130px;
+        }
+        .td-inp {
             width: 100%;
-            padding: 0.45rem 0.65rem;
-            border: 1.5px solid #b8d4c0;
-            border-radius: 4px;
-            font-size: 0.88rem;
-            color: #1a1a1a;
-            background: white;
+            border: none;
+            padding: 0.15rem 0.28rem;
+            font-size: 0.8rem;
             font-family: inherit;
-            margin-top: 0.35rem;
+            background: transparent;
+            border-radius: 2px;
         }
+        .td-inp:focus { outline: none; background: white; box-shadow: 0 0 0 1px #2b5a39; }
 
-        #subjectVal:focus {
-            outline: none;
-            border-color: #2b5a39;
-            box-shadow: 0 0 0 2px rgba(43,90,57,0.12);
-        }
+        /* ── Divider ── */
+        .divider { height: 1px; background: #ddd9d0; margin: 0.9rem 0; }
 
-        /* Divider */
-        .divider {
-            height: 1px;
-            background: #ddd9d0;
-            margin: 0.9rem 0;
-        }
-
-        /* Preview */
+        /* ── Preview ── */
         .preview-box {
             background: white;
             border: 1.5px solid #ddd9d0;
@@ -237,11 +295,9 @@
             white-space: pre-wrap;
             word-break: break-word;
             margin-bottom: 0.9rem;
-            max-height: 240px;
+            max-height: 220px;
             overflow-y: auto;
         }
-
-        /* Unfilled placeholder highlight */
         .preview-box .unfilled {
             background: #fef9c3;
             color: #92400e;
@@ -250,7 +306,7 @@
             font-weight: 600;
         }
 
-        /* Actions */
+        /* ── Buttons ── */
         .btn {
             display: block;
             width: 100%;
@@ -262,22 +318,19 @@
             border: none;
             transition: background 0.12s, transform 0.1s;
             text-align: center;
+            margin-bottom: 0.4rem;
         }
-
         .btn:active { transform: scale(0.97); }
         .btn:disabled { opacity: 0.4; cursor: default; transform: none; }
-
         .btn-primary { background: #2b5a39; color: white; }
         .btn-primary:hover:not(:disabled) { background: #224830; }
         .btn-primary.success { background: #16a34a; }
+        .btn-secondary { background: white; color: #333; border: 1.5px solid #ccc; }
+        .btn-secondary:hover { background: #f5f5f3; }
+        .btn-blue { background: #2563eb; color: white; }
+        .btn-blue:hover:not(:disabled) { background: #1d4ed8; }
 
-        .status {
-            margin-top: 0.5rem;
-            font-size: 0.75rem;
-            color: #16a34a;
-            min-height: 1rem;
-            text-align: center;
-        }
+        .status { margin-top: 0.4rem; font-size: 0.75rem; color: #16a34a; min-height: 1rem; text-align: center; }
         .status.err { color: #b91c1c; }
 
         .hidden { display: none !important; }
@@ -290,17 +343,22 @@
     <p>Email Templates</p>
 </header>
 
-<!-- ── Browse state ── -->
+<!-- ══════════════════════════════════════════════
+     STATE 1 — BROWSE
+══════════════════════════════════════════════ -->
 <div id="stateBrowse">
     <div class="cat-bar" id="catBar"></div>
     <div id="templateList"></div>
 </div>
 
-<!-- ── Fill state ── -->
+<!-- ══════════════════════════════════════════════
+     STATE 2 — FILL (use a template)
+══════════════════════════════════════════════ -->
 <div id="stateFill" class="hidden">
-    <div class="fill-header">
-        <button id="backBtn">← Back</button>
-        <span id="fillName"></span>
+    <div class="pane-header">
+        <button class="back-btn" id="fillBack">← Back</button>
+        <span class="pane-title" id="fillName"></span>
+        <button class="header-edit-btn hidden" id="fillEditBtn">Edit</button>
     </div>
     <main>
         <div id="subjectSection" class="hidden">
@@ -310,36 +368,77 @@
                 <input type="checkbox" id="applySubject"> Also set email subject
             </label>
         </div>
-
         <div id="placeholderForm"></div>
-
         <div class="divider"></div>
-
         <div class="field-label" style="margin-bottom:0.45rem">Preview</div>
         <div class="preview-box" id="preview"></div>
-
         <button class="btn btn-primary" id="insertBtn">Insert into email</button>
         <div class="status" id="status"></div>
     </main>
 </div>
 
+<!-- ══════════════════════════════════════════════
+     STATE 3 — CREATE / EDIT personal template
+══════════════════════════════════════════════ -->
+<div id="stateCreate" class="hidden">
+    <div class="pane-header">
+        <button class="back-btn" id="createBack">← Back</button>
+        <span class="pane-title" id="createTitle">New personal template</span>
+    </div>
+    <main>
+        <div class="form-field">
+            <div class="field-label">Template name</div>
+            <input type="text" class="text-input" id="cName" placeholder="e.g. Chase sign-off">
+        </div>
+        <div class="form-field">
+            <div class="field-label">Category</div>
+            <select class="cat-select" id="cCat"></select>
+        </div>
+        <div class="form-field">
+            <div class="field-label">Subject line <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
+            <input type="text" class="text-input" id="cSubject" placeholder="Leave blank if none">
+        </div>
+        <div class="form-field">
+            <div class="field-label">Body — use {FIELD_NAME} for dynamic parts</div>
+            <textarea id="cBody" rows="8" placeholder="Dear {CLIENT_NAME},&#10;&#10;..."></textarea>
+        </div>
+        <div class="form-field" id="cPhSection">
+            <div class="field-label">Detected placeholders — set labels</div>
+            <div id="cPhContent"><span class="ph-none">None yet — add {KEY} tokens to the body above.</span></div>
+        </div>
+        <button class="btn btn-blue" id="savePersonalBtn">Save template</button>
+        <button class="btn btn-secondary hidden" id="deletePersonalBtn" style="border-color:#fca5a5;color:#b91c1c">Delete template</button>
+    </main>
+</div>
+
 <script>
-    const CATEGORIES = ['All', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+    // ── Constants ────────────────────────────────────────
+    const SHARED_CATS = ['Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+    const LS_FAVS     = 'ld_favs';
+    const LS_PERSONAL = 'ld_personal';
 
-    let TEMPLATES = [];
+    // ── State ────────────────────────────────────────────
+    let sharedTemplates = [];
+    let activeCat       = '★ Favourites';
     let currentTemplate = null;
-    let officeReady = false;
-    let activeCat = 'All';
+    let editingPersonalId = null;
+    let officeReady     = false;
 
-    // ── Load templates ───────────────────────────────────
+    // ── localStorage helpers ─────────────────────────────
+    function getFavs()          { return JSON.parse(localStorage.getItem(LS_FAVS)     || '[]'); }
+    function setFavs(a)         { localStorage.setItem(LS_FAVS, JSON.stringify(a)); }
+    function isFav(id)          { return getFavs().includes(id); }
+    function toggleFav(id)      { const f = getFavs(); const i = f.indexOf(id); i >= 0 ? f.splice(i,1) : f.push(id); setFavs(f); }
+    function getPersonal()      { return JSON.parse(localStorage.getItem(LS_PERSONAL) || '[]'); }
+    function setPersonal(a)     { localStorage.setItem(LS_PERSONAL, JSON.stringify(a)); }
+
+    // ── Load shared templates ────────────────────────────
     async function loadTemplates() {
         try {
             const r = await fetch('templates.json?_=' + Date.now());
-            const data = await r.json();
-            TEMPLATES = data.templates || [];
-        } catch (e) {
-            TEMPLATES = [];
-        }
+            const d = await r.json();
+            sharedTemplates = d.templates || [];
+        } catch (e) { sharedTemplates = []; }
         buildCatBar();
         renderList();
     }
@@ -348,17 +447,16 @@
     function buildCatBar() {
         const bar = document.getElementById('catBar');
         bar.innerHTML = '';
-        const cats = ['All', ...new Set(TEMPLATES.map(t => t.category))];
+        const sharedCats = [...new Set(sharedTemplates.map(t => t.category))];
+        const cats = ['★ Favourites', 'Mine', 'All', ...sharedCats];
         cats.forEach(cat => {
             const btn = document.createElement('button');
-            btn.className = 'cat-btn' + (cat === activeCat ? ' active' : '');
+            btn.className = 'cat-btn'
+                + (cat === '★ Favourites' ? ' cat-fav' : '')
+                + (cat === 'Mine' ? ' cat-mine' : '')
+                + (cat === activeCat ? ' active' : '');
             btn.textContent = cat;
-            btn.addEventListener('click', () => {
-                activeCat = cat;
-                bar.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                renderList();
-            });
+            btn.addEventListener('click', () => { activeCat = cat; buildCatBar(); renderList(); });
             bar.appendChild(btn);
         });
     }
@@ -367,31 +465,120 @@
     function renderList() {
         const list = document.getElementById('templateList');
         list.innerHTML = '';
-        const visible = activeCat === 'All' ? TEMPLATES : TEMPLATES.filter(t => t.category === activeCat);
-        if (!visible.length) {
-            list.innerHTML = '<p style="color:#888;font-size:0.82rem;padding:0.5rem 0">No templates found.</p>';
+
+        if (activeCat === 'Mine') {
+            renderMineList(list);
             return;
         }
-        visible.forEach(tpl => {
-            const item = document.createElement('div');
-            item.className = 'tpl-item' + (tpl.subject ? ' has-subject' : '');
-            item.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-cat">${tpl.category}</div>`;
-            item.addEventListener('click', () => openTemplate(tpl.id));
-            list.appendChild(item);
-        });
+
+        let items;
+        if (activeCat === '★ Favourites') {
+            const favIds = getFavs();
+            const all = [...sharedTemplates, ...getPersonal()];
+            items = favIds.map(id => all.find(t => t.id === id)).filter(Boolean);
+        } else if (activeCat === 'All') {
+            items = sharedTemplates;
+        } else {
+            items = sharedTemplates.filter(t => t.category === activeCat);
+        }
+
+        if (!items.length) {
+            list.innerHTML = '<p class="empty-msg">No templates here yet.</p>';
+            return;
+        }
+        items.forEach(tpl => list.appendChild(makeSharedItem(tpl)));
     }
 
-    // ── Open template ─────────────────────────────────────
-    function openTemplate(id) {
-        currentTemplate = TEMPLATES.find(t => t.id === id);
-        if (!currentTemplate) return;
+    function renderMineList(list) {
+        const personal = getPersonal();
+        const addBtn = document.createElement('button');
+        addBtn.className = 'add-btn';
+        addBtn.innerHTML = '+ New personal template';
+        addBtn.addEventListener('click', () => openCreate(null));
+        list.appendChild(addBtn);
 
-        document.getElementById('fillName').textContent = currentTemplate.name;
+        if (!personal.length) {
+            list.innerHTML += '<p class="empty-msg">No personal templates yet. Add one above.</p>';
+            return;
+        }
+        personal.forEach(tpl => list.appendChild(makePersonalItem(tpl)));
+    }
+
+    function makeSharedItem(tpl) {
+        const item = document.createElement('div');
+        item.className = 'tpl-item';
+
+        const body = document.createElement('div');
+        body.className = 'tpl-body';
+        body.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-meta">${tpl.category}${tpl.subject ? ' · has subject' : ''}</div>`;
+        body.addEventListener('click', () => openFill(tpl, false));
+
+        const starBtn = document.createElement('button');
+        starBtn.className = 'tpl-btn star' + (isFav(tpl.id) ? ' active' : '');
+        starBtn.title = 'Favourite';
+        starBtn.textContent = '★';
+        starBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            toggleFav(tpl.id);
+            starBtn.classList.toggle('active', isFav(tpl.id));
+            if (activeCat === '★ Favourites') renderList();
+        });
+
+        const actions = document.createElement('div');
+        actions.className = 'tpl-actions';
+        actions.appendChild(starBtn);
+
+        item.appendChild(body);
+        item.appendChild(actions);
+        return item;
+    }
+
+    function makePersonalItem(tpl) {
+        const item = document.createElement('div');
+        item.className = 'tpl-item';
+
+        const body = document.createElement('div');
+        body.className = 'tpl-body';
+        body.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-meta" style="color:#2563eb">${tpl.category} · personal${tpl.subject ? ' · has subject' : ''}</div>`;
+        body.addEventListener('click', () => openFill(tpl, true));
+
+        const starBtn = document.createElement('button');
+        starBtn.className = 'tpl-btn star' + (isFav(tpl.id) ? ' active' : '');
+        starBtn.title = 'Favourite';
+        starBtn.textContent = '★';
+        starBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            toggleFav(tpl.id);
+            starBtn.classList.toggle('active', isFav(tpl.id));
+        });
+
+        const editBtn = document.createElement('button');
+        editBtn.className = 'tpl-btn edit';
+        editBtn.title = 'Edit';
+        editBtn.textContent = '✎';
+        editBtn.addEventListener('click', e => { e.stopPropagation(); openCreate(tpl); });
+
+        const actions = document.createElement('div');
+        actions.className = 'tpl-actions';
+        actions.appendChild(starBtn);
+        actions.appendChild(editBtn);
+
+        item.appendChild(body);
+        item.appendChild(actions);
+        return item;
+    }
+
+    // ── FILL state ────────────────────────────────────────
+    function openFill(tpl, isPersonal) {
+        currentTemplate = tpl;
+
+        document.getElementById('fillName').textContent = tpl.name;
+        document.getElementById('fillEditBtn').classList.toggle('hidden', !isPersonal);
 
         // Subject
         const subjSec = document.getElementById('subjectSection');
-        if (currentTemplate.subject) {
-            document.getElementById('subjectVal').value = currentTemplate.subject;
+        if (tpl.subject) {
+            document.getElementById('subjectVal').value = tpl.subject;
             document.getElementById('applySubject').checked = false;
             subjSec.classList.remove('hidden');
         } else {
@@ -401,7 +588,7 @@
         // Placeholder form
         const form = document.getElementById('placeholderForm');
         form.innerHTML = '';
-        (currentTemplate.placeholders || []).forEach(p => {
+        (tpl.placeholders || []).forEach(p => {
             const div = document.createElement('div');
             div.className = 'form-field';
             div.innerHTML = `
@@ -411,26 +598,18 @@
             `;
             form.appendChild(div);
         });
-
-        form.querySelectorAll('.ph-input').forEach(inp => inp.addEventListener('input', updatePreview));
+        form.querySelectorAll('.ph-input').forEach(i => i.addEventListener('input', updatePreview));
 
         updatePreview();
-
-        document.getElementById('stateBrowse').classList.add('hidden');
-        document.getElementById('stateFill').classList.remove('hidden');
+        show('stateFill');
     }
 
-    // ── Preview ───────────────────────────────────────────
     function updatePreview() {
         if (!currentTemplate) return;
         const values = getValues();
-        const rendered = fillTemplate(currentTemplate.body, values, false);
-        const previewEl = document.getElementById('preview');
-        // Highlight unfilled placeholders
-        previewEl.innerHTML = rendered.replace(/\{[A-Z_]+\}/g, m =>
-            `<span class="unfilled">${m}</span>`
-        );
-
+        const rendered = fillTpl(currentTemplate.body, values);
+        document.getElementById('preview').innerHTML = rendered.replace(/\{[A-Z_]+\}/g,
+            m => `<span class="unfilled">${m}</span>`);
         const allFilled = (currentTemplate.placeholders || [])
             .filter(p => !p.optional)
             .every(p => (values[p.key] || '').trim() !== '');
@@ -439,41 +618,29 @@
 
     function getValues() {
         const vals = {};
-        document.querySelectorAll('.ph-input').forEach(inp => {
-            vals[inp.dataset.key] = inp.value;
-        });
+        document.querySelectorAll('.ph-input').forEach(i => { vals[i.dataset.key] = i.value; });
         return vals;
     }
 
-    function fillTemplate(body, values, forInsert) {
-        return body.replace(/\{([A-Z_]+)\}/g, (match, key) => {
-            const val = values[key];
-            if (val !== undefined) return val;
-            return forInsert ? match : match;
-        });
+    function fillTpl(body, values) {
+        return body.replace(/\{([A-Z_]+)\}/g, (m, k) => values[k] !== undefined ? values[k] : m);
     }
 
-    // ── Insert ────────────────────────────────────────────
     document.getElementById('insertBtn').addEventListener('click', async () => {
         if (!currentTemplate) return;
-        const values = getValues();
-        const text = fillTemplate(currentTemplate.body, values, true);
+        const text = fillTpl(currentTemplate.body, getValues());
         const html = textToHtml(text);
+        const btn  = document.getElementById('insertBtn');
+        const stat = document.getElementById('status');
 
-        const btn = document.getElementById('insertBtn');
-        const statEl = document.getElementById('status');
-
-        // Optionally set subject
         if (currentTemplate.subject && document.getElementById('applySubject').checked) {
             const subj = document.getElementById('subjectVal').value.trim();
-            if (officeReady && Office.context && Office.context.mailbox) {
+            if (officeReady && Office.context?.mailbox)
                 Office.context.mailbox.item.subject.setAsync(subj, () => {});
-            }
         }
 
-        if (officeReady && Office.context && Office.context.mailbox) {
-            Office.context.mailbox.item.body.setSelectedDataAsync(
-                html,
+        if (officeReady && Office.context?.mailbox) {
+            Office.context.mailbox.item.body.setSelectedDataAsync(html,
                 { coercionType: Office.CoercionType.Html },
                 result => {
                     if (result.status === Office.AsyncResultStatus.Succeeded) {
@@ -482,24 +649,148 @@
                         setTimeout(async () => {
                             btn.textContent = 'Insert into email';
                             btn.classList.remove('success');
-                            try {
-                                if (Office.addin && typeof Office.addin.hide === 'function') {
-                                    await Office.addin.hide();
-                                }
-                            } catch (e) {}
+                            try { if (Office.addin?.hide) await Office.addin.hide(); } catch(e) {}
                         }, 800);
-                    } else {
-                        showStatus('Insert failed — try again.', true);
-                    }
-                }
-            );
+                    } else { showStatus('Insert failed — try again.', true); }
+                });
         } else {
-            // Fallback: copy plain text to clipboard
-            navigator.clipboard.writeText(text).then(() => {
-                showStatus('Copied to clipboard (open via Outlook to insert directly).', false);
-            });
+            navigator.clipboard.writeText(text).then(() =>
+                showStatus('Copied to clipboard (open via Outlook to insert directly).', false));
         }
     });
+
+    document.getElementById('fillBack').addEventListener('click', () => show('stateBrowse'));
+    document.getElementById('fillEditBtn').addEventListener('click', () => openCreate(currentTemplate));
+
+    // ── CREATE / EDIT state ───────────────────────────────
+    const CATS_FOR_SELECT = [...SHARED_CATS];
+
+    function openCreate(tpl) {
+        editingPersonalId = tpl ? tpl.id : null;
+        document.getElementById('createTitle').textContent = tpl ? 'Edit template' : 'New personal template';
+
+        // Populate category dropdown
+        const sel = document.getElementById('cCat');
+        sel.innerHTML = '';
+        CATS_FOR_SELECT.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c; opt.textContent = c;
+            if (tpl && c === tpl.category) opt.selected = true;
+            sel.appendChild(opt);
+        });
+
+        document.getElementById('cName').value    = tpl ? tpl.name    : '';
+        document.getElementById('cSubject').value = tpl ? (tpl.subject || '') : '';
+        const bodyEl = document.getElementById('cBody');
+        bodyEl.value = tpl ? tpl.body : '';
+
+        // Store current placeholders so labels survive re-detection
+        createPhs = tpl ? (tpl.placeholders || []) : [];
+        syncCreatePhs();
+
+        document.getElementById('deletePersonalBtn').classList.toggle('hidden', !tpl);
+        show('stateCreate');
+    }
+
+    let createPhs = [];
+
+    document.getElementById('cBody').addEventListener('input', syncCreatePhs);
+
+    function syncCreatePhs() {
+        const body = document.getElementById('cBody').value;
+        const found = [];
+        const regex = /\{([A-Z][A-Z0-9_]*)\}/g;
+        let m;
+        while ((m = regex.exec(body)) !== null) {
+            if (!found.includes(m[1])) found.push(m[1]);
+        }
+        const existMap = {};
+        createPhs.forEach(p => { existMap[p.key] = p; });
+        createPhs = found.map(key => existMap[key] || { key, label: humanize(key), hint: '', optional: false });
+        renderCreatePhs();
+    }
+
+    function renderCreatePhs() {
+        const container = document.getElementById('cPhContent');
+        container.innerHTML = '';
+        if (!createPhs.length) {
+            container.innerHTML = '<span class="ph-none">None yet — add {KEY} tokens to the body above.</span>';
+            return;
+        }
+        const tbl = document.createElement('table');
+        tbl.className = 'ph-table';
+        tbl.innerHTML = '<thead><tr><th>Token</th><th>Label shown to user</th><th>Hint</th></tr></thead>';
+        const tbody = document.createElement('tbody');
+        createPhs.forEach((ph, i) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>{${ph.key}}</td>
+                <td><input class="td-inp" type="text" value="${esc(ph.label)}" placeholder="Label"></td>
+                <td><input class="td-inp" type="text" value="${esc(ph.hint||'')}" placeholder="e.g. Feb 2026"></td>
+            `;
+            const [,lbl,hint] = tr.querySelectorAll('input');
+            lbl.addEventListener('input',  () => { createPhs[i].label = lbl.value; });
+            hint.addEventListener('input', () => { createPhs[i].hint  = hint.value; });
+            tbody.appendChild(tr);
+        });
+        tbl.appendChild(tbody);
+        container.appendChild(tbl);
+    }
+
+    document.getElementById('savePersonalBtn').addEventListener('click', () => {
+        const name = document.getElementById('cName').value.trim();
+        if (!name) { alert('Please enter a template name.'); return; }
+        const body = document.getElementById('cBody').value.trim();
+        if (!body) { alert('Please enter a body.'); return; }
+
+        const personal = getPersonal();
+        const tpl = {
+            id:           editingPersonalId || ('personal_' + Date.now()),
+            name,
+            category:     document.getElementById('cCat').value,
+            subject:      document.getElementById('cSubject').value.trim(),
+            body,
+            placeholders: createPhs.map(p => ({ ...p }))
+        };
+
+        if (editingPersonalId) {
+            const idx = personal.findIndex(t => t.id === editingPersonalId);
+            if (idx >= 0) personal[idx] = tpl; else personal.push(tpl);
+        } else {
+            personal.push(tpl);
+        }
+        setPersonal(personal);
+        activeCat = 'Mine';
+        buildCatBar();
+        renderList();
+        show('stateBrowse');
+    });
+
+    document.getElementById('deletePersonalBtn').addEventListener('click', () => {
+        if (!editingPersonalId) return;
+        if (!confirm('Delete this personal template?')) return;
+        const personal = getPersonal().filter(t => t.id !== editingPersonalId);
+        setPersonal(personal);
+        // Also remove from favs
+        const favs = getFavs().filter(id => id !== editingPersonalId);
+        setFavs(favs);
+        activeCat = 'Mine';
+        buildCatBar();
+        renderList();
+        show('stateBrowse');
+    });
+
+    document.getElementById('createBack').addEventListener('click', () => {
+        buildCatBar();
+        renderList();
+        show('stateBrowse');
+    });
+
+    // ── Utilities ─────────────────────────────────────────
+    function show(stateId) {
+        ['stateBrowse','stateFill','stateCreate'].forEach(id =>
+            document.getElementById(id).classList.toggle('hidden', id !== stateId));
+    }
 
     function showStatus(msg, isErr) {
         const el = document.getElementById('status');
@@ -508,26 +799,25 @@
         setTimeout(() => { el.textContent = ''; el.className = 'status'; }, 3000);
     }
 
-    // ── Back button ───────────────────────────────────────
-    document.getElementById('backBtn').addEventListener('click', () => {
-        document.getElementById('stateFill').classList.add('hidden');
-        document.getElementById('stateBrowse').classList.remove('hidden');
-        currentTemplate = null;
-    });
+    function humanize(key) {
+        const words = key.toLowerCase().split('_');
+        words[0] = words[0].charAt(0).toUpperCase() + words[0].slice(1);
+        return words.join(' ');
+    }
 
-    // ── Text → HTML conversion ────────────────────────────
+    function esc(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
     function textToHtml(text) {
-        function esc(s) {
-            return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        }
-        const paragraphs = text.split(/\n\n+/);
-        return paragraphs.map(p => {
+        function e(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+        return text.split(/\n\n+/).map(p => {
             const lines = p.split('\n');
             if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
-                const items = lines.map(l => '<li>' + esc(l.trim().slice(2)) + '</li>').join('');
-                return '<ul style="margin:0 0 0 1.2em;padding:0">' + items + '</ul>';
+                return '<ul style="margin:0 0 0.75em 1.2em;padding:0">' +
+                    lines.map(l => '<li>' + e(l.trim().slice(2)) + '</li>').join('') + '</ul>';
             }
-            return '<p style="margin:0 0 0.75em 0">' + lines.map(esc).join('<br>') + '</p>';
+            return '<p style="margin:0 0 0.75em 0">' + lines.map(e).join('<br>') + '</p>';
         }).join('');
     }
 
@@ -538,6 +828,5 @@
 
     loadTemplates();
 </script>
-
 </body>
 </html>

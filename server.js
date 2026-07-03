@@ -13,6 +13,10 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         fs.createReadStream(path.join(DIR, 'editor.html')).pipe(res);
 
+    } else if (req.method === 'GET' && url === '/taskpane.html') {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        fs.createReadStream(path.join(DIR, 'taskpane.html')).pipe(res);
+
     } else if (req.method === 'GET' && url === '/templates.json') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         fs.createReadStream(path.join(DIR, 'templates.json')).pipe(res);
