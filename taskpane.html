@@ -651,8 +651,7 @@
                     } else { showStatus('Insert failed — try again.', true); }
                 });
         } else {
-            navigator.clipboard.writeText(text).then(() =>
-                showStatus('Copied to clipboard (open via Outlook to insert directly).', false));
+            showPreviewModal(text);
         }
     });
 
@@ -821,6 +820,40 @@
     // ── Office init ───────────────────────────────────────
     if (typeof Office !== 'undefined') {
         Office.onReady(() => { officeReady = true; });
+    }
+
+    // ── Browser preview modal ─────────────────────────────
+    function showPreviewModal(text) {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:999;display:flex;align-items:center;justify-content:center;padding:1rem';
+
+        const box = document.createElement('div');
+        box.style.cssText = 'background:white;border-radius:6px;width:100%;max-width:480px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,0.25)';
+
+        const head = document.createElement('div');
+        head.style.cssText = 'background:#2b5a39;color:white;padding:0.75rem 1rem;border-radius:6px 6px 0 0;display:flex;align-items:center;justify-content:space-between';
+        head.innerHTML = '<span style="font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Preview — this is what goes into the email</span>';
+
+        const closeBtn = document.createElement('button');
+        closeBtn.textContent = '✕';
+        closeBtn.style.cssText = 'background:none;border:none;color:white;font-size:1rem;cursor:pointer;padding:0 0.2rem;opacity:0.8';
+        closeBtn.addEventListener('click', () => document.body.removeChild(overlay));
+        head.appendChild(closeBtn);
+
+        const body = document.createElement('div');
+        body.style.cssText = 'padding:1rem;overflow-y:auto;font-size:0.88rem;line-height:1.75;white-space:pre-wrap;color:#1a1a1a;flex:1';
+        body.textContent = text;
+
+        const foot = document.createElement('div');
+        foot.style.cssText = 'padding:0.75rem 1rem;border-top:1px solid #e5e5e5;font-size:0.75rem;color:#888;text-align:center';
+        foot.textContent = 'In Outlook this inserts directly into your email — no clipboard needed.';
+
+        box.appendChild(head);
+        box.appendChild(body);
+        box.appendChild(foot);
+        overlay.appendChild(box);
+        overlay.addEventListener('click', e => { if (e.target === overlay) document.body.removeChild(overlay); });
+        document.body.appendChild(overlay);
     }
 
     loadTemplates();
