@@ -441,7 +441,7 @@ function renderPlaceholders(idx, container) {
             <td><input class="td-input" type="text" value="${esc(ph.hint || '')}" placeholder="e.g. Feb/March 2026"></td>
             <td style="text-align:center"><input class="opt-check" type="checkbox" ${ph.optional ? 'checked' : ''}></td>
         `;
-        const [, labelInp, hintInp, optCell] = tr.querySelectorAll('input');
+        const [labelInp, hintInp, optCell] = tr.querySelectorAll('input');
         labelInp.addEventListener('input', () => { templates[idx].placeholders[pi].label = labelInp.value; });
         hintInp.addEventListener('input',  () => { templates[idx].placeholders[pi].hint  = hintInp.value; });
         optCell.addEventListener('change', () => { templates[idx].placeholders[pi].optional = optCell.checked; });
