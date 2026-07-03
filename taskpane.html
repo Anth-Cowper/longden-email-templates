@@ -603,10 +603,23 @@
             subjSec.classList.add('hidden');
         }
 
+        // Derive placeholders: prefer saved labels/hints, fall back to scanning body
+        const savedMap = {};
+        (tpl.placeholders || []).forEach(p => { savedMap[p.key] = p; });
+        const keysInBody = [];
+        const phScan = /\{(\w+)\}/g;
+        let pm;
+        while ((pm = phScan.exec(tpl.body)) !== null) {
+            if (!keysInBody.includes(pm[1])) keysInBody.push(pm[1]);
+        }
+        const effectivePhs = keysInBody.map(key =>
+            savedMap[key] || { key, label: humanize(key), hint: '', optional: false }
+        );
+
         // Placeholder form
         const form = document.getElementById('placeholderForm');
         form.innerHTML = '';
-        (tpl.placeholders || []).forEach(p => {
+        effectivePhs.forEach(p => {
             const div = document.createElement('div');
             div.className = 'form-field';
             div.innerHTML = `
@@ -628,7 +641,7 @@
 
         const html = currentTemplate.body
             .split('\n')
-            .map(line => line.replace(/\{([A-Z_]+)\}/g, (match, key) => {
+            .map(line => line.replace(/\{(\w+)\}/g, (match, key) => {
                 const val = values[key];
                 if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
                 return `<span class="unfilled">${match}</span>`;
@@ -636,9 +649,9 @@
             .join('<br>');
         document.getElementById('preview').innerHTML = html;
 
-        const allFilled = (currentTemplate.placeholders || [])
-            .filter(p => !p.optional)
-            .every(p => (values[p.key] || '').trim() !== '');
+        const allFilled = document.querySelectorAll('.ph-input[data-key]')
+            .length === 0 || [...document.querySelectorAll('.ph-input[data-key]')]
+            .every(inp => inp.value.trim() !== '');
         document.getElementById('insertBtn').disabled = !allFilled;
     }
 
@@ -649,7 +662,7 @@
     }
 
     function fillTpl(body, values) {
-        return body.replace(/\{([A-Z_]+)\}/g, (m, k) => values[k] !== undefined ? values[k] : m);
+        return body.replace(/\{(\w+)\}/g, (m, k) => values[k] !== undefined ? values[k] : m);
     }
 
     document.getElementById('insertBtn').addEventListener('click', async () => {
@@ -723,7 +736,7 @@
     function syncCreatePhs() {
         const body = document.getElementById('cBody').value;
         const found = [];
-        const regex = /\{([A-Z][A-Z0-9_]*)\}/g;
+        const regex = /\{(\w+)\}/g;
         let m;
         while ((m = regex.exec(body)) !== null) {
             if (!found.includes(m[1])) found.push(m[1]);
