@@ -13,6 +13,39 @@ if (!fs.existsSync(TEMPLATES_PATH)) {
     fs.writeFileSync(TEMPLATES_PATH, JSON.stringify(seed, null, 2));
 }
 
+const SENTENCES_PATH = path.join(DIR, 'sentences.json');
+
+function handleSave(fileName, gitMessage, req, res) {
+    let body = '';
+    req.on('data', chunk => { body += chunk; });
+    req.on('end', () => {
+        try {
+            JSON.parse(body);
+        } catch (e) {
+            res.writeHead(400, { 'Content-Type': 'text/plain' });
+            res.end('Invalid JSON: ' + e.message);
+            return;
+        }
+
+        fs.writeFileSync(path.join(DIR, fileName), body);
+
+        exec(
+            `git add ${fileName} && git commit -m "${gitMessage}" && git push`,
+            { cwd: DIR },
+            (err, stdout, stderr) => {
+                const out = stdout + stderr;
+                if (err && !out.toLowerCase().includes('nothing to commit')) {
+                    res.writeHead(500, { 'Content-Type': 'text/plain' });
+                    res.end(stderr || err.message);
+                } else {
+                    res.writeHead(200, { 'Content-Type': 'text/plain' });
+                    res.end('ok');
+                }
+            }
+        );
+    });
+}
+
 const server = http.createServer((req, res) => {
     const url = req.url.split('?')[0];
 
@@ -26,37 +59,17 @@ const server = http.createServer((req, res) => {
 
     } else if (req.method === 'GET' && url === '/templates.json') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
-        fs.createReadStream(path.join(DIR, 'templates.json')).pipe(res);
+        fs.createReadStream(TEMPLATES_PATH).pipe(res);
 
-    } else if (req.method === 'POST' && url === '/save') {
-        let body = '';
-        req.on('data', chunk => { body += chunk; });
-        req.on('end', () => {
-            try {
-                JSON.parse(body);
-            } catch (e) {
-                res.writeHead(400, { 'Content-Type': 'text/plain' });
-                res.end('Invalid JSON: ' + e.message);
-                return;
-            }
+    } else if (req.method === 'GET' && url === '/sentences.json') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        fs.createReadStream(SENTENCES_PATH).pipe(res);
 
-            fs.writeFileSync(path.join(DIR, 'templates.json'), body);
+    } else if (req.method === 'POST' && url === '/save-templates') {
+        handleSave('templates.json', 'Update email templates', req, res);
 
-            exec(
-                'git add templates.json && git commit -m "Update email templates" && git push',
-                { cwd: DIR },
-                (err, stdout, stderr) => {
-                    const out = stdout + stderr;
-                    if (err && !out.toLowerCase().includes('nothing to commit')) {
-                        res.writeHead(500, { 'Content-Type': 'text/plain' });
-                        res.end(stderr || err.message);
-                    } else {
-                        res.writeHead(200, { 'Content-Type': 'text/plain' });
-                        res.end('ok');
-                    }
-                }
-            );
-        });
+    } else if (req.method === 'POST' && url === '/save-sentences') {
+        handleSave('sentences.json', 'Update lead time sentences', req, res);
 
     } else {
         res.writeHead(404);

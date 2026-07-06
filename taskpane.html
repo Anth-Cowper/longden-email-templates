@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<!-- v2026-07-03 -->
+<!DOCTYPE html>
+<!-- v2026-07-06: combined Email Templates + Lead Time tool -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Email Templates — Longden Doors</title>
+    <title>Longden Doors Toolkit</title>
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,6 +28,32 @@
         .header-logo  { height: 46px; width: auto; flex-shrink: 0; display: block; }
         header h1 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
         header p  { font-size: 0.72rem; opacity: 0.65; margin-top: 0.1rem; }
+
+        /* ── Tool switcher ── */
+        .tool-tabs {
+            display: flex;
+            background: white;
+            border-bottom: 1px solid #ddd9d0;
+        }
+        .tool-tab {
+            flex: 1;
+            padding: 0.65rem 0.5rem;
+            text-align: center;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: #888;
+            background: white;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            transition: color 0.12s, border-color 0.12s;
+        }
+        .tool-tab:hover { color: #333; }
+        .tool-tab.active { color: #111111; border-bottom-color: #111111; }
+
+        .tool-panel { display: none; }
+        .tool-panel.active { display: block; }
 
         /* ── Category bar ── */
         .cat-bar {
@@ -358,6 +384,181 @@
         .status.err { color: #b91c1c; }
 
         .hidden { display: none !important; }
+
+        #extrasSection:not(:empty) { margin-bottom: 0.9rem; }
+
+        /* ══════════════════════════════════════════════
+           LEAD TIME PANEL (re-skinned to Email Templates branding)
+        ══════════════════════════════════════════════ */
+        #panelLeadTime .lt-subtabs { display: flex; background: #111111; }
+        #panelLeadTime .lt-subtab {
+            padding: 0.55rem 0.9rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.55);
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        #panelLeadTime .lt-subtab.active { color: white; border-bottom-color: white; }
+
+        #panelLeadTime .lt-main { padding: 0.9rem; }
+
+        #panelLeadTime .lt-page { display: none; }
+        #panelLeadTime .lt-page.active { display: block; }
+
+        #panelLeadTime .toggle {
+            display: flex;
+            border: 1.5px solid #111111;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 0.9rem;
+        }
+        #panelLeadTime .toggle-btn {
+            flex: 1;
+            padding: 0.45rem 0.5rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background: white;
+            color: #111111;
+            transition: background 0.15s, color 0.15s;
+        }
+        #panelLeadTime .toggle-btn:not(:last-child) { border-right: 1px solid #111111; }
+        #panelLeadTime .toggle-btn.active { background: #111111; color: white; }
+
+        #panelLeadTime .signoff-row,
+        #panelLeadTime .bydate-row { margin-bottom: 0.9rem; display: none; }
+        #panelLeadTime .signoff-row.visible,
+        #panelLeadTime .bydate-row.visible { display: block; }
+
+        #panelLeadTime .controls { display: flex; gap: 0.75rem; margin-bottom: 0.9rem; }
+        #panelLeadTime .control-group { flex: 1; }
+
+        #panelLeadTime label {
+            display: block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 0.3rem;
+        }
+
+        #panelLeadTime select,
+        #panelLeadTime input[type="date"] {
+            width: 100%;
+            padding: 0.5rem 0.65rem;
+            border: 1.5px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            background: white;
+            cursor: pointer;
+            font-family: inherit;
+            transition: border-color 0.12s;
+        }
+        #panelLeadTime select {
+            padding-right: 1.8rem;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23666' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.6rem center;
+        }
+        #panelLeadTime select:focus,
+        #panelLeadTime input[type="date"]:focus {
+            outline: none;
+            border-color: #111111;
+            box-shadow: 0 0 0 2px rgba(0,0,0,0.12);
+        }
+
+        #panelLeadTime .error {
+            font-size: 0.8rem;
+            color: #b91c1c;
+            background: #fef2f2;
+            border: 1px solid #fca5a5;
+            border-radius: 4px;
+            padding: 0.5rem 0.7rem;
+            margin-bottom: 0.9rem;
+            display: none;
+        }
+        #panelLeadTime .error.visible { display: block; }
+
+        #panelLeadTime .sentence-box {
+            background: white;
+            border: 1.5px solid #ddd9d0;
+            border-radius: 4px;
+            padding: 0.75rem 0.85rem;
+            font-size: 0.875rem;
+            line-height: 1.65;
+            color: #1a1a1a;
+            min-height: 80px;
+            margin-bottom: 0.4rem;
+            user-select: all;
+            white-space: pre-wrap;
+        }
+        #panelLeadTime .date-hint { font-size: 0.72rem; color: #888; margin-bottom: 0.9rem; }
+        #panelLeadTime .lt-extras { margin-bottom: 0.9rem; }
+        #panelLeadTime .lt-extras .check-label { margin-top: 0; margin-bottom: 0.5rem; align-items: flex-start; }
+        #panelLeadTime .actions { display: flex; }
+
+        /* ── Text style toolbar ── */
+        #panelLeadTime .lt-style-bar {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            padding: 0.55rem 0.9rem;
+            background: #f7f7f5;
+            border-bottom: 1px solid #ddd9d0;
+        }
+        #panelLeadTime .style-btn {
+            width: 30px;
+            height: 30px;
+            border: 1.5px solid #ccc;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.85rem;
+            color: #333;
+            transition: background 0.12s, border-color 0.12s, color 0.12s;
+        }
+        #panelLeadTime .style-btn:hover { border-color: #111111; }
+        #panelLeadTime .style-btn.active { background: #111111; border-color: #111111; color: white; }
+
+        #panelLeadTime .size-stepper { display: flex; align-items: center; gap: 0.25rem; }
+        #panelLeadTime .size-btn { width: 24px; height: 24px; font-size: 0.65rem; }
+        #panelLeadTime .size-readout { font-size: 0.7rem; font-weight: 700; color: #666; width: 28px; text-align: center; }
+
+        #panelLeadTime .swatch-row { display: flex; align-items: center; gap: 0.3rem; }
+        #panelLeadTime .swatch {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            cursor: pointer;
+            padding: 0;
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+            transition: border-color 0.12s, transform 0.1s;
+        }
+        #panelLeadTime .swatch:hover { transform: scale(1.1); }
+        #panelLeadTime .swatch.active { border-color: #111111; }
+
+        #panelLeadTime .style-check {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #666;
+            cursor: pointer;
+            margin-left: 0.2rem;
+        }
     </style>
 </head>
 <body>
@@ -367,616 +568,1251 @@
         <img class="header-logo" src="data:image/png;base64,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" alt="Longden Doors logo">
         <div>
             <h1>Longden Doors</h1>
-            <p>Email Templates</p>
+            <p id="headerSubtitle">Email Templates</p>
         </div>
     </div>
 </header>
 
-<!-- ══════════════════════════════════════════════
-     STATE 1 — BROWSE
-══════════════════════════════════════════════ -->
-<div id="stateBrowse">
-    <div class="cat-bar" id="catBar"></div>
-    <div id="templateList"></div>
+<div class="tool-tabs">
+    <button class="tool-tab active" id="toolTabEmail">Email Templates</button>
+    <button class="tool-tab" id="toolTabLeadTime">Lead Time Tool</button>
 </div>
 
 <!-- ══════════════════════════════════════════════
-     STATE 2 — FILL (use a template)
+     TOOL 1 — EMAIL TEMPLATES
 ══════════════════════════════════════════════ -->
-<div id="stateFill" class="hidden">
-    <div class="pane-header">
-        <button class="back-btn" id="fillBack">← Back</button>
-        <span class="pane-title" id="fillName"></span>
-        <button class="header-edit-btn hidden" id="fillEditBtn">Edit</button>
+<div id="panelEmail" class="tool-panel active">
+
+    <!-- STATE 1 — BROWSE -->
+    <div id="stateBrowse">
+        <div class="cat-bar" id="catBar"></div>
+        <div id="templateList"></div>
     </div>
-    <main>
-        <div id="subjectSection" class="hidden">
-            <div class="field-label">Suggested subject</div>
-            <input id="subjectVal" type="text">
-            <label class="check-label">
-                <input type="checkbox" id="applySubject"> Also set email subject
-            </label>
+
+    <!-- STATE 2 — FILL (use a template) -->
+    <div id="stateFill" class="hidden">
+        <div class="pane-header">
+            <button class="back-btn" id="fillBack">← Back</button>
+            <span class="pane-title" id="fillName"></span>
+            <button class="header-edit-btn hidden" id="fillEditBtn">Edit</button>
         </div>
-        <div id="placeholderForm"></div>
-        <div class="divider"></div>
-        <div class="field-label" style="margin-bottom:0.45rem">Preview</div>
-        <div class="preview-box" id="preview"></div>
-        <button class="btn btn-primary" id="insertBtn">Insert into email</button>
-        <div class="status" id="status"></div>
-    </main>
+        <main>
+            <div id="subjectSection" class="hidden">
+                <div class="field-label">Suggested subject</div>
+                <input id="subjectVal" type="text">
+                <label class="check-label">
+                    <input type="checkbox" id="applySubject"> Also set email subject
+                </label>
+            </div>
+            <div id="placeholderForm"></div>
+            <div class="divider"></div>
+            <div class="field-label" style="margin-bottom:0.45rem">Preview</div>
+            <div class="preview-box" id="preview"></div>
+            <div id="extrasSection"></div>
+            <button class="btn btn-primary" id="insertBtn">Insert into email</button>
+            <div class="status" id="status"></div>
+        </main>
+    </div>
+
+    <!-- STATE 3 — CREATE / EDIT personal template -->
+    <div id="stateCreate" class="hidden">
+        <div class="pane-header">
+            <button class="back-btn" id="createBack">← Back</button>
+            <span class="pane-title" id="createTitle">New personal template</span>
+        </div>
+        <main>
+            <div class="form-field">
+                <div class="field-label">Template name</div>
+                <input type="text" class="text-input" id="cName" placeholder="e.g. Chase sign-off">
+            </div>
+            <div class="form-field">
+                <div class="field-label">Category</div>
+                <select class="cat-select" id="cCat"></select>
+            </div>
+            <div class="form-field">
+                <div class="field-label">Subject line <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
+                <input type="text" class="text-input" id="cSubject" placeholder="Leave blank if none">
+            </div>
+            <div class="form-field">
+                <div class="field-label">Body — use {FIELD_NAME} for dynamic parts</div>
+                <textarea id="cBody" rows="8" placeholder="Dear {CLIENT_NAME},&#10;&#10;..."></textarea>
+            </div>
+            <div class="form-field" id="cPhSection">
+                <div class="field-label">Detected placeholders — set labels</div>
+                <div id="cPhContent"><span class="ph-none">None yet — add {KEY} tokens to the body above.</span></div>
+            </div>
+            <button class="btn btn-blue" id="savePersonalBtn">Save template</button>
+        </main>
+    </div>
+
 </div>
 
 <!-- ══════════════════════════════════════════════
-     STATE 3 — CREATE / EDIT personal template
+     TOOL 2 — LEAD TIME
 ══════════════════════════════════════════════ -->
-<div id="stateCreate" class="hidden">
-    <div class="pane-header">
-        <button class="back-btn" id="createBack">← Back</button>
-        <span class="pane-title" id="createTitle">New personal template</span>
+<div id="panelLeadTime" class="tool-panel">
+
+    <div class="lt-subtabs">
+        <button class="lt-subtab active" id="tabLead">Lead Time</button>
+        <button class="lt-subtab" id="tabClient">Client Delivery Date</button>
     </div>
-    <main>
-        <div class="form-field">
-            <div class="field-label">Template name</div>
-            <input type="text" class="text-input" id="cName" placeholder="e.g. Chase sign-off">
+
+    <div class="lt-style-bar">
+        <button type="button" class="style-btn" id="styleBold" title="Bold"><b>B</b></button>
+        <button type="button" class="style-btn" id="styleItalic" title="Italic"><i>I</i></button>
+        <button type="button" class="style-btn" id="styleUnderline" title="Underline"><u>U</u></button>
+
+        <div class="size-stepper" title="Text size">
+            <button type="button" class="style-btn size-btn" id="sizeDown">▼</button>
+            <span class="size-readout" id="sizeReadout">11pt</span>
+            <button type="button" class="style-btn size-btn" id="sizeUp">▲</button>
         </div>
-        <div class="form-field">
-            <div class="field-label">Category</div>
-            <select class="cat-select" id="cCat"></select>
+
+        <div class="swatch-row" id="colorSwatches">
+            <button type="button" class="swatch" data-color="#dc2626" style="background:#dc2626" title="Red"></button>
+            <button type="button" class="swatch" data-color="#ea580c" style="background:#ea580c" title="Orange"></button>
+            <button type="button" class="swatch" data-color="#ca8a04" style="background:#ca8a04" title="Yellow"></button>
+            <button type="button" class="swatch" data-color="#4ade80" style="background:#4ade80" title="Light green"></button>
+            <button type="button" class="swatch" data-color="#15803d" style="background:#15803d" title="Dark green"></button>
+            <button type="button" class="swatch" data-color="#2563eb" style="background:#2563eb" title="Blue"></button>
+            <button type="button" class="swatch" data-color="#7c3aed" style="background:#7c3aed" title="Purple"></button>
+            <button type="button" class="swatch" data-color="#111111" style="background:#111111" title="Black"></button>
         </div>
-        <div class="form-field">
-            <div class="field-label">Subject line <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></div>
-            <input type="text" class="text-input" id="cSubject" placeholder="Leave blank if none">
+
+        <label class="style-check"><input type="checkbox" id="styleUppercase"> UPPERCASE</label>
+    </div>
+
+    <div class="lt-main">
+
+        <!-- ── Page 1: Lead Time ── -->
+        <div id="pageLead" class="lt-page active">
+
+            <div class="toggle">
+                <button class="toggle-btn active" id="btnToday">From today</button>
+                <button class="toggle-btn"        id="btnSignOff">Sign off</button>
+                <button class="toggle-btn"        id="btnByDate">By date</button>
+            </div>
+
+            <div class="signoff-row" id="signoffRow">
+                <div class="control-group">
+                    <label for="signOffWeek">Sign off in (weeks)</label>
+                    <select id="signOffWeek"></select>
+                </div>
+            </div>
+
+            <div class="bydate-row" id="bydateRow">
+                <div class="control-group">
+                    <label for="signOffDate">Sign off by</label>
+                    <input type="date" id="signOffDate">
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="lowWeek">Low week</label>
+                    <select id="lowWeek"></select>
+                </div>
+                <div class="control-group">
+                    <label for="highWeek">High week</label>
+                    <select id="highWeek"></select>
+                </div>
+            </div>
+
+            <div class="error" id="error">High week must be &ge; low week.</div>
+
+            <div class="field-label">Generated sentence</div>
+            <div class="sentence-box" id="sentence"></div>
+            <div class="date-hint" id="dateHint"></div>
+            <div class="lt-extras" id="ltExtrasLead"></div>
+
+            <div class="actions">
+                <button class="btn btn-primary" id="ltInsertBtn">Insert into email</button>
+            </div>
+            <div class="status" id="ltStatus"></div>
+
         </div>
-        <div class="form-field">
-            <div class="field-label">Body — use {FIELD_NAME} for dynamic parts</div>
-            <textarea id="cBody" rows="8" placeholder="Dear {CLIENT_NAME},&#10;&#10;..."></textarea>
+
+        <!-- ── Page 2: Client Delivery Date ── -->
+        <div id="pageClient" class="lt-page">
+
+            <div class="control-group" style="margin-bottom:1rem">
+                <label for="deliveryDate">Client's delivery date</label>
+                <input type="date" id="deliveryDate">
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="delivLowWeek">Low week</label>
+                    <select id="delivLowWeek"></select>
+                </div>
+                <div class="control-group">
+                    <label for="delivHighWeek">High week</label>
+                    <select id="delivHighWeek"></select>
+                </div>
+            </div>
+
+            <div class="error" id="delivError">High week must be &ge; low week.</div>
+
+            <div class="field-label">Generated sentence</div>
+            <div class="sentence-box" id="delivSentence"></div>
+            <div class="date-hint" id="delivDateHint"></div>
+            <div class="lt-extras" id="ltExtrasClient"></div>
+
+            <div class="actions">
+                <button class="btn btn-primary" id="delivInsertBtn">Insert into email</button>
+            </div>
+            <div class="status" id="delivStatus"></div>
+
         </div>
-        <div class="form-field" id="cPhSection">
-            <div class="field-label">Detected placeholders — set labels</div>
-            <div id="cPhContent"><span class="ph-none">None yet — add {KEY} tokens to the body above.</span></div>
-        </div>
-        <button class="btn btn-blue" id="savePersonalBtn">Save template</button>
-    </main>
+
+    </div>
+
 </div>
 
 <script>
-    // ── Constants ────────────────────────────────────────
-    const SHARED_CATS = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
-    const LS_FAVS     = 'ld_favs';
-    const LS_PERSONAL = 'ld_personal';
+    // ── Top-level tool switcher ────────────────────────────
+    (function () {
+        const toolTabEmail    = document.getElementById('toolTabEmail');
+        const toolTabLeadTime = document.getElementById('toolTabLeadTime');
+        const panelEmail      = document.getElementById('panelEmail');
+        const panelLeadTime   = document.getElementById('panelLeadTime');
+        const subtitle        = document.getElementById('headerSubtitle');
 
-    // ── State ────────────────────────────────────────────
-    let sharedTemplates = [];
-    let activeCat       = '★ Favourites';
-    let currentTemplate = null;
-    let editingPersonalId = null;
-    let officeReady     = false;
-
-    // ── localStorage helpers ─────────────────────────────
-    function getFavs()          { return JSON.parse(localStorage.getItem(LS_FAVS)     || '[]'); }
-    function setFavs(a)         { localStorage.setItem(LS_FAVS, JSON.stringify(a)); }
-    function isFav(id)          { return getFavs().includes(id); }
-    function toggleFav(id)      { const f = getFavs(); const i = f.indexOf(id); i >= 0 ? f.splice(i,1) : f.push(id); setFavs(f); }
-    function getPersonal()      { return JSON.parse(localStorage.getItem(LS_PERSONAL) || '[]'); }
-    function setPersonal(a)     { localStorage.setItem(LS_PERSONAL, JSON.stringify(a)); }
-
-    // ── Load shared templates ────────────────────────────
-    async function loadTemplates() {
-        try {
-            const r = await fetch('templates.json?_=' + Date.now());
-            const d = await r.json();
-            sharedTemplates = d.templates || [];
-        } catch (e) { sharedTemplates = []; }
-        buildCatBar();
-        renderList();
-    }
-
-    // ── Category bar ─────────────────────────────────────
-    function buildCatBar() {
-        const bar = document.getElementById('catBar');
-        bar.innerHTML = '';
-
-        // Favourites pill
-        const favBtn = document.createElement('button');
-        favBtn.className = 'cat-btn cat-fav' + (activeCat === '★ Favourites' ? ' active' : '');
-        favBtn.textContent = '★ Favs';
-        favBtn.addEventListener('click', () => { activeCat = '★ Favourites'; buildCatBar(); renderList(); });
-        bar.appendChild(favBtn);
-
-        // Mine pill
-        const mineBtn = document.createElement('button');
-        mineBtn.className = 'cat-btn cat-mine' + (activeCat === 'Mine' ? ' active' : '');
-        mineBtn.textContent = 'Mine';
-        mineBtn.addEventListener('click', () => { activeCat = 'Mine'; buildCatBar(); renderList(); });
-        bar.appendChild(mineBtn);
-
-        // Category dropdown (All + categories in defined order)
-        const presentCats = [...new Set(sharedTemplates.map(t => t.category))];
-        const orderedCats = SHARED_CATS.filter(c => presentCats.includes(c));
-        presentCats.forEach(c => { if (!orderedCats.includes(c)) orderedCats.push(c); });
-
-        const isSpecial = activeCat === '★ Favourites' || activeCat === 'Mine';
-        const selectVal = isSpecial ? 'All' : activeCat;
-
-        const sel = document.createElement('select');
-        sel.className = 'cat-filter-select' + (!isSpecial && activeCat !== 'All' ? ' has-value' : '');
-        ['All', ...orderedCats].forEach(c => {
-            const opt = document.createElement('option');
-            opt.value = c;
-            opt.textContent = c;
-            if (c === selectVal) opt.selected = true;
-            sel.appendChild(opt);
+        toolTabEmail.addEventListener('click', () => {
+            toolTabEmail.classList.add('active');
+            toolTabLeadTime.classList.remove('active');
+            panelEmail.classList.add('active');
+            panelLeadTime.classList.remove('active');
+            subtitle.textContent = 'Email Templates';
         });
-        sel.addEventListener('change', () => {
-            activeCat = sel.value;
+
+        toolTabLeadTime.addEventListener('click', () => {
+            toolTabLeadTime.classList.add('active');
+            toolTabEmail.classList.remove('active');
+            panelLeadTime.classList.add('active');
+            panelEmail.classList.remove('active');
+            subtitle.textContent = 'Lead Time Tool';
+        });
+    })();
+
+    // ══════════════════════════════════════════════
+    // EMAIL TEMPLATES TOOL
+    // ══════════════════════════════════════════════
+    (function () {
+        // ── Constants ────────────────────────────────────────
+        const SHARED_CATS = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+        const LS_FAVS     = 'ld_favs';
+        const LS_PERSONAL = 'ld_personal';
+
+        // ── State ────────────────────────────────────────────
+        let sharedTemplates = [];
+        let sharedExtras    = [];
+        let activeCat       = '★ Favourites';
+        let currentTemplate = null;
+        let editingPersonalId = null;
+        let officeReady     = false;
+
+        // ── localStorage helpers ─────────────────────────────
+        function getFavs()          { return JSON.parse(localStorage.getItem(LS_FAVS)     || '[]'); }
+        function setFavs(a)         { localStorage.setItem(LS_FAVS, JSON.stringify(a)); }
+        function isFav(id)          { return getFavs().includes(id); }
+        function toggleFav(id)      { const f = getFavs(); const i = f.indexOf(id); i >= 0 ? f.splice(i,1) : f.push(id); setFavs(f); }
+        function getPersonal()      { return JSON.parse(localStorage.getItem(LS_PERSONAL) || '[]'); }
+        function setPersonal(a)     { localStorage.setItem(LS_PERSONAL, JSON.stringify(a)); }
+
+        // ── Load shared templates ────────────────────────────
+        async function loadTemplates() {
+            try {
+                const r = await fetch('templates.json?_=' + Date.now());
+                const d = await r.json();
+                sharedTemplates = d.templates || [];
+                sharedExtras    = d.extras || [];
+            } catch (e) { sharedTemplates = []; sharedExtras = []; }
             buildCatBar();
             renderList();
-        });
-        bar.appendChild(sel);
-    }
-
-    // ── Template list ─────────────────────────────────────
-    function renderList() {
-        const list = document.getElementById('templateList');
-        list.innerHTML = '';
-
-        if (activeCat === 'Mine') {
-            renderMineList(list);
-            return;
         }
 
-        let items;
-        if (activeCat === '★ Favourites') {
-            const favIds = getFavs();
-            const all = [...sharedTemplates, ...getPersonal()];
-            items = favIds.map(id => all.find(t => t.id === id)).filter(Boolean);
-        } else if (activeCat === 'All') {
-            items = sharedTemplates;
-        } else {
-            items = sharedTemplates.filter(t => t.category === activeCat);
-        }
+        // ── Category bar ─────────────────────────────────────
+        function buildCatBar() {
+            const bar = document.getElementById('catBar');
+            bar.innerHTML = '';
 
-        if (!items.length) {
-            list.innerHTML = '<p class="empty-msg">No templates here yet.</p>';
-            return;
-        }
-        items.forEach(tpl => list.appendChild(makeSharedItem(tpl)));
-    }
+            // Favourites pill
+            const favBtn = document.createElement('button');
+            favBtn.className = 'cat-btn cat-fav' + (activeCat === '★ Favourites' ? ' active' : '');
+            favBtn.textContent = '★ Favs';
+            favBtn.addEventListener('click', () => { activeCat = '★ Favourites'; buildCatBar(); renderList(); });
+            bar.appendChild(favBtn);
 
-    function renderMineList(list) {
-        const personal = getPersonal();
-        const addBtn = document.createElement('button');
-        addBtn.className = 'add-btn';
-        addBtn.innerHTML = '+ New personal template';
-        addBtn.addEventListener('click', () => openCreate(null));
-        list.appendChild(addBtn);
+            // Mine pill
+            const mineBtn = document.createElement('button');
+            mineBtn.className = 'cat-btn cat-mine' + (activeCat === 'Mine' ? ' active' : '');
+            mineBtn.textContent = 'Mine';
+            mineBtn.addEventListener('click', () => { activeCat = 'Mine'; buildCatBar(); renderList(); });
+            bar.appendChild(mineBtn);
 
-        if (!personal.length) {
-            const msg = document.createElement('p');
-            msg.className = 'empty-msg';
-            msg.textContent = 'No personal templates yet. Add one above.';
-            list.appendChild(msg);
-            return;
-        }
-        personal.forEach(tpl => list.appendChild(makePersonalItem(tpl)));
-    }
+            // Category dropdown (All + categories in defined order)
+            const presentCats = [...new Set(sharedTemplates.map(t => t.category))];
+            const orderedCats = SHARED_CATS.filter(c => presentCats.includes(c));
+            presentCats.forEach(c => { if (!orderedCats.includes(c)) orderedCats.push(c); });
 
-    function makeSharedItem(tpl) {
-        const item = document.createElement('div');
-        item.className = 'tpl-item';
+            const isSpecial = activeCat === '★ Favourites' || activeCat === 'Mine';
+            const selectVal = isSpecial ? 'All' : activeCat;
 
-        const body = document.createElement('div');
-        body.className = 'tpl-body';
-        body.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-meta">${tpl.category}${tpl.subject ? ' · has subject' : ''}</div>`;
-        body.addEventListener('click', () => openFill(tpl, false));
-
-        const starBtn = document.createElement('button');
-        starBtn.className = 'tpl-btn star' + (isFav(tpl.id) ? ' active' : '');
-        starBtn.title = 'Favourite';
-        starBtn.textContent = '★';
-        starBtn.addEventListener('click', e => {
-            e.stopPropagation();
-            toggleFav(tpl.id);
-            starBtn.classList.toggle('active', isFav(tpl.id));
-            if (activeCat === '★ Favourites') renderList();
-        });
-
-        const actions = document.createElement('div');
-        actions.className = 'tpl-actions';
-        actions.appendChild(starBtn);
-
-        item.appendChild(body);
-        item.appendChild(actions);
-        return item;
-    }
-
-    function makePersonalItem(tpl) {
-        const item = document.createElement('div');
-        item.className = 'tpl-item';
-
-        const body = document.createElement('div');
-        body.className = 'tpl-body';
-        body.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-meta" style="color:#2563eb">${tpl.category} · personal${tpl.subject ? ' · has subject' : ''}</div>`;
-        body.addEventListener('click', () => openFill(tpl, true));
-
-        const starBtn = document.createElement('button');
-        starBtn.className = 'tpl-btn star' + (isFav(tpl.id) ? ' active' : '');
-        starBtn.title = 'Favourite';
-        starBtn.textContent = '★';
-        starBtn.addEventListener('click', e => {
-            e.stopPropagation();
-            toggleFav(tpl.id);
-            starBtn.classList.toggle('active', isFav(tpl.id));
-        });
-
-        const editBtn = document.createElement('button');
-        editBtn.className = 'tpl-btn edit';
-        editBtn.textContent = 'Edit';
-        editBtn.addEventListener('click', e => { e.stopPropagation(); openCreate(tpl); });
-
-        const delBtn = document.createElement('button');
-        delBtn.className = 'tpl-btn del';
-        delBtn.textContent = 'Delete';
-        delBtn.addEventListener('click', e => {
-            e.stopPropagation();
-            confirmDelete(tpl.name, () => {
-                const updated = getPersonal().filter(t => t.id !== tpl.id);
-                setPersonal(updated);
-                setFavs(getFavs().filter(id => id !== tpl.id));
+            const sel = document.createElement('select');
+            sel.className = 'cat-filter-select' + (!isSpecial && activeCat !== 'All' ? ' has-value' : '');
+            ['All', ...orderedCats].forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                if (c === selectVal) opt.selected = true;
+                sel.appendChild(opt);
+            });
+            sel.addEventListener('change', () => {
+                activeCat = sel.value;
+                buildCatBar();
                 renderList();
             });
-        });
-
-        const actions = document.createElement('div');
-        actions.className = 'tpl-actions';
-        actions.appendChild(starBtn);
-        actions.appendChild(editBtn);
-        actions.appendChild(delBtn);
-
-        item.appendChild(body);
-        item.appendChild(actions);
-        return item;
-    }
-
-    // ── FILL state ────────────────────────────────────────
-    function openFill(tpl, isPersonal) {
-        currentTemplate = tpl;
-
-        document.getElementById('fillName').textContent = tpl.name;
-        document.getElementById('fillEditBtn').classList.toggle('hidden', !isPersonal);
-
-        // Subject
-        const subjSec = document.getElementById('subjectSection');
-        if (tpl.subject) {
-            document.getElementById('subjectVal').value = tpl.subject;
-            document.getElementById('applySubject').checked = false;
-            subjSec.classList.remove('hidden');
-        } else {
-            subjSec.classList.add('hidden');
+            bar.appendChild(sel);
         }
 
-        // Derive placeholders: prefer saved labels/hints, fall back to scanning body
-        const savedMap = {};
-        (tpl.placeholders || []).forEach(p => { savedMap[p.key] = p; });
-        const keysInBody = [];
-        const phScan = /\{(\w+)\}/g;
-        let pm;
-        while ((pm = phScan.exec(tpl.body)) !== null) {
-            if (!keysInBody.includes(pm[1])) keysInBody.push(pm[1]);
-        }
-        const effectivePhs = keysInBody.map(key =>
-            savedMap[key] || { key, label: humanize(key), hint: '', optional: false }
-        );
+        // ── Template list ─────────────────────────────────────
+        function renderList() {
+            const list = document.getElementById('templateList');
+            list.innerHTML = '';
 
-        // Placeholder form
-        const form = document.getElementById('placeholderForm');
-        form.innerHTML = '';
-        effectivePhs.forEach(p => {
-            const div = document.createElement('div');
-            div.className = 'form-field';
-            div.innerHTML = `
-                <div class="field-label">${p.label}${p.optional ? ' <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span>' : ''}</div>
-                <input type="text" class="text-input ph-input" data-key="${p.key}" autocomplete="off">
-                ${p.hint ? `<div class="field-hint">${p.hint}</div>` : ''}
-            `;
-            form.appendChild(div);
-        });
-        form.querySelectorAll('.ph-input').forEach(i => i.addEventListener('input', updatePreview));
-
-        updatePreview();
-        show('stateFill');
-    }
-
-    function updatePreview() {
-        if (!currentTemplate) return;
-        const values = getValues();
-
-        const html = currentTemplate.body
-            .split('\n')
-            .map(line => line.replace(/\{(\w+)\}/g, (match, key) => {
-                const val = values[key];
-                if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
-                return `<span class="unfilled">${match}</span>`;
-            }))
-            .join('<br>');
-        document.getElementById('preview').innerHTML = html;
-
-        const allFilled = document.querySelectorAll('.ph-input[data-key]')
-            .length === 0 || [...document.querySelectorAll('.ph-input[data-key]')]
-            .every(inp => inp.value.trim() !== '');
-        document.getElementById('insertBtn').disabled = !allFilled;
-    }
-
-    function getValues() {
-        const vals = {};
-        document.querySelectorAll('.ph-input').forEach(i => { vals[i.dataset.key] = i.value; });
-        return vals;
-    }
-
-    function fillTpl(body, values) {
-        return body.replace(/\{(\w+)\}/g, (m, k) => values[k] !== undefined ? values[k] : m);
-    }
-
-    document.getElementById('insertBtn').addEventListener('click', async () => {
-        if (!currentTemplate) return;
-        const text = fillTpl(currentTemplate.body, getValues());
-        const html = textToHtml(text);
-        const btn  = document.getElementById('insertBtn');
-        const stat = document.getElementById('status');
-
-        if (currentTemplate.subject && document.getElementById('applySubject').checked) {
-            const subj = document.getElementById('subjectVal').value.trim();
-            if (officeReady && Office.context?.mailbox)
-                Office.context.mailbox.item.subject.setAsync(subj, () => {});
-        }
-
-        if (officeReady && Office.context?.mailbox) {
-            Office.context.mailbox.item.body.setSelectedDataAsync(html,
-                { coercionType: Office.CoercionType.Html },
-                result => {
-                    if (result.status === Office.AsyncResultStatus.Succeeded) {
-                        btn.textContent = 'Inserted!';
-                        btn.classList.add('success');
-                        setTimeout(async () => {
-                            btn.textContent = 'Insert into email';
-                            btn.classList.remove('success');
-                            try { if (Office.addin?.hide) await Office.addin.hide(); } catch(e) {}
-                        }, 800);
-                    } else { showStatus('Insert failed — try again.', true); }
-                });
-        } else {
-            showPreviewModal(text);
-        }
-    });
-
-    document.getElementById('fillBack').addEventListener('click', () => show('stateBrowse'));
-    document.getElementById('fillEditBtn').addEventListener('click', () => openCreate(currentTemplate));
-
-    // ── CREATE / EDIT state ───────────────────────────────
-    const CATS_FOR_SELECT = [...SHARED_CATS];
-
-    function openCreate(tpl) {
-        editingPersonalId = tpl ? tpl.id : null;
-        document.getElementById('createTitle').textContent = tpl ? 'Edit template' : 'New personal template';
-
-        // Populate category dropdown
-        const sel = document.getElementById('cCat');
-        sel.innerHTML = '';
-        CATS_FOR_SELECT.forEach(c => {
-            const opt = document.createElement('option');
-            opt.value = c; opt.textContent = c;
-            if (tpl && c === tpl.category) opt.selected = true;
-            sel.appendChild(opt);
-        });
-
-        document.getElementById('cName').value    = tpl ? tpl.name    : '';
-        document.getElementById('cSubject').value = tpl ? (tpl.subject || '') : '';
-        const bodyEl = document.getElementById('cBody');
-        bodyEl.value = tpl ? tpl.body : '';
-
-        // Store current placeholders so labels survive re-detection
-        createPhs = tpl ? (tpl.placeholders || []) : [];
-        syncCreatePhs();
-
-        show('stateCreate');
-    }
-
-    let createPhs = [];
-
-    document.getElementById('cBody').addEventListener('input', syncCreatePhs);
-
-    function syncCreatePhs() {
-        const body = document.getElementById('cBody').value;
-        const found = [];
-        const regex = /\{(\w+)\}/g;
-        let m;
-        while ((m = regex.exec(body)) !== null) {
-            if (!found.includes(m[1])) found.push(m[1]);
-        }
-        const existMap = {};
-        createPhs.forEach(p => { existMap[p.key] = p; });
-        createPhs = found.map(key => existMap[key] || { key, label: humanize(key), hint: '', optional: false });
-        renderCreatePhs();
-    }
-
-    function renderCreatePhs() {
-        const container = document.getElementById('cPhContent');
-        container.innerHTML = '';
-        if (!createPhs.length) {
-            container.innerHTML = '<span class="ph-none">None yet — add {KEY} tokens to the body above.</span>';
-            return;
-        }
-        const tbl = document.createElement('table');
-        tbl.className = 'ph-table';
-        tbl.innerHTML = '<thead><tr><th>Token</th><th>Label shown to user</th><th>Hint</th></tr></thead>';
-        const tbody = document.createElement('tbody');
-        createPhs.forEach((ph, i) => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td>{${ph.key}}</td>
-                <td><input class="td-inp" type="text" value="${esc(ph.label)}" placeholder="Label"></td>
-                <td><input class="td-inp" type="text" value="${esc(ph.hint||'')}" placeholder="e.g. Feb 2026"></td>
-            `;
-            const [lbl, hint] = tr.querySelectorAll('input');
-            lbl.addEventListener('input',  () => { createPhs[i].label = lbl.value; });
-            hint.addEventListener('input', () => { createPhs[i].hint  = hint.value; });
-            tbody.appendChild(tr);
-        });
-        tbl.appendChild(tbody);
-        container.appendChild(tbl);
-    }
-
-    document.getElementById('savePersonalBtn').addEventListener('click', () => {
-        const name = document.getElementById('cName').value.trim();
-        if (!name) { alert('Please enter a template name.'); return; }
-        const body = document.getElementById('cBody').value.trim();
-        if (!body) { alert('Please enter a body.'); return; }
-
-        const personal = getPersonal();
-        const tpl = {
-            id:           editingPersonalId || ('personal_' + Date.now()),
-            name,
-            category:     document.getElementById('cCat').value,
-            subject:      document.getElementById('cSubject').value.trim(),
-            body,
-            placeholders: createPhs.map(p => ({ ...p }))
-        };
-
-        if (editingPersonalId) {
-            const idx = personal.findIndex(t => t.id === editingPersonalId);
-            if (idx >= 0) personal[idx] = tpl; else personal.push(tpl);
-        } else {
-            personal.push(tpl);
-        }
-        setPersonal(personal);
-        activeCat = 'Mine';
-        buildCatBar();
-        renderList();
-        show('stateBrowse');
-    });
-
-    document.getElementById('createBack').addEventListener('click', () => {
-        buildCatBar();
-        renderList();
-        show('stateBrowse');
-    });
-
-    // ── Utilities ─────────────────────────────────────────
-    function show(stateId) {
-        ['stateBrowse','stateFill','stateCreate'].forEach(id =>
-            document.getElementById(id).classList.toggle('hidden', id !== stateId));
-    }
-
-    function showStatus(msg, isErr) {
-        const el = document.getElementById('status');
-        el.textContent = msg;
-        el.className = 'status' + (isErr ? ' err' : '');
-        setTimeout(() => { el.textContent = ''; el.className = 'status'; }, 3000);
-    }
-
-    function humanize(key) {
-        const words = key.toLowerCase().split('_');
-        words[0] = words[0].charAt(0).toUpperCase() + words[0].slice(1);
-        return words.join(' ');
-    }
-
-    function esc(s) {
-        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
-
-    function textToHtml(text) {
-        function e(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-        return text.split(/\n\n+/).map(p => {
-            const lines = p.split('\n');
-            if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
-                return '<ul style="margin:0 0 0.75em 1.2em;padding:0">' +
-                    lines.map(l => '<li>' + e(l.trim().slice(2)) + '</li>').join('') + '</ul>';
+            if (activeCat === 'Mine') {
+                renderMineList(list);
+                return;
             }
-            return '<p style="margin:0 0 0.75em 0">' + lines.map(e).join('<br>') + '</p>';
-        }).join('');
-    }
 
-    // ── Office init ───────────────────────────────────────
-    if (typeof Office !== 'undefined') {
-        Office.onReady(() => { officeReady = true; });
-    }
+            let items;
+            if (activeCat === '★ Favourites') {
+                const favIds = getFavs();
+                const all = [...sharedTemplates, ...getPersonal()];
+                items = favIds.map(id => all.find(t => t.id === id)).filter(Boolean);
+            } else if (activeCat === 'All') {
+                items = sharedTemplates;
+            } else {
+                items = sharedTemplates.filter(t => t.category === activeCat);
+            }
 
-    // ── Delete confirmation dialog ────────────────────────
-    function confirmDelete(name, onConfirm) {
-        const overlay = document.createElement('div');
-        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999;display:flex;align-items:center;justify-content:center;padding:1.5rem';
+            if (!items.length) {
+                list.innerHTML = '<p class="empty-msg">No templates here yet.</p>';
+                return;
+            }
+            items.forEach(tpl => list.appendChild(makeSharedItem(tpl)));
+        }
 
-        const box = document.createElement('div');
-        box.style.cssText = 'background:white;border-radius:6px;width:100%;max-width:280px;box-shadow:0 8px 32px rgba(0,0,0,0.22);overflow:hidden';
+        function renderMineList(list) {
+            const personal = getPersonal();
+            const addBtn = document.createElement('button');
+            addBtn.className = 'add-btn';
+            addBtn.innerHTML = '+ New personal template';
+            addBtn.addEventListener('click', () => openCreate(null));
+            list.appendChild(addBtn);
 
-        const head = document.createElement('div');
-        head.style.cssText = 'background:#b91c1c;color:white;padding:0.7rem 1rem;font-size:0.8rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase';
-        head.textContent = 'Delete template';
+            if (!personal.length) {
+                const msg = document.createElement('p');
+                msg.className = 'empty-msg';
+                msg.textContent = 'No personal templates yet. Add one above.';
+                list.appendChild(msg);
+                return;
+            }
+            personal.forEach(tpl => list.appendChild(makePersonalItem(tpl)));
+        }
 
-        const msg = document.createElement('p');
-        msg.style.cssText = 'padding:1rem;font-size:0.85rem;color:#1a1a1a;line-height:1.5';
-        msg.textContent = `Are you sure you want to delete "${name}"? This cannot be undone.`;
+        function makeSharedItem(tpl) {
+            const item = document.createElement('div');
+            item.className = 'tpl-item';
 
-        const foot = document.createElement('div');
-        foot.style.cssText = 'display:flex;gap:0.5rem;padding:0 1rem 1rem';
+            const body = document.createElement('div');
+            body.className = 'tpl-body';
+            body.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-meta">${tpl.category}${tpl.subject ? ' · has subject' : ''}</div>`;
+            body.addEventListener('click', () => openFill(tpl, false));
 
-        const cancelBtn = document.createElement('button');
-        cancelBtn.textContent = 'Cancel';
-        cancelBtn.style.cssText = 'flex:1;padding:0.55rem;border-radius:4px;border:1.5px solid #ccc;background:white;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:inherit';
+            const starBtn = document.createElement('button');
+            starBtn.className = 'tpl-btn star' + (isFav(tpl.id) ? ' active' : '');
+            starBtn.title = 'Favourite';
+            starBtn.textContent = '★';
+            starBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                toggleFav(tpl.id);
+                starBtn.classList.toggle('active', isFav(tpl.id));
+                if (activeCat === '★ Favourites') renderList();
+            });
 
-        const deleteBtn = document.createElement('button');
-        deleteBtn.textContent = 'Yes, delete';
-        deleteBtn.style.cssText = 'flex:1;padding:0.55rem;border-radius:4px;border:none;background:#b91c1c;color:white;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:inherit';
+            const actions = document.createElement('div');
+            actions.className = 'tpl-actions';
+            actions.appendChild(starBtn);
 
-        foot.appendChild(cancelBtn);
-        foot.appendChild(deleteBtn);
-        box.appendChild(head);
-        box.appendChild(msg);
-        box.appendChild(foot);
-        overlay.appendChild(box);
-        document.body.appendChild(overlay);
+            item.appendChild(body);
+            item.appendChild(actions);
+            return item;
+        }
 
-        const close = () => document.body.removeChild(overlay);
-        cancelBtn.addEventListener('click', close);
-        overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
-        deleteBtn.addEventListener('click', () => { close(); onConfirm(); });
-    }
+        function makePersonalItem(tpl) {
+            const item = document.createElement('div');
+            item.className = 'tpl-item';
 
-    // ── Browser preview modal ─────────────────────────────
-    function showPreviewModal(text) {
-        const overlay = document.createElement('div');
-        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:999;display:flex;align-items:center;justify-content:center;padding:1rem';
+            const body = document.createElement('div');
+            body.className = 'tpl-body';
+            body.innerHTML = `<div class="tpl-name">${tpl.name}</div><div class="tpl-meta" style="color:#2563eb">${tpl.category} · personal${tpl.subject ? ' · has subject' : ''}</div>`;
+            body.addEventListener('click', () => openFill(tpl, true));
 
-        const box = document.createElement('div');
-        box.style.cssText = 'background:white;border-radius:6px;width:100%;max-width:480px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,0.25)';
+            const starBtn = document.createElement('button');
+            starBtn.className = 'tpl-btn star' + (isFav(tpl.id) ? ' active' : '');
+            starBtn.title = 'Favourite';
+            starBtn.textContent = '★';
+            starBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                toggleFav(tpl.id);
+                starBtn.classList.toggle('active', isFav(tpl.id));
+            });
 
-        const head = document.createElement('div');
-        head.style.cssText = 'background:#111111;color:white;padding:0.75rem 1rem;border-radius:6px 6px 0 0;display:flex;align-items:center;justify-content:space-between';
-        head.innerHTML = '<span style="font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Preview — this is what goes into the email</span>';
+            const editBtn = document.createElement('button');
+            editBtn.className = 'tpl-btn edit';
+            editBtn.textContent = 'Edit';
+            editBtn.addEventListener('click', e => { e.stopPropagation(); openCreate(tpl); });
 
-        const closeBtn = document.createElement('button');
-        closeBtn.textContent = '✕';
-        closeBtn.style.cssText = 'background:none;border:none;color:white;font-size:1rem;cursor:pointer;padding:0 0.2rem;opacity:0.8';
-        closeBtn.addEventListener('click', () => document.body.removeChild(overlay));
-        head.appendChild(closeBtn);
+            const delBtn = document.createElement('button');
+            delBtn.className = 'tpl-btn del';
+            delBtn.textContent = 'Delete';
+            delBtn.addEventListener('click', e => {
+                e.stopPropagation();
+                confirmDelete(tpl.name, () => {
+                    const updated = getPersonal().filter(t => t.id !== tpl.id);
+                    setPersonal(updated);
+                    setFavs(getFavs().filter(id => id !== tpl.id));
+                    renderList();
+                });
+            });
 
-        const body = document.createElement('div');
-        body.style.cssText = 'padding:1rem;overflow-y:auto;font-size:0.88rem;line-height:1.75;white-space:pre-wrap;color:#1a1a1a;flex:1';
-        body.textContent = text;
+            const actions = document.createElement('div');
+            actions.className = 'tpl-actions';
+            actions.appendChild(starBtn);
+            actions.appendChild(editBtn);
+            actions.appendChild(delBtn);
 
-        const foot = document.createElement('div');
-        foot.style.cssText = 'padding:0.75rem 1rem;border-top:1px solid #e5e5e5;font-size:0.75rem;color:#888;text-align:center';
-        foot.textContent = 'In Outlook this inserts directly into your email — no clipboard needed.';
+            item.appendChild(body);
+            item.appendChild(actions);
+            return item;
+        }
 
-        box.appendChild(head);
-        box.appendChild(body);
-        box.appendChild(foot);
-        overlay.appendChild(box);
-        overlay.addEventListener('click', e => { if (e.target === overlay) document.body.removeChild(overlay); });
-        document.body.appendChild(overlay);
-    }
+        // ── FILL state ────────────────────────────────────────
+        function openFill(tpl, isPersonal) {
+            currentTemplate = tpl;
 
-    loadTemplates();
+            document.getElementById('fillName').textContent = tpl.name;
+            document.getElementById('fillEditBtn').classList.toggle('hidden', !isPersonal);
+
+            // Subject
+            const subjSec = document.getElementById('subjectSection');
+            if (tpl.subject) {
+                document.getElementById('subjectVal').value = tpl.subject;
+                document.getElementById('applySubject').checked = false;
+                subjSec.classList.remove('hidden');
+            } else {
+                subjSec.classList.add('hidden');
+            }
+
+            // Derive placeholders: prefer saved labels/hints, fall back to scanning body
+            const savedMap = {};
+            (tpl.placeholders || []).forEach(p => { savedMap[p.key] = p; });
+            const keysInBody = [];
+            const phScan = /\{(\w+)\}/g;
+            let pm;
+            while ((pm = phScan.exec(tpl.body)) !== null) {
+                if (!keysInBody.includes(pm[1])) keysInBody.push(pm[1]);
+            }
+            const effectivePhs = keysInBody.map(key =>
+                savedMap[key] || { key, label: humanize(key), hint: '', optional: false }
+            );
+
+            // Placeholder form
+            const form = document.getElementById('placeholderForm');
+            form.innerHTML = '';
+            effectivePhs.forEach(p => {
+                const div = document.createElement('div');
+                div.className = 'form-field';
+                div.innerHTML = `
+                    <div class="field-label">${p.label}${p.optional ? ' <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span>' : ''}</div>
+                    <input type="text" class="text-input ph-input" data-key="${p.key}" autocomplete="off">
+                    ${p.hint ? `<div class="field-hint">${p.hint}</div>` : ''}
+                `;
+                form.appendChild(div);
+            });
+            form.querySelectorAll('.ph-input').forEach(i => i.addEventListener('input', updatePreview));
+
+            renderExtras();
+            updatePreview();
+            show('stateFill');
+        }
+
+        // ── Optional additions (fixed statements) ──────────────
+        function renderExtras() {
+            const container = document.getElementById('extrasSection');
+            container.innerHTML = '';
+            if (!sharedExtras.length) return;
+
+            const label = document.createElement('div');
+            label.className = 'field-label';
+            label.textContent = 'Optional additions';
+            container.appendChild(label);
+
+            sharedExtras.forEach(ex => {
+                const wrap = document.createElement('label');
+                wrap.className = 'check-label';
+                wrap.style.alignItems = 'flex-start';
+                wrap.innerHTML = `<input type="checkbox" class="extra-check" data-id="${ex.id}"> <span>${esc(ex.text)}</span>`;
+                container.appendChild(wrap);
+            });
+            container.querySelectorAll('.extra-check').forEach(cb => cb.addEventListener('change', updatePreview));
+        }
+
+        function getCheckedExtrasText() {
+            return [...document.querySelectorAll('.extra-check:checked')]
+                .map(cb => sharedExtras.find(e => e.id === cb.dataset.id))
+                .filter(Boolean)
+                .map(e => e.text);
+        }
+
+        function updatePreview() {
+            if (!currentTemplate) return;
+            const values = getValues();
+
+            const html = currentTemplate.body
+                .split('\n')
+                .map(line => line.replace(/\{(\w+)\}/g, (match, key) => {
+                    const val = values[key];
+                    if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
+                    return `<span class="unfilled">${match}</span>`;
+                }))
+                .join('<br>');
+            const extrasHtml = getCheckedExtrasText().map(t => '<br><br>' + esc(t)).join('');
+            document.getElementById('preview').innerHTML = html + extrasHtml;
+
+            const allFilled = document.querySelectorAll('.ph-input[data-key]')
+                .length === 0 || [...document.querySelectorAll('.ph-input[data-key]')]
+                .every(inp => inp.value.trim() !== '');
+            document.getElementById('insertBtn').disabled = !allFilled;
+        }
+
+        function getValues() {
+            const vals = {};
+            document.querySelectorAll('.ph-input').forEach(i => { vals[i.dataset.key] = i.value; });
+            return vals;
+        }
+
+        function fillTpl(body, values) {
+            return body.replace(/\{(\w+)\}/g, (m, k) => values[k] !== undefined ? values[k] : m);
+        }
+
+        document.getElementById('insertBtn').addEventListener('click', async () => {
+            if (!currentTemplate) return;
+            const extrasText = getCheckedExtrasText().map(t => '\n\n' + t).join('');
+            const text = fillTpl(currentTemplate.body, getValues()) + extrasText;
+            const html = textToHtml(text);
+            const btn  = document.getElementById('insertBtn');
+            const stat = document.getElementById('status');
+
+            if (currentTemplate.subject && document.getElementById('applySubject').checked) {
+                const subj = document.getElementById('subjectVal').value.trim();
+                if (officeReady && Office.context?.mailbox)
+                    Office.context.mailbox.item.subject.setAsync(subj, () => {});
+            }
+
+            if (officeReady && Office.context?.mailbox) {
+                Office.context.mailbox.item.body.setSelectedDataAsync(html,
+                    { coercionType: Office.CoercionType.Html },
+                    result => {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            btn.textContent = 'Inserted!';
+                            btn.classList.add('success');
+                            setTimeout(async () => {
+                                btn.textContent = 'Insert into email';
+                                btn.classList.remove('success');
+                                try { if (Office.addin?.hide) await Office.addin.hide(); } catch(e) {}
+                            }, 800);
+                        } else { showStatus('Insert failed — try again.', true); }
+                    });
+            } else {
+                showPreviewModal(text);
+            }
+        });
+
+        document.getElementById('fillBack').addEventListener('click', () => show('stateBrowse'));
+        document.getElementById('fillEditBtn').addEventListener('click', () => openCreate(currentTemplate));
+
+        // ── CREATE / EDIT state ───────────────────────────────
+        const CATS_FOR_SELECT = [...SHARED_CATS];
+
+        function openCreate(tpl) {
+            editingPersonalId = tpl ? tpl.id : null;
+            document.getElementById('createTitle').textContent = tpl ? 'Edit template' : 'New personal template';
+
+            // Populate category dropdown
+            const sel = document.getElementById('cCat');
+            sel.innerHTML = '';
+            CATS_FOR_SELECT.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c; opt.textContent = c;
+                if (tpl && c === tpl.category) opt.selected = true;
+                sel.appendChild(opt);
+            });
+
+            document.getElementById('cName').value    = tpl ? tpl.name    : '';
+            document.getElementById('cSubject').value = tpl ? (tpl.subject || '') : '';
+            const bodyEl = document.getElementById('cBody');
+            bodyEl.value = tpl ? tpl.body : '';
+
+            // Store current placeholders so labels survive re-detection
+            createPhs = tpl ? (tpl.placeholders || []) : [];
+            syncCreatePhs();
+
+            show('stateCreate');
+        }
+
+        let createPhs = [];
+
+        document.getElementById('cBody').addEventListener('input', syncCreatePhs);
+
+        function syncCreatePhs() {
+            const body = document.getElementById('cBody').value;
+            const found = [];
+            const regex = /\{(\w+)\}/g;
+            let m;
+            while ((m = regex.exec(body)) !== null) {
+                if (!found.includes(m[1])) found.push(m[1]);
+            }
+            const existMap = {};
+            createPhs.forEach(p => { existMap[p.key] = p; });
+            createPhs = found.map(key => existMap[key] || { key, label: humanize(key), hint: '', optional: false });
+            renderCreatePhs();
+        }
+
+        function renderCreatePhs() {
+            const container = document.getElementById('cPhContent');
+            container.innerHTML = '';
+            if (!createPhs.length) {
+                container.innerHTML = '<span class="ph-none">None yet — add {KEY} tokens to the body above.</span>';
+                return;
+            }
+            const tbl = document.createElement('table');
+            tbl.className = 'ph-table';
+            tbl.innerHTML = '<thead><tr><th>Token</th><th>Label shown to user</th><th>Hint</th></tr></thead>';
+            const tbody = document.createElement('tbody');
+            createPhs.forEach((ph, i) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>{${ph.key}}</td>
+                    <td><input class="td-inp" type="text" value="${esc(ph.label)}" placeholder="Label"></td>
+                    <td><input class="td-inp" type="text" value="${esc(ph.hint||'')}" placeholder="e.g. Feb 2026"></td>
+                `;
+                const [lbl, hint] = tr.querySelectorAll('input');
+                lbl.addEventListener('input',  () => { createPhs[i].label = lbl.value; });
+                hint.addEventListener('input', () => { createPhs[i].hint  = hint.value; });
+                tbody.appendChild(tr);
+            });
+            tbl.appendChild(tbody);
+            container.appendChild(tbl);
+        }
+
+        document.getElementById('savePersonalBtn').addEventListener('click', () => {
+            const name = document.getElementById('cName').value.trim();
+            if (!name) { alert('Please enter a template name.'); return; }
+            const body = document.getElementById('cBody').value.trim();
+            if (!body) { alert('Please enter a body.'); return; }
+
+            const personal = getPersonal();
+            const tpl = {
+                id:           editingPersonalId || ('personal_' + Date.now()),
+                name,
+                category:     document.getElementById('cCat').value,
+                subject:      document.getElementById('cSubject').value.trim(),
+                body,
+                placeholders: createPhs.map(p => ({ ...p }))
+            };
+
+            if (editingPersonalId) {
+                const idx = personal.findIndex(t => t.id === editingPersonalId);
+                if (idx >= 0) personal[idx] = tpl; else personal.push(tpl);
+            } else {
+                personal.push(tpl);
+            }
+            setPersonal(personal);
+            activeCat = 'Mine';
+            buildCatBar();
+            renderList();
+            show('stateBrowse');
+        });
+
+        document.getElementById('createBack').addEventListener('click', () => {
+            buildCatBar();
+            renderList();
+            show('stateBrowse');
+        });
+
+        // ── Utilities ─────────────────────────────────────────
+        function show(stateId) {
+            ['stateBrowse','stateFill','stateCreate'].forEach(id =>
+                document.getElementById(id).classList.toggle('hidden', id !== stateId));
+        }
+
+        function showStatus(msg, isErr) {
+            const el = document.getElementById('status');
+            el.textContent = msg;
+            el.className = 'status' + (isErr ? ' err' : '');
+            setTimeout(() => { el.textContent = ''; el.className = 'status'; }, 3000);
+        }
+
+        function humanize(key) {
+            const words = key.toLowerCase().split('_');
+            words[0] = words[0].charAt(0).toUpperCase() + words[0].slice(1);
+            return words.join(' ');
+        }
+
+        function esc(s) {
+            return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        function textToHtml(text) {
+            function e(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+            return text.split(/\n\n+/).map(p => {
+                const lines = p.split('\n');
+                if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
+                    return '<ul style="margin:0 0 0.75em 1.2em;padding:0">' +
+                        lines.map(l => '<li>' + e(l.trim().slice(2)) + '</li>').join('') + '</ul>';
+                }
+                return '<p style="margin:0 0 0.75em 0">' + lines.map(e).join('<br>') + '</p>';
+            }).join('');
+        }
+
+        // ── Office init ───────────────────────────────────────
+        if (typeof Office !== 'undefined') {
+            Office.onReady(() => { officeReady = true; });
+        }
+
+        // ── Delete confirmation dialog ────────────────────────
+        function confirmDelete(name, onConfirm) {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999;display:flex;align-items:center;justify-content:center;padding:1.5rem';
+
+            const box = document.createElement('div');
+            box.style.cssText = 'background:white;border-radius:6px;width:100%;max-width:280px;box-shadow:0 8px 32px rgba(0,0,0,0.22);overflow:hidden';
+
+            const head = document.createElement('div');
+            head.style.cssText = 'background:#b91c1c;color:white;padding:0.7rem 1rem;font-size:0.8rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase';
+            head.textContent = 'Delete template';
+
+            const msg = document.createElement('p');
+            msg.style.cssText = 'padding:1rem;font-size:0.85rem;color:#1a1a1a;line-height:1.5';
+            msg.textContent = `Are you sure you want to delete "${name}"? This cannot be undone.`;
+
+            const foot = document.createElement('div');
+            foot.style.cssText = 'display:flex;gap:0.5rem;padding:0 1rem 1rem';
+
+            const cancelBtn = document.createElement('button');
+            cancelBtn.textContent = 'Cancel';
+            cancelBtn.style.cssText = 'flex:1;padding:0.55rem;border-radius:4px;border:1.5px solid #ccc;background:white;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:inherit';
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Yes, delete';
+            deleteBtn.style.cssText = 'flex:1;padding:0.55rem;border-radius:4px;border:none;background:#b91c1c;color:white;font-size:0.85rem;font-weight:600;cursor:pointer;font-family:inherit';
+
+            foot.appendChild(cancelBtn);
+            foot.appendChild(deleteBtn);
+            box.appendChild(head);
+            box.appendChild(msg);
+            box.appendChild(foot);
+            overlay.appendChild(box);
+            document.body.appendChild(overlay);
+
+            const close = () => document.body.removeChild(overlay);
+            cancelBtn.addEventListener('click', close);
+            overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+            deleteBtn.addEventListener('click', () => { close(); onConfirm(); });
+        }
+
+        // ── Browser preview modal ─────────────────────────────
+        function showPreviewModal(text) {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:999;display:flex;align-items:center;justify-content:center;padding:1rem';
+
+            const box = document.createElement('div');
+            box.style.cssText = 'background:white;border-radius:6px;width:100%;max-width:480px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,0.25)';
+
+            const head = document.createElement('div');
+            head.style.cssText = 'background:#111111;color:white;padding:0.75rem 1rem;border-radius:6px 6px 0 0;display:flex;align-items:center;justify-content:space-between';
+            head.innerHTML = '<span style="font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Preview — this is what goes into the email</span>';
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '✕';
+            closeBtn.style.cssText = 'background:none;border:none;color:white;font-size:1rem;cursor:pointer;padding:0 0.2rem;opacity:0.8';
+            closeBtn.addEventListener('click', () => document.body.removeChild(overlay));
+            head.appendChild(closeBtn);
+
+            const body = document.createElement('div');
+            body.style.cssText = 'padding:1rem;overflow-y:auto;font-size:0.88rem;line-height:1.75;white-space:pre-wrap;color:#1a1a1a;flex:1';
+            body.textContent = text;
+
+            const foot = document.createElement('div');
+            foot.style.cssText = 'padding:0.75rem 1rem;border-top:1px solid #e5e5e5;font-size:0.75rem;color:#888;text-align:center';
+            foot.textContent = 'In Outlook this inserts directly into your email — no clipboard needed.';
+
+            box.appendChild(head);
+            box.appendChild(body);
+            box.appendChild(foot);
+            overlay.appendChild(box);
+            overlay.addEventListener('click', e => { if (e.target === overlay) document.body.removeChild(overlay); });
+            document.body.appendChild(overlay);
+        }
+
+        loadTemplates();
+    })();
+
+    // ══════════════════════════════════════════════
+    // LEAD TIME TOOL
+    // ══════════════════════════════════════════════
+    (function () {
+        function fill(t, v) {
+            return t.replace(/\{([A-Z_]+)\}/g, (_, k) => v[k] !== undefined ? v[k] : '{' + k + '}');
+        }
+
+        let TEMPLATES = null;
+
+        async function loadTemplates() {
+            try {
+                const r = await fetch('sentences.json?_=' + Date.now());
+                TEMPLATES = await r.json();
+                if (TEMPLATES.defaultLow)  { lowSel.value = TEMPLATES.defaultLow;  delivLowSel.value  = TEMPLATES.defaultLow; }
+                if (TEMPLATES.defaultHigh) { highSel.value = TEMPLATES.defaultHigh; delivHighSel.value = TEMPLATES.defaultHigh; }
+            } catch (e) { TEMPLATES = {}; }
+            renderExtras(document.getElementById('ltExtrasLead'),   'lead',  update);
+            renderExtras(document.getElementById('ltExtrasClient'), 'deliv', delivUpdate);
+            update();
+            delivUpdate();
+        }
+
+        // ── Optional additions (fixed statements) ──────────────
+        function esc(s) {
+            return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+
+        function renderExtras(container, prefix, onChange) {
+            container.innerHTML = '';
+            const extras = (TEMPLATES && TEMPLATES.extras) || [];
+            if (!extras.length) return;
+            extras.forEach(ex => {
+                const wrap = document.createElement('label');
+                wrap.className = 'check-label';
+                wrap.style.alignItems = 'flex-start';
+                wrap.innerHTML = `<input type="checkbox" class="${prefix}-extra-check" data-id="${ex.id}"> <span>${esc(ex.text)}</span>`;
+                container.appendChild(wrap);
+            });
+            container.querySelectorAll(`.${prefix}-extra-check`).forEach(cb => cb.addEventListener('change', onChange));
+        }
+
+        function getCheckedExtrasText(prefix) {
+            const extras = (TEMPLATES && TEMPLATES.extras) || [];
+            return [...document.querySelectorAll(`.${prefix}-extra-check:checked`)]
+                .map(cb => extras.find(e => e.id === cb.dataset.id))
+                .filter(Boolean)
+                .map(e => e.text);
+        }
+
+        // ── Config ───────────────────────────────────────────
+        const WEEK_OPTIONS    = [2, 4, 6, 8, 10, 12, 14, 16];
+        const DEFAULT_LOW     = 10;
+        const DEFAULT_HIGH    = 12;
+        const DEFAULT_SIGNOFF = 4;
+        // ────────────────────────────────────────────────────
+
+        // Lead Time page elements
+        const btnToday       = document.getElementById('btnToday');
+        const btnSignOff     = document.getElementById('btnSignOff');
+        const btnByDate      = document.getElementById('btnByDate');
+        const signoffRow     = document.getElementById('signoffRow');
+        const bydateRow      = document.getElementById('bydateRow');
+        const signOffSel     = document.getElementById('signOffWeek');
+        const signOffDateInp = document.getElementById('signOffDate');
+        const lowSel         = document.getElementById('lowWeek');
+        const highSel        = document.getElementById('highWeek');
+        const errorEl        = document.getElementById('error');
+        const sentenceEl     = document.getElementById('sentence');
+        const dateHintEl     = document.getElementById('dateHint');
+        const insertBtn      = document.getElementById('ltInsertBtn');
+        const statusEl       = document.getElementById('ltStatus');
+
+        // Client Delivery page elements
+        const deliveryDateInp = document.getElementById('deliveryDate');
+        const delivLowSel     = document.getElementById('delivLowWeek');
+        const delivHighSel    = document.getElementById('delivHighWeek');
+        const delivErrorEl    = document.getElementById('delivError');
+        const delivSentenceEl = document.getElementById('delivSentence');
+        const delivDateHintEl = document.getElementById('delivDateHint');
+        const delivInsertBtn  = document.getElementById('delivInsertBtn');
+        const delivStatusEl   = document.getElementById('delivStatus');
+
+        // Sub-tabs (Lead Time / Client Delivery Date)
+        const tabLead    = document.getElementById('tabLead');
+        const tabClient  = document.getElementById('tabClient');
+        const pageLead   = document.getElementById('pageLead');
+        const pageClient = document.getElementById('pageClient');
+
+        // Text style toolbar
+        const styleBoldBtn      = document.getElementById('styleBold');
+        const styleItalicBtn    = document.getElementById('styleItalic');
+        const styleUnderlineBtn = document.getElementById('styleUnderline');
+        const sizeDownBtn       = document.getElementById('sizeDown');
+        const sizeUpBtn         = document.getElementById('sizeUp');
+        const sizeReadoutEl     = document.getElementById('sizeReadout');
+        const colorSwatches     = document.getElementById('colorSwatches');
+        const styleUppercaseChk = document.getElementById('styleUppercase');
+
+        const SIZE_MIN = 8, SIZE_MAX = 20;
+
+        let officeReady = false;
+        let mode        = 'today'; // 'today' | 'signoff' | 'bydate'
+        let styleState  = { bold: false, italic: false, underline: false, sizePt: 11, color: '', uppercase: false };
+
+        // Populate sign-off dropdown (1–12)
+        for (let i = 1; i <= 12; i++) {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.textContent = i;
+            signOffSel.appendChild(opt);
+        }
+        signOffSel.value = DEFAULT_SIGNOFF;
+
+        // Set default dates to today
+        const _t = new Date();
+        const _todayStr = `${_t.getFullYear()}-${String(_t.getMonth()+1).padStart(2,'0')}-${String(_t.getDate()).padStart(2,'0')}`;
+        signOffDateInp.value  = _todayStr;
+        deliveryDateInp.value = _todayStr;
+
+        // Populate week dropdowns
+        WEEK_OPTIONS.forEach(w => {
+            [lowSel, highSel, delivLowSel, delivHighSel].forEach(sel => {
+                const opt = document.createElement('option');
+                opt.value = w;
+                opt.textContent = w;
+                sel.appendChild(opt);
+            });
+        });
+        lowSel.value       = DEFAULT_LOW;
+        highSel.value      = DEFAULT_HIGH;
+        delivLowSel.value  = DEFAULT_LOW;
+        delivHighSel.value = DEFAULT_HIGH;
+
+        const MONTHS = ['January','February','March','April','May','June',
+                        'July','August','September','October','November','December'];
+
+        function addDays(base, days) {
+            const d = new Date(base);
+            d.setDate(d.getDate() + days);
+            return d;
+        }
+
+        function fmt(date, includeYear) {
+            const s = `${date.getDate()} ${MONTHS[date.getMonth()]}`;
+            return includeYear ? `${s} ${date.getFullYear()}` : s;
+        }
+
+        // ── Lead Time page ───────────────────────────────────
+        function update() {
+            const low     = parseInt(lowSel.value,     10);
+            const high    = parseInt(highSel.value,    10);
+            const signOff = parseInt(signOffSel.value, 10);
+
+            if (!TEMPLATES) { sentenceEl.textContent = 'Loading…'; insertBtn.disabled = true; return; }
+
+            if (high < low) {
+                errorEl.classList.add('visible');
+                sentenceEl.textContent = '';
+                dateHintEl.textContent = '';
+                insertBtn.disabled = true;
+                return;
+            }
+
+            errorEl.classList.remove('visible');
+            insertBtn.disabled = false;
+
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            let sentence;
+
+            if (mode === 'today') {
+                const dateLow   = addDays(today, low  * 7);
+                const dateHigh  = addDays(today, high * 7);
+                const diffYears = dateLow.getFullYear() !== dateHigh.getFullYear();
+
+                sentence = fill(TEMPLATES.fromToday, { LOW: low, HIGH: high, DATE_LOW: fmt(dateLow, diffYears), DATE_HIGH: fmt(dateHigh, true) });
+
+                dateHintEl.textContent = `Low: ${fmt(dateLow, true)}  ·  High: ${fmt(dateHigh, true)}`;
+
+            } else if (mode === 'signoff') {
+                const offset    = signOff * 7;
+                const dateLow   = addDays(today, offset + low  * 7);
+                const dateHigh  = addDays(today, offset + high * 7);
+                const diffYears = dateLow.getFullYear() !== dateHigh.getFullYear();
+                const weekWord  = signOff === 1 ? 'week' : 'weeks';
+
+                sentence = fill(TEMPLATES.signOffWeeks, { N: signOff, WEEK_WORD: weekWord, LOW: low, HIGH: high, DATE_LOW: fmt(dateLow, diffYears), DATE_HIGH: fmt(dateHigh, true) });
+
+                dateHintEl.textContent = `Low: ${fmt(dateLow, true)}  ·  High: ${fmt(dateHigh, true)}`;
+
+            } else {
+                if (!signOffDateInp.value) {
+                    sentenceEl.textContent = '';
+                    dateHintEl.textContent = '';
+                    insertBtn.disabled = true;
+                    return;
+                }
+                const [y, m, d]  = signOffDateInp.value.split('-').map(Number);
+                const signOffDate = new Date(y, m - 1, d);
+                const dateLow     = addDays(signOffDate, low  * 7);
+                const dateHigh    = addDays(signOffDate, high * 7);
+                const diffYears   = dateLow.getFullYear() !== dateHigh.getFullYear();
+
+                sentence = fill(TEMPLATES.signOffByDate, { SIGN_OFF_DATE: fmt(signOffDate, true), LOW: low, HIGH: high, DATE_LOW: fmt(dateLow, diffYears), DATE_HIGH: fmt(dateHigh, true) });
+
+                dateHintEl.textContent = `Low: ${fmt(dateLow, true)}  ·  High: ${fmt(dateHigh, true)}`;
+            }
+
+            sentenceEl.textContent = finalizeText([sentence, ...getCheckedExtrasText('lead')].join('\n\n'));
+        }
+
+        function setMode(newMode) {
+            mode = newMode;
+            [btnToday, btnSignOff, btnByDate].forEach(b => b.classList.remove('active'));
+            [signoffRow, bydateRow].forEach(r => r.classList.remove('visible'));
+            if (newMode === 'today')   { btnToday.classList.add('active'); }
+            if (newMode === 'signoff') { btnSignOff.classList.add('active'); signoffRow.classList.add('visible'); }
+            if (newMode === 'bydate')  { btnByDate.classList.add('active'); bydateRow.classList.add('visible'); }
+            update();
+        }
+
+        btnToday.addEventListener('click',   () => setMode('today'));
+        btnSignOff.addEventListener('click', () => setMode('signoff'));
+        btnByDate.addEventListener('click',  () => setMode('bydate'));
+
+        signOffSel.addEventListener('change',     update);
+        signOffDateInp.addEventListener('change', update);
+        lowSel.addEventListener('change',         update);
+        highSel.addEventListener('change',        update);
+
+        // ── Client Delivery page ─────────────────────────────
+        function delivUpdate() {
+            const low  = parseInt(delivLowSel.value,  10);
+            const high = parseInt(delivHighSel.value, 10);
+
+            if (!TEMPLATES) { delivSentenceEl.textContent = 'Loading…'; delivInsertBtn.disabled = true; return; }
+
+            if (high < low) {
+                delivErrorEl.classList.add('visible');
+                delivSentenceEl.textContent = '';
+                delivDateHintEl.textContent = '';
+                delivInsertBtn.disabled = true;
+                return;
+            }
+
+            delivErrorEl.classList.remove('visible');
+
+            if (!deliveryDateInp.value) {
+                delivSentenceEl.textContent = '';
+                delivDateHintEl.textContent = '';
+                delivInsertBtn.disabled = true;
+                return;
+            }
+
+            delivInsertBtn.disabled = false;
+
+            const [dy, dm, dd]  = deliveryDateInp.value.split('-').map(Number);
+            const delivDate     = new Date(dy, dm - 1, dd);
+            const today         = new Date(); today.setHours(0, 0, 0, 0);
+            const orderByDate   = addDays(delivDate, -high * 7);
+            const earliestDeliv = addDays(today, low  * 7);
+            const latestDeliv   = addDays(today, high * 7);
+            const diffYearsNow  = earliestDeliv.getFullYear() !== latestDeliv.getFullYear();
+
+            let sentence;
+
+            if (delivDate <= today) {
+                sentence = fill(TEMPLATES.clientDatePassed, { DELIVERY_DATE: fmt(delivDate, true), LOW: low, HIGH: high, DATE_LOW: fmt(earliestDeliv, diffYearsNow), DATE_HIGH: fmt(latestDeliv, true) });
+                delivDateHintEl.textContent = `Earliest: ${fmt(earliestDeliv, true)}  ·  Latest: ${fmt(latestDeliv, true)}`;
+            } else if (orderByDate < today) {
+                sentence = fill(TEMPLATES.clientSignOffMissed, { DELIVERY_DATE: fmt(delivDate, true), SIGN_OFF_BY: fmt(orderByDate, true), LOW: low, HIGH: high, DATE_LOW: fmt(earliestDeliv, diffYearsNow), DATE_HIGH: fmt(latestDeliv, true) });
+                delivDateHintEl.textContent = `Sign-off was due: ${fmt(orderByDate, true)}  ·  Earliest now: ${fmt(earliestDeliv, true)}`;
+            } else {
+                sentence = fill(TEMPLATES.clientAchievable, { DELIVERY_DATE: fmt(delivDate, true), LOW: low, HIGH: high, SIGN_OFF_BY: fmt(orderByDate, true) });
+                delivDateHintEl.textContent = `Sign off by: ${fmt(orderByDate, true)}`;
+            }
+
+            delivSentenceEl.textContent = finalizeText([sentence, ...getCheckedExtrasText('deliv')].join('\n\n'));
+        }
+
+        deliveryDateInp.addEventListener('change', delivUpdate);
+        delivLowSel.addEventListener('change',     delivUpdate);
+        delivHighSel.addEventListener('change',    delivUpdate);
+
+        // ── Sub-tab switching ─────────────────────────────────
+        tabLead.addEventListener('click', () => {
+            tabLead.classList.add('active');
+            tabClient.classList.remove('active');
+            pageLead.classList.add('active');
+            pageClient.classList.remove('active');
+        });
+
+        tabClient.addEventListener('click', () => {
+            tabClient.classList.add('active');
+            tabLead.classList.remove('active');
+            pageClient.classList.add('active');
+            pageLead.classList.remove('active');
+            delivUpdate();
+        });
+
+        // ── Text style toolbar ───────────────────────────────
+        function applyStyleVisuals() {
+            [sentenceEl, delivSentenceEl].forEach(el => {
+                el.style.fontWeight     = styleState.bold ? '700' : '400';
+                el.style.fontStyle      = styleState.italic ? 'italic' : 'normal';
+                el.style.textDecoration = styleState.underline ? 'underline' : 'none';
+                el.style.fontSize       = styleState.sizePt + 'pt';
+                el.style.color          = styleState.color || '#1a1a1a';
+            });
+            sizeReadoutEl.textContent = styleState.sizePt + 'pt';
+            colorSwatches.querySelectorAll('.swatch').forEach(sw => {
+                sw.classList.toggle('active', sw.dataset.color === styleState.color);
+            });
+        }
+
+        styleBoldBtn.addEventListener('click', () => {
+            styleState.bold = !styleState.bold;
+            styleBoldBtn.classList.toggle('active', styleState.bold);
+            applyStyleVisuals();
+        });
+        styleItalicBtn.addEventListener('click', () => {
+            styleState.italic = !styleState.italic;
+            styleItalicBtn.classList.toggle('active', styleState.italic);
+            applyStyleVisuals();
+        });
+        styleUnderlineBtn.addEventListener('click', () => {
+            styleState.underline = !styleState.underline;
+            styleUnderlineBtn.classList.toggle('active', styleState.underline);
+            applyStyleVisuals();
+        });
+        sizeDownBtn.addEventListener('click', () => {
+            styleState.sizePt = Math.max(SIZE_MIN, styleState.sizePt - 1);
+            applyStyleVisuals();
+        });
+        sizeUpBtn.addEventListener('click', () => {
+            styleState.sizePt = Math.min(SIZE_MAX, styleState.sizePt + 1);
+            applyStyleVisuals();
+        });
+        colorSwatches.addEventListener('click', e => {
+            const sw = e.target.closest('.swatch');
+            if (!sw) return;
+            styleState.color = styleState.color === sw.dataset.color ? '' : sw.dataset.color;
+            applyStyleVisuals();
+        });
+        styleUppercaseChk.addEventListener('change', () => {
+            styleState.uppercase = styleUppercaseChk.checked;
+            update();
+            delivUpdate();
+        });
+
+        applyStyleVisuals();
+
+        function finalizeText(rawText) {
+            return styleState.uppercase ? rawText.toUpperCase() : rawText;
+        }
+
+        function escHtml(s) {
+            return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+
+        function buildStyledHtml(text) {
+            const styles = ['margin:0 0 0.75em 0', 'font-size:' + styleState.sizePt + 'pt'];
+            if (styleState.bold)      styles.push('font-weight:bold');
+            if (styleState.italic)    styles.push('font-style:italic');
+            if (styleState.underline) styles.push('text-decoration:underline');
+            if (styleState.color) styles.push('color:' + styleState.color);
+            const styleAttr = styles.join(';');
+            return text.split('\n\n').map(p =>
+                `<p style="${styleAttr}">${escHtml(p).replace(/\n/g, '<br>')}</p>`
+            ).join('');
+        }
+
+        // ── Insert / shared helpers ──────────────────────────
+        function flash(el, text, cssClass, duration) {
+            const orig = el.textContent;
+            const origClass = el.className;
+            el.textContent = text;
+            if (cssClass) el.classList.add(cssClass);
+            setTimeout(() => { el.textContent = orig; el.className = origClass; }, duration || 1800);
+        }
+
+        function showStatus(el, msg, isErr) {
+            el.textContent = msg;
+            el.className = 'status' + (isErr ? ' err' : '');
+            setTimeout(() => { el.textContent = ''; el.className = 'status'; }, 2500);
+        }
+
+        async function closePane() {
+            try {
+                if (Office.addin && typeof Office.addin.hide === 'function') {
+                    await Office.addin.hide();
+                } else {
+                    window.close();
+                }
+            } catch (e) { window.close(); }
+        }
+
+        function insertText(text, btn, statEl) {
+            if (!text) return;
+            const html = buildStyledHtml(text);
+            if (officeReady && Office.context && Office.context.mailbox) {
+                Office.context.mailbox.item.body.setSelectedDataAsync(
+                    html,
+                    { coercionType: Office.CoercionType.Html },
+                    result => {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            flash(btn, 'Inserted!', 'success');
+                            setTimeout(closePane, 500);
+                        } else {
+                            showStatus(statEl, 'Insert failed — try again.', true);
+                        }
+                    }
+                );
+            } else if (navigator.clipboard && navigator.clipboard.write && window.ClipboardItem) {
+                const item = new ClipboardItem({
+                    'text/html':  new Blob([html], { type: 'text/html' }),
+                    'text/plain': new Blob([text], { type: 'text/plain' })
+                });
+                navigator.clipboard.write([item]).then(
+                    () => showStatus(statEl, 'Copied (open via Outlook to insert directly).', false),
+                    () => navigator.clipboard.writeText(text).then(() =>
+                        showStatus(statEl, 'Copied as plain text.', false))
+                );
+            } else {
+                navigator.clipboard.writeText(text).then(() =>
+                    showStatus(statEl, 'Copied (open via Outlook to insert directly).', false)
+                );
+            }
+        }
+
+        insertBtn.addEventListener('click',      () => insertText(sentenceEl.textContent,      insertBtn,      statusEl));
+        delivInsertBtn.addEventListener('click', () => insertText(delivSentenceEl.textContent, delivInsertBtn, delivStatusEl));
+
+        if (typeof Office !== 'undefined') {
+            Office.onReady(() => { officeReady = true; });
+        }
+
+        loadTemplates();
+    })();
 </script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Template Editor — Longden Doors</title>
+<title>Toolkit Editor — Longden Doors</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -30,6 +30,9 @@ body {
     min-height: 100vh;
 }
 
+.hidden { display: none !important; }
+
+/* ── Top bar ── */
 .topbar {
     background: var(--brand);
     color: white;
@@ -64,8 +67,35 @@ body {
 .btn-add:hover:not(:disabled) { background: rgba(255,255,255,0.28); }
 
 .btn-publish { background: white; color: var(--brand); }
-.btn-publish:hover:not(:disabled) { background: #e8f2ec; }
+.btn-publish:hover:not(:disabled) { background: #eeeeee; }
 .btn-publish.success { background: #dcfce7; color: var(--success); }
+
+/* ── Tool switcher ── */
+.tool-tabs {
+    display: flex;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+.tool-tab {
+    flex: 1;
+    max-width: 220px;
+    padding: 0.65rem 0.5rem;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    background: var(--surface);
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: color 0.12s, border-color 0.12s;
+}
+.tool-tab:hover { color: var(--brand); }
+.tool-tab.active { color: var(--brand); border-bottom-color: var(--brand); }
+
+.tool-panel { display: none; }
+.tool-panel.active { display: block; }
 
 main {
     max-width: 820px;
@@ -85,7 +115,7 @@ main {
 .section-name { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); white-space: nowrap; }
 .section-rule { flex: 1; height: 1px; background: var(--brand); opacity: 0.2; }
 
-/* ── Template card ── */
+/* ── Card (shared by both tools) ── */
 .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -121,6 +151,9 @@ main {
 .card-name-input:hover { background: rgba(0,0,0,0.08); }
 .card-name-input:focus { outline: none; background: white; box-shadow: 0 0 0 2px rgba(0,0,0,0.2); }
 
+.card-name { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand); }
+.card-when { font-size: 0.63rem; color: var(--muted); }
+
 .cat-select {
     font-size: 0.72rem;
     color: var(--muted);
@@ -132,8 +165,6 @@ main {
     cursor: pointer;
 }
 .cat-select:focus { outline: none; border-color: var(--brand); }
-.btn-publish { background: white; color: var(--brand); }
-.btn-publish:hover:not(:disabled) { background: #eeeeee; }
 
 .btn-delete {
     background: none;
@@ -189,7 +220,7 @@ textarea {
 }
 textarea:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 2px rgba(0,0,0,0.1); }
 
-/* Placeholder table */
+/* Placeholder table (Email Templates) */
 .ph-section { margin-top: 0.75rem; }
 .ph-title { font-size: 0.68rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem; }
 .ph-empty { font-size: 0.8rem; color: #bbb; font-style: italic; }
@@ -233,7 +264,56 @@ td:first-child {
 
 .opt-check { cursor: pointer; }
 
-/* ── Tab bar ── */
+/* Read-only variable chips (Lead Time) */
+.vars { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+.var-chip {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.68rem;
+    padding: 0.15rem 0.45rem;
+    background: var(--brand-faint);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--brand);
+    user-select: all;
+}
+
+/* ── Optional additions (fixed statements) ── */
+.extras-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+}
+.extras-title { font-size: 0.68rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem; }
+.extras-hint  { font-size: 0.72rem; color: #999; margin-bottom: 0.75rem; }
+.extra-row { display: flex; gap: 0.5rem; align-items: flex-start; margin-bottom: 0.5rem; }
+.extra-input {
+    flex: 1;
+    min-height: 46px;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    resize: vertical;
+}
+.btn-add-extra {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background: #eff6ff;
+    border: 1.5px dashed #93c5fd;
+    border-radius: 4px;
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.12s;
+    font-family: inherit;
+}
+.btn-add-extra:hover { background: #dbeafe; }
+
+/* ── Category tab bar (Email Templates only) ── */
 .tab-bar {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -307,53 +387,313 @@ td:first-child {
 <div class="topbar">
     <div>
         <div class="topbar-title">Longden Doors</div>
-        <div class="topbar-sub">Template Editor</div>
+        <div class="topbar-sub" id="topbarSub">Email Templates</div>
     </div>
     <div class="topbar-right">
-        <button class="btn-topbar btn-add" onclick="addTemplate()">+ Add template</button>
-        <button class="btn-topbar btn-publish" id="publishBtn" onclick="publish()">Publish to live</button>
+        <button class="btn-topbar btn-add" id="addTemplateBtn" onclick="addTemplate()">+ Add template</button>
+        <button class="btn-topbar btn-publish" id="publishBtn">Publish to live</button>
     </div>
 </div>
 
-<div class="tab-bar" id="tabBar">
-    <button class="tab active" data-cat="" onclick="setCategory('')">All</button>
-    <button class="tab" data-cat="Estimating" onclick="setCategory('Estimating')">Estimating</button>
-    <button class="tab" data-cat="Scheduling" onclick="setCategory('Scheduling')">Scheduling</button>
-    <button class="tab" data-cat="Project Progress" onclick="setCategory('Project Progress')">Project Progress</button>
-    <button class="tab" data-cat="Delivery" onclick="setCategory('Delivery')">Delivery</button>
-    <button class="tab" data-cat="Enquiries" onclick="setCategory('Enquiries')">Enquiries</button>
-    <button class="tab" data-cat="Technical" onclick="setCategory('Technical')">Technical</button>
+<div class="tool-tabs">
+    <button class="tool-tab active" id="toolTabEmail">Email Templates</button>
+    <button class="tool-tab" id="toolTabLeadTime">Lead Time Tool</button>
 </div>
 
-<main id="main"></main>
+<!-- ══════════════════════════════════════════════
+     EMAIL TEMPLATES EDITOR
+══════════════════════════════════════════════ -->
+<div id="panelEmailEditor" class="tool-panel active">
+
+    <main style="padding-bottom:0">
+        <div class="extras-card">
+            <div class="extras-title">Optional additions</div>
+            <div class="extras-hint">Shown as checkboxes when filling in a template — tick to add the statement to the email.</div>
+            <div id="emailExtrasList"></div>
+            <button class="btn-add-extra" onclick="addEmailExtra()">+ Add statement</button>
+        </div>
+    </main>
+
+    <div class="tab-bar" id="tabBar">
+        <button class="tab active" data-cat="" onclick="setCategory('')">All</button>
+        <button class="tab" data-cat="Estimating" onclick="setCategory('Estimating')">Estimating</button>
+        <button class="tab" data-cat="Scheduling" onclick="setCategory('Scheduling')">Scheduling</button>
+        <button class="tab" data-cat="Project Progress" onclick="setCategory('Project Progress')">Project Progress</button>
+        <button class="tab" data-cat="Delivery" onclick="setCategory('Delivery')">Delivery</button>
+        <button class="tab" data-cat="Enquiries" onclick="setCategory('Enquiries')">Enquiries</button>
+        <button class="tab" data-cat="Technical" onclick="setCategory('Technical')">Technical</button>
+    </div>
+
+    <main id="main"></main>
+
+</div>
+
+<!-- ══════════════════════════════════════════════
+     LEAD TIME EDITOR
+══════════════════════════════════════════════ -->
+<div id="panelLeadTimeEditor" class="tool-panel">
+
+    <main>
+
+        <div class="section-head" style="margin-top:0">
+            <span class="section-name">Defaults</span>
+            <div class="section-rule"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">Default week range</span>
+                <span class="card-when">Pre-selected values when the add-in opens</span>
+            </div>
+            <div class="card-body" style="display:flex;gap:1rem">
+                <div style="flex:1">
+                    <div class="card-name" style="margin-bottom:0.35rem">Default low week</div>
+                    <select id="defaultLow" style="width:100%;padding:0.5rem 0.6rem;border:1.5px solid var(--border);border-radius:3px;font-size:0.9rem;color:var(--text);background:var(--surface)"></select>
+                </div>
+                <div style="flex:1">
+                    <div class="card-name" style="margin-bottom:0.35rem">Default high week</div>
+                    <select id="defaultHigh" style="width:100%;padding:0.5rem 0.6rem;border:1.5px solid var(--border);border-radius:3px;font-size:0.9rem;color:var(--text);background:var(--surface)"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="extras-card">
+            <div class="extras-title">Optional additions</div>
+            <div class="extras-hint">Shown as checkboxes under the generated sentence on both the Lead Time and Client Delivery Date screens.</div>
+            <div id="ltExtrasList"></div>
+            <button class="btn-add-extra" onclick="addLtExtra()">+ Add statement</button>
+        </div>
+
+        <div class="section-head">
+            <span class="section-name">Tab: Lead Time</span>
+            <div class="section-rule"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">From today</span>
+                <span class="card-when">Mode toggle → From today</span>
+            </div>
+            <div class="card-body">
+                <textarea id="fromToday" rows="3"></textarea>
+                <div class="vars">
+                    <span class="var-chip">{LOW}</span>
+                    <span class="var-chip">{HIGH}</span>
+                    <span class="var-chip">{DATE_LOW}</span>
+                    <span class="var-chip">{DATE_HIGH}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">Sign off — in N weeks</span>
+                <span class="card-when">Mode toggle → Sign off</span>
+            </div>
+            <div class="card-body">
+                <textarea id="signOffWeeks" rows="4"></textarea>
+                <div class="vars">
+                    <span class="var-chip">{N}</span>
+                    <span class="var-chip">{WEEK_WORD}</span>
+                    <span class="var-chip">{LOW}</span>
+                    <span class="var-chip">{HIGH}</span>
+                    <span class="var-chip">{DATE_LOW}</span>
+                    <span class="var-chip">{DATE_HIGH}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">Sign off — by date</span>
+                <span class="card-when">Mode toggle → By date</span>
+            </div>
+            <div class="card-body">
+                <textarea id="signOffByDate" rows="4"></textarea>
+                <div class="vars">
+                    <span class="var-chip">{SIGN_OFF_DATE}</span>
+                    <span class="var-chip">{LOW}</span>
+                    <span class="var-chip">{HIGH}</span>
+                    <span class="var-chip">{DATE_LOW}</span>
+                    <span class="var-chip">{DATE_HIGH}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-head">
+            <span class="section-name">Tab: Client Delivery Date</span>
+            <div class="section-rule"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">Date is achievable</span>
+                <span class="card-when">Delivery date still reachable</span>
+            </div>
+            <div class="card-body">
+                <textarea id="clientAchievable" rows="3"></textarea>
+                <div class="vars">
+                    <span class="var-chip">{DELIVERY_DATE}</span>
+                    <span class="var-chip">{LOW}</span>
+                    <span class="var-chip">{HIGH}</span>
+                    <span class="var-chip">{SIGN_OFF_BY}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">Sign-off window has passed</span>
+                <span class="card-when">Delivery date future — but sign-off deadline missed</span>
+            </div>
+            <div class="card-body">
+                <textarea id="clientSignOffMissed" rows="5"></textarea>
+                <div class="vars">
+                    <span class="var-chip">{DELIVERY_DATE}</span>
+                    <span class="var-chip">{SIGN_OFF_BY}</span>
+                    <span class="var-chip">{LOW}</span>
+                    <span class="var-chip">{HIGH}</span>
+                    <span class="var-chip">{DATE_LOW}</span>
+                    <span class="var-chip">{DATE_HIGH}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <span class="card-name">Delivery date has already passed</span>
+                <span class="card-when">Delivery date ≤ today</span>
+            </div>
+            <div class="card-body">
+                <textarea id="clientDatePassed" rows="3"></textarea>
+                <div class="vars">
+                    <span class="var-chip">{DELIVERY_DATE}</span>
+                    <span class="var-chip">{LOW}</span>
+                    <span class="var-chip">{HIGH}</span>
+                    <span class="var-chip">{DATE_LOW}</span>
+                    <span class="var-chip">{DATE_HIGH}</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
 
 <div id="toast"></div>
 
 <script>
 if (location.protocol === 'file:') { location.href = 'http://127.0.0.1:3457/editor.html'; }
 
+// ── Shared toast ────────────────────────────────────────
+function toast(msg, type, duration) {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.className = 'show ' + (type || '');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(() => { el.className = ''; }, duration || 3000);
+}
+
+// ── Top-level tool switcher ──────────────────────────────
+let activeTool = 'email';
+
+const toolTabEmail       = document.getElementById('toolTabEmail');
+const toolTabLeadTime    = document.getElementById('toolTabLeadTime');
+const panelEmailEditor   = document.getElementById('panelEmailEditor');
+const panelLeadTimeEditor = document.getElementById('panelLeadTimeEditor');
+const topbarSub          = document.getElementById('topbarSub');
+const addTemplateBtn     = document.getElementById('addTemplateBtn');
+const publishBtn         = document.getElementById('publishBtn');
+
+toolTabEmail.addEventListener('click', () => {
+    activeTool = 'email';
+    toolTabEmail.classList.add('active');
+    toolTabLeadTime.classList.remove('active');
+    panelEmailEditor.classList.add('active');
+    panelLeadTimeEditor.classList.remove('active');
+    topbarSub.textContent = 'Email Templates';
+    addTemplateBtn.classList.remove('hidden');
+});
+
+toolTabLeadTime.addEventListener('click', () => {
+    activeTool = 'leadtime';
+    toolTabLeadTime.classList.add('active');
+    toolTabEmail.classList.remove('active');
+    panelLeadTimeEditor.classList.add('active');
+    panelEmailEditor.classList.remove('active');
+    topbarSub.textContent = 'Lead Time Tool';
+    addTemplateBtn.classList.add('hidden');
+});
+
+publishBtn.addEventListener('click', () => {
+    if (activeTool === 'email') publishTemplates(); else publishSentences();
+});
+
+// ══════════════════════════════════════════════
+// EMAIL TEMPLATES EDITOR
+// ══════════════════════════════════════════════
 const CATEGORIES = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
 
 let templates = [];
+let emailExtras = [];
 let activeCategory = '';
 
 // ── Load (retries while server warms up) ──────────────
-async function load(attempt) {
+async function loadTemplates(attempt) {
     attempt = attempt || 1;
     try {
         const r = await fetch('/templates.json');
         if (!r.ok) throw new Error('Server error ' + r.status);
         const data = await r.json();
         templates = data.templates || [];
+        emailExtras = data.extras || [];
         render();
+        renderEmailExtras();
     } catch (e) {
         if (attempt < 6) {
-            setTimeout(() => load(attempt + 1), 1500);
+            setTimeout(() => loadTemplates(attempt + 1), 1500);
         } else {
             toast('Could not load templates — make sure start-editor.bat is running.', 'err', 10000);
             render();
+            renderEmailExtras();
         }
     }
+}
+
+// ── Optional additions (fixed statements) ──────────────
+function renderEmailExtras() {
+    const container = document.getElementById('emailExtrasList');
+    container.innerHTML = '';
+    emailExtras.forEach((ex, i) => {
+        const row = document.createElement('div');
+        row.className = 'extra-row';
+
+        const ta = document.createElement('textarea');
+        ta.className = 'extra-input';
+        ta.rows = 2;
+        ta.value = ex.text;
+        ta.placeholder = 'Statement text shown when the checkbox is ticked';
+        ta.addEventListener('input', () => { emailExtras[i].text = ta.value; });
+
+        const del = document.createElement('button');
+        del.className = 'btn-delete';
+        del.title = 'Remove';
+        del.textContent = '✕';
+        del.addEventListener('click', () => { emailExtras.splice(i, 1); renderEmailExtras(); });
+
+        row.appendChild(ta);
+        row.appendChild(del);
+        container.appendChild(row);
+    });
+}
+
+function addEmailExtra() {
+    emailExtras.push({ id: 'extra_' + Date.now(), text: '' });
+    renderEmailExtras();
+    setTimeout(() => {
+        const rows = document.querySelectorAll('#emailExtrasList textarea');
+        rows[rows.length - 1]?.focus();
+    }, 30);
 }
 
 // ── Category filter ────────────────────────────────────
@@ -611,15 +951,15 @@ function addTemplate() {
 }
 
 // ── Publish ───────────────────────────────────────────
-async function publish() {
-    const btn = document.getElementById('publishBtn');
+async function publishTemplates() {
+    const btn = publishBtn;
     btn.disabled = true;
     btn.textContent = 'Publishing…';
 
-    const payload = JSON.stringify({ templates }, null, 2);
+    const payload = JSON.stringify({ templates, extras: emailExtras }, null, 2);
 
     try {
-        const r = await fetch('/save', {
+        const r = await fetch('/save-templates', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: payload
@@ -643,16 +983,119 @@ async function publish() {
     }
 }
 
-// ── Toast ─────────────────────────────────────────────
-function toast(msg, type, duration) {
-    const el = document.getElementById('toast');
-    el.textContent = msg;
-    el.className = 'show ' + (type || '');
-    clearTimeout(toast._t);
-    toast._t = setTimeout(() => { el.className = ''; }, duration || 3000);
+loadTemplates();
+
+// ══════════════════════════════════════════════
+// LEAD TIME EDITOR
+// ══════════════════════════════════════════════
+const LT_KEYS = ['fromToday','signOffWeeks','signOffByDate','clientAchievable','clientSignOffMissed','clientDatePassed'];
+const LT_WEEK_OPTIONS = [2, 4, 6, 8, 10, 12, 14, 16];
+let ltExtras = [];
+
+['defaultLow','defaultHigh'].forEach(id => {
+    const sel = document.getElementById(id);
+    LT_WEEK_OPTIONS.forEach(w => {
+        const opt = document.createElement('option');
+        opt.value = w; opt.textContent = w;
+        sel.appendChild(opt);
+    });
+});
+
+async function loadSentences() {
+    try {
+        const r = await fetch('/sentences.json');
+        if (!r.ok) throw new Error('Server error ' + r.status);
+        const data = await r.json();
+        LT_KEYS.forEach(k => {
+            const el = document.getElementById(k);
+            if (el && data[k]) el.value = data[k];
+        });
+        if (data.defaultLow)  document.getElementById('defaultLow').value  = data.defaultLow;
+        if (data.defaultHigh) document.getElementById('defaultHigh').value = data.defaultHigh;
+        ltExtras = data.extras || [];
+        renderLtExtras();
+    } catch (e) {
+        toast('Could not load sentences: ' + e.message, 'err', 6000);
+    }
 }
 
-load();
+// ── Optional additions (fixed statements) ──────────────
+function renderLtExtras() {
+    const container = document.getElementById('ltExtrasList');
+    container.innerHTML = '';
+    ltExtras.forEach((ex, i) => {
+        const row = document.createElement('div');
+        row.className = 'extra-row';
+
+        const ta = document.createElement('textarea');
+        ta.className = 'extra-input';
+        ta.rows = 2;
+        ta.value = ex.text;
+        ta.placeholder = 'Statement text shown when the checkbox is ticked';
+        ta.addEventListener('input', () => { ltExtras[i].text = ta.value; });
+
+        const del = document.createElement('button');
+        del.className = 'btn-delete';
+        del.title = 'Remove';
+        del.textContent = '✕';
+        del.addEventListener('click', () => { ltExtras.splice(i, 1); renderLtExtras(); });
+
+        row.appendChild(ta);
+        row.appendChild(del);
+        container.appendChild(row);
+    });
+}
+
+function addLtExtra() {
+    ltExtras.push({ id: 'extra_' + Date.now(), text: '' });
+    renderLtExtras();
+    setTimeout(() => {
+        const rows = document.querySelectorAll('#ltExtrasList textarea');
+        rows[rows.length - 1]?.focus();
+    }, 30);
+}
+
+async function publishSentences() {
+    const btn = publishBtn;
+    btn.disabled = true;
+    btn.textContent = 'Publishing…';
+
+    const sentences = {};
+    sentences.defaultLow  = parseInt(document.getElementById('defaultLow').value,  10);
+    sentences.defaultHigh = parseInt(document.getElementById('defaultHigh').value, 10);
+    LT_KEYS.forEach(k => { sentences[k] = document.getElementById(k).value.trim(); });
+    sentences.extras = ltExtras;
+
+    try {
+        const r = await fetch('/save-sentences', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(sentences, null, 2)
+        });
+
+        if (!r.ok) {
+            const err = await r.text();
+            throw new Error(err || 'Server error ' + r.status);
+        }
+
+        btn.textContent = 'Published!';
+        btn.classList.add('success');
+        toast('Published — live in the add-in within ~1 minute', 'ok', 4000);
+        setTimeout(() => {
+            btn.textContent = 'Publish to live';
+            btn.classList.remove('success');
+            btn.disabled = false;
+        }, 3000);
+
+    } catch (e) {
+        toast(e.message, 'err', 6000);
+        btn.textContent = 'Publish to live';
+        btn.disabled = false;
+    }
+}
+
+loadSentences();
 </script>
+
 </body>
 </html>
