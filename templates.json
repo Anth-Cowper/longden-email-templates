@@ -241,6 +241,39 @@
           "optional": false
         }
       ]
+    },
+    {
+      "id": "template-1784101172105",
+      "name": "Job Clearing",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Good Morning/Afternoon all,\n\n{Project_name} - {Project_Number} phase {Number} has been cleared for production at a value of £{Value}\n\nOverview: [Brief summary of what is included, e.g. X no. doorsets / leaves only / frames only, and the key door style.]\n\nStyle: [e.g. Sussex, Dorchester, Edinburgh, Flush, etc.]\n·         Panels/Profile: [e.g. Sheraton panels, Duplex moulding, square shoulder]\n·         Timber/Material: [e.g. Sapele, Accoya, Oak, Tulipwood]\n·         Finish: [e.g. White primer, Stained & lacquered, Holzol 10%]\n·         Fire Rating: [FD30 / FD60 / Non-Rated, or mix — detail which]\n·         Intumescent: [e.g. Prepped in door, supplied loose, in frame only, N/A]\n·         Ironmongery: [e.g. Free issue, on order with Arun, Longden supplying hinges only, all by others on site, prep only]\n \nSpecial Notes: [Any special points — CNC work required, outsourced elements, payment terms affecting delivery, residential quality requirement, sample/test piece, etc.]\nPurchasing Actions (@Ellie Nevison): [Any items to order — flush doors from Xander, glass, hinges, intumescent, etc. — or state \"Nothing to purchase, all in hand.\"]\nCNC (@Duane Beagle): [Any CNC requirements, or N/A.]\nDelivery (@Daniella Jackson): [Required date, customer deadline, lead time agreed with customer, any special delivery instructions — e.g. deliver to customer's address not site.]\nCustomer Handover (@Graeme Vickers): [Point of contact name and company for liaison, or N/A if not applicable yet.]\n \nAny questions, please get back to me.",
+      "placeholders": [
+        {
+          "key": "Project_name",
+          "label": "Project name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "Project_Number",
+          "label": "Project number",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "Number",
+          "label": "Number",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "Value",
+          "label": "Value",
+          "hint": "",
+          "optional": false
+        }
+      ]
     }
   ],
   "extras": []
