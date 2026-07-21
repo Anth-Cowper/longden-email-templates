@@ -155,28 +155,16 @@
       ]
     },
     {
-      "id": "delivery-delay",
-      "name": "Delivery delay",
+      "id": "template-1784618943864",
+      "name": "Delivery RFI",
       "category": "Delivery",
       "subject": "",
-      "body": "Hi {CLIENT_NAME},\n\nJust to update you, unfortunately your delivery date will now be week commencing {NEW_DELIVERY_DATE}.\n\nWe haven't yet received {OUTSTANDING_ITEM}, which has delayed production. I completely understand how important this is for your schedule, and I'm really sorry for the inconvenience this causes.\n\nPlease rest assured that if there's any way we can pull this forward, we absolutely will. I'll keep you updated as soon as there's any movement on the {OUTSTANDING_ITEM}.\n\nThank you for your patience and understanding — apologies once again.",
+      "body": "Dear {Client_Name},\n\nTo allow us to finalise the delivery arrangements for this project, please could you confirm the following at your earliest convenience:\n\nType of vehicle permitted on site (articulated wagon, rigid vehicle, Luton van, etc.)\nAny delivery access restrictions\nMaximum vehicle length, width, height and weight permitted on site\nAny bridge, road, gate, archway or turning restrictions affecting vehicle access\nAvailable unloading areas and any restrictions on vehicle movements\nSite operating hours and any delivery time restrictions\nAny booking-in procedures or permit requirements\nAny other site conditions that may affect deliveries\n\nPlease note that our quotation is based on the delivery assumptions available at the time of pricing. Delivery costs must be agreed and finalised prior to manufacture and dispatch to avoid any misunderstandings later in the project.\n\nWhere site restrictions necessitate the use of smaller vehicles, vehicle transhipping, split loads, multiple deliveries, restricted delivery times, or any other non-standard delivery arrangements, any associated additional costs will be chargeable.\n\nWe would therefore appreciate confirmation of the above so that the correct delivery provision can be included and agreed before production is completed.\n\nShould delivery requirements change after acceptance, or should previously undisclosed site restrictions result in additional deliveries being required, Longden Doors reserves the right to review and amend delivery charges accordingly.\n\nPlease note that any additional deliveries required due to site access restrictions not previously advised will be chargeable.",
       "placeholders": [
         {
-          "key": "CLIENT_NAME",
+          "key": "Client_Name",
           "label": "Client name",
-          "hint": "",
-          "optional": false
-        },
-        {
-          "key": "NEW_DELIVERY_DATE",
-          "label": "New delivery date",
-          "hint": "e.g. 14 July 2026",
-          "optional": false
-        },
-        {
-          "key": "OUTSTANDING_ITEM",
-          "label": "Outstanding item",
-          "hint": "e.g. the ironmongery schedule",
+          "hint": "eg. Holden Mugroin",
           "optional": false
         }
       ]
@@ -271,6 +259,33 @@
           "key": "CLIENT_NAME",
           "label": "Client name",
           "hint": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "delivery-delay",
+      "name": "Delivery delay",
+      "category": "Delivery",
+      "subject": "",
+      "body": "Hi {CLIENT_NAME},\n\nJust to update you, unfortunately your delivery date will now be week commencing {NEW_DELIVERY_DATE}.\n\nWe haven't yet received {OUTSTANDING_ITEM}, which has delayed production. I completely understand how important this is for your schedule, and I'm really sorry for the inconvenience this causes.\n\nPlease rest assured that if there's any way we can pull this forward, we absolutely will. I'll keep you updated as soon as there's any movement on the {OUTSTANDING_ITEM}.\n\nThank you for your patience and understanding — apologies once again.",
+      "placeholders": [
+        {
+          "key": "CLIENT_NAME",
+          "label": "Client name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "NEW_DELIVERY_DATE",
+          "label": "New delivery date",
+          "hint": "e.g. 14 July 2026",
+          "optional": false
+        },
+        {
+          "key": "OUTSTANDING_ITEM",
+          "label": "Outstanding item",
+          "hint": "e.g. the ironmongery schedule",
           "optional": false
         }
       ]
