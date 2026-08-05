@@ -1,6 +1,21 @@
 {
   "templates": [
     {
+      "id": "template-1785919898031",
+      "name": "RFI email",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Good morning/ afternoon {insert_name_here},\n\nThank you for the deposit. Before this is passed on to our scheduling department, we need updated information and confirmation on the following;\n\n• Confirmation/ final dimensions of structural opening sizes and wall depths\n• An ironmongery schedule and/or confirmation on what will be required\n• Latest revision to relevant drawings (i.e. bespoke mouldings, floor plans etc.)\n• Preferred dates for delivery and whether there are any delivery restrictions\n• Final finishes to door sets (if these differ from final quotation)\n• Any further changes/ amendments not previously quoted for\n• Project manager/ lead point of contact and who will be signing off drawings\n\nIf there are no changes to our quotation, as attached, or there is going to be a delay in information being retrieved, please advise us - drawings will not be produced until we receive responses to our RFI's.\n\n",
+      "placeholders": [
+        {
+          "key": "insert_name_here",
+          "label": "Insert name here",
+          "hint": "",
+          "optional": false
+        }
+      ]
+    },
+    {
       "id": "template-1785913781906",
       "name": "Sign off confirmation",
       "category": "Scheduling",
@@ -83,33 +98,6 @@
           "key": "DELIVERY_ESTIMATE",
           "label": "Earliest delivery estimate",
           "hint": "e.g. February/March 2026",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": "capacity-reached",
-      "name": "Capacity reached",
-      "category": "Scheduling",
-      "subject": "",
-      "body": "Dear {CLIENT_NAME},\n\nJust to let you know, Longden Doors has currently reached capacity for orders that have not yet been released into production. Normally we try and maintain an 8–10 week lead time, but with the volume of orders we have, this is no longer possible.\n\nWe still need to receive sign-off ready for production, which will assign priority to jobs, but our current workload means that production probably wouldn't commence until {PRODUCTION_START}, with deliveries being in {DELIVERY_PERIOD}.\n\nWe will always try to work with our clients and improve delivery dates where we can.",
-      "placeholders": [
-        {
-          "key": "CLIENT_NAME",
-          "label": "Client name",
-          "hint": "",
-          "optional": false
-        },
-        {
-          "key": "PRODUCTION_START",
-          "label": "Production start",
-          "hint": "e.g. mid/end January",
-          "optional": false
-        },
-        {
-          "key": "DELIVERY_PERIOD",
-          "label": "Delivery period",
-          "hint": "e.g. February/March",
           "optional": false
         }
       ]
@@ -274,12 +262,31 @@
       ]
     },
     {
-      "id": "factory-capacity-casual",
-      "name": "Factory capacity (casual)",
+      "id": "capacity-reached",
+      "name": "Capacity reached",
       "category": "Scheduling",
-      "subject": "Factory capacity — securing your production slot",
-      "body": "Hi,\n\nJust a quick heads-up on factory scheduling. We currently have some capacity available, but we have several large jobs about to land that will take us into our seasonal busy period. Once they're confirmed, production slots will be allocated on a first come, first served basis.\n\nIt's also worth flagging that we have a number of factory operatives taking annual leave over the coming weeks, which will naturally tighten our available production capacity further.\n\nIf you're in a position to sign off drawings, return revisions, or complete checks, getting these back to us sooner rather than later will secure your slot and protect your delivery dates. I completely appreciate that sign-off and revisions take the time they take — this is simply to give you the best possible visibility so nothing slips.\n\nHappy to talk through any outstanding items if that would help move things along.",
-      "placeholders": []
+      "subject": "",
+      "body": "Dear {CLIENT_NAME},\n\nJust to let you know, Longden Doors has currently reached capacity for orders that have not yet been released into production. Normally we try and maintain an 8–10 week lead time, but with the volume of orders we have, this is no longer possible.\n\nWe still need to receive sign-off ready for production, which will assign priority to jobs, but our current workload means that production probably wouldn't commence until {PRODUCTION_START}, with deliveries being in {DELIVERY_PERIOD}.\n\nWe will always try to work with our clients and improve delivery dates where we can.",
+      "placeholders": [
+        {
+          "key": "CLIENT_NAME",
+          "label": "Client name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "PRODUCTION_START",
+          "label": "Production start",
+          "hint": "e.g. mid/end January",
+          "optional": false
+        },
+        {
+          "key": "DELIVERY_PERIOD",
+          "label": "Delivery period",
+          "hint": "e.g. February/March",
+          "optional": false
+        }
+      ]
     },
     {
       "id": "delivery-delay",
@@ -307,6 +314,14 @@
           "optional": false
         }
       ]
+    },
+    {
+      "id": "factory-capacity-casual",
+      "name": "Factory capacity (casual)",
+      "category": "Scheduling",
+      "subject": "Factory capacity — securing your production slot",
+      "body": "Hi,\n\nJust a quick heads-up on factory scheduling. We currently have some capacity available, but we have several large jobs about to land that will take us into our seasonal busy period. Once they're confirmed, production slots will be allocated on a first come, first served basis.\n\nIt's also worth flagging that we have a number of factory operatives taking annual leave over the coming weeks, which will naturally tighten our available production capacity further.\n\nIf you're in a position to sign off drawings, return revisions, or complete checks, getting these back to us sooner rather than later will secure your slot and protect your delivery dates. I completely appreciate that sign-off and revisions take the time they take — this is simply to give you the best possible visibility so nothing slips.\n\nHappy to talk through any outstanding items if that would help move things along.",
+      "placeholders": []
     },
     {
       "id": "factory-capacity-formal",
