@@ -82,22 +82,28 @@
       ]
     },
     {
-      "id": "project-on-hold",
-      "name": "Project on hold",
+      "id": "template-1788338547201",
+      "name": "Updated Drawing/Schedule",
       "category": "Scheduling",
       "subject": "",
-      "body": "Dear {CLIENT_NAME},\n\nPlease be advised that due to our current workloads, we are prioritising projects where customers have responded to RFIs, approved our production drawings and require an \"as soon as possible\" delivery.\n\nAs we are still awaiting information/approval to proceed from you, your project will be put on hold until you are ready to proceed, but this will mean that delivery is unlikely to be sooner than {DELIVERY_ESTIMATE}.\n\nNaturally, we will always try to work with our clients and improve delivery dates where we can.",
+      "body": "{Greeting},\n\nPlease find attached the latest updated drawings and priced schedule for {Project_name}, Rev{revision_number}.\n\nPlease review these documents carefully to ensure that all requested amendments have been incorporated. Depending on the nature of the revisions, there may have been an impact on the project cost, which will be reflected in the attached priced schedule.\n\nPlease note that before your project can be released into production, we require written approval of both the drawings and the priced schedule.\n\nOur quoted lead times will commence from the date of full sign-off of both documents. Receipt of a deposit does not constitute project sign-off and does not trigger the commencement of lead times.\n\nShould you have any questions or require any further clarification, please do not hesitate to contact us.",
       "placeholders": [
         {
-          "key": "CLIENT_NAME",
-          "label": "Client name",
+          "key": "Greeting",
+          "label": "Greeting",
           "hint": "",
           "optional": false
         },
         {
-          "key": "DELIVERY_ESTIMATE",
-          "label": "Earliest delivery estimate",
-          "hint": "e.g. February/March 2026",
+          "key": "Project_name",
+          "label": "Project name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "revision_number",
+          "label": "Revision number",
+          "hint": "",
           "optional": false
         }
       ]
@@ -262,11 +268,11 @@
       ]
     },
     {
-      "id": "capacity-reached",
-      "name": "Capacity reached",
+      "id": "project-on-hold",
+      "name": "Project on hold",
       "category": "Scheduling",
       "subject": "",
-      "body": "Dear {CLIENT_NAME},\n\nJust to let you know, Longden Doors has currently reached capacity for orders that have not yet been released into production. Normally we try and maintain an 8–10 week lead time, but with the volume of orders we have, this is no longer possible.\n\nWe still need to receive sign-off ready for production, which will assign priority to jobs, but our current workload means that production probably wouldn't commence until {PRODUCTION_START}, with deliveries being in {DELIVERY_PERIOD}.\n\nWe will always try to work with our clients and improve delivery dates where we can.",
+      "body": "Dear {CLIENT_NAME},\n\nPlease be advised that due to our current workloads, we are prioritising projects where customers have responded to RFIs, approved our production drawings and require an \"as soon as possible\" delivery.\n\nAs we are still awaiting information/approval to proceed from you, your project will be put on hold until you are ready to proceed, but this will mean that delivery is unlikely to be sooner than {DELIVERY_ESTIMATE}.\n\nNaturally, we will always try to work with our clients and improve delivery dates where we can.",
       "placeholders": [
         {
           "key": "CLIENT_NAME",
@@ -275,15 +281,9 @@
           "optional": false
         },
         {
-          "key": "PRODUCTION_START",
-          "label": "Production start",
-          "hint": "e.g. mid/end January",
-          "optional": false
-        },
-        {
-          "key": "DELIVERY_PERIOD",
-          "label": "Delivery period",
-          "hint": "e.g. February/March",
+          "key": "DELIVERY_ESTIMATE",
+          "label": "Earliest delivery estimate",
+          "hint": "e.g. February/March 2026",
           "optional": false
         }
       ]
@@ -311,6 +311,33 @@
           "key": "OUTSTANDING_ITEM",
           "label": "Outstanding item",
           "hint": "e.g. the ironmongery schedule",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "capacity-reached",
+      "name": "Capacity reached",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Dear {CLIENT_NAME},\n\nJust to let you know, Longden Doors has currently reached capacity for orders that have not yet been released into production. Normally we try and maintain an 8–10 week lead time, but with the volume of orders we have, this is no longer possible.\n\nWe still need to receive sign-off ready for production, which will assign priority to jobs, but our current workload means that production probably wouldn't commence until {PRODUCTION_START}, with deliveries being in {DELIVERY_PERIOD}.\n\nWe will always try to work with our clients and improve delivery dates where we can.",
+      "placeholders": [
+        {
+          "key": "CLIENT_NAME",
+          "label": "Client name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "PRODUCTION_START",
+          "label": "Production start",
+          "hint": "e.g. mid/end January",
+          "optional": false
+        },
+        {
+          "key": "DELIVERY_PERIOD",
+          "label": "Delivery period",
+          "hint": "e.g. February/March",
           "optional": false
         }
       ]
