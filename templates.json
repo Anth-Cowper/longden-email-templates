@@ -360,6 +360,69 @@
       "placeholders": []
     },
     {
+      "id": "template-1788342827096",
+      "name": "Internal pre-clearence",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Hi All,\n\nThe customer has signed off on {Project_Name} - {project_number} {when}, and it has now been passed on for technical checks. This email serves as notification that the project clock has now started on our side.\n\nPlease note that this has not yet been cleared for production. This simply indicates that the customer has signed off the documentation and that the pre-production process has commenced.\n\nProject details:\n\nQuantity: {Quantity} \nConstruction/core: {Type}\nFaces/Timber: {veneer_timber}\nFrames: {frame_material}\nFinish: {Finish_type_TBC_if_not_confirmed}\nIronmongery: {details}\n\nPlease refer to the attached drawings and schedules for details.\n\nOutstanding items:\n\n[e.g. \"Awaiting quotation from [Supplier] — chased again today\"]\n[Add/remove as needed]\n\nActions:\n\n@Ellie – Please see the attached purchase plan and timber components\n\n@[Name] – Critical delivery date: [date], due to [reason, e.g. school holiday install window]. \n[Optional: \"Achievable given [Supplier]'s current lead time of [X weeks]\"]\n\nKey dependency: Overall programme is dependent on [e.g. finish approval / supplier lead time] being confirmed in a timely manner.\n\nIf you have any questions, please let me know.\n\n",
+      "placeholders": [
+        {
+          "key": "Project_Name",
+          "label": "Project name",
+          "hint": "e.g. Project",
+          "optional": false
+        },
+        {
+          "key": "project_number",
+          "label": "Project number",
+          "hint": "e.g. 117xxx",
+          "optional": false
+        },
+        {
+          "key": "when",
+          "label": "When",
+          "hint": "e.g. today/yesterday/date",
+          "optional": false
+        },
+        {
+          "key": "Quantity",
+          "label": "Quantity",
+          "hint": "e.g. Quantity",
+          "optional": false
+        },
+        {
+          "key": "Type",
+          "label": "Type",
+          "hint": "e.g. Door Type",
+          "optional": false
+        },
+        {
+          "key": "veneer_timber",
+          "label": "Veneer timber",
+          "hint": "e.g. Oak",
+          "optional": false
+        },
+        {
+          "key": "frame_material",
+          "label": "Frame material",
+          "hint": "e.g. Sapele",
+          "optional": false
+        },
+        {
+          "key": "Finish_type_TBC_if_not_confirmed",
+          "label": "Finish type tbc if not confirmed",
+          "hint": "e.g. primed",
+          "optional": false
+        },
+        {
+          "key": "details",
+          "label": "Details",
+          "hint": "e.g Ironmongery prep required ",
+          "optional": false
+        }
+      ]
+    },
+    {
       "id": "factory-capacity-formal",
       "name": "Factory capacity (formal)",
       "category": "Scheduling",
@@ -370,33 +433,6 @@
           "key": "CLIENT_NAME",
           "label": "Client name",
           "hint": "",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": "template-1786524165018",
-      "name": "Paint \"Finishing/Top coats\"",
-      "category": "Scheduling",
-      "subject": "",
-      "body": "Hi {Name},\n\nFollowing on from our discussion regarding the finish for {Finish_required}, I wanted to clarify our position on paint-finished doors.\n\nAs standard, we supply doors in primer for finishing on site. We're happy to apply some topcoats prior to despatch to give a head start on the final finish, but we don't class these as \"finished\" doors, and here's why:\n\nDoors that arrive with a full finish rarely survive the fitting process intact. Knocks, chips, and scratches during transit and installation are almost inevitable, and unfortunately these get attributed to Longden even though they typically occur on site during fitting. This then puts us on the hook for additional onsite touch-ups, or in some cases attendance from a French polisher to make good — something we're happy to accommodate, but it needs to be reflected in the cost from the outset.\n\nTo give you a better idea of pricing:\n\nTopcoats only: approx. £{LOWcost_hiCOST}  uplift per leaf. Please note this is not supplied or guaranteed as a final finish — while it may end up serving as the final finish depending on how the doors fare in transit and installation, the treatment, handling, and protection of the item once it leaves our premises and during the fitting process falls outside Longden's scope and liability.\nFully finished doors, including French polisher attendance for snagging/touch-up: potentially double the topcoat-only cost, as this needs to cover the cost of remedial work that's essentially guaranteed to be needed post-installation\n\nWhichever route you'd like to take, we're happy to accommodate — we just want to make sure the costs and expectations are aligned upfront so there are no surprises further down the line.\n\nPlease let me know how you'd like to proceed and I can get a formal quote over to you.",
-      "placeholders": [
-        {
-          "key": "Name",
-          "label": "Name",
-          "hint": "client name",
-          "optional": false
-        },
-        {
-          "key": "Finish_required",
-          "label": "Finish required",
-          "hint": "RAL/colour code",
-          "optional": false
-        },
-        {
-          "key": "LOWcost_hiCOST",
-          "label": "Lowcost hicost",
-          "hint": "£250-£300",
           "optional": false
         }
       ]
@@ -463,6 +499,33 @@
           "key": "project_number",
           "label": "Project number",
           "hint": "e.g. 117xxx",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "template-1786524165018",
+      "name": "Paint \"Finishing/Top coats\"",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Hi {Name},\n\nFollowing on from our discussion regarding the finish for {Finish_required}, I wanted to clarify our position on paint-finished doors.\n\nAs standard, we supply doors in primer for finishing on site. We're happy to apply some topcoats prior to despatch to give a head start on the final finish, but we don't class these as \"finished\" doors, and here's why:\n\nDoors that arrive with a full finish rarely survive the fitting process intact. Knocks, chips, and scratches during transit and installation are almost inevitable, and unfortunately these get attributed to Longden even though they typically occur on site during fitting. This then puts us on the hook for additional onsite touch-ups, or in some cases attendance from a French polisher to make good — something we're happy to accommodate, but it needs to be reflected in the cost from the outset.\n\nTo give you a better idea of pricing:\n\nTopcoats only: approx. £{LOWcost_hiCOST}  uplift per leaf. Please note this is not supplied or guaranteed as a final finish — while it may end up serving as the final finish depending on how the doors fare in transit and installation, the treatment, handling, and protection of the item once it leaves our premises and during the fitting process falls outside Longden's scope and liability.\nFully finished doors, including French polisher attendance for snagging/touch-up: potentially double the topcoat-only cost, as this needs to cover the cost of remedial work that's essentially guaranteed to be needed post-installation\n\nWhichever route you'd like to take, we're happy to accommodate — we just want to make sure the costs and expectations are aligned upfront so there are no surprises further down the line.\n\nPlease let me know how you'd like to proceed and I can get a formal quote over to you.",
+      "placeholders": [
+        {
+          "key": "Name",
+          "label": "Name",
+          "hint": "client name",
+          "optional": false
+        },
+        {
+          "key": "Finish_required",
+          "label": "Finish required",
+          "hint": "RAL/colour code",
+          "optional": false
+        },
+        {
+          "key": "LOWcost_hiCOST",
+          "label": "Lowcost hicost",
+          "hint": "£250-£300",
           "optional": false
         }
       ]
