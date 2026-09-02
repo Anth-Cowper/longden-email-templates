@@ -343,7 +343,10 @@
             margin-bottom: 0.9rem;
             max-height: 220px;
             overflow-y: auto;
+            outline: none;
+            cursor: text;
         }
+        .preview-box:focus { border-color: #111111; }
         .preview-box .unfilled {
             color: #b91c1c;
             font-weight: 700;
@@ -499,9 +502,11 @@
             color: #1a1a1a;
             min-height: 80px;
             margin-bottom: 0.4rem;
-            user-select: all;
             white-space: pre-wrap;
+            outline: none;
+            cursor: text;
         }
+        #panelLeadTime .sentence-box:focus { border-color: #111111; }
         #panelLeadTime .date-hint { font-size: 0.72rem; color: #888; margin-bottom: 0.9rem; }
         #panelLeadTime .lt-extras { margin-bottom: 0.9rem; }
         #panelLeadTime .lt-extras .check-label { margin-top: 0; margin-bottom: 0.5rem; align-items: flex-start; }
@@ -633,7 +638,7 @@
             <div id="placeholderForm"></div>
             <div class="divider"></div>
             <div class="field-label" style="margin-bottom:0.45rem">Preview</div>
-            <div class="preview-box" id="preview"></div>
+            <div class="preview-box" id="preview" contenteditable="true"></div>
             <div id="extrasSection"></div>
             <button class="btn btn-primary" id="insertBtn">Insert into email</button>
             <div class="status" id="status"></div>
@@ -747,7 +752,7 @@
             <div class="error" id="error">High week must be &ge; low week.</div>
 
             <div class="field-label">Generated sentence</div>
-            <div class="sentence-box" id="sentence"></div>
+            <div class="sentence-box" id="sentence" contenteditable="true"></div>
             <div class="date-hint" id="dateHint"></div>
             <div class="lt-extras" id="ltExtrasLead"></div>
 
@@ -780,7 +785,7 @@
             <div class="error" id="delivError">High week must be &ge; low week.</div>
 
             <div class="field-label">Generated sentence</div>
-            <div class="sentence-box" id="delivSentence"></div>
+            <div class="sentence-box" id="delivSentence" contenteditable="true"></div>
             <div class="date-hint" id="delivDateHint"></div>
             <div class="lt-extras" id="ltExtrasClient"></div>
 
@@ -1111,22 +1116,36 @@
             return html.replace(/<[^>]+>|[^<]+/g, seg => seg.startsWith('<') ? seg : seg.toUpperCase());
         }
 
+        // Splits plain text into <p>/<ul> blocks on blank lines, detecting "- " bulleted paragraphs.
+        function buildParagraphBlocks(text, lineFn) {
+            return text.split(/\n\n+/).map(p => {
+                const lines = p.split('\n');
+                if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
+                    return '<ul style="margin:0 0 0.75em 1.2em;padding:0">' +
+                        lines.map(l => '<li>' + lineFn(l.trim().slice(2)) + '</li>').join('') + '</ul>';
+                }
+                return '<p style="margin:0 0 0.75em 0">' + lines.map(lineFn).join('<br>') + '</p>';
+            }).join('');
+        }
+
         function updatePreview() {
             if (!currentTemplate) return;
             const values = getValues();
             const upper = tplStyleState.uppercase;
 
-            let html = currentTemplate.body
-                .split('\n')
-                .map(line => line.replace(/\{(\w+)\}/g, (match, key) => {
-                    const val = values[key];
-                    if (val && val.trim() !== '') return `<span class="filled">${esc(upper ? val.toUpperCase() : val)}</span>`;
-                    return `<span class="unfilled">${match}</span>`;
-                }))
-                .join('<br>');
-            if (upper) html = upperOutsideTags(html);
-            const extrasHtml = getCheckedExtrasText().map(t => '<br><br>' + esc(upper ? t.toUpperCase() : t)).join('');
-            document.getElementById('preview').innerHTML = html + extrasHtml;
+            const lineFn = line => line.replace(/\{(\w+)\}/g, (match, key) => {
+                const val = values[key];
+                if (val && val.trim() !== '') return `<span class="filled">${esc(upper ? val.toUpperCase() : val)}</span>`;
+                return `<span class="unfilled">${match}</span>`;
+            });
+
+            let bodyHtml = buildParagraphBlocks(currentTemplate.body, lineFn);
+            if (upper) bodyHtml = upperOutsideTags(bodyHtml);
+
+            const extrasHtml = getCheckedExtrasText()
+                .map(t => '<p style="margin:0 0 0.75em 0">' + esc(upper ? t.toUpperCase() : t) + '</p>')
+                .join('');
+            document.getElementById('preview').innerHTML = bodyHtml + extrasHtml;
 
             const allFilled = document.querySelectorAll('.ph-input[data-key]')
                 .length === 0 || [...document.querySelectorAll('.ph-input[data-key]')]
@@ -1140,16 +1159,20 @@
             return vals;
         }
 
-        function fillTpl(body, values) {
-            return body.replace(/\{(\w+)\}/g, (m, k) => values[k] !== undefined ? values[k] : m);
+        function tplBaselineStyle() {
+            const styles = ['font-size:' + tplStyleState.sizePt + 'pt'];
+            if (tplStyleState.bold)      styles.push('font-weight:bold');
+            if (tplStyleState.italic)    styles.push('font-style:italic');
+            if (tplStyleState.underline) styles.push('text-decoration:underline');
+            if (tplStyleState.color)     styles.push('color:' + tplStyleState.color);
+            return styles.join(';');
         }
 
         document.getElementById('insertBtn').addEventListener('click', async () => {
             if (!currentTemplate) return;
-            const extrasText = getCheckedExtrasText().map(t => '\n\n' + t).join('');
-            const rawText = fillTpl(currentTemplate.body, getValues()) + extrasText;
-            const text = tplStyleState.uppercase ? rawText.toUpperCase() : rawText;
-            const html = textToHtml(text);
+            const previewEl = document.getElementById('preview');
+            const html = `<div style="${tplBaselineStyle()}">${previewEl.innerHTML}</div>`;
+            const plainText = previewEl.innerText.trim();
             const btn  = document.getElementById('insertBtn');
             const stat = document.getElementById('status');
 
@@ -1174,7 +1197,7 @@
                         } else { showStatus('Insert failed — try again.', true); }
                     });
             } else {
-                showPreviewModal(text);
+                showPreviewModal(plainText);
             }
         });
 
@@ -1313,24 +1336,6 @@
             return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
         }
 
-        function textToHtml(text) {
-            function e(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-            const styles = ['font-size:' + tplStyleState.sizePt + 'pt'];
-            if (tplStyleState.bold)      styles.push('font-weight:bold');
-            if (tplStyleState.italic)    styles.push('font-style:italic');
-            if (tplStyleState.underline) styles.push('text-decoration:underline');
-            if (tplStyleState.color)     styles.push('color:' + tplStyleState.color);
-            const styleAttr = styles.join(';');
-            return text.split(/\n\n+/).map(p => {
-                const lines = p.split('\n');
-                if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
-                    return `<ul style="margin:0 0 0.75em 1.2em;padding:0;${styleAttr}">` +
-                        lines.map(l => '<li>' + e(l.trim().slice(2)) + '</li>').join('') + '</ul>';
-                }
-                return `<p style="margin:0 0 0.75em 0;${styleAttr}">` + lines.map(e).join('<br>') + '</p>';
-            }).join('');
-        }
-
         // ── Office init ───────────────────────────────────────
         if (typeof Office !== 'undefined') {
             Office.onReady(() => { officeReady = true; });
@@ -1421,6 +1426,35 @@
         const tplColorSwatches     = document.getElementById('tplColorSwatches');
         const tplStyleUppercaseChk = document.getElementById('tplStyleUppercase');
 
+        // Returns a live selection Range if there's a non-empty selection fully inside `container`, else null.
+        function getSelectionRangeIn(container) {
+            const sel = window.getSelection();
+            if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
+            const range = sel.getRangeAt(0);
+            if (!container.contains(range.commonAncestorContainer)) return null;
+            return range;
+        }
+
+        // Wraps the selected range's contents in a new span carrying one style property, and re-selects it.
+        function wrapSelectionWithStyle(range, styleProp, styleValue) {
+            const span = document.createElement('span');
+            span.style[styleProp] = styleValue;
+            span.appendChild(range.extractContents());
+            range.insertNode(span);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            const newRange = document.createRange();
+            newRange.selectNodeContents(span);
+            sel.addRange(newRange);
+        }
+
+        function selectionFontSizePt(range) {
+            let node = range.startContainer;
+            if (node.nodeType === 3) node = node.parentElement;
+            const px = parseFloat(getComputedStyle(node).fontSize);
+            return Math.round(px * 72 / 96);
+        }
+
         function applyTplStyleVisuals() {
             const el = document.getElementById('preview');
             el.style.fontWeight     = tplStyleState.bold ? '700' : '400';
@@ -1435,31 +1469,51 @@
         }
 
         tplStyleBoldBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(document.getElementById('preview'));
+            if (range) { document.execCommand('bold'); return; }
             tplStyleState.bold = !tplStyleState.bold;
             tplStyleBoldBtn.classList.toggle('active', tplStyleState.bold);
             applyTplStyleVisuals();
         });
         tplStyleItalicBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(document.getElementById('preview'));
+            if (range) { document.execCommand('italic'); return; }
             tplStyleState.italic = !tplStyleState.italic;
             tplStyleItalicBtn.classList.toggle('active', tplStyleState.italic);
             applyTplStyleVisuals();
         });
         tplStyleUnderlineBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(document.getElementById('preview'));
+            if (range) { document.execCommand('underline'); return; }
             tplStyleState.underline = !tplStyleState.underline;
             tplStyleUnderlineBtn.classList.toggle('active', tplStyleState.underline);
             applyTplStyleVisuals();
         });
         tplSizeDownBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(document.getElementById('preview'));
+            if (range) {
+                const next = Math.max(TPL_SIZE_MIN, selectionFontSizePt(range) - 1);
+                wrapSelectionWithStyle(range, 'fontSize', next + 'pt');
+                return;
+            }
             tplStyleState.sizePt = Math.max(TPL_SIZE_MIN, tplStyleState.sizePt - 1);
             applyTplStyleVisuals();
         });
         tplSizeUpBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(document.getElementById('preview'));
+            if (range) {
+                const next = Math.min(TPL_SIZE_MAX, selectionFontSizePt(range) + 1);
+                wrapSelectionWithStyle(range, 'fontSize', next + 'pt');
+                return;
+            }
             tplStyleState.sizePt = Math.min(TPL_SIZE_MAX, tplStyleState.sizePt + 1);
             applyTplStyleVisuals();
         });
         tplColorSwatches.addEventListener('click', e => {
             const sw = e.target.closest('.swatch');
             if (!sw) return;
+            const range = getSelectionRangeIn(document.getElementById('preview'));
+            if (range) { wrapSelectionWithStyle(range, 'color', sw.dataset.color); return; }
             tplStyleState.color = tplStyleState.color === sw.dataset.color ? '' : sw.dataset.color;
             applyTplStyleVisuals();
         });
@@ -1683,7 +1737,7 @@
                 dateHintEl.textContent = `Low: ${fmt(dateLow, true)}  ·  High: ${fmt(dateHigh, true)}`;
             }
 
-            sentenceEl.textContent = finalizeText([sentence, ...getCheckedExtrasText('lead')].join('\n\n'));
+            sentenceEl.innerHTML = buildParagraphBlocks(finalizeText([sentence, ...getCheckedExtrasText('lead')].join('\n\n')), escHtml);
         }
 
         function setMode(newMode) {
@@ -1752,7 +1806,7 @@
                 delivDateHintEl.textContent = `Sign off by: ${fmt(orderByDate, true)}`;
             }
 
-            delivSentenceEl.textContent = finalizeText([sentence, ...getCheckedExtrasText('deliv')].join('\n\n'));
+            delivSentenceEl.innerHTML = buildParagraphBlocks(finalizeText([sentence, ...getCheckedExtrasText('deliv')].join('\n\n')), escHtml);
         }
 
         deliveryDateInp.addEventListener('change', delivUpdate);
@@ -1776,6 +1830,39 @@
         });
 
         // ── Text style toolbar ───────────────────────────────
+        function activeLtBox() {
+            return pageClient.classList.contains('active') ? delivSentenceEl : sentenceEl;
+        }
+
+        // Returns a live selection Range if there's a non-empty selection fully inside `container`, else null.
+        function getSelectionRangeIn(container) {
+            const sel = window.getSelection();
+            if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
+            const range = sel.getRangeAt(0);
+            if (!container.contains(range.commonAncestorContainer)) return null;
+            return range;
+        }
+
+        // Wraps the selected range's contents in a new span carrying one style property, and re-selects it.
+        function wrapSelectionWithStyle(range, styleProp, styleValue) {
+            const span = document.createElement('span');
+            span.style[styleProp] = styleValue;
+            span.appendChild(range.extractContents());
+            range.insertNode(span);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            const newRange = document.createRange();
+            newRange.selectNodeContents(span);
+            sel.addRange(newRange);
+        }
+
+        function selectionFontSizePt(range) {
+            let node = range.startContainer;
+            if (node.nodeType === 3) node = node.parentElement;
+            const px = parseFloat(getComputedStyle(node).fontSize);
+            return Math.round(px * 72 / 96);
+        }
+
         function applyStyleVisuals() {
             [sentenceEl, delivSentenceEl].forEach(el => {
                 el.style.fontWeight     = styleState.bold ? '700' : '400';
@@ -1791,31 +1878,51 @@
         }
 
         styleBoldBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(activeLtBox());
+            if (range) { document.execCommand('bold'); return; }
             styleState.bold = !styleState.bold;
             styleBoldBtn.classList.toggle('active', styleState.bold);
             applyStyleVisuals();
         });
         styleItalicBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(activeLtBox());
+            if (range) { document.execCommand('italic'); return; }
             styleState.italic = !styleState.italic;
             styleItalicBtn.classList.toggle('active', styleState.italic);
             applyStyleVisuals();
         });
         styleUnderlineBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(activeLtBox());
+            if (range) { document.execCommand('underline'); return; }
             styleState.underline = !styleState.underline;
             styleUnderlineBtn.classList.toggle('active', styleState.underline);
             applyStyleVisuals();
         });
         sizeDownBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(activeLtBox());
+            if (range) {
+                const next = Math.max(SIZE_MIN, selectionFontSizePt(range) - 1);
+                wrapSelectionWithStyle(range, 'fontSize', next + 'pt');
+                return;
+            }
             styleState.sizePt = Math.max(SIZE_MIN, styleState.sizePt - 1);
             applyStyleVisuals();
         });
         sizeUpBtn.addEventListener('click', () => {
+            const range = getSelectionRangeIn(activeLtBox());
+            if (range) {
+                const next = Math.min(SIZE_MAX, selectionFontSizePt(range) + 1);
+                wrapSelectionWithStyle(range, 'fontSize', next + 'pt');
+                return;
+            }
             styleState.sizePt = Math.min(SIZE_MAX, styleState.sizePt + 1);
             applyStyleVisuals();
         });
         colorSwatches.addEventListener('click', e => {
             const sw = e.target.closest('.swatch');
             if (!sw) return;
+            const range = getSelectionRangeIn(activeLtBox());
+            if (range) { wrapSelectionWithStyle(range, 'color', sw.dataset.color); return; }
             styleState.color = styleState.color === sw.dataset.color ? '' : sw.dataset.color;
             applyStyleVisuals();
         });
@@ -1835,16 +1942,25 @@
             return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
         }
 
-        function buildStyledHtml(text) {
-            const styles = ['margin:0 0 0.75em 0', 'font-size:' + styleState.sizePt + 'pt'];
+        // Splits plain text into <p>/<ul> blocks on blank lines, detecting "- " bulleted paragraphs.
+        function buildParagraphBlocks(text, lineFn) {
+            return text.split(/\n\n+/).map(p => {
+                const lines = p.split('\n');
+                if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
+                    return '<ul style="margin:0 0 0.75em 1.2em;padding:0">' +
+                        lines.map(l => '<li>' + lineFn(l.trim().slice(2)) + '</li>').join('') + '</ul>';
+                }
+                return '<p style="margin:0 0 0.75em 0">' + lines.map(lineFn).join('<br>') + '</p>';
+            }).join('');
+        }
+
+        function ltBaselineStyle() {
+            const styles = ['font-size:' + styleState.sizePt + 'pt'];
             if (styleState.bold)      styles.push('font-weight:bold');
             if (styleState.italic)    styles.push('font-style:italic');
             if (styleState.underline) styles.push('text-decoration:underline');
-            if (styleState.color) styles.push('color:' + styleState.color);
-            const styleAttr = styles.join(';');
-            return text.split('\n\n').map(p =>
-                `<p style="${styleAttr}">${escHtml(p).replace(/\n/g, '<br>')}</p>`
-            ).join('');
+            if (styleState.color)     styles.push('color:' + styleState.color);
+            return styles.join(';');
         }
 
         // ── Insert / shared helpers ──────────────────────────
@@ -1872,9 +1988,10 @@
             } catch (e) { window.close(); }
         }
 
-        function insertText(text, btn, statEl) {
-            if (!text) return;
-            const html = buildStyledHtml(text);
+        function insertContent(containerEl, btn, statEl) {
+            const plainText = containerEl.innerText.trim();
+            if (!plainText) return;
+            const html = `<div style="${ltBaselineStyle()}">${containerEl.innerHTML}</div>`;
             if (officeReady && Office.context && Office.context.mailbox) {
                 Office.context.mailbox.item.body.setSelectedDataAsync(
                     html,
@@ -1891,22 +2008,22 @@
             } else if (navigator.clipboard && navigator.clipboard.write && window.ClipboardItem) {
                 const item = new ClipboardItem({
                     'text/html':  new Blob([html], { type: 'text/html' }),
-                    'text/plain': new Blob([text], { type: 'text/plain' })
+                    'text/plain': new Blob([plainText], { type: 'text/plain' })
                 });
                 navigator.clipboard.write([item]).then(
                     () => showStatus(statEl, 'Copied (open via Outlook to insert directly).', false),
-                    () => navigator.clipboard.writeText(text).then(() =>
+                    () => navigator.clipboard.writeText(plainText).then(() =>
                         showStatus(statEl, 'Copied as plain text.', false))
                 );
             } else {
-                navigator.clipboard.writeText(text).then(() =>
+                navigator.clipboard.writeText(plainText).then(() =>
                     showStatus(statEl, 'Copied (open via Outlook to insert directly).', false)
                 );
             }
         }
 
-        insertBtn.addEventListener('click',      () => insertText(sentenceEl.textContent,      insertBtn,      statusEl));
-        delivInsertBtn.addEventListener('click', () => insertText(delivSentenceEl.textContent, delivInsertBtn, delivStatusEl));
+        insertBtn.addEventListener('click',      () => insertContent(sentenceEl,      insertBtn,      statusEl));
+        delivInsertBtn.addEventListener('click', () => insertContent(delivSentenceEl, delivInsertBtn, delivStatusEl));
 
         if (typeof Office !== 'undefined') {
             Office.onReady(() => { officeReady = true; });
