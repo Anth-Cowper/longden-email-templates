@@ -1,4 +1,13 @@
 {
+  "categories": [
+    "Estimating",
+    "Scheduling",
+    "Project Progress",
+    "Delivery",
+    "Enquiries",
+    "Technical",
+    "Accounts"
+  ],
   "templates": [
     {
       "id": "template-1785919898031",
