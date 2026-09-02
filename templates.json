@@ -277,89 +277,6 @@
       ]
     },
     {
-      "id": "project-on-hold",
-      "name": "Project on hold",
-      "category": "Scheduling",
-      "subject": "",
-      "body": "Dear {CLIENT_NAME},\n\nPlease be advised that due to our current workloads, we are prioritising projects where customers have responded to RFIs, approved our production drawings and require an \"as soon as possible\" delivery.\n\nAs we are still awaiting information/approval to proceed from you, your project will be put on hold until you are ready to proceed, but this will mean that delivery is unlikely to be sooner than {DELIVERY_ESTIMATE}.\n\nNaturally, we will always try to work with our clients and improve delivery dates where we can.",
-      "placeholders": [
-        {
-          "key": "CLIENT_NAME",
-          "label": "Client name",
-          "hint": "",
-          "optional": false
-        },
-        {
-          "key": "DELIVERY_ESTIMATE",
-          "label": "Earliest delivery estimate",
-          "hint": "e.g. February/March 2026",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": "delivery-delay",
-      "name": "Delivery delay",
-      "category": "Delivery",
-      "subject": "",
-      "body": "Hi {CLIENT_NAME},\n\nJust to update you, unfortunately your delivery date will now be week commencing {NEW_DELIVERY_DATE}.\n\nWe haven't yet received {OUTSTANDING_ITEM}, which has delayed production. I completely understand how important this is for your schedule, and I'm really sorry for the inconvenience this causes.\n\nPlease rest assured that if there's any way we can pull this forward, we absolutely will. I'll keep you updated as soon as there's any movement on the {OUTSTANDING_ITEM}.\n\nThank you for your patience and understanding — apologies once again.",
-      "placeholders": [
-        {
-          "key": "CLIENT_NAME",
-          "label": "Client name",
-          "hint": "",
-          "optional": false
-        },
-        {
-          "key": "NEW_DELIVERY_DATE",
-          "label": "New delivery date",
-          "hint": "e.g. 14 July 2026",
-          "optional": false
-        },
-        {
-          "key": "OUTSTANDING_ITEM",
-          "label": "Outstanding item",
-          "hint": "e.g. the ironmongery schedule",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": "capacity-reached",
-      "name": "Capacity reached",
-      "category": "Scheduling",
-      "subject": "",
-      "body": "Dear {CLIENT_NAME},\n\nJust to let you know, Longden Doors has currently reached capacity for orders that have not yet been released into production. Normally we try and maintain an 8–10 week lead time, but with the volume of orders we have, this is no longer possible.\n\nWe still need to receive sign-off ready for production, which will assign priority to jobs, but our current workload means that production probably wouldn't commence until {PRODUCTION_START}, with deliveries being in {DELIVERY_PERIOD}.\n\nWe will always try to work with our clients and improve delivery dates where we can.",
-      "placeholders": [
-        {
-          "key": "CLIENT_NAME",
-          "label": "Client name",
-          "hint": "",
-          "optional": false
-        },
-        {
-          "key": "PRODUCTION_START",
-          "label": "Production start",
-          "hint": "e.g. mid/end January",
-          "optional": false
-        },
-        {
-          "key": "DELIVERY_PERIOD",
-          "label": "Delivery period",
-          "hint": "e.g. February/March",
-          "optional": false
-        }
-      ]
-    },
-    {
-      "id": "factory-capacity-casual",
-      "name": "Factory capacity (casual)",
-      "category": "Scheduling",
-      "subject": "Factory capacity — securing your production slot",
-      "body": "Hi,\n\nJust a quick heads-up on factory scheduling. We currently have some capacity available, but we have several large jobs about to land that will take us into our seasonal busy period. Once they're confirmed, production slots will be allocated on a first come, first served basis.\n\nIt's also worth flagging that we have a number of factory operatives taking annual leave over the coming weeks, which will naturally tighten our available production capacity further.\n\nIf you're in a position to sign off drawings, return revisions, or complete checks, getting these back to us sooner rather than later will secure your slot and protect your delivery dates. I completely appreciate that sign-off and revisions take the time they take — this is simply to give you the best possible visibility so nothing slips.\n\nHappy to talk through any outstanding items if that would help move things along.",
-      "placeholders": []
-    },
-    {
       "id": "template-1788342827096",
       "name": "Internal pre-clearence",
       "category": "Scheduling",
@@ -423,6 +340,89 @@
       ]
     },
     {
+      "id": "delivery-delay",
+      "name": "Delivery delay",
+      "category": "Delivery",
+      "subject": "",
+      "body": "Hi {CLIENT_NAME},\n\nJust to update you, unfortunately your delivery date will now be week commencing {NEW_DELIVERY_DATE}.\n\nWe haven't yet received {OUTSTANDING_ITEM}, which has delayed production. I completely understand how important this is for your schedule, and I'm really sorry for the inconvenience this causes.\n\nPlease rest assured that if there's any way we can pull this forward, we absolutely will. I'll keep you updated as soon as there's any movement on the {OUTSTANDING_ITEM}.\n\nThank you for your patience and understanding — apologies once again.",
+      "placeholders": [
+        {
+          "key": "CLIENT_NAME",
+          "label": "Client name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "NEW_DELIVERY_DATE",
+          "label": "New delivery date",
+          "hint": "e.g. 14 July 2026",
+          "optional": false
+        },
+        {
+          "key": "OUTSTANDING_ITEM",
+          "label": "Outstanding item",
+          "hint": "e.g. the ironmongery schedule",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "project-on-hold",
+      "name": "Project on hold",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Dear {CLIENT_NAME},\n\nPlease be advised that due to our current workloads, we are prioritising projects where customers have responded to RFIs, approved our production drawings and require an \"as soon as possible\" delivery.\n\nAs we are still awaiting information/approval to proceed from you, your project will be put on hold until you are ready to proceed, but this will mean that delivery is unlikely to be sooner than {DELIVERY_ESTIMATE}.\n\nNaturally, we will always try to work with our clients and improve delivery dates where we can.",
+      "placeholders": [
+        {
+          "key": "CLIENT_NAME",
+          "label": "Client name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "DELIVERY_ESTIMATE",
+          "label": "Earliest delivery estimate",
+          "hint": "e.g. February/March 2026",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "capacity-reached",
+      "name": "Capacity reached",
+      "category": "Scheduling",
+      "subject": "",
+      "body": "Dear {CLIENT_NAME},\n\nJust to let you know, Longden Doors has currently reached capacity for orders that have not yet been released into production. Normally we try and maintain an 8–10 week lead time, but with the volume of orders we have, this is no longer possible.\n\nWe still need to receive sign-off ready for production, which will assign priority to jobs, but our current workload means that production probably wouldn't commence until {PRODUCTION_START}, with deliveries being in {DELIVERY_PERIOD}.\n\nWe will always try to work with our clients and improve delivery dates where we can.",
+      "placeholders": [
+        {
+          "key": "CLIENT_NAME",
+          "label": "Client name",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "PRODUCTION_START",
+          "label": "Production start",
+          "hint": "e.g. mid/end January",
+          "optional": false
+        },
+        {
+          "key": "DELIVERY_PERIOD",
+          "label": "Delivery period",
+          "hint": "e.g. February/March",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "factory-capacity-casual",
+      "name": "Factory capacity (casual)",
+      "category": "Scheduling",
+      "subject": "Factory capacity — securing your production slot",
+      "body": "Hi,\n\nJust a quick heads-up on factory scheduling. We currently have some capacity available, but we have several large jobs about to land that will take us into our seasonal busy period. Once they're confirmed, production slots will be allocated on a first come, first served basis.\n\nIt's also worth flagging that we have a number of factory operatives taking annual leave over the coming weeks, which will naturally tighten our available production capacity further.\n\nIf you're in a position to sign off drawings, return revisions, or complete checks, getting these back to us sooner rather than later will secure your slot and protect your delivery dates. I completely appreciate that sign-off and revisions take the time they take — this is simply to give you the best possible visibility so nothing slips.\n\nHappy to talk through any outstanding items if that would help move things along.",
+      "placeholders": []
+    },
+    {
       "id": "factory-capacity-formal",
       "name": "Factory capacity (formal)",
       "category": "Scheduling",
@@ -442,12 +442,18 @@
       "name": "Deposit request",
       "category": "Accounts",
       "subject": "",
-      "body": "{Greeting},\n\nThank you for your order for {project_name} - {project_number}.\n\nPlease find attached our deposit invoice.\n\nThe contract sum is based upon the specifications, quantities, dimensions and project requirements provided at the time of quotation and order placement. Any subsequent amendments to the specification, including but not limited to materials, finishes, ironmongery, fire performance requirements, certification requirements, quantities, dimensions, delivery arrangements or any other project-specific requirements, may result in a revision to the contract value. Any such adjustments will be reflected in the final invoice.\n\nKindly note that delays in payment may result in delays in the allocation of a Longden Project Manager. This may in turn affect the RFI process, preparation of drawings, procurement of materials, production scheduling and agreed delivery timescales.\n\nUpon receipt of cleared funds, the RFI process will begin leading to preparation of specifications and drawings, together with the ordering of materials, will commence. We would appreciate notification once payment has been made so that we can verify receipt and proceed without delay.\n\nPlease also note that upon completion of the order and delivery of all items to site, Operations & Maintenance Manuals, fire certification, as-built drawings and any other project documentation will only be released once the outstanding balance has been paid in full and cleared funds have been received.\n\nAs a supply-only manufacturer, all orders are accepted and fulfilled in accordance with the Terms and Conditions of Longden Doors UK Ltd, which can be found on our website at www.longdendoors.co.uk.",
+      "body": "{Greeting} {Client_Name},\n\nThank you for your order for {project_name} - {project_number}.\n\nPlease find attached our deposit invoice.\n\nThe contract sum is based upon the specifications, quantities, dimensions and project requirements provided at the time of quotation and order placement. Any subsequent amendments to the specification, including but not limited to materials, finishes, ironmongery, fire performance requirements, certification requirements, quantities, dimensions, delivery arrangements or any other project-specific requirements, may result in a revision to the contract value. Any such adjustments will be reflected in the final invoice.\n\nKindly note that delays in payment may result in delays in the allocation of a Longden Project Manager. This may in turn affect the RFI process, preparation of drawings, procurement of materials, production scheduling and agreed delivery timescales.\n\nUpon receipt of cleared funds, the RFI process will begin leading to preparation of specifications and drawings, together with the ordering of materials, will commence. We would appreciate notification once payment has been made so that we can verify receipt and proceed without delay.\n\nPlease also note that upon completion of the order and delivery of all items to site, Operations & Maintenance Manuals, fire certification, as-built drawings and any other project documentation will only be released once the outstanding balance has been paid in full and cleared funds have been received.\n\nAs a supply-only manufacturer, all orders are accepted and fulfilled in accordance with the Terms and Conditions of Longden Doors UK Ltd, which can be found on our website at www.longdendoors.co.uk.",
       "placeholders": [
         {
           "key": "Greeting",
           "label": "Greeting",
           "hint": "e.g. Greetings and salutations",
+          "optional": false
+        },
+        {
+          "key": "Client_Name",
+          "label": "Client name",
+          "hint": "e.g. Spencers",
           "optional": false
         },
         {
