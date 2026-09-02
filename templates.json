@@ -400,6 +400,72 @@
           "optional": false
         }
       ]
+    },
+    {
+      "id": "template-1788340255442",
+      "name": "Deposit request",
+      "category": "Accounts",
+      "subject": "",
+      "body": "{Greeting},\n\nThank you for your order for {project_name} - {project_number}.\n\nPlease find attached our deposit invoice.\n\nThe contract sum is based upon the specifications, quantities, dimensions and project requirements provided at the time of quotation and order placement. Any subsequent amendments to the specification, including but not limited to materials, finishes, ironmongery, fire performance requirements, certification requirements, quantities, dimensions, delivery arrangements or any other project-specific requirements, may result in a revision to the contract value. Any such adjustments will be reflected in the final invoice.\n\nKindly note that delays in payment may result in delays in the allocation of a Longden Project Manager. This may in turn affect the RFI process, preparation of drawings, procurement of materials, production scheduling and agreed delivery timescales.\n\nUpon receipt of cleared funds, the RFI process will begin leading to preparation of specifications and drawings, together with the ordering of materials, will commence. We would appreciate notification once payment has been made so that we can verify receipt and proceed without delay.\n\nPlease also note that upon completion of the order and delivery of all items to site, Operations & Maintenance Manuals, fire certification, as-built drawings and any other project documentation will only be released once the outstanding balance has been paid in full and cleared funds have been received.\n\nAs a supply-only manufacturer, all orders are accepted and fulfilled in accordance with the Terms and Conditions of Longden Doors UK Ltd, which can be found on our website at www.longdendoors.co.uk.",
+      "placeholders": [
+        {
+          "key": "Greeting",
+          "label": "Greeting",
+          "hint": "e.g. Hi",
+          "optional": false
+        },
+        {
+          "key": "project_name",
+          "label": "Project name",
+          "hint": "e.g. Project name",
+          "optional": false
+        },
+        {
+          "key": "project_number",
+          "label": "Project number",
+          "hint": "e.g. 117xxx",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "template-1788341887061",
+      "name": "Chase deposit",
+      "category": "Accounts",
+      "subject": "",
+      "body": "{Greeting} {client_name}\n\nI hope you're well.\n\nI'm writing to follow up on deposit invoice {invoice number}, issued on {date}, for {project_name} - {project_number} which remains outstanding. A copy is attached for reference.\n\nAs a reminder, our process cannot progress until cleared funds have been received:\n\nUpon receipt of cleared funds, the RFI process will begin, leading to preparation of specifications and drawings, together with the ordering of materials.\nDelays in payment may result in delays in the allocation of a Longden Project Manager, which can in turn affect the RFI process, drawing preparation, procurement of materials, production scheduling and agreed delivery timescales.\n\nWe'd appreciate it if payment could be arranged as soon as possible, and kindly ask that you notify us once payment has been made so we can verify receipt and proceed without delay.\n\nAs a general note, the contract sum is based on the specifications, quantities, dimensions and project requirements confirmed at the time of quotation and order placement. Any subsequent amendments — including but not limited to materials, finishes, ironmongery, fire performance requirements, certification requirements, quantities, dimensions, delivery arrangements or any other project-specific requirements — may result in a revision to the contract value, which will be reflected in the final invoice.\n\nAs a supply-only manufacturer, all orders are accepted and fulfilled in accordance with the Terms and Conditions of Longden Doors UK Ltd, available at www.longdendoors.co.uk.\n\nIf payment has already been sent, please disregard this message and let us know so we can update our records.\n\nPlease don't hesitate to contact me if you have any questions.",
+      "placeholders": [
+        {
+          "key": "Greeting",
+          "label": "Greeting",
+          "hint": "e.g. Hello",
+          "optional": false
+        },
+        {
+          "key": "client_name",
+          "label": "Client name",
+          "hint": "e.g. frank",
+          "optional": false
+        },
+        {
+          "key": "date",
+          "label": "Date",
+          "hint": "",
+          "optional": false
+        },
+        {
+          "key": "project_name",
+          "label": "Project name",
+          "hint": "e.g. Project",
+          "optional": false
+        },
+        {
+          "key": "project_number",
+          "label": "Project number",
+          "hint": "e.g. 117xxx",
+          "optional": false
+        }
+      ]
     }
   ],
   "extras": []
