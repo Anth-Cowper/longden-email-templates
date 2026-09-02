@@ -507,8 +507,8 @@
         #panelLeadTime .lt-extras .check-label { margin-top: 0; margin-bottom: 0.5rem; align-items: flex-start; }
         #panelLeadTime .actions { display: flex; }
 
-        /* ── Text style toolbar ── */
-        #panelLeadTime .lt-style-bar {
+        /* ── Text style toolbar (shared: Email Templates + Lead Time) ── */
+        .lt-style-bar {
             display: flex;
             align-items: center;
             gap: 0.4rem;
@@ -517,7 +517,7 @@
             background: #f7f7f5;
             border-bottom: 1px solid #ddd9d0;
         }
-        #panelLeadTime .style-btn {
+        .style-btn {
             width: 30px;
             height: 30px;
             border: 1.5px solid #ccc;
@@ -528,15 +528,15 @@
             color: #333;
             transition: background 0.12s, border-color 0.12s, color 0.12s;
         }
-        #panelLeadTime .style-btn:hover { border-color: #111111; }
-        #panelLeadTime .style-btn.active { background: #111111; border-color: #111111; color: white; }
+        .style-btn:hover { border-color: #111111; }
+        .style-btn.active { background: #111111; border-color: #111111; color: white; }
 
-        #panelLeadTime .size-stepper { display: flex; align-items: center; gap: 0.25rem; }
-        #panelLeadTime .size-btn { width: 24px; height: 24px; font-size: 0.65rem; }
-        #panelLeadTime .size-readout { font-size: 0.7rem; font-weight: 700; color: #666; width: 28px; text-align: center; }
+        .size-stepper { display: flex; align-items: center; gap: 0.25rem; }
+        .size-btn { width: 24px; height: 24px; font-size: 0.65rem; }
+        .size-readout { font-size: 0.7rem; font-weight: 700; color: #666; width: 28px; text-align: center; }
 
-        #panelLeadTime .swatch-row { display: flex; align-items: center; gap: 0.3rem; }
-        #panelLeadTime .swatch {
+        .swatch-row { display: flex; align-items: center; gap: 0.3rem; }
+        .swatch {
             width: 22px;
             height: 22px;
             border-radius: 50%;
@@ -546,10 +546,10 @@
             box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
             transition: border-color 0.12s, transform 0.1s;
         }
-        #panelLeadTime .swatch:hover { transform: scale(1.1); }
-        #panelLeadTime .swatch.active { border-color: #111111; }
+        .swatch:hover { transform: scale(1.1); }
+        .swatch.active { border-color: #111111; }
 
-        #panelLeadTime .style-check {
+        .style-check {
             display: flex;
             align-items: center;
             gap: 0.3rem;
@@ -607,6 +607,32 @@
             <div id="placeholderForm"></div>
             <div class="divider"></div>
             <div class="field-label" style="margin-bottom:0.45rem">Preview</div>
+
+            <div class="lt-style-bar" style="margin:0 -1rem 0.75rem;border-top:1px solid #ddd9d0">
+                <button type="button" class="style-btn" id="tplStyleBold" title="Bold"><b>B</b></button>
+                <button type="button" class="style-btn" id="tplStyleItalic" title="Italic"><i>I</i></button>
+                <button type="button" class="style-btn" id="tplStyleUnderline" title="Underline"><u>U</u></button>
+
+                <div class="size-stepper" title="Text size">
+                    <button type="button" class="style-btn size-btn" id="tplSizeDown">▼</button>
+                    <span class="size-readout" id="tplSizeReadout">11pt</span>
+                    <button type="button" class="style-btn size-btn" id="tplSizeUp">▲</button>
+                </div>
+
+                <div class="swatch-row" id="tplColorSwatches">
+                    <button type="button" class="swatch" data-color="#dc2626" style="background:#dc2626" title="Red"></button>
+                    <button type="button" class="swatch" data-color="#ea580c" style="background:#ea580c" title="Orange"></button>
+                    <button type="button" class="swatch" data-color="#ca8a04" style="background:#ca8a04" title="Yellow"></button>
+                    <button type="button" class="swatch" data-color="#4ade80" style="background:#4ade80" title="Light green"></button>
+                    <button type="button" class="swatch" data-color="#15803d" style="background:#15803d" title="Dark green"></button>
+                    <button type="button" class="swatch" data-color="#2563eb" style="background:#2563eb" title="Blue"></button>
+                    <button type="button" class="swatch" data-color="#7c3aed" style="background:#7c3aed" title="Purple"></button>
+                    <button type="button" class="swatch" data-color="#111111" style="background:#111111" title="Black"></button>
+                </div>
+
+                <label class="style-check"><input type="checkbox" id="tplStyleUppercase"> UPPERCASE</label>
+            </div>
+
             <div class="preview-box" id="preview"></div>
             <div id="extrasSection"></div>
             <button class="btn btn-primary" id="insertBtn">Insert into email</button>
@@ -812,6 +838,8 @@
         let currentTemplate = null;
         let editingPersonalId = null;
         let officeReady     = false;
+        const TPL_SIZE_MIN = 8, TPL_SIZE_MAX = 20;
+        let tplStyleState = { bold: false, italic: false, underline: false, sizePt: 11, color: '', uppercase: false };
 
         // ── localStorage helpers ─────────────────────────────
         function getFavs()          { return JSON.parse(localStorage.getItem(LS_FAVS)     || '[]'); }
@@ -1079,19 +1107,25 @@
                 .map(e => e.text);
         }
 
+        function upperOutsideTags(html) {
+            return html.replace(/<[^>]+>|[^<]+/g, seg => seg.startsWith('<') ? seg : seg.toUpperCase());
+        }
+
         function updatePreview() {
             if (!currentTemplate) return;
             const values = getValues();
+            const upper = tplStyleState.uppercase;
 
-            const html = currentTemplate.body
+            let html = currentTemplate.body
                 .split('\n')
                 .map(line => line.replace(/\{(\w+)\}/g, (match, key) => {
                     const val = values[key];
-                    if (val && val.trim() !== '') return `<span class="filled">${esc(val)}</span>`;
+                    if (val && val.trim() !== '') return `<span class="filled">${esc(upper ? val.toUpperCase() : val)}</span>`;
                     return `<span class="unfilled">${match}</span>`;
                 }))
                 .join('<br>');
-            const extrasHtml = getCheckedExtrasText().map(t => '<br><br>' + esc(t)).join('');
+            if (upper) html = upperOutsideTags(html);
+            const extrasHtml = getCheckedExtrasText().map(t => '<br><br>' + esc(upper ? t.toUpperCase() : t)).join('');
             document.getElementById('preview').innerHTML = html + extrasHtml;
 
             const allFilled = document.querySelectorAll('.ph-input[data-key]')
@@ -1113,7 +1147,8 @@
         document.getElementById('insertBtn').addEventListener('click', async () => {
             if (!currentTemplate) return;
             const extrasText = getCheckedExtrasText().map(t => '\n\n' + t).join('');
-            const text = fillTpl(currentTemplate.body, getValues()) + extrasText;
+            const rawText = fillTpl(currentTemplate.body, getValues()) + extrasText;
+            const text = tplStyleState.uppercase ? rawText.toUpperCase() : rawText;
             const html = textToHtml(text);
             const btn  = document.getElementById('insertBtn');
             const stat = document.getElementById('status');
@@ -1280,13 +1315,19 @@
 
         function textToHtml(text) {
             function e(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+            const styles = ['font-size:' + tplStyleState.sizePt + 'pt'];
+            if (tplStyleState.bold)      styles.push('font-weight:bold');
+            if (tplStyleState.italic)    styles.push('font-style:italic');
+            if (tplStyleState.underline) styles.push('text-decoration:underline');
+            if (tplStyleState.color)     styles.push('color:' + tplStyleState.color);
+            const styleAttr = styles.join(';');
             return text.split(/\n\n+/).map(p => {
                 const lines = p.split('\n');
                 if (lines.length > 1 && lines.every(l => l.trim().startsWith('- '))) {
-                    return '<ul style="margin:0 0 0.75em 1.2em;padding:0">' +
+                    return `<ul style="margin:0 0 0.75em 1.2em;padding:0;${styleAttr}">` +
                         lines.map(l => '<li>' + e(l.trim().slice(2)) + '</li>').join('') + '</ul>';
                 }
-                return '<p style="margin:0 0 0.75em 0">' + lines.map(e).join('<br>') + '</p>';
+                return `<p style="margin:0 0 0.75em 0;${styleAttr}">` + lines.map(e).join('<br>') + '</p>';
             }).join('');
         }
 
@@ -1369,6 +1410,65 @@
             overlay.addEventListener('click', e => { if (e.target === overlay) document.body.removeChild(overlay); });
             document.body.appendChild(overlay);
         }
+
+        // ── Text style toolbar ───────────────────────────────
+        const tplStyleBoldBtn      = document.getElementById('tplStyleBold');
+        const tplStyleItalicBtn    = document.getElementById('tplStyleItalic');
+        const tplStyleUnderlineBtn = document.getElementById('tplStyleUnderline');
+        const tplSizeDownBtn       = document.getElementById('tplSizeDown');
+        const tplSizeUpBtn         = document.getElementById('tplSizeUp');
+        const tplSizeReadoutEl     = document.getElementById('tplSizeReadout');
+        const tplColorSwatches     = document.getElementById('tplColorSwatches');
+        const tplStyleUppercaseChk = document.getElementById('tplStyleUppercase');
+
+        function applyTplStyleVisuals() {
+            const el = document.getElementById('preview');
+            el.style.fontWeight     = tplStyleState.bold ? '700' : '400';
+            el.style.fontStyle      = tplStyleState.italic ? 'italic' : 'normal';
+            el.style.textDecoration = tplStyleState.underline ? 'underline' : 'none';
+            el.style.fontSize       = tplStyleState.sizePt + 'pt';
+            el.style.color          = tplStyleState.color || '#1a1a1a';
+            tplSizeReadoutEl.textContent = tplStyleState.sizePt + 'pt';
+            tplColorSwatches.querySelectorAll('.swatch').forEach(sw => {
+                sw.classList.toggle('active', sw.dataset.color === tplStyleState.color);
+            });
+        }
+
+        tplStyleBoldBtn.addEventListener('click', () => {
+            tplStyleState.bold = !tplStyleState.bold;
+            tplStyleBoldBtn.classList.toggle('active', tplStyleState.bold);
+            applyTplStyleVisuals();
+        });
+        tplStyleItalicBtn.addEventListener('click', () => {
+            tplStyleState.italic = !tplStyleState.italic;
+            tplStyleItalicBtn.classList.toggle('active', tplStyleState.italic);
+            applyTplStyleVisuals();
+        });
+        tplStyleUnderlineBtn.addEventListener('click', () => {
+            tplStyleState.underline = !tplStyleState.underline;
+            tplStyleUnderlineBtn.classList.toggle('active', tplStyleState.underline);
+            applyTplStyleVisuals();
+        });
+        tplSizeDownBtn.addEventListener('click', () => {
+            tplStyleState.sizePt = Math.max(TPL_SIZE_MIN, tplStyleState.sizePt - 1);
+            applyTplStyleVisuals();
+        });
+        tplSizeUpBtn.addEventListener('click', () => {
+            tplStyleState.sizePt = Math.min(TPL_SIZE_MAX, tplStyleState.sizePt + 1);
+            applyTplStyleVisuals();
+        });
+        tplColorSwatches.addEventListener('click', e => {
+            const sw = e.target.closest('.swatch');
+            if (!sw) return;
+            tplStyleState.color = tplStyleState.color === sw.dataset.color ? '' : sw.dataset.color;
+            applyTplStyleVisuals();
+        });
+        tplStyleUppercaseChk.addEventListener('change', () => {
+            tplStyleState.uppercase = tplStyleUppercaseChk.checked;
+            updatePreview();
+        });
+
+        applyTplStyleVisuals();
 
         loadTemplates();
     })();
