@@ -411,7 +411,7 @@
         {
           "key": "Greeting",
           "label": "Greeting",
-          "hint": "e.g. Hi",
+          "hint": "e.g. Greetings and salutations",
           "optional": false
         },
         {
