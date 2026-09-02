@@ -800,7 +800,8 @@
     // ══════════════════════════════════════════════
     (function () {
         // ── Constants ────────────────────────────────────────
-        const SHARED_CATS = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+        const DEFAULT_SHARED_CATS = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+        let SHARED_CATS   = DEFAULT_SHARED_CATS.slice();
         const LS_FAVS     = 'ld_favs';
         const LS_PERSONAL = 'ld_personal';
 
@@ -827,6 +828,7 @@
                 const d = await r.json();
                 sharedTemplates = d.templates || [];
                 sharedExtras    = d.extras || [];
+                SHARED_CATS     = (d.categories && d.categories.length) ? d.categories.slice() : DEFAULT_SHARED_CATS.slice();
             } catch (e) { sharedTemplates = []; sharedExtras = []; }
             buildCatBar();
             renderList();

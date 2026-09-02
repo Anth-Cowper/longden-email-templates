@@ -341,6 +341,41 @@ td:first-child {
 }
 .tab:hover { border-color: var(--brand); color: var(--brand); }
 .tab.active { background: var(--brand); color: white; border-color: var(--brand); }
+.tab-wrap { position: relative; display: inline-flex; align-items: center; }
+.tab-del {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--muted);
+    font-size: 0.6rem;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+.tab-wrap:hover .tab-del { display: flex; }
+.tab-del:hover { color: white; background: var(--danger); border-color: var(--danger); }
+.tab-add {
+    border: 1.5px dashed #93c5fd;
+    border-radius: 20px;
+    padding: 0.28rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #eff6ff;
+    color: #2563eb;
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    transition: background 0.12s;
+}
+.tab-add:hover { background: #dbeafe; }
 
 /* ── Move buttons ── */
 .btn-move {
@@ -414,15 +449,7 @@ td:first-child {
         </div>
     </main>
 
-    <div class="tab-bar" id="tabBar">
-        <button class="tab active" data-cat="" onclick="setCategory('')">All</button>
-        <button class="tab" data-cat="Estimating" onclick="setCategory('Estimating')">Estimating</button>
-        <button class="tab" data-cat="Scheduling" onclick="setCategory('Scheduling')">Scheduling</button>
-        <button class="tab" data-cat="Project Progress" onclick="setCategory('Project Progress')">Project Progress</button>
-        <button class="tab" data-cat="Delivery" onclick="setCategory('Delivery')">Delivery</button>
-        <button class="tab" data-cat="Enquiries" onclick="setCategory('Enquiries')">Enquiries</button>
-        <button class="tab" data-cat="Technical" onclick="setCategory('Technical')">Technical</button>
-    </div>
+    <div class="tab-bar" id="tabBar"></div>
 
     <main id="main"></main>
 
@@ -632,8 +659,9 @@ publishBtn.addEventListener('click', () => {
 // ══════════════════════════════════════════════
 // EMAIL TEMPLATES EDITOR
 // ══════════════════════════════════════════════
-const CATEGORIES = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
+const DEFAULT_CATEGORIES = ['Estimating', 'Scheduling', 'Project Progress', 'Delivery', 'Enquiries', 'Technical'];
 
+let categories = DEFAULT_CATEGORIES.slice();
 let templates = [];
 let emailExtras = [];
 let activeCategory = '';
@@ -647,6 +675,10 @@ async function loadTemplates(attempt) {
         const data = await r.json();
         templates = data.templates || [];
         emailExtras = data.extras || [];
+        categories = (data.categories && data.categories.length) ? data.categories.slice() : DEFAULT_CATEGORIES.slice();
+        // Pick up any category already in use on a template but missing from the list (legacy drift)
+        templates.forEach(t => { if (t.category && !categories.includes(t.category)) categories.push(t.category); });
+        renderCategoryTabs();
         render();
         renderEmailExtras();
     } catch (e) {
@@ -654,6 +686,7 @@ async function loadTemplates(attempt) {
             setTimeout(() => loadTemplates(attempt + 1), 1500);
         } else {
             toast('Could not load templates — make sure start-editor.bat is running.', 'err', 10000);
+            renderCategoryTabs();
             render();
             renderEmailExtras();
         }
@@ -705,6 +738,74 @@ function setCategory(cat) {
     render();
 }
 
+// ── Category tabs (add/remove on the fly) ──────────────
+function renderCategoryTabs() {
+    const bar = document.getElementById('tabBar');
+    bar.innerHTML = '';
+
+    const allBtn = document.createElement('button');
+    allBtn.className = 'tab' + (activeCategory === '' ? ' active' : '');
+    allBtn.dataset.cat = '';
+    allBtn.textContent = 'All';
+    allBtn.addEventListener('click', () => setCategory(''));
+    bar.appendChild(allBtn);
+
+    categories.forEach(cat => {
+        const wrap = document.createElement('span');
+        wrap.className = 'tab-wrap';
+
+        const btn = document.createElement('button');
+        btn.className = 'tab' + (activeCategory === cat ? ' active' : '');
+        btn.dataset.cat = cat;
+        btn.textContent = cat;
+        btn.addEventListener('click', () => setCategory(cat));
+        wrap.appendChild(btn);
+
+        const del = document.createElement('button');
+        del.className = 'tab-del';
+        del.title = 'Remove category';
+        del.textContent = '✕';
+        del.addEventListener('click', (e) => { e.stopPropagation(); deleteCategory(cat); });
+        wrap.appendChild(del);
+
+        bar.appendChild(wrap);
+    });
+
+    const addBtn = document.createElement('button');
+    addBtn.className = 'tab-add';
+    addBtn.textContent = '+ Add category';
+    addBtn.addEventListener('click', addCategory);
+    bar.appendChild(addBtn);
+}
+
+function addCategory() {
+    const name = prompt('New category name:');
+    if (name === null) return;
+    const trimmed = name.trim();
+    if (!trimmed) return;
+    if (categories.some(c => c.toLowerCase() === trimmed.toLowerCase())) {
+        toast('That category already exists', 'err', 3000);
+        return;
+    }
+    categories.push(trimmed);
+    activeCategory = trimmed;
+    renderCategoryTabs();
+    render();
+}
+
+function deleteCategory(cat) {
+    const inUse = templates.some(t => t.category === cat);
+    if (inUse) {
+        alert(`"${cat}" still has templates in it. Move or delete them first, then remove the category.`);
+        return;
+    }
+    if (!confirm(`Remove category "${cat}"?`)) return;
+    categories = categories.filter(c => c !== cat);
+    if (activeCategory === cat) activeCategory = '';
+    renderCategoryTabs();
+    render();
+}
+
 // ── Move template within its category ─────────────────
 function moveTemplate(idx, dir) {
     const cat = templates[idx].category;
@@ -733,7 +834,7 @@ function render() {
     });
 
     // Render in category order (defined + any extras)
-    const cats = [...new Set([...CATEGORIES, ...Object.keys(byCategory)])];
+    const cats = [...new Set([...categories, ...Object.keys(byCategory)])];
     cats.forEach(cat => {
         if (!byCategory[cat]) return;
         const head = document.createElement('div');
@@ -763,7 +864,7 @@ function buildCard(t, idx) {
 
     const catSel = document.createElement('select');
     catSel.className = 'cat-select';
-    CATEGORIES.forEach(c => {
+    categories.forEach(c => {
         const opt = document.createElement('option');
         opt.value = c; opt.textContent = c;
         if (c === t.category) opt.selected = true;
@@ -935,7 +1036,7 @@ function addTemplate() {
     const t = {
         id: 'template-' + Date.now(),
         name: 'New template',
-        category: activeCategory || 'Scheduling',
+        category: activeCategory || categories[0] || 'General',
         subject: '',
         body: '',
         placeholders: []
@@ -956,7 +1057,7 @@ async function publishTemplates() {
     btn.disabled = true;
     btn.textContent = 'Publishing…';
 
-    const payload = JSON.stringify({ templates, extras: emailExtras }, null, 2);
+    const payload = JSON.stringify({ categories, templates, extras: emailExtras }, null, 2);
 
     try {
         const r = await fetch('/save-templates', {
