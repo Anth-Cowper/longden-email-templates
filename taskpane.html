@@ -2104,13 +2104,29 @@
                 mainSection.classList.remove('hidden');
                 return;
             }
-            connectSection.classList.remove('hidden');
-            mainSection.classList.add('hidden');
             try {
                 const users = await dorwazeFetch('/api/auth/users');
+
+                // Auto-match against the signed-in Outlook mailbox's own address — no need
+                // to ask someone to pick their own name if it's already unambiguous.
+                const outlookEmail = (officeReady && Office.context?.mailbox?.userProfile?.emailAddress || '').toLowerCase();
+                const matched = outlookEmail && users.find(u => (u.email || '').toLowerCase() === outlookEmail);
+                if (matched) {
+                    localStorage.setItem('dorwazeUserId', String(matched.id));
+                    connectSection.classList.add('hidden');
+                    mainSection.classList.remove('hidden');
+                    return;
+                }
+
+                // No match (different address on file, or no DorWaze account) — fall back
+                // to picking manually.
+                connectSection.classList.remove('hidden');
+                mainSection.classList.add('hidden');
                 userSelect.innerHTML = '<option value="">— pick your name —</option>' +
                     users.map(u => `<option value="${u.id}">${u.name}</option>`).join('');
             } catch (err) {
+                connectSection.classList.remove('hidden');
+                mainSection.classList.add('hidden');
                 setStatus(connectStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
             }
         }
