@@ -820,7 +820,8 @@
             <button class="btn btn-primary" id="tagLoadJobsBtn">Load live jobs</button>
             <div class="status" id="tagStatus"></div>
 
-            <div id="tagJobList" style="margin-top:0.75rem"></div>
+            <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
+            <div id="tagJobList" style="margin-top:0.5rem"></div>
         </div>
     </main>
 </div>
@@ -2068,6 +2069,7 @@
         const emailSummary   = document.getElementById('tagEmailSummary');
         const loadJobsBtn    = document.getElementById('tagLoadJobsBtn');
         const tagStatus      = document.getElementById('tagStatus');
+        const stageFilter    = document.getElementById('tagStageFilter');
         const jobList        = document.getElementById('tagJobList');
 
         function setStatus(el, msg, isError) {
@@ -2144,12 +2146,12 @@
             emailSummary.innerHTML = `<strong>${item.subject || '(no subject)'}</strong><br>${from}<br>${received}`;
         }
 
-        // Cached after the first load so switching between the category list and a
-        // category's job list (and back) never needs a re-fetch.
-        let boardCache = null; // { stageOrder, byStage: Map<stage, Map<projectId, row>> }
+        // Cached after the first load so changing the category filter never needs a re-fetch.
+        let boardCache = null; // Map<stage, Map<projectId, row>>
 
         async function loadJobs() {
             jobList.innerHTML = '';
+            stageFilter.classList.add('hidden');
             setStatus(tagStatus, 'Loading live jobs…', false);
             try {
                 const { stageOrder, rows } = await dorwazeFetch('/api/board');
@@ -2158,40 +2160,28 @@
                     if (!byStage.has(r.stage)) byStage.set(r.stage, new Map());
                     byStage.get(r.stage).set(r.projectId, r); // de-dupe per project within a stage
                 });
-                boardCache = { stageOrder, byStage };
+                boardCache = byStage;
                 setStatus(tagStatus, '', false);
-                renderStageList();
+
+                // Category filter — defaults to whichever comes first in stageOrder, so the
+                // list is already narrowed down the moment jobs finish loading, not showing
+                // everything until a category gets picked.
+                const available = stageOrder.filter(stage => (byStage.get(stage) || new Map()).size);
+                stageFilter.innerHTML = available
+                    .map(stage => `<option value="${stage}">${stage} (${byStage.get(stage).size})</option>`)
+                    .join('');
+                stageFilter.classList.toggle('hidden', !available.length);
+                renderFilteredJobs();
             } catch (err) {
                 setStatus(tagStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
             }
         }
 
-        // First selection: which board category (Estimating/Orders/Scheduling/…) — so
-        // there's a short list of categories to scan instead of every live job at once.
-        function renderStageList() {
-            const { stageOrder, byStage } = boardCache;
+        // Re-renders just the jobs in whichever category is currently selected in the filter.
+        function renderFilteredJobs() {
+            const stage = stageFilter.value;
+            const projects = [...(boardCache?.get(stage) || new Map()).values()];
             let html = '';
-            stageOrder.forEach(stage => {
-                const count = (byStage.get(stage) || new Map()).size;
-                if (!count) return;
-                html += `<button type="button" class="stage-pick-btn" data-stage="${stage}"
-                    style="display:flex;justify-content:space-between;align-items:center;width:100%;
-                    text-align:left;padding:0.55rem 0.7rem;margin:0.25rem 0;border:1px solid #ddd9d0;
-                    border-radius:6px;background:white;cursor:pointer;font-size:0.85rem;font-weight:600">
-                    <span>${stage}</span><span style="color:#888;font-weight:400">${count}</span>
-                </button>`;
-            });
-            jobList.innerHTML = html || '<p style="color:#888">No live jobs found.</p>';
-            jobList.querySelectorAll('.stage-pick-btn').forEach(btn => {
-                btn.addEventListener('click', () => renderJobList(btn.dataset.stage));
-            });
-        }
-
-        // Second selection: the jobs within one chosen category.
-        function renderJobList(stage) {
-            const projects = [...(boardCache.byStage.get(stage) || new Map()).values()];
-            let html = `<button type="button" id="tagBackToStages" class="back-btn" style="margin-bottom:0.4rem">← Categories</button>
-                <div class="field-label" style="margin-bottom:0.3rem">${stage}</div>`;
             projects.forEach(p => {
                 html += `<button type="button" class="job-pick-btn" data-project-id="${p.projectId}"
                     style="display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;margin:0.2rem 0;
@@ -2199,12 +2189,13 @@
                     <strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}
                 </button>`;
             });
-            jobList.innerHTML = html;
-            document.getElementById('tagBackToStages').addEventListener('click', renderStageList);
+            jobList.innerHTML = html || '<p style="color:#888">No live jobs in this category.</p>';
             jobList.querySelectorAll('.job-pick-btn').forEach(btn => {
                 btn.addEventListener('click', () => tagToProject(Number(btn.dataset.projectId), btn));
             });
         }
+
+        stageFilter.addEventListener('change', renderFilteredJobs);
 
         function tagToProject(projectId, btn) {
             if (!officeReady || !Office.context?.mailbox?.item) {
