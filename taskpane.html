@@ -817,21 +817,25 @@
             <div class="field-label">Selected email</div>
             <div id="tagEmailSummary" style="padding:0.5rem 0 0.9rem;font-size:0.85rem;color:#333;line-height:1.4"></div>
 
-            <button class="btn btn-primary" id="tagLoadJobsBtn">Load live jobs</button>
-            <div class="status" id="tagStatus"></div>
+            <!-- Sticky control group — stays visible while the job list below scrolls, so
+                 these three controls are never pushed out of view by a long list. -->
+            <div style="position:sticky;top:0;background:#f0f0ec;padding-bottom:0.6rem;z-index:1;border-bottom:1px solid #ddd9d0;margin-bottom:0.6rem">
+                <button class="btn btn-primary" id="tagLoadJobsBtn">Load live jobs</button>
+                <div class="status" id="tagStatus"></div>
+                <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
+                <button class="btn btn-primary" id="tagManualToggleBtn" type="button" style="margin-top:0.6rem">
+                    Or type a project number if not a live job
+                </button>
+            </div>
 
-            <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
-            <div id="tagJobList" style="margin-top:0.5rem"></div>
-
-            <button class="btn btn-secondary" id="tagManualToggleBtn" type="button" style="margin-top:0.6rem">
-                Or type a project number if not a live job
-            </button>
-            <div id="tagManualSection" class="hidden" style="margin-top:0.5rem">
+            <div id="tagManualSection" class="hidden" style="margin-bottom:0.5rem">
                 <input type="text" class="text-input" id="tagManualJobNumber" placeholder="e.g. 117622">
                 <button class="btn btn-primary" id="tagManualFindBtn" type="button" style="margin-top:0.4rem">Find job</button>
                 <div class="status" id="tagManualStatus"></div>
                 <div id="tagManualResult" style="margin-top:0.5rem"></div>
             </div>
+
+            <div id="tagJobList"></div>
         </div>
     </main>
 </div>
@@ -2246,11 +2250,11 @@
                 boardCache = byStage;
                 setStatus(tagStatus, '', false);
 
-                // Category filter — defaults to whichever comes first in stageOrder, so the
-                // list is already narrowed down the moment jobs finish loading, not showing
-                // everything until a category gets picked.
+                // Category filter — defaults to an unselected placeholder, so nothing shows
+                // until a category is actually chosen (rather than dumping the first stage's
+                // full list, which can be over a hundred jobs, in front of you immediately).
                 const available = stageOrder.filter(stage => (byStage.get(stage) || new Map()).size);
-                stageFilter.innerHTML = available
+                stageFilter.innerHTML = '<option value="">— choose a category —</option>' + available
                     .map(stage => `<option value="${stage}">${stage} (${byStage.get(stage).size})</option>`)
                     .join('');
                 stageFilter.classList.toggle('hidden', !available.length);
@@ -2263,6 +2267,10 @@
         // Re-renders just the jobs in whichever category is currently selected in the filter.
         function renderFilteredJobs() {
             const stage = stageFilter.value;
+            if (!stage) {
+                jobList.innerHTML = '<p style="color:#888">Choose a category above to see its jobs.</p>';
+                return;
+            }
             const projects = [...(boardCache?.get(stage) || new Map()).values()];
             let html = '';
             projects.forEach(p => {
