@@ -2119,7 +2119,9 @@
             }
             if (!res.ok) {
                 const body = await res.json().catch(() => ({}));
-                throw new Error(body.error || `Request failed (${res.status})`);
+                const error = new Error(body.error || `Request failed (${res.status})`);
+                error.status = res.status;
+                throw error;
             }
             return res.json();
         }
@@ -2237,18 +2239,24 @@
             try {
                 const p = await dorwazeFetch(`/api/projects/by-job-number/${encodeURIComponent(jobNumber)}`);
                 setStatus(manualStatus, '', false);
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.className = 'job-pick-btn';
-                btn.dataset.projectId = p.projectId;
-                btn.style.cssText = 'display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;' +
-                    'margin:0.2rem 0;border:1px solid #ddd9d0;border-radius:6px;background:white;' +
-                    'cursor:pointer;font-size:0.82rem';
-                btn.innerHTML = `<strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}`;
-                btn.addEventListener('click', () => tagToProject(p.projectId, btn));
-                manualResult.appendChild(btn);
+
+                // A typed number is more error-prone than picking from a known list, so
+                // confirm the actual project/client name rather than tagging on first click.
+                const clientLine = p.companyName ? ` (client: "${p.companyName}")` : '';
+                manualResult.innerHTML = `
+                    <div style="padding:0.5rem 0.6rem;border:1px solid #ddd9d0;border-radius:6px;background:#f7f5f0">
+                        <div style="margin-bottom:0.5rem">
+                            Add this email to job ${p.jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?
+                        </div>
+                        <button type="button" class="btn btn-primary" id="tagManualConfirmYes" style="margin-right:0.4rem">Yes, tag it</button>
+                        <button type="button" class="btn btn-secondary" id="tagManualConfirmNo">Cancel</button>
+                    </div>`;
+                document.getElementById('tagManualConfirmYes').addEventListener('click', (e) => tagToProject(p.projectId, e.target));
+                document.getElementById('tagManualConfirmNo').addEventListener('click', () => { manualResult.innerHTML = ''; });
             } catch (err) {
-                setStatus(manualStatus, err.message, true);
+                setStatus(manualStatus, err.status === 404
+                    ? `No project found with job number "${jobNumber}".`
+                    : err.message, true);
             }
         }
 
