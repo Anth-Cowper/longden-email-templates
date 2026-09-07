@@ -2173,19 +2173,27 @@
         // means this pane can stay open across selection changes rather than reopening fresh.
         let selectedEmails = [];
 
+        let selectionDebugNote = null; // surfaced in the panel instead of only the console, so a
+                                        // real-Outlook failure is diagnosable from a screenshot alone.
+
         function refreshSelection() {
             if (!officeReady || !Office.context?.mailbox?.getSelectedItemsAsync) {
+                selectionDebugNote = 'getSelectedItemsAsync not available on this host.';
                 selectedEmails = [];
                 renderEmailSummary();
                 return;
             }
             Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
                 if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                    console.error('getSelectedItemsAsync failed:', asyncResult.error.message);
+                    selectionDebugNote = `getSelectedItemsAsync failed: ${asyncResult.error.message}`;
                     selectedEmails = [];
                 } else {
+                    const raw = asyncResult.value || [];
                     const messageType = Office.MailboxEnums?.ItemType?.Message ?? 'message';
-                    selectedEmails = (asyncResult.value || []).filter((it) => it.itemType === messageType);
+                    selectedEmails = raw.filter((it) => it.itemType === messageType);
+                    selectionDebugNote = raw.length && !selectedEmails.length
+                        ? `Saw ${raw.length} selected item(s) but none matched the expected type (itemType: ${[...new Set(raw.map(r => r.itemType))].join(', ')}).`
+                        : null;
                 }
                 renderEmailSummary();
             });
@@ -2198,6 +2206,9 @@
                 emailSummary.innerHTML = `<strong>${selectedEmails[0].subject || '(no subject)'}</strong>`;
             } else {
                 emailSummary.innerHTML = `<strong>${selectedEmails.length} emails selected</strong>`;
+            }
+            if (selectionDebugNote) {
+                emailSummary.innerHTML += `<br><span style="color:#dc2626;font-size:0.75rem">${selectionDebugNote}</span>`;
             }
         }
 
@@ -2387,8 +2398,16 @@
                 // selection changes (only meaningful once SupportsNoItemContext/multi-select
                 // is active — a no-op call is harmless otherwise).
                 if (Office.context.mailbox?.addHandlerAsync) {
-                    Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, refreshSelection, () => {});
+                    Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, refreshSelection, (result) => {
+                        if (result.status === Office.AsyncResultStatus.Failed) {
+                            selectionDebugNote = `Couldn't watch for selection changes: ${result.error.message}`;
+                            renderEmailSummary();
+                        }
+                    });
+                } else {
+                    selectionDebugNote = 'addHandlerAsync not available on this host — selection changes while the pane is open won’t be picked up automatically; reopen the pane after selecting.';
                 }
+                refreshSelection();
             });
         }
     })();
