@@ -822,6 +822,16 @@
 
             <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
             <div id="tagJobList" style="margin-top:0.5rem"></div>
+
+            <button class="btn btn-secondary" id="tagManualToggleBtn" type="button" style="margin-top:0.6rem">
+                Or type a project number if not a live job
+            </button>
+            <div id="tagManualSection" class="hidden" style="margin-top:0.5rem">
+                <input type="text" class="text-input" id="tagManualJobNumber" placeholder="e.g. 117622">
+                <button class="btn btn-primary" id="tagManualFindBtn" type="button" style="margin-top:0.4rem">Find job</button>
+                <div class="status" id="tagManualStatus"></div>
+                <div id="tagManualResult" style="margin-top:0.5rem"></div>
+            </div>
         </div>
     </main>
 </div>
@@ -2071,6 +2081,12 @@
         const tagStatus      = document.getElementById('tagStatus');
         const stageFilter    = document.getElementById('tagStageFilter');
         const jobList        = document.getElementById('tagJobList');
+        const manualToggleBtn = document.getElementById('tagManualToggleBtn');
+        const manualSection   = document.getElementById('tagManualSection');
+        const manualJobNumber = document.getElementById('tagManualJobNumber');
+        const manualFindBtn   = document.getElementById('tagManualFindBtn');
+        const manualStatus    = document.getElementById('tagManualStatus');
+        const manualResult    = document.getElementById('tagManualResult');
 
         function setStatus(el, msg, isError) {
             el.textContent = msg;
@@ -2084,18 +2100,26 @@
         // without a dedicated Office.js API for "how was this pane opened".
         function isReadModeItem(item) { return !!item && typeof item.subject === 'string'; }
 
+        // Distinguishes "DorWaze isn't reachable at all" (the fetch itself failed) from a
+        // real HTTP-level error DorWaze returned on purpose (404 "no project found", etc.) —
+        // every caller can just show err.message as-is, already worded appropriately either way.
         async function dorwazeFetch(path, options = {}) {
-            const res = await fetch(DORWAZE_BASE + path, {
-                ...options,
-                headers: {
-                    'Content-Type': 'application/json',
-                    'x-user-id': dorwazeUserId() || '',
-                    ...(options.headers || {}),
-                },
-            });
+            let res;
+            try {
+                res = await fetch(DORWAZE_BASE + path, {
+                    ...options,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-user-id': dorwazeUserId() || '',
+                        ...(options.headers || {}),
+                    },
+                });
+            } catch (err) {
+                throw new Error(`Couldn't reach DorWaze — is it running? (${err.message})`);
+            }
             if (!res.ok) {
                 const body = await res.json().catch(() => ({}));
-                throw new Error(body.error || `request failed (${res.status})`);
+                throw new Error(body.error || `Request failed (${res.status})`);
             }
             return res.json();
         }
@@ -2129,7 +2153,7 @@
             } catch (err) {
                 connectSection.classList.remove('hidden');
                 mainSection.classList.add('hidden');
-                setStatus(connectStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
+                setStatus(connectStatus, err.message, true);
             }
         }
 
@@ -2173,7 +2197,7 @@
                 stageFilter.classList.toggle('hidden', !available.length);
                 renderFilteredJobs();
             } catch (err) {
-                setStatus(tagStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
+                setStatus(tagStatus, err.message, true);
             }
         }
 
@@ -2196,6 +2220,40 @@
         }
 
         stageFilter.addEventListener('change', renderFilteredJobs);
+
+        // Manual entry — for a job that's already closed/complete and has dropped off the
+        // live board entirely (buildBoardRows() drops order_complete projects outright), so
+        // it could never show up in the "Load live jobs" list no matter which category.
+        manualToggleBtn.addEventListener('click', () => {
+            manualSection.classList.toggle('hidden');
+            if (!manualSection.classList.contains('hidden')) manualJobNumber.focus();
+        });
+
+        async function findManualJob() {
+            const jobNumber = manualJobNumber.value.trim();
+            manualResult.innerHTML = '';
+            if (!jobNumber) return;
+            setStatus(manualStatus, 'Looking up…', false);
+            try {
+                const p = await dorwazeFetch(`/api/projects/by-job-number/${encodeURIComponent(jobNumber)}`);
+                setStatus(manualStatus, '', false);
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'job-pick-btn';
+                btn.dataset.projectId = p.projectId;
+                btn.style.cssText = 'display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;' +
+                    'margin:0.2rem 0;border:1px solid #ddd9d0;border-radius:6px;background:white;' +
+                    'cursor:pointer;font-size:0.82rem';
+                btn.innerHTML = `<strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}`;
+                btn.addEventListener('click', () => tagToProject(p.projectId, btn));
+                manualResult.appendChild(btn);
+            } catch (err) {
+                setStatus(manualStatus, err.message, true);
+            }
+        }
+
+        manualFindBtn.addEventListener('click', findManualJob);
+        manualJobNumber.addEventListener('keydown', (e) => { if (e.key === 'Enter') findManualJob(); });
 
         function tagToProject(projectId, btn) {
             if (!officeReady || !Office.context?.mailbox?.item) {
