@@ -2176,7 +2176,13 @@
         let selectionDebugNote = null; // surfaced in the panel instead of only the console, so a
                                         // real-Outlook failure is diagnosable from a screenshot alone.
 
+        // Distinguishes "the callback never fired at all" (hung/unsupported call) from "it
+        // fired and genuinely found nothing" — both otherwise look identical from outside.
+        let refreshCallCount = 0;
+        let refreshReturnedCount = 0;
+
         function refreshSelection() {
+            refreshCallCount++;
             if (!officeReady || !Office.context?.mailbox?.getSelectedItemsAsync) {
                 selectionDebugNote = 'getSelectedItemsAsync not available on this host.';
                 selectedEmails = [];
@@ -2184,6 +2190,7 @@
                 return;
             }
             Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
+                refreshReturnedCount++;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     selectionDebugNote = `getSelectedItemsAsync failed: ${asyncResult.error.message}`;
                     selectedEmails = [];
@@ -2210,6 +2217,13 @@
             if (selectionDebugNote) {
                 emailSummary.innerHTML += `<br><span style="color:#dc2626;font-size:0.75rem">${selectionDebugNote}</span>`;
             }
+            // Always visible once at least one check has actually completed — tells apart
+            // "checked and found nothing" from "the check never ran/returned at all", which
+            // otherwise look identical from the panel alone.
+            const checkNote = refreshReturnedCount
+                ? `checked ${refreshReturnedCount}/${refreshCallCount} time(s)`
+                : refreshCallCount ? `called ${refreshCallCount} time(s), no response yet` : 'not yet called';
+            emailSummary.innerHTML += `<br><span style="color:#999;font-size:0.7rem">(${checkNote})</span>`;
         }
 
         // Cached after the first load so changing the category filter never needs a re-fetch.
