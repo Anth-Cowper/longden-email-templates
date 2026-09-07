@@ -581,6 +581,7 @@
 <div class="tool-tabs">
     <button class="tool-tab active" id="toolTabEmail">Email Templates</button>
     <button class="tool-tab" id="toolTabLeadTime">Lead Time Tool</button>
+    <button class="tool-tab" id="toolTabTag">Tag to Job</button>
 </div>
 
 <!-- ══════════════════════════════════════════════
@@ -800,29 +801,47 @@
 
 </div>
 
+<!-- ══════════════════════════════════════════════
+     TOOL 3 — TAG TO JOB
+══════════════════════════════════════════════ -->
+<div id="panelTag" class="tool-panel">
+    <main>
+        <div id="tagConnectSection" class="hidden">
+            <div class="field-label">Connect your DorWaze account</div>
+            <select class="cat-select" id="tagUserSelect"><option value="">— pick your name —</option></select>
+            <button class="btn btn-primary" id="tagConnectBtn" style="margin-top:0.5rem">Connect</button>
+            <div class="status" id="tagConnectStatus"></div>
+        </div>
+
+        <div id="tagMainSection" class="hidden">
+            <div class="field-label">Selected email</div>
+            <div id="tagEmailSummary" style="padding:0.5rem 0 0.9rem;font-size:0.85rem;color:#333;line-height:1.4"></div>
+
+            <button class="btn btn-primary" id="tagLoadJobsBtn">Load live jobs</button>
+            <div class="status" id="tagStatus"></div>
+
+            <div id="tagJobList" style="margin-top:0.75rem"></div>
+        </div>
+    </main>
+</div>
+
 <script>
     // ── Top-level tool switcher ────────────────────────────
     (function () {
-        const toolTabEmail    = document.getElementById('toolTabEmail');
-        const toolTabLeadTime = document.getElementById('toolTabLeadTime');
-        const panelEmail      = document.getElementById('panelEmail');
-        const panelLeadTime   = document.getElementById('panelLeadTime');
-        const subtitle        = document.getElementById('headerSubtitle');
+        const tabs = [
+            { tab: document.getElementById('toolTabEmail'),    panel: document.getElementById('panelEmail'),    label: 'Email Templates' },
+            { tab: document.getElementById('toolTabLeadTime'), panel: document.getElementById('panelLeadTime'), label: 'Lead Time Tool' },
+            { tab: document.getElementById('toolTabTag'),       panel: document.getElementById('panelTag'),       label: 'Tag to Job' },
+        ];
+        const subtitle = document.getElementById('headerSubtitle');
 
-        toolTabEmail.addEventListener('click', () => {
-            toolTabEmail.classList.add('active');
-            toolTabLeadTime.classList.remove('active');
-            panelEmail.classList.add('active');
-            panelLeadTime.classList.remove('active');
-            subtitle.textContent = 'Email Templates';
-        });
-
-        toolTabLeadTime.addEventListener('click', () => {
-            toolTabLeadTime.classList.add('active');
-            toolTabEmail.classList.remove('active');
-            panelLeadTime.classList.add('active');
-            panelEmail.classList.remove('active');
-            subtitle.textContent = 'Lead Time Tool';
+        tabs.forEach(({ tab, panel, label }) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => { t.tab.classList.remove('active'); t.panel.classList.remove('active'); });
+                tab.classList.add('active');
+                panel.classList.add('active');
+                subtitle.textContent = label;
+            });
         });
     })();
 
@@ -2030,6 +2049,184 @@
         }
 
         loadTemplates();
+    })();
+
+    // ══════════════════════════════════════════════
+    // TAG TO JOB TOOL — files a received email (no job number in its subject, so the
+    // background matcher.js/mailIndexer.js poller never catches it) straight into a
+    // project's correspondence via DorWaze's POST /api/correspondence/manual-tag.
+    // ══════════════════════════════════════════════
+    (function () {
+        const DORWAZE_BASE = 'http://localhost:4310';
+        let officeReady = false;
+
+        const connectSection = document.getElementById('tagConnectSection');
+        const mainSection    = document.getElementById('tagMainSection');
+        const userSelect     = document.getElementById('tagUserSelect');
+        const connectBtn     = document.getElementById('tagConnectBtn');
+        const connectStatus  = document.getElementById('tagConnectStatus');
+        const emailSummary   = document.getElementById('tagEmailSummary');
+        const loadJobsBtn    = document.getElementById('tagLoadJobsBtn');
+        const tagStatus      = document.getElementById('tagStatus');
+        const jobList        = document.getElementById('tagJobList');
+
+        function setStatus(el, msg, isError) {
+            el.textContent = msg;
+            el.style.color = isError ? '#dc2626' : '#15803d';
+        }
+
+        function dorwazeUserId() { return localStorage.getItem('dorwazeUserId'); }
+
+        // Read-mode items expose `subject` as a plain string; compose-mode items expose it
+        // as an object with getAsync/setAsync — cheap, reliable way to tell the two apart
+        // without a dedicated Office.js API for "how was this pane opened".
+        function isReadModeItem(item) { return !!item && typeof item.subject === 'string'; }
+
+        async function dorwazeFetch(path, options = {}) {
+            const res = await fetch(DORWAZE_BASE + path, {
+                ...options,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-user-id': dorwazeUserId() || '',
+                    ...(options.headers || {}),
+                },
+            });
+            if (!res.ok) {
+                const body = await res.json().catch(() => ({}));
+                throw new Error(body.error || `request failed (${res.status})`);
+            }
+            return res.json();
+        }
+
+        async function ensureConnected() {
+            if (dorwazeUserId()) {
+                connectSection.classList.add('hidden');
+                mainSection.classList.remove('hidden');
+                return;
+            }
+            connectSection.classList.remove('hidden');
+            mainSection.classList.add('hidden');
+            try {
+                const users = await dorwazeFetch('/api/auth/users');
+                userSelect.innerHTML = '<option value="">— pick your name —</option>' +
+                    users.map(u => `<option value="${u.id}">${u.name}</option>`).join('');
+            } catch (err) {
+                setStatus(connectStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
+            }
+        }
+
+        connectBtn.addEventListener('click', () => {
+            if (!userSelect.value) return;
+            localStorage.setItem('dorwazeUserId', userSelect.value);
+            connectSection.classList.add('hidden');
+            mainSection.classList.remove('hidden');
+        });
+
+        function renderEmailSummary(item) {
+            const from = item.from ? `${item.from.displayName} &lt;${item.from.emailAddress}&gt;` : '(unknown sender)';
+            const received = item.dateTimeCreated ? new Date(item.dateTimeCreated).toLocaleString() : '';
+            emailSummary.innerHTML = `<strong>${item.subject || '(no subject)'}</strong><br>${from}<br>${received}`;
+        }
+
+        async function loadJobs() {
+            jobList.innerHTML = '';
+            setStatus(tagStatus, 'Loading live jobs…', false);
+            try {
+                const { stageOrder, rows } = await dorwazeFetch('/api/board');
+                const byStage = new Map();
+                rows.forEach(r => {
+                    if (!byStage.has(r.stage)) byStage.set(r.stage, new Map());
+                    byStage.get(r.stage).set(r.projectId, r); // de-dupe per project within a stage
+                });
+
+                let html = '';
+                stageOrder.forEach(stage => {
+                    const projects = [...(byStage.get(stage) || new Map()).values()];
+                    if (!projects.length) return;
+                    html += `<div class="field-label" style="margin-top:0.6rem">${stage}</div>`;
+                    projects.forEach(p => {
+                        html += `<button type="button" class="job-pick-btn" data-project-id="${p.projectId}"
+                            style="display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;margin:0.2rem 0;
+                            border:1px solid #ddd9d0;border-radius:6px;background:white;cursor:pointer;font-size:0.82rem">
+                            <strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}
+                        </button>`;
+                    });
+                });
+                jobList.innerHTML = html || '<p style="color:#888">No live jobs found.</p>';
+                setStatus(tagStatus, '', false);
+
+                jobList.querySelectorAll('.job-pick-btn').forEach(btn => {
+                    btn.addEventListener('click', () => tagToProject(Number(btn.dataset.projectId), btn));
+                });
+            } catch (err) {
+                setStatus(tagStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
+            }
+        }
+
+        function tagToProject(projectId, btn) {
+            if (!officeReady || !Office.context?.mailbox?.item) {
+                setStatus(tagStatus, 'Open or select an email first.', true);
+                return;
+            }
+            const item = Office.context.mailbox.item;
+            btn.disabled = true;
+
+            item.body.getAsync(Office.CoercionType.Text, async (bodyResult) => {
+                const bodyPreview = bodyResult.status === Office.AsyncResultStatus.Succeeded
+                    ? bodyResult.value.slice(0, 500)
+                    : null;
+
+                try {
+                    const result = await dorwazeFetch('/api/correspondence/manual-tag', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            projectId,
+                            internetMessageId: item.internetMessageId,
+                            mailbox: Office.context.mailbox.userProfile.emailAddress,
+                            subject: item.subject,
+                            fromAddress: item.from?.emailAddress ?? null,
+                            fromName: item.from?.displayName ?? null,
+                            toAddresses: (item.to || []).map(r => r.emailAddress),
+                            ccAddresses: (item.cc || []).map(r => r.emailAddress),
+                            receivedAt: item.dateTimeCreated ? item.dateTimeCreated.toISOString() : null,
+                            sentAt: null,
+                            bodyPreview,
+                            hasAttachments: !!item.hasAttachments,
+                            webLink: null,
+                        }),
+                    });
+                    setStatus(tagStatus, `Tagged to ${result.jobNumber}.`, false);
+                    jobList.innerHTML = '';
+                } catch (err) {
+                    setStatus(tagStatus, `Tagging failed: ${err.message}`, true);
+                    btn.disabled = false;
+                }
+            });
+        }
+
+        loadJobsBtn.addEventListener('click', loadJobs);
+
+        document.getElementById('toolTabTag').addEventListener('click', () => {
+            ensureConnected();
+            if (officeReady && Office.context?.mailbox?.item) {
+                renderEmailSummary(Office.context.mailbox.item);
+            } else {
+                emailSummary.textContent = 'Open or select an email to tag it.';
+            }
+        });
+
+        if (typeof Office !== 'undefined') {
+            Office.onReady(() => {
+                officeReady = true;
+                // Opened via the Read-surface "Longden Toolkit" button (as opposed to the
+                // Compose-surface "Email Templates" button) — jump straight to this tab
+                // rather than leaving Email Templates showing for a message with nothing to
+                // insert into.
+                if (isReadModeItem(Office.context.mailbox?.item)) {
+                    document.getElementById('toolTabTag').click();
+                }
+            });
+        }
     })();
 </script>
 
