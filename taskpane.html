@@ -2196,8 +2196,11 @@
                     selectedEmails = [];
                 } else {
                     const raw = asyncResult.value || [];
-                    const messageType = Office.MailboxEnums?.ItemType?.Message ?? 'message';
-                    selectedEmails = raw.filter((it) => it.itemType === messageType);
+                    // Confirmed via real-device testing: itemType actually comes back as
+                    // "Message" (capital M) here, not the lowercase "message" the docs implied
+                    // (and not necessarily matching Office.MailboxEnums.ItemType.Message either)
+                    // — compare case-insensitively rather than trust either assumption.
+                    selectedEmails = raw.filter((it) => (it.itemType || '').toLowerCase() === 'message');
                     selectionDebugNote = raw.length && !selectedEmails.length
                         ? `Saw ${raw.length} selected item(s) but none matched the expected type (itemType: ${[...new Set(raw.map(r => r.itemType))].join(', ')}).`
                         : null;
