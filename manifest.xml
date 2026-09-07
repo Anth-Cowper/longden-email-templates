@@ -5,7 +5,7 @@
            xsi:type="MailApp">
 
   <Id>7c4e8b2a-f1d3-4a9e-8b5c-2d6f0e1a3b7c</Id>
-  <Version>1.2.0.0</Version>
+  <Version>1.2.1.0</Version>
   <ProviderName>Longden Doors</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Email Templates"/>
