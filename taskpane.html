@@ -2095,10 +2095,11 @@
 
         function dorwazeUserId() { return localStorage.getItem('dorwazeUserId'); }
 
-        // Read-mode items expose `subject` as a plain string; compose-mode items expose it
-        // as an object with getAsync/setAsync — cheap, reliable way to tell the two apart
-        // without a dedicated Office.js API for "how was this pane opened".
-        function isReadModeItem(item) { return !!item && typeof item.subject === 'string'; }
+        // Compose-mode items expose `subject` as an object with getAsync/setAsync; read-mode
+        // items (and the no-item/multi-select case, where there's no single "current" item at
+        // all) don't — cheap, reliable way to tell "should this pane default to the Tag to Job
+        // tab" apart from "opened via the Compose-surface Email Templates button".
+        function isComposeModeItem(item) { return !!item && typeof item.subject !== 'string'; }
 
         // Distinguishes "DorWaze isn't reachable at all" (the fetch itself failed) from a
         // real HTTP-level error DorWaze returned on purpose (404 "no project found", etc.) —
@@ -2166,10 +2167,38 @@
             mainSection.classList.remove('hidden');
         });
 
-        function renderEmailSummary(item) {
-            const from = item.from ? `${item.from.displayName} &lt;${item.from.emailAddress}&gt;` : '(unknown sender)';
-            const received = item.dateTimeCreated ? new Date(item.dateTimeCreated).toLocaleString() : '';
-            emailSummary.innerHTML = `<strong>${item.subject || '(no subject)'}</strong><br>${from}<br>${received}`;
+        // The currently selected message(s) — one entry whether a single email is open in its
+        // own reading view or several are selected in the list, refreshed whenever the
+        // selection changes (Office.EventType.SelectedItemsChanged) since SupportsNoItemContext
+        // means this pane can stay open across selection changes rather than reopening fresh.
+        let selectedEmails = [];
+
+        function refreshSelection() {
+            if (!officeReady || !Office.context?.mailbox?.getSelectedItemsAsync) {
+                selectedEmails = [];
+                renderEmailSummary();
+                return;
+            }
+            Office.context.mailbox.getSelectedItemsAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    console.error('getSelectedItemsAsync failed:', asyncResult.error.message);
+                    selectedEmails = [];
+                } else {
+                    const messageType = Office.MailboxEnums?.ItemType?.Message ?? 'message';
+                    selectedEmails = (asyncResult.value || []).filter((it) => it.itemType === messageType);
+                }
+                renderEmailSummary();
+            });
+        }
+
+        function renderEmailSummary() {
+            if (!selectedEmails.length) {
+                emailSummary.textContent = 'Select one or more emails to tag them.';
+            } else if (selectedEmails.length === 1) {
+                emailSummary.innerHTML = `<strong>${selectedEmails[0].subject || '(no subject)'}</strong>`;
+            } else {
+                emailSummary.innerHTML = `<strong>${selectedEmails.length} emails selected</strong>`;
+            }
         }
 
         // Cached after the first load so changing the category filter never needs a re-fetch.
@@ -2263,67 +2292,102 @@
         manualFindBtn.addEventListener('click', findManualJob);
         manualJobNumber.addEventListener('keydown', (e) => { if (e.key === 'Enter') findManualJob(); });
 
-        function tagToProject(projectId, btn) {
-            if (!officeReady || !Office.context?.mailbox?.item) {
-                setStatus(tagStatus, 'Open or select an email first.', true);
+        // Loads one selected message fully (from/body — properties getSelectedItemsAsync
+        // doesn't provide), posts the tag, then unloads it before the next one. Sequential by
+        // design: loadItemByIdAsync only ever processes one selected message at a time, and
+        // unloadAsync must complete before loading another (see Microsoft's item-multi-select
+        // guide) — a Promise.all here would just error on the second item.
+        function tagOneEmail(email, projectId) {
+            return new Promise((resolve, reject) => {
+                Office.context.mailbox.loadItemByIdAsync(email.itemId, (loadResult) => {
+                    if (loadResult.status === Office.AsyncResultStatus.Failed) {
+                        reject(new Error(loadResult.error.message));
+                        return;
+                    }
+                    const loadedItem = loadResult.value;
+                    const finish = (err) => {
+                        loadedItem.unloadAsync(() => (err ? reject(err) : resolve()));
+                    };
+                    loadedItem.body.getAsync(Office.CoercionType.Text, (bodyResult) => {
+                        const bodyPreview = bodyResult.status === Office.AsyncResultStatus.Succeeded
+                            ? bodyResult.value.slice(0, 500)
+                            : null;
+                        dorwazeFetch('/api/correspondence/manual-tag', {
+                            method: 'POST',
+                            body: JSON.stringify({
+                                projectId,
+                                internetMessageId: email.internetMessageId,
+                                mailbox: Office.context.mailbox.userProfile.emailAddress,
+                                subject: email.subject,
+                                fromAddress: loadedItem.from?.emailAddress ?? null,
+                                fromName: loadedItem.from?.displayName ?? null,
+                                toAddresses: (loadedItem.to || []).map((r) => r.emailAddress),
+                                ccAddresses: (loadedItem.cc || []).map((r) => r.emailAddress),
+                                receivedAt: loadedItem.dateTimeCreated ? loadedItem.dateTimeCreated.toISOString() : null,
+                                sentAt: null,
+                                bodyPreview,
+                                hasAttachments: !!email.hasAttachments,
+                                webLink: null,
+                            }),
+                        }).then(() => finish(null)).catch(finish);
+                    });
+                });
+            });
+        }
+
+        async function tagToProject(projectId, btn) {
+            if (!officeReady || !selectedEmails.length) {
+                setStatus(tagStatus, 'Select one or more emails first.', true);
                 return;
             }
-            const item = Office.context.mailbox.item;
             btn.disabled = true;
+            const total = selectedEmails.length;
+            setStatus(tagStatus, total > 1 ? `Tagging ${total} emails…` : 'Tagging…', false);
 
-            item.body.getAsync(Office.CoercionType.Text, async (bodyResult) => {
-                const bodyPreview = bodyResult.status === Office.AsyncResultStatus.Succeeded
-                    ? bodyResult.value.slice(0, 500)
-                    : null;
-
+            let tagged = 0;
+            let lastJobNumber = null;
+            const failures = [];
+            for (const email of selectedEmails) {
                 try {
-                    const result = await dorwazeFetch('/api/correspondence/manual-tag', {
-                        method: 'POST',
-                        body: JSON.stringify({
-                            projectId,
-                            internetMessageId: item.internetMessageId,
-                            mailbox: Office.context.mailbox.userProfile.emailAddress,
-                            subject: item.subject,
-                            fromAddress: item.from?.emailAddress ?? null,
-                            fromName: item.from?.displayName ?? null,
-                            toAddresses: (item.to || []).map(r => r.emailAddress),
-                            ccAddresses: (item.cc || []).map(r => r.emailAddress),
-                            receivedAt: item.dateTimeCreated ? item.dateTimeCreated.toISOString() : null,
-                            sentAt: null,
-                            bodyPreview,
-                            hasAttachments: !!item.hasAttachments,
-                            webLink: null,
-                        }),
-                    });
-                    setStatus(tagStatus, `Tagged to ${result.jobNumber}.`, false);
-                    jobList.innerHTML = '';
+                    await tagOneEmail(email, projectId);
+                    tagged++;
                 } catch (err) {
-                    setStatus(tagStatus, `Tagging failed: ${err.message}`, true);
-                    btn.disabled = false;
+                    failures.push(`${email.subject || '(no subject)'}: ${err.message}`);
                 }
-            });
+            }
+
+            if (!failures.length) {
+                setStatus(tagStatus, total > 1 ? `Tagged ${tagged} emails.` : 'Tagged.', false);
+                jobList.innerHTML = '';
+                manualResult.innerHTML = '';
+            } else {
+                setStatus(tagStatus, `Tagged ${tagged}/${total} — failed: ${failures.join('; ')}`, true);
+                btn.disabled = false;
+            }
         }
 
         loadJobsBtn.addEventListener('click', loadJobs);
 
         document.getElementById('toolTabTag').addEventListener('click', () => {
             ensureConnected();
-            if (officeReady && Office.context?.mailbox?.item) {
-                renderEmailSummary(Office.context.mailbox.item);
-            } else {
-                emailSummary.textContent = 'Open or select an email to tag it.';
-            }
+            refreshSelection();
         });
 
         if (typeof Office !== 'undefined') {
             Office.onReady(() => {
                 officeReady = true;
-                // Opened via the Read-surface "Longden Toolkit" button (as opposed to the
-                // Compose-surface "Email Templates" button) — jump straight to this tab
-                // rather than leaving Email Templates showing for a message with nothing to
-                // insert into.
-                if (isReadModeItem(Office.context.mailbox?.item)) {
+                // Opened via the Read-surface "Longden Toolkit" button, or with no item at all
+                // (SupportsNoItemContext) — as opposed to the Compose-surface "Email Templates"
+                // button — jump straight to this tab rather than leaving Email Templates
+                // showing for a message with nothing to insert into.
+                if (!isComposeModeItem(Office.context.mailbox?.item)) {
                     document.getElementById('toolTabTag').click();
+                }
+                // Keeps the selection summary current while the pane stays open across
+                // selection changes (only meaningful once SupportsNoItemContext/multi-select
+                // is active — a no-op call is harmless otherwise).
+                if (Office.context.mailbox?.addHandlerAsync) {
+                    Office.context.mailbox.addHandlerAsync(Office.EventType.SelectedItemsChanged, refreshSelection, () => {});
                 }
             });
         }
