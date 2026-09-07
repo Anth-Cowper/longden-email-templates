@@ -873,7 +873,7 @@
         // ── State ────────────────────────────────────────────
         let sharedTemplates = [];
         let sharedExtras    = [];
-        let activeCat       = '★ Favourites';
+        let activeCat       = ''; // '' = nothing chosen yet — shows a "choose a category" prompt
         let currentTemplate = null;
         let editingPersonalId = null;
         let officeReady     = false;
@@ -929,7 +929,12 @@
             const selectVal = isSpecial ? 'All' : activeCat;
 
             const sel = document.createElement('select');
-            sel.className = 'cat-filter-select' + (!isSpecial && activeCat !== 'All' ? ' has-value' : '');
+            sel.className = 'cat-filter-select' + (!isSpecial && activeCat !== 'All' && activeCat !== '' ? ' has-value' : '');
+            const placeholderOpt = document.createElement('option');
+            placeholderOpt.value = '';
+            placeholderOpt.textContent = '— choose a category —';
+            if (selectVal === '') placeholderOpt.selected = true;
+            sel.appendChild(placeholderOpt);
             ['All', ...orderedCats].forEach(c => {
                 const opt = document.createElement('option');
                 opt.value = c;
@@ -949,6 +954,11 @@
         function renderList() {
             const list = document.getElementById('templateList');
             list.innerHTML = '';
+
+            if (activeCat === '') {
+                list.innerHTML = '<p class="empty-msg">Choose a category above to see templates.</p>';
+                return;
+            }
 
             if (activeCat === 'Mine') {
                 renderMineList(list);
