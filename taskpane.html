@@ -2144,6 +2144,10 @@
             emailSummary.innerHTML = `<strong>${item.subject || '(no subject)'}</strong><br>${from}<br>${received}`;
         }
 
+        // Cached after the first load so switching between the category list and a
+        // category's job list (and back) never needs a re-fetch.
+        let boardCache = null; // { stageOrder, byStage: Map<stage, Map<projectId, row>> }
+
         async function loadJobs() {
             jobList.innerHTML = '';
             setStatus(tagStatus, 'Loading live jobs…', false);
@@ -2154,29 +2158,52 @@
                     if (!byStage.has(r.stage)) byStage.set(r.stage, new Map());
                     byStage.get(r.stage).set(r.projectId, r); // de-dupe per project within a stage
                 });
-
-                let html = '';
-                stageOrder.forEach(stage => {
-                    const projects = [...(byStage.get(stage) || new Map()).values()];
-                    if (!projects.length) return;
-                    html += `<div class="field-label" style="margin-top:0.6rem">${stage}</div>`;
-                    projects.forEach(p => {
-                        html += `<button type="button" class="job-pick-btn" data-project-id="${p.projectId}"
-                            style="display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;margin:0.2rem 0;
-                            border:1px solid #ddd9d0;border-radius:6px;background:white;cursor:pointer;font-size:0.82rem">
-                            <strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}
-                        </button>`;
-                    });
-                });
-                jobList.innerHTML = html || '<p style="color:#888">No live jobs found.</p>';
+                boardCache = { stageOrder, byStage };
                 setStatus(tagStatus, '', false);
-
-                jobList.querySelectorAll('.job-pick-btn').forEach(btn => {
-                    btn.addEventListener('click', () => tagToProject(Number(btn.dataset.projectId), btn));
-                });
+                renderStageList();
             } catch (err) {
                 setStatus(tagStatus, `Couldn't reach DorWaze — is it running? (${err.message})`, true);
             }
+        }
+
+        // First selection: which board category (Estimating/Orders/Scheduling/…) — so
+        // there's a short list of categories to scan instead of every live job at once.
+        function renderStageList() {
+            const { stageOrder, byStage } = boardCache;
+            let html = '';
+            stageOrder.forEach(stage => {
+                const count = (byStage.get(stage) || new Map()).size;
+                if (!count) return;
+                html += `<button type="button" class="stage-pick-btn" data-stage="${stage}"
+                    style="display:flex;justify-content:space-between;align-items:center;width:100%;
+                    text-align:left;padding:0.55rem 0.7rem;margin:0.25rem 0;border:1px solid #ddd9d0;
+                    border-radius:6px;background:white;cursor:pointer;font-size:0.85rem;font-weight:600">
+                    <span>${stage}</span><span style="color:#888;font-weight:400">${count}</span>
+                </button>`;
+            });
+            jobList.innerHTML = html || '<p style="color:#888">No live jobs found.</p>';
+            jobList.querySelectorAll('.stage-pick-btn').forEach(btn => {
+                btn.addEventListener('click', () => renderJobList(btn.dataset.stage));
+            });
+        }
+
+        // Second selection: the jobs within one chosen category.
+        function renderJobList(stage) {
+            const projects = [...(boardCache.byStage.get(stage) || new Map()).values()];
+            let html = `<button type="button" id="tagBackToStages" class="back-btn" style="margin-bottom:0.4rem">← Categories</button>
+                <div class="field-label" style="margin-bottom:0.3rem">${stage}</div>`;
+            projects.forEach(p => {
+                html += `<button type="button" class="job-pick-btn" data-project-id="${p.projectId}"
+                    style="display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;margin:0.2rem 0;
+                    border:1px solid #ddd9d0;border-radius:6px;background:white;cursor:pointer;font-size:0.82rem">
+                    <strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}
+                </button>`;
+            });
+            jobList.innerHTML = html;
+            document.getElementById('tagBackToStages').addEventListener('click', renderStageList);
+            jobList.querySelectorAll('.job-pick-btn').forEach(btn => {
+                btn.addEventListener('click', () => tagToProject(Number(btn.dataset.projectId), btn));
+            });
         }
 
         function tagToProject(projectId, btn) {
