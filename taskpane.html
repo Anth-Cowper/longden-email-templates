@@ -816,13 +816,14 @@
         <input type="text" class="text-input" id="tagJobNumberInput" placeholder="e.g. 117622" inputmode="numeric">
         <button class="btn btn-primary" id="tagDirectBtn" type="button" style="margin-top:0.4rem">Tag to this job</button>
         <div class="status" id="tagStatus"></div>
+        <div id="tagDirectResult" style="margin-top:0.5rem"></div>
 
         <!-- Optional convenience only — browse live jobs by name/company instead of typing
              the number. Only works when DorWaze happens to be reachable from this device
              (today, only Anth's own PC); degrades to a plain message otherwise, never blocks
              the input above. -->
         <div style="margin-top:1rem;padding-top:0.8rem;border-top:1px solid #ddd9d0">
-            <button class="btn btn-secondary" id="tagLoadJobsBtn" type="button">Browse live jobs by name instead</button>
+            <button class="btn btn-primary" id="tagLoadJobsBtn" type="button">Browse live jobs by name instead</button>
             <div class="status" id="tagBrowseStatus"></div>
             <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
             <div id="tagJobList"></div>
@@ -2101,6 +2102,7 @@
         const tagJobNumberInput = document.getElementById('tagJobNumberInput');
         const tagDirectBtn   = document.getElementById('tagDirectBtn');
         const tagStatus      = document.getElementById('tagStatus');
+        const tagDirectResult = document.getElementById('tagDirectResult');
         const loadJobsBtn    = document.getElementById('tagLoadJobsBtn');
         const tagBrowseStatus = document.getElementById('tagBrowseStatus');
         const stageFilter    = document.getElementById('tagStageFilter');
@@ -2291,15 +2293,56 @@
 
         stageFilter.addEventListener('change', renderFilteredJobs);
 
-        tagDirectBtn.addEventListener('click', () => {
+        // Checks the typed number is a real project before tagging — errors clearly if not,
+        // and shows the project (and client, if known) name so a typo doesn't silently tag the
+        // wrong job. This needs DorWaze reachability to actually check, same as "Browse live
+        // jobs" — if this device can't reach DorWaze at all, it degrades to tagging directly
+        // without the check rather than blocking the whole feature (matching Tag to Job's core
+        // design: it must still work with zero DorWaze reachability, see the 2026-09-08 entries
+        // in project memory for why).
+        async function findAndConfirmJob() {
             const jobNumber = tagJobNumberInput.value.trim();
+            tagDirectResult.innerHTML = '';
             if (!/^\d{6}$/.test(jobNumber)) {
                 setStatus(tagStatus, 'Enter a 6-digit job number.', true);
                 return;
             }
-            tagToProject(jobNumber, tagDirectBtn);
-        });
-        tagJobNumberInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') tagDirectBtn.click(); });
+            tagDirectBtn.disabled = true;
+            setStatus(tagStatus, 'Checking job number…', false);
+
+            const connected = await trySilentAutoMatch();
+            if (!connected) {
+                tagDirectBtn.disabled = false;
+                setStatus(tagStatus, 'Couldn’t verify the project name from this device — tagging anyway.', false);
+                await tagToProject(jobNumber, tagDirectBtn);
+                return;
+            }
+
+            try {
+                const p = await dorwazeFetch(`/api/projects/by-job-number/${encodeURIComponent(jobNumber)}`);
+                setStatus(tagStatus, '', false);
+                const clientLine = p.companyName ? ` (client: "${p.companyName}")` : '';
+                tagDirectResult.innerHTML = `
+                    <div style="padding:0.5rem 0.6rem;border:1px solid #ddd9d0;border-radius:6px;background:#f7f5f0">
+                        <div style="margin-bottom:0.5rem">
+                            Add this email to job ${p.jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?
+                        </div>
+                        <button type="button" class="btn btn-primary" id="tagDirectConfirmYes" style="margin-right:0.4rem">Yes, tag it</button>
+                        <button type="button" class="btn btn-secondary" id="tagDirectConfirmNo">Cancel</button>
+                    </div>`;
+                document.getElementById('tagDirectConfirmYes').addEventListener('click', (e) => tagToProject(jobNumber, e.target));
+                document.getElementById('tagDirectConfirmNo').addEventListener('click', () => { tagDirectResult.innerHTML = ''; });
+            } catch (err) {
+                setStatus(tagStatus, err.status === 404
+                    ? `No project found with job number "${jobNumber}".`
+                    : err.message, true);
+            } finally {
+                tagDirectBtn.disabled = false;
+            }
+        }
+
+        tagDirectBtn.addEventListener('click', findAndConfirmJob);
+        tagJobNumberInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') findAndConfirmJob(); });
 
         function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 
@@ -2412,6 +2455,7 @@
                     ? `Tagged ${tagged} emails to job ${jobNumber}`
                     : `Tagged to job ${jobNumber}`) + ' — will appear in DorWaze within about 10 seconds.', false);
                 tagJobNumberInput.value = '';
+                tagDirectResult.innerHTML = '';
                 jobList.innerHTML = '';
                 btn.disabled = false;
             } else {
