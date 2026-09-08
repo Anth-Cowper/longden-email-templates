@@ -2301,6 +2301,30 @@
         });
         tagJobNumberInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') tagDirectBtn.click(); });
 
+        // Office.js will NOT let item.categories.addAsync apply an arbitrary new category name
+        // — confirmed by a real failure (2026-09-08), "Invalid categories were provided" — a
+        // category has to already exist in the mailbox's own master category list first. This
+        // registers it there (a no-op, not an error, if it's already registered from an earlier
+        // tag) before it's ever applied to a message. Cached per session so tagging several
+        // emails to the same job in one batch doesn't re-register it every time.
+        const registeredCategories = new Set();
+        function ensureCategoryRegistered(name) {
+            if (registeredCategories.has(name)) return Promise.resolve();
+            return new Promise((resolve, reject) => {
+                Office.context.mailbox.masterCategories.addAsync(
+                    [{ displayName: name, color: Office.MailboxEnums.CategoryColor.Preset0 }],
+                    (result) => {
+                        if (result.status === Office.AsyncResultStatus.Failed) {
+                            reject(new Error(result.error.message));
+                        } else {
+                            registeredCategories.add(name);
+                            resolve();
+                        }
+                    }
+                );
+            });
+        }
+
         // Sets an Outlook category on the message (e.g. "DorWaze-117438") instead of calling
         // DorWaze directly — the background indexer (mailIndexer.js/matcher.js) picks this up
         // on its next poll (~10s) and files the email exactly like a subject-line match, no
@@ -2313,7 +2337,8 @@
         // unloadAsync must complete before loading another (see Microsoft's item-multi-select
         // guide) — a Promise.all here would just error on the second item.
         function tagOneEmail(email, jobNumber) {
-            return new Promise((resolve, reject) => {
+            const category = `DorWaze-${jobNumber}`;
+            return ensureCategoryRegistered(category).then(() => new Promise((resolve, reject) => {
                 Office.context.mailbox.loadItemByIdAsync(email.itemId, (loadResult) => {
                     if (loadResult.status === Office.AsyncResultStatus.Failed) {
                         reject(new Error(loadResult.error.message));
@@ -2323,13 +2348,13 @@
                     const finish = (err) => {
                         loadedItem.unloadAsync(() => (err ? reject(err) : resolve()));
                     };
-                    loadedItem.categories.addAsync([`DorWaze-${jobNumber}`], (catResult) => {
+                    loadedItem.categories.addAsync([category], (catResult) => {
                         finish(catResult.status === Office.AsyncResultStatus.Failed
                             ? new Error(catResult.error.message)
                             : null);
                     });
                 });
-            });
+            }));
         }
 
         async function tagToProject(jobNumber, btn) {
