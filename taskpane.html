@@ -2134,6 +2134,12 @@
 
         function refreshSelection() {
             refreshCallCount++;
+            // Clear any leftover "Tagged to job X" banner from a previous email the moment the
+            // selection changes — otherwise it silently keeps showing success for whatever email
+            // is now open, even though nothing has actually been tagged for it (confirmed real
+            // case, 2026-09-08: someone tagged one email, browsed to another, and believed the
+            // second one was tagged too because this message never cleared).
+            setStatus(tagStatus, '', false);
             if (!officeReady || !Office.context?.mailbox?.getSelectedItemsAsync) {
                 selectionDebugNote = 'getSelectedItemsAsync not available on this host.';
                 selectedEmails = [];
