@@ -2073,28 +2073,27 @@
     // project's correspondence via DorWaze's POST /api/correspondence/manual-tag.
     // ══════════════════════════════════════════════
     (function () {
-        // Only used by the optional "Browse live jobs" convenience below now — the actual
-        // tagging action no longer calls DorWaze at all (see tagOneEmail). Confirmed by real
-        // testing (2026-09-08) that a plain browser blocks a public-origin page (this add-in,
-        // served from GitHub Pages) from reaching a private LAN hostname outright under
-        // Chromium's Private Network Access policy, even with the right CORS headers on
-        // DorWaze's side — 'localhost' only works at all when Outlook happens to be running
-        // on Anth's own PC (DorWaze's only host today), so DESKTOP-K539URH.longden.local (the
-        // real internal DNS name for his PC, used instead of a raw IP since that's already
-        // been observed to change between sessions) is tried as a fallback for anyone else,
-        // purely so the browse convenience has a chance of working there too.
-        const DORWAZE_LOCALHOST = 'http://localhost:4310';
-        const DORWAZE_LAN = 'http://DESKTOP-K539URH.longden.local:4310';
-        let DORWAZE_BASE = DORWAZE_LOCALHOST;
-        let dorwazeBaseResolved = null;
-        function resolveDorwazeBase() {
-            if (!dorwazeBaseResolved) {
-                dorwazeBaseResolved = fetch(DORWAZE_LOCALHOST + '/api/health')
-                    .then((res) => { if (!res.ok) throw new Error('not ok'); })
-                    .then(() => { DORWAZE_BASE = DORWAZE_LOCALHOST; })
-                    .catch(() => { DORWAZE_BASE = DORWAZE_LAN; });
+        // Browsing/checking job numbers reads a static jobs-snapshot.json published by DorWaze
+        // itself into this same repo every 5 minutes (see backend/src/db/jobsSnapshot.js) —
+        // NOT a live call to DorWaze's own API. Confirmed by real testing (2026-09-08) that a
+        // live call from this add-in straight into DorWaze is blocked outright on every machine
+        // but Anth's own, by Chromium's Private Network Access policy — no CORS fix on
+        // DorWaze's side gets around it. Reading a plain file already sitting on this exact
+        // site sidesteps that entirely (same-origin, not a private-network target at all), at
+        // the cost of the job list being "fresh as of the last publish" rather than truly live —
+        // an agreed trade-off, not an oversight.
+        const JOBS_SNAPSHOT_URL = 'https://anth-cowper.github.io/longden-email-templates/jobs-snapshot.json';
+        let jobsSnapshotPromise = null;
+        function getJobsSnapshot() {
+            if (!jobsSnapshotPromise) {
+                jobsSnapshotPromise = fetch(JOBS_SNAPSHOT_URL, { cache: 'no-store' })
+                    .then((res) => {
+                        if (!res.ok) throw new Error(`Couldn't load the job list (${res.status})`);
+                        return res.json();
+                    })
+                    .catch((err) => { jobsSnapshotPromise = null; throw err; }); // don't cache a failure forever — let the next attempt retry
             }
-            return dorwazeBaseResolved;
+            return jobsSnapshotPromise;
         }
         let officeReady = false;
 
@@ -2113,62 +2112,11 @@
             el.style.color = isError ? '#dc2626' : '#15803d';
         }
 
-        function dorwazeUserId() { return localStorage.getItem('dorwazeUserId'); }
-
         // Compose-mode items expose `subject` as an object with getAsync/setAsync; read-mode
         // items (and the no-item/multi-select case, where there's no single "current" item at
         // all) don't — cheap, reliable way to tell "should this pane default to the Tag to Job
         // tab" apart from "opened via the Compose-surface Email Templates button".
         function isComposeModeItem(item) { return !!item && typeof item.subject !== 'string'; }
-
-        // Distinguishes "DorWaze isn't reachable at all" (the fetch itself failed) from a
-        // real HTTP-level error DorWaze returned on purpose (404 "no project found", etc.) —
-        // every caller can just show err.message as-is, already worded appropriately either way.
-        async function dorwazeFetch(path, options = {}) {
-            await resolveDorwazeBase();
-            let res;
-            try {
-                res = await fetch(DORWAZE_BASE + path, {
-                    ...options,
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'x-user-id': dorwazeUserId() || '',
-                        ...(options.headers || {}),
-                    },
-                });
-            } catch (err) {
-                throw new Error(`Couldn't reach DorWaze — is it running? (${err.message})`);
-            }
-            if (!res.ok) {
-                const body = await res.json().catch(() => ({}));
-                const error = new Error(body.error || `Request failed (${res.status})`);
-                error.status = res.status;
-                throw error;
-            }
-            return res.json();
-        }
-
-        // Only needed for the optional "Browse live jobs" convenience below — DorWaze's own
-        // /api/board is permission-gated per user, so that read still needs *some* DorWaze
-        // identity even though tagging itself no longer does. Silent: no picker, no visible
-        // "connect" step — if the signed-in Outlook mailbox doesn't match a DorWaze user (or
-        // DorWaze isn't reachable at all), the browse feature just says so and the primary
-        // job-number input above keeps working regardless.
-        async function trySilentAutoMatch() {
-            if (dorwazeUserId()) return true;
-            try {
-                const users = await dorwazeFetch('/api/auth/users');
-                const outlookEmail = (officeReady && Office.context?.mailbox?.userProfile?.emailAddress || '').toLowerCase();
-                const matched = outlookEmail && users.find(u => (u.email || '').toLowerCase() === outlookEmail);
-                if (matched) {
-                    localStorage.setItem('dorwazeUserId', String(matched.id));
-                    return true;
-                }
-            } catch (err) {
-                return false;
-            }
-            return false;
-        }
 
         // The currently selected message(s) — one entry whether a single email is open in its
         // own reading view or several are selected in the list, refreshed whenever the
@@ -2238,17 +2186,11 @@
         async function loadJobs() {
             jobList.innerHTML = '';
             stageFilter.classList.add('hidden');
-            setStatus(tagBrowseStatus, 'Checking DorWaze…', false);
-            const ok = await trySilentAutoMatch();
-            if (!ok) {
-                setStatus(tagBrowseStatus, 'Live job browsing isn’t available on this device — just type the job number above instead.', true);
-                return;
-            }
             setStatus(tagBrowseStatus, 'Loading live jobs…', false);
             try {
-                const { stageOrder, rows } = await dorwazeFetch('/api/board');
+                const { stageOrder, boardRows } = await getJobsSnapshot();
                 const byStage = new Map();
-                rows.forEach(r => {
+                boardRows.forEach(r => {
                     if (!byStage.has(r.stage)) byStage.set(r.stage, new Map());
                     byStage.get(r.stage).set(r.projectId, r); // de-dupe per project within a stage
                 });
@@ -2295,11 +2237,8 @@
 
         // Checks the typed number is a real project before tagging — errors clearly if not,
         // and shows the project (and client, if known) name so a typo doesn't silently tag the
-        // wrong job. This needs DorWaze reachability to actually check, same as "Browse live
-        // jobs" — if this device can't reach DorWaze at all, it degrades to tagging directly
-        // without the check rather than blocking the whole feature (matching Tag to Job's core
-        // design: it must still work with zero DorWaze reachability, see the 2026-09-08 entries
-        // in project memory for why).
+        // wrong job. Looks it up in the same jobs-snapshot.json as "Browse live jobs" — see
+        // getJobsSnapshot() above for why this reads a static file rather than calling DorWaze.
         async function findAndConfirmJob() {
             const jobNumber = tagJobNumberInput.value.trim();
             tagDirectResult.innerHTML = '';
@@ -2310,22 +2249,19 @@
             tagDirectBtn.disabled = true;
             setStatus(tagStatus, 'Checking job number…', false);
 
-            const connected = await trySilentAutoMatch();
-            if (!connected) {
-                tagDirectBtn.disabled = false;
-                setStatus(tagStatus, 'Couldn’t verify the project name from this device — tagging anyway.', false);
-                await tagToProject(jobNumber, tagDirectBtn);
-                return;
-            }
-
             try {
-                const p = await dorwazeFetch(`/api/projects/by-job-number/${encodeURIComponent(jobNumber)}`);
+                const { allJobs } = await getJobsSnapshot();
+                const p = allJobs.find((j) => j.jobNumber === jobNumber);
+                if (!p) {
+                    setStatus(tagStatus, `No project found with job number "${jobNumber}".`, true);
+                    return;
+                }
                 setStatus(tagStatus, '', false);
                 const clientLine = p.companyName ? ` (client: "${p.companyName}")` : '';
                 tagDirectResult.innerHTML = `
                     <div style="padding:0.5rem 0.6rem;border:1px solid #ddd9d0;border-radius:6px;background:#f7f5f0">
                         <div style="margin-bottom:0.5rem">
-                            Add this email to job ${p.jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?
+                            Add this email to job ${jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?
                         </div>
                         <button type="button" class="btn btn-primary" id="tagDirectConfirmYes" style="margin-right:0.4rem">Yes, tag it</button>
                         <button type="button" class="btn btn-secondary" id="tagDirectConfirmNo">Cancel</button>
@@ -2333,9 +2269,10 @@
                 document.getElementById('tagDirectConfirmYes').addEventListener('click', (e) => tagToProject(jobNumber, e.target));
                 document.getElementById('tagDirectConfirmNo').addEventListener('click', () => { tagDirectResult.innerHTML = ''; });
             } catch (err) {
-                setStatus(tagStatus, err.status === 404
-                    ? `No project found with job number "${jobNumber}".`
-                    : err.message, true);
+                // The snapshot itself couldn't be fetched — genuinely rare, since it's the exact
+                // same site this code is already running from. Don't block tagging over it.
+                setStatus(tagStatus, `Couldn’t check the job number (${err.message}) — tagging anyway.`, false);
+                await tagToProject(jobNumber, tagDirectBtn);
             } finally {
                 tagDirectBtn.disabled = false;
             }
