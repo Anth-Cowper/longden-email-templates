@@ -2082,7 +2082,34 @@
     // project's correspondence via DorWaze's POST /api/correspondence/manual-tag.
     // ══════════════════════════════════════════════
     (function () {
-        const DORWAZE_BASE = 'http://localhost:4310';
+        // 'localhost' only ever reachable when Outlook happened to be running on Anth's own PC
+        // (the only machine DorWaze runs on today) — on anyone else's machine that address is
+        // their OWN loopback, nothing is listening there, and it fails outright, surfacing as a
+        // stuck "Connect your DorWaze account" screen since the /auth/users call behind it fails
+        // the same way. DESKTOP-K539URH.longden.local is the real internal DNS name for Anth's
+        // PC (used instead of a raw IP since that's already been observed to change between
+        // sessions — the DNS name keeps resolving correctly regardless).
+        //
+        // Tries localhost FIRST, not the LAN name directly — confirmed by real testing
+        // (2026-09-08) that a plain browser blocks a public-origin page (this add-in, served
+        // from GitHub Pages) from reaching a private LAN hostname at all under Chromium's
+        // Private Network Access policy, even with the right CORS headers on DorWaze's side;
+        // 'localhost' specifically may or may not be exempted depending on the exact Chromium/
+        // WebView2 build, so preferring it preserves whatever already worked for Anth rather
+        // than gambling that behaviour away for everyone at once.
+        const DORWAZE_LOCALHOST = 'http://localhost:4310';
+        const DORWAZE_LAN = 'http://DESKTOP-K539URH.longden.local:4310';
+        let DORWAZE_BASE = DORWAZE_LOCALHOST;
+        let dorwazeBaseResolved = null;
+        function resolveDorwazeBase() {
+            if (!dorwazeBaseResolved) {
+                dorwazeBaseResolved = fetch(DORWAZE_LOCALHOST + '/api/health')
+                    .then((res) => { if (!res.ok) throw new Error('not ok'); })
+                    .then(() => { DORWAZE_BASE = DORWAZE_LOCALHOST; })
+                    .catch(() => { DORWAZE_BASE = DORWAZE_LAN; });
+            }
+            return dorwazeBaseResolved;
+        }
         let officeReady = false;
 
         const connectSection = document.getElementById('tagConnectSection');
@@ -2119,6 +2146,7 @@
         // real HTTP-level error DorWaze returned on purpose (404 "no project found", etc.) —
         // every caller can just show err.message as-is, already worded appropriately either way.
         async function dorwazeFetch(path, options = {}) {
+            await resolveDorwazeBase();
             let res;
             try {
                 res = await fetch(DORWAZE_BASE + path, {
