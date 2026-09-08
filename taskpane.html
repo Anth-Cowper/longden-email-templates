@@ -2358,11 +2358,16 @@
                         const bodyPreview = bodyResult.status === Office.AsyncResultStatus.Succeeded
                             ? bodyResult.value.slice(0, 500)
                             : null;
+                        // Prefer the fully-loaded item's own internetMessageId over the lightweight
+                        // getSelectedItemsAsync() one — confirmed by real failures (2026-09-08): that
+                        // lightweight multi-select object doesn't reliably carry this field for every
+                        // message (some come back undefined), even though the same message's full,
+                        // individually-loaded item does have it.
                         dorwazeFetch('/api/correspondence/manual-tag', {
                             method: 'POST',
                             body: JSON.stringify({
                                 projectId,
-                                internetMessageId: email.internetMessageId,
+                                internetMessageId: loadedItem.internetMessageId || email.internetMessageId,
                                 mailbox: Office.context.mailbox.userProfile.emailAddress,
                                 subject: email.subject,
                                 fromAddress: loadedItem.from?.emailAddress ?? null,
