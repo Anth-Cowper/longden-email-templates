@@ -806,35 +806,25 @@
 ══════════════════════════════════════════════ -->
 <div id="panelTag" class="tool-panel">
     <main>
-        <div id="tagConnectSection" class="hidden">
-            <div class="field-label">Connect your DorWaze account</div>
-            <select class="cat-select" id="tagUserSelect"><option value="">— pick your name —</option></select>
-            <button class="btn btn-primary" id="tagConnectBtn" style="margin-top:0.5rem">Connect</button>
-            <div class="status" id="tagConnectStatus"></div>
-        </div>
+        <div class="field-label">Selected email</div>
+        <div id="tagEmailSummary" style="padding:0.5rem 0 0.9rem;font-size:0.85rem;color:#333;line-height:1.4"></div>
 
-        <div id="tagMainSection" class="hidden">
-            <div class="field-label">Selected email</div>
-            <div id="tagEmailSummary" style="padding:0.5rem 0 0.9rem;font-size:0.85rem;color:#333;line-height:1.4"></div>
+        <!-- Primary path: always works, no DorWaze connection or reachability needed at all —
+             sets an Outlook category on the message, which the background indexer picks up
+             within ~10 seconds and files exactly like a subject-line match. -->
+        <div class="field-label">Job number</div>
+        <input type="text" class="text-input" id="tagJobNumberInput" placeholder="e.g. 117622" inputmode="numeric">
+        <button class="btn btn-primary" id="tagDirectBtn" type="button" style="margin-top:0.4rem">Tag to this job</button>
+        <div class="status" id="tagStatus"></div>
 
-            <!-- Sticky control group — stays visible while the job list below scrolls, so
-                 these three controls are never pushed out of view by a long list. -->
-            <div style="position:sticky;top:0;background:#f0f0ec;padding-bottom:0.6rem;z-index:1;border-bottom:1px solid #ddd9d0;margin-bottom:0.6rem">
-                <button class="btn btn-primary" id="tagLoadJobsBtn">Load live jobs</button>
-                <div class="status" id="tagStatus"></div>
-                <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
-                <button class="btn btn-primary" id="tagManualToggleBtn" type="button" style="margin-top:0.6rem">
-                    Or type a project number if not a live job
-                </button>
-            </div>
-
-            <div id="tagManualSection" class="hidden" style="margin-bottom:0.5rem">
-                <input type="text" class="text-input" id="tagManualJobNumber" placeholder="e.g. 117622">
-                <button class="btn btn-primary" id="tagManualFindBtn" type="button" style="margin-top:0.4rem">Find job</button>
-                <div class="status" id="tagManualStatus"></div>
-                <div id="tagManualResult" style="margin-top:0.5rem"></div>
-            </div>
-
+        <!-- Optional convenience only — browse live jobs by name/company instead of typing
+             the number. Only works when DorWaze happens to be reachable from this device
+             (today, only Anth's own PC); degrades to a plain message otherwise, never blocks
+             the input above. -->
+        <div style="margin-top:1rem;padding-top:0.8rem;border-top:1px solid #ddd9d0">
+            <button class="btn btn-secondary" id="tagLoadJobsBtn" type="button">Browse live jobs by name instead</button>
+            <div class="status" id="tagBrowseStatus"></div>
+            <select class="cat-select hidden" id="tagStageFilter" style="margin-top:0.6rem"></select>
             <div id="tagJobList"></div>
         </div>
     </main>
@@ -2082,21 +2072,16 @@
     // project's correspondence via DorWaze's POST /api/correspondence/manual-tag.
     // ══════════════════════════════════════════════
     (function () {
-        // 'localhost' only ever reachable when Outlook happened to be running on Anth's own PC
-        // (the only machine DorWaze runs on today) — on anyone else's machine that address is
-        // their OWN loopback, nothing is listening there, and it fails outright, surfacing as a
-        // stuck "Connect your DorWaze account" screen since the /auth/users call behind it fails
-        // the same way. DESKTOP-K539URH.longden.local is the real internal DNS name for Anth's
-        // PC (used instead of a raw IP since that's already been observed to change between
-        // sessions — the DNS name keeps resolving correctly regardless).
-        //
-        // Tries localhost FIRST, not the LAN name directly — confirmed by real testing
-        // (2026-09-08) that a plain browser blocks a public-origin page (this add-in, served
-        // from GitHub Pages) from reaching a private LAN hostname at all under Chromium's
-        // Private Network Access policy, even with the right CORS headers on DorWaze's side;
-        // 'localhost' specifically may or may not be exempted depending on the exact Chromium/
-        // WebView2 build, so preferring it preserves whatever already worked for Anth rather
-        // than gambling that behaviour away for everyone at once.
+        // Only used by the optional "Browse live jobs" convenience below now — the actual
+        // tagging action no longer calls DorWaze at all (see tagOneEmail). Confirmed by real
+        // testing (2026-09-08) that a plain browser blocks a public-origin page (this add-in,
+        // served from GitHub Pages) from reaching a private LAN hostname outright under
+        // Chromium's Private Network Access policy, even with the right CORS headers on
+        // DorWaze's side — 'localhost' only works at all when Outlook happens to be running
+        // on Anth's own PC (DorWaze's only host today), so DESKTOP-K539URH.longden.local (the
+        // real internal DNS name for his PC, used instead of a raw IP since that's already
+        // been observed to change between sessions) is tried as a fallback for anyone else,
+        // purely so the browse convenience has a chance of working there too.
         const DORWAZE_LOCALHOST = 'http://localhost:4310';
         const DORWAZE_LAN = 'http://DESKTOP-K539URH.longden.local:4310';
         let DORWAZE_BASE = DORWAZE_LOCALHOST;
@@ -2112,22 +2097,14 @@
         }
         let officeReady = false;
 
-        const connectSection = document.getElementById('tagConnectSection');
-        const mainSection    = document.getElementById('tagMainSection');
-        const userSelect     = document.getElementById('tagUserSelect');
-        const connectBtn     = document.getElementById('tagConnectBtn');
-        const connectStatus  = document.getElementById('tagConnectStatus');
         const emailSummary   = document.getElementById('tagEmailSummary');
-        const loadJobsBtn    = document.getElementById('tagLoadJobsBtn');
+        const tagJobNumberInput = document.getElementById('tagJobNumberInput');
+        const tagDirectBtn   = document.getElementById('tagDirectBtn');
         const tagStatus      = document.getElementById('tagStatus');
+        const loadJobsBtn    = document.getElementById('tagLoadJobsBtn');
+        const tagBrowseStatus = document.getElementById('tagBrowseStatus');
         const stageFilter    = document.getElementById('tagStageFilter');
         const jobList        = document.getElementById('tagJobList');
-        const manualToggleBtn = document.getElementById('tagManualToggleBtn');
-        const manualSection   = document.getElementById('tagManualSection');
-        const manualJobNumber = document.getElementById('tagManualJobNumber');
-        const manualFindBtn   = document.getElementById('tagManualFindBtn');
-        const manualStatus    = document.getElementById('tagManualStatus');
-        const manualResult    = document.getElementById('tagManualResult');
 
         function setStatus(el, msg, isError) {
             el.textContent = msg;
@@ -2169,45 +2146,27 @@
             return res.json();
         }
 
-        async function ensureConnected() {
-            if (dorwazeUserId()) {
-                connectSection.classList.add('hidden');
-                mainSection.classList.remove('hidden');
-                return;
-            }
+        // Only needed for the optional "Browse live jobs" convenience below — DorWaze's own
+        // /api/board is permission-gated per user, so that read still needs *some* DorWaze
+        // identity even though tagging itself no longer does. Silent: no picker, no visible
+        // "connect" step — if the signed-in Outlook mailbox doesn't match a DorWaze user (or
+        // DorWaze isn't reachable at all), the browse feature just says so and the primary
+        // job-number input above keeps working regardless.
+        async function trySilentAutoMatch() {
+            if (dorwazeUserId()) return true;
             try {
                 const users = await dorwazeFetch('/api/auth/users');
-
-                // Auto-match against the signed-in Outlook mailbox's own address — no need
-                // to ask someone to pick their own name if it's already unambiguous.
                 const outlookEmail = (officeReady && Office.context?.mailbox?.userProfile?.emailAddress || '').toLowerCase();
                 const matched = outlookEmail && users.find(u => (u.email || '').toLowerCase() === outlookEmail);
                 if (matched) {
                     localStorage.setItem('dorwazeUserId', String(matched.id));
-                    connectSection.classList.add('hidden');
-                    mainSection.classList.remove('hidden');
-                    return;
+                    return true;
                 }
-
-                // No match (different address on file, or no DorWaze account) — fall back
-                // to picking manually.
-                connectSection.classList.remove('hidden');
-                mainSection.classList.add('hidden');
-                userSelect.innerHTML = '<option value="">— pick your name —</option>' +
-                    users.map(u => `<option value="${u.id}">${u.name}</option>`).join('');
             } catch (err) {
-                connectSection.classList.remove('hidden');
-                mainSection.classList.add('hidden');
-                setStatus(connectStatus, err.message, true);
+                return false;
             }
+            return false;
         }
-
-        connectBtn.addEventListener('click', () => {
-            if (!userSelect.value) return;
-            localStorage.setItem('dorwazeUserId', userSelect.value);
-            connectSection.classList.add('hidden');
-            mainSection.classList.remove('hidden');
-        });
 
         // The currently selected message(s) — one entry whether a single email is open in its
         // own reading view or several are selected in the list, refreshed whenever the
@@ -2277,7 +2236,13 @@
         async function loadJobs() {
             jobList.innerHTML = '';
             stageFilter.classList.add('hidden');
-            setStatus(tagStatus, 'Loading live jobs…', false);
+            setStatus(tagBrowseStatus, 'Checking DorWaze…', false);
+            const ok = await trySilentAutoMatch();
+            if (!ok) {
+                setStatus(tagBrowseStatus, 'Live job browsing isn’t available on this device — just type the job number above instead.', true);
+                return;
+            }
+            setStatus(tagBrowseStatus, 'Loading live jobs…', false);
             try {
                 const { stageOrder, rows } = await dorwazeFetch('/api/board');
                 const byStage = new Map();
@@ -2286,7 +2251,7 @@
                     byStage.get(r.stage).set(r.projectId, r); // de-dupe per project within a stage
                 });
                 boardCache = byStage;
-                setStatus(tagStatus, '', false);
+                setStatus(tagBrowseStatus, '', false);
 
                 // Category filter — defaults to an unselected placeholder, so nothing shows
                 // until a category is actually chosen (rather than dumping the first stage's
@@ -2298,7 +2263,7 @@
                 stageFilter.classList.toggle('hidden', !available.length);
                 renderFilteredJobs();
             } catch (err) {
-                setStatus(tagStatus, err.message, true);
+                setStatus(tagBrowseStatus, err.message, true);
             }
         }
 
@@ -2312,7 +2277,7 @@
             const projects = [...(boardCache?.get(stage) || new Map()).values()];
             let html = '';
             projects.forEach(p => {
-                html += `<button type="button" class="job-pick-btn" data-project-id="${p.projectId}"
+                html += `<button type="button" class="job-pick-btn" data-job-number="${p.jobNumber}"
                     style="display:block;width:100%;text-align:left;padding:0.45rem 0.6rem;margin:0.2rem 0;
                     border:1px solid #ddd9d0;border-radius:6px;background:white;cursor:pointer;font-size:0.82rem">
                     <strong>${p.jobNumber}</strong> — ${p.projectName}${p.companyName ? ` (${p.companyName})` : ''}
@@ -2320,58 +2285,34 @@
             });
             jobList.innerHTML = html || '<p style="color:#888">No live jobs in this category.</p>';
             jobList.querySelectorAll('.job-pick-btn').forEach(btn => {
-                btn.addEventListener('click', () => tagToProject(Number(btn.dataset.projectId), btn));
+                btn.addEventListener('click', () => tagToProject(btn.dataset.jobNumber, btn));
             });
         }
 
         stageFilter.addEventListener('change', renderFilteredJobs);
 
-        // Manual entry — for a job that's already closed/complete and has dropped off the
-        // live board entirely (buildBoardRows() drops order_complete projects outright), so
-        // it could never show up in the "Load live jobs" list no matter which category.
-        manualToggleBtn.addEventListener('click', () => {
-            manualSection.classList.toggle('hidden');
-            if (!manualSection.classList.contains('hidden')) manualJobNumber.focus();
-        });
-
-        async function findManualJob() {
-            const jobNumber = manualJobNumber.value.trim();
-            manualResult.innerHTML = '';
-            if (!jobNumber) return;
-            setStatus(manualStatus, 'Looking up…', false);
-            try {
-                const p = await dorwazeFetch(`/api/projects/by-job-number/${encodeURIComponent(jobNumber)}`);
-                setStatus(manualStatus, '', false);
-
-                // A typed number is more error-prone than picking from a known list, so
-                // confirm the actual project/client name rather than tagging on first click.
-                const clientLine = p.companyName ? ` (client: "${p.companyName}")` : '';
-                manualResult.innerHTML = `
-                    <div style="padding:0.5rem 0.6rem;border:1px solid #ddd9d0;border-radius:6px;background:#f7f5f0">
-                        <div style="margin-bottom:0.5rem">
-                            Add this email to job ${p.jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?
-                        </div>
-                        <button type="button" class="btn btn-primary" id="tagManualConfirmYes" style="margin-right:0.4rem">Yes, tag it</button>
-                        <button type="button" class="btn btn-secondary" id="tagManualConfirmNo">Cancel</button>
-                    </div>`;
-                document.getElementById('tagManualConfirmYes').addEventListener('click', (e) => tagToProject(p.projectId, e.target));
-                document.getElementById('tagManualConfirmNo').addEventListener('click', () => { manualResult.innerHTML = ''; });
-            } catch (err) {
-                setStatus(manualStatus, err.status === 404
-                    ? `No project found with job number "${jobNumber}".`
-                    : err.message, true);
+        tagDirectBtn.addEventListener('click', () => {
+            const jobNumber = tagJobNumberInput.value.trim();
+            if (!/^\d{6}$/.test(jobNumber)) {
+                setStatus(tagStatus, 'Enter a 6-digit job number.', true);
+                return;
             }
-        }
+            tagToProject(jobNumber, tagDirectBtn);
+        });
+        tagJobNumberInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') tagDirectBtn.click(); });
 
-        manualFindBtn.addEventListener('click', findManualJob);
-        manualJobNumber.addEventListener('keydown', (e) => { if (e.key === 'Enter') findManualJob(); });
-
-        // Loads one selected message fully (from/body — properties getSelectedItemsAsync
-        // doesn't provide), posts the tag, then unloads it before the next one. Sequential by
-        // design: loadItemByIdAsync only ever processes one selected message at a time, and
+        // Sets an Outlook category on the message (e.g. "DorWaze-117438") instead of calling
+        // DorWaze directly — the background indexer (mailIndexer.js/matcher.js) picks this up
+        // on its next poll (~10s) and files the email exactly like a subject-line match, no
+        // network call to DorWaze needed at all. This is what makes tagging work from ANY
+        // machine, not just Anth's own PC: a live call from a public add-in straight into a
+        // private LAN address is blocked outright by the browser's own Private Network Access
+        // policy (confirmed 2026-09-08 against real failures on other staff's machines), no
+        // matter what CORS headers DorWaze's own server sends. Sequential by design, same as
+        // before: loadItemByIdAsync only ever processes one selected message at a time, and
         // unloadAsync must complete before loading another (see Microsoft's item-multi-select
         // guide) — a Promise.all here would just error on the second item.
-        function tagOneEmail(email, projectId) {
+        function tagOneEmail(email, jobNumber) {
             return new Promise((resolve, reject) => {
                 Office.context.mailbox.loadItemByIdAsync(email.itemId, (loadResult) => {
                     if (loadResult.status === Office.AsyncResultStatus.Failed) {
@@ -2382,39 +2323,16 @@
                     const finish = (err) => {
                         loadedItem.unloadAsync(() => (err ? reject(err) : resolve()));
                     };
-                    loadedItem.body.getAsync(Office.CoercionType.Text, (bodyResult) => {
-                        const bodyPreview = bodyResult.status === Office.AsyncResultStatus.Succeeded
-                            ? bodyResult.value.slice(0, 500)
-                            : null;
-                        // Prefer the fully-loaded item's own internetMessageId over the lightweight
-                        // getSelectedItemsAsync() one — confirmed by real failures (2026-09-08): that
-                        // lightweight multi-select object doesn't reliably carry this field for every
-                        // message (some come back undefined), even though the same message's full,
-                        // individually-loaded item does have it.
-                        dorwazeFetch('/api/correspondence/manual-tag', {
-                            method: 'POST',
-                            body: JSON.stringify({
-                                projectId,
-                                internetMessageId: loadedItem.internetMessageId || email.internetMessageId,
-                                mailbox: Office.context.mailbox.userProfile.emailAddress,
-                                subject: email.subject,
-                                fromAddress: loadedItem.from?.emailAddress ?? null,
-                                fromName: loadedItem.from?.displayName ?? null,
-                                toAddresses: (loadedItem.to || []).map((r) => r.emailAddress),
-                                ccAddresses: (loadedItem.cc || []).map((r) => r.emailAddress),
-                                receivedAt: loadedItem.dateTimeCreated ? loadedItem.dateTimeCreated.toISOString() : null,
-                                sentAt: null,
-                                bodyPreview,
-                                hasAttachments: !!email.hasAttachments,
-                                webLink: null,
-                            }),
-                        }).then(() => finish(null)).catch(finish);
+                    loadedItem.categories.addAsync([`DorWaze-${jobNumber}`], (catResult) => {
+                        finish(catResult.status === Office.AsyncResultStatus.Failed
+                            ? new Error(catResult.error.message)
+                            : null);
                     });
                 });
             });
         }
 
-        async function tagToProject(projectId, btn) {
+        async function tagToProject(jobNumber, btn) {
             if (!officeReady || !selectedEmails.length) {
                 setStatus(tagStatus, 'Select one or more emails first.', true);
                 return;
@@ -2424,11 +2342,10 @@
             setStatus(tagStatus, total > 1 ? `Tagging ${total} emails…` : 'Tagging…', false);
 
             let tagged = 0;
-            let lastJobNumber = null;
             const failures = [];
             for (const email of selectedEmails) {
                 try {
-                    await tagOneEmail(email, projectId);
+                    await tagOneEmail(email, jobNumber);
                     tagged++;
                 } catch (err) {
                     failures.push(`${email.subject || '(no subject)'}: ${err.message}`);
@@ -2436,9 +2353,12 @@
             }
 
             if (!failures.length) {
-                setStatus(tagStatus, total > 1 ? `Tagged ${tagged} emails.` : 'Tagged.', false);
+                setStatus(tagStatus, (total > 1
+                    ? `Tagged ${tagged} emails to job ${jobNumber}`
+                    : `Tagged to job ${jobNumber}`) + ' — will appear in DorWaze within about 10 seconds.', false);
+                tagJobNumberInput.value = '';
                 jobList.innerHTML = '';
-                manualResult.innerHTML = '';
+                btn.disabled = false;
             } else {
                 setStatus(tagStatus, `Tagged ${tagged}/${total} — failed: ${failures.join('; ')}`, true);
                 btn.disabled = false;
@@ -2448,7 +2368,6 @@
         loadJobsBtn.addEventListener('click', loadJobs);
 
         document.getElementById('toolTabTag').addEventListener('click', () => {
-            ensureConnected();
             refreshSelection();
         });
 
