@@ -2301,12 +2301,32 @@
         });
         tagJobNumberInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') tagDirectBtn.click(); });
 
+        function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
+
+        function getMasterCategoryNames() {
+            return new Promise((resolve, reject) => {
+                Office.context.mailbox.masterCategories.getAsync((result) => {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        reject(new Error(result.error.message));
+                    } else {
+                        resolve((result.value || []).map((c) => c.displayName));
+                    }
+                });
+            });
+        }
+
         // Office.js will NOT let item.categories.addAsync apply an arbitrary new category name
         // — confirmed by a real failure (2026-09-08), "Invalid categories were provided" — a
         // category has to already exist in the mailbox's own master category list first. This
-        // registers it there (a no-op, not an error, if it's already registered from an earlier
-        // tag) before it's ever applied to a message. Cached per session so tagging several
-        // emails to the same job in one batch doesn't re-register it every time.
+        // registers it there, then explicitly re-reads the master list to confirm it actually
+        // landed before proceeding: a second real failure with the identical error, even after
+        // adding the registration step, points at the master-list write not yet being visible
+        // to the very next call in "new Outlook" (a client already documented to have rougher
+        // categories-API support) rather than the registration being skipped entirely — so
+        // verify-and-briefly-retry rather than trust the addAsync callback's success alone.
+        // `DuplicateCategory` (already registered, e.g. from an earlier tag) is treated as
+        // success, not a real error. Cached per session once confirmed, so tagging several
+        // emails to the same job in one batch doesn't repeat this whole dance every time.
         const registeredCategories = new Set();
         function ensureCategoryRegistered(name) {
             if (registeredCategories.has(name)) return Promise.resolve();
@@ -2314,14 +2334,24 @@
                 Office.context.mailbox.masterCategories.addAsync(
                     [{ displayName: name, color: Office.MailboxEnums.CategoryColor.Preset0 }],
                     (result) => {
-                        if (result.status === Office.AsyncResultStatus.Failed) {
+                        if (result.status === Office.AsyncResultStatus.Failed
+                            && result.error.name !== 'DuplicateCategory') {
                             reject(new Error(result.error.message));
-                        } else {
-                            registeredCategories.add(name);
-                            resolve();
+                            return;
                         }
+                        resolve();
                     }
                 );
+            }).then(async () => {
+                for (let attempt = 1; attempt <= 5; attempt++) {
+                    const names = await getMasterCategoryNames();
+                    if (names.includes(name)) {
+                        registeredCategories.add(name);
+                        return;
+                    }
+                    await sleep(300 * attempt);
+                }
+                throw new Error(`"${name}" was registered but Outlook hasn't confirmed it yet — try again in a moment.`);
             });
         }
 
