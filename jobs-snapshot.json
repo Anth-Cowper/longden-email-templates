@@ -1,6 +1,7 @@
 {
-  "generatedAt": "2026-09-09T08:58:17.836Z",
+  "generatedAt": "2026-09-09T09:01:38.624Z",
   "stageOrder": [
+    "Quoting",
     "Estimating",
     "Orders",
     "Scheduling",
