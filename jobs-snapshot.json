@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T11:37:33.906Z",
+  "generatedAt": "2026-09-14T11:42:33.939Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3451,6 +3451,25 @@
       "sortDate": "2026-08-24T00:00:00.000Z"
     },
     {
+      "projectId": 2024,
+      "jobNumber": "117822",
+      "projectName": "47 Banbury Road",
+      "companyName": "Benfield & Loxley (Oxford)",
+      "value": null,
+      "phaseStatus": null,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "quoteDateReceived": "2026-08-21T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-14T00:00:00.000Z",
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-08-21T00:00:00.000Z"
+    },
+    {
       "projectId": 2021,
       "jobNumber": "117819",
       "projectName": "1 Holbein Mews",
@@ -5824,25 +5843,6 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-11T00:00:00.000Z"
-    },
-    {
-      "projectId": 2024,
-      "jobNumber": "117822",
-      "projectName": "47 Banbury Road",
-      "companyName": "Benfield & Loxley (Oxford)",
-      "value": null,
-      "phaseStatus": null,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "quoteDateReceived": "2026-08-21T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-14T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-14T00:00:00.000Z"
     },
     {
       "projectId": 2036,
