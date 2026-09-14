@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T13:42:34.124Z",
+  "generatedAt": "2026-09-14T14:07:34.181Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -529,7 +529,7 @@
       "jobNumber": "117773",
       "projectName": "54 South Eaton Place",
       "companyName": "Ana Castro Henckel",
-      "value": 0,
+      "value": 1478.69,
       "phaseStatus": "Scheduling WIP",
       "orderDate": "2026-06-23T00:00:00.000Z",
       "releasedAt": null,
