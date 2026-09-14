@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T10:27:33.753Z",
+  "generatedAt": "2026-09-14T11:12:33.889Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5835,7 +5835,7 @@
       "orderDate": null,
       "releasedAt": null,
       "depositPaidAt": null,
-      "estimatorName": null,
+      "estimatorName": "Alfie Price",
       "schedulerName": null,
       "quoteDateReceived": "2026-08-21T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-14T00:00:00.000Z",
