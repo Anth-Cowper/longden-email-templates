@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T12:17:33.999Z",
+  "generatedAt": "2026-09-14T13:12:34.064Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -523,6 +523,25 @@
       "phaseId": 992,
       "phaseNumber": "1",
       "sortDate": "2026-06-24T00:00:00.000Z"
+    },
+    {
+      "projectId": 1975,
+      "jobNumber": "117773",
+      "projectName": "54 South Eaton Place",
+      "companyName": "Ana Castro Henckel",
+      "value": 0,
+      "phaseStatus": "Scheduling WIP",
+      "orderDate": "2026-06-23T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-06-30T00:00:00.000Z",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Tony Oliver",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 1010,
+      "phaseNumber": "2",
+      "sortDate": "2026-06-30T00:00:00.000Z"
     },
     {
       "projectId": 1448,
