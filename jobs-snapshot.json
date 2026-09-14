@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T13:12:34.064Z",
+  "generatedAt": "2026-09-14T13:32:34.077Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -35,7 +35,7 @@
       "jobNumber": "117382",
       "projectName": "5 Fitzharding Street",
       "companyName": "Richardson (Nyewood) Limited",
-      "value": 37349.03,
+      "value": 37579.03,
       "phaseStatus": "On Amend",
       "orderDate": "2025-12-18T00:00:00.000Z",
       "releasedAt": "2026-08-18T14:40:11.447Z",
