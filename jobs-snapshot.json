@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T07:46:26.566Z",
+  "generatedAt": "2026-09-15T07:51:26.575Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5781,11 +5781,11 @@
       "estimatorName": null,
       "schedulerName": null,
       "quoteDateReceived": "2026-08-19T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-17T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-16T00:00:00.000Z",
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-09-17T00:00:00.000Z"
+      "sortDate": "2026-09-16T00:00:00.000Z"
     },
     {
       "projectId": 2019,
@@ -5800,11 +5800,11 @@
       "estimatorName": null,
       "schedulerName": null,
       "quoteDateReceived": "2026-08-18T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-18T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-17T00:00:00.000Z",
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-09-18T00:00:00.000Z"
+      "sortDate": "2026-09-17T00:00:00.000Z"
     },
     {
       "projectId": 2038,
