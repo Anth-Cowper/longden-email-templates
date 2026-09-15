@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T12:36:28.520Z",
+  "generatedAt": "2026-09-15T14:01:28.777Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,25 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 1780,
-      "jobNumber": "117578",
-      "projectName": "Little Blunts Farm",
-      "companyName": "Southern Contract Services",
-      "value": 45518.3,
-      "phaseStatus": "On Amend",
-      "orderDate": "2025-12-12T00:00:00.000Z",
-      "releasedAt": "2026-07-14T11:29:58.687Z",
-      "depositPaidAt": "2026-01-29T00:00:00.000Z",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Beth Williams",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 968,
-      "phaseNumber": "1",
-      "sortDate": "2026-01-29T00:00:00.000Z"
-    },
     {
       "projectId": 486,
       "jobNumber": "116273",
@@ -2803,6 +2784,25 @@
       "phaseId": 981,
       "phaseNumber": "1",
       "sortDate": "2026-05-15T00:00:00.000Z"
+    },
+    {
+      "projectId": 1780,
+      "jobNumber": "117578",
+      "projectName": "Little Blunts Farm",
+      "companyName": "Southern Contract Services",
+      "value": 45475.32,
+      "phaseStatus": "Manufacture",
+      "orderDate": "2025-12-12T00:00:00.000Z",
+      "releasedAt": "2026-07-14T11:29:58.687Z",
+      "depositPaidAt": "2026-01-29T00:00:00.000Z",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Beth Williams",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Production",
+      "phaseId": 968,
+      "phaseNumber": "1",
+      "sortDate": "2026-07-14T11:29:58.687Z"
     },
     {
       "projectId": 1622,
