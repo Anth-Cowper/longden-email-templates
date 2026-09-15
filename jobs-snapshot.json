@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T10:31:28.087Z",
+  "generatedAt": "2026-09-15T11:01:28.242Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -29,6 +29,25 @@
       "phaseId": 968,
       "phaseNumber": "1",
       "sortDate": "2026-01-29T00:00:00.000Z"
+    },
+    {
+      "projectId": 1584,
+      "jobNumber": "117382",
+      "projectName": "5 Fitzharding Street",
+      "companyName": "Richardson (Nyewood) Limited",
+      "value": 37579.03,
+      "phaseStatus": "On Amend",
+      "orderDate": "2025-12-18T00:00:00.000Z",
+      "releasedAt": "2026-08-18T14:40:11.447Z",
+      "depositPaidAt": "2026-05-01T00:00:00.000Z",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 887,
+      "phaseNumber": "1",
+      "sortDate": "2026-05-01T00:00:00.000Z"
     },
     {
       "projectId": 486,
@@ -3050,25 +3069,6 @@
       "phaseId": 1000,
       "phaseNumber": "1",
       "sortDate": "2026-08-18T10:56:11.180Z"
-    },
-    {
-      "projectId": 1584,
-      "jobNumber": "117382",
-      "projectName": "5 Fitzharding Street",
-      "companyName": "Richardson (Nyewood) Limited",
-      "value": 37579.03,
-      "phaseStatus": "Planning Pool",
-      "orderDate": "2025-12-18T00:00:00.000Z",
-      "releasedAt": "2026-08-18T14:40:11.447Z",
-      "depositPaidAt": "2026-05-01T00:00:00.000Z",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Madi Glen",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Production",
-      "phaseId": 887,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-18T14:40:11.447Z"
     },
     {
       "projectId": 1362,
