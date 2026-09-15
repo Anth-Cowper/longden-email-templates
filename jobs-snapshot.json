@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T14:46:28.836Z",
+  "generatedAt": "2026-09-15T14:56:28.863Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5876,11 +5876,11 @@
       "estimatorName": "Tony Oliver",
       "schedulerName": null,
       "quoteDateReceived": "2026-09-01T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-22T00:00:00.000Z",
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-10-01T00:00:00.000Z"
+      "sortDate": "2026-09-22T00:00:00.000Z"
     },
     {
       "projectId": 1969,
