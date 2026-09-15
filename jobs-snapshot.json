@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T14:01:28.777Z",
+  "generatedAt": "2026-09-15T14:06:28.768Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5712,25 +5712,6 @@
       "sortDate": "2026-09-09T00:00:00.000Z"
     },
     {
-      "projectId": 1765,
-      "jobNumber": "117563",
-      "projectName": "44-47 Lowndes Square",
-      "companyName": "Detailed Estimating",
-      "value": null,
-      "phaseStatus": null,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatorName": "Tony Oliver",
-      "schedulerName": null,
-      "quoteDateReceived": "2026-09-01T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-10T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-10T00:00:00.000Z"
-    },
-    {
       "projectId": 2026,
       "jobNumber": "117824",
       "projectName": "Epic Long Ashton",
@@ -5781,11 +5762,11 @@
       "estimatorName": "Beth Williams",
       "schedulerName": null,
       "quoteDateReceived": "2026-08-19T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-16T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-17T00:00:00.000Z",
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-09-16T00:00:00.000Z"
+      "sortDate": "2026-09-17T00:00:00.000Z"
     },
     {
       "projectId": 2019,
@@ -5824,6 +5805,25 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-21T00:00:00.000Z"
+    },
+    {
+      "projectId": 1765,
+      "jobNumber": "117563",
+      "projectName": "44-47 Lowndes Square",
+      "companyName": "Detailed Estimating",
+      "value": null,
+      "phaseStatus": null,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatorName": "Tony Oliver",
+      "schedulerName": null,
+      "quoteDateReceived": "2026-09-01T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-01T00:00:00.000Z"
     },
     {
       "projectId": 1969,
