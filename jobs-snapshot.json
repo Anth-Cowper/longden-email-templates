@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T07:10:05.721Z",
+  "generatedAt": "2026-09-16T07:35:05.741Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5759,7 +5759,7 @@
       "orderDate": null,
       "releasedAt": null,
       "depositPaidAt": null,
-      "estimatorName": null,
+      "estimatorName": "Beth Williams",
       "schedulerName": null,
       "quoteDateReceived": "2026-08-18T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-17T00:00:00.000Z",
