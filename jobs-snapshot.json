@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T13:30:06.440Z",
+  "generatedAt": "2026-09-16T13:50:06.482Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -339,7 +339,7 @@
       "jobNumber": "117586",
       "projectName": "1b Chester Row",
       "companyName": "Volute London Limited",
-      "value": 5693.12,
+      "value": 5304.82,
       "phaseStatus": "Scheduling WIP",
       "orderDate": "2026-02-22T00:00:00.000Z",
       "releasedAt": null,
