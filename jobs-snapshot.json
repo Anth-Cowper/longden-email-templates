@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T14:05:06.519Z",
+  "generatedAt": "2026-09-16T16:20:06.707Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3337,25 +3337,6 @@
       "sortDate": "2026-08-28T00:00:00.000Z"
     },
     {
-      "projectId": 2029,
-      "jobNumber": "117827",
-      "projectName": "5 Denmark Street",
-      "companyName": null,
-      "value": 27784.88,
-      "phaseStatus": null,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "quoteDateReceived": "2026-09-04T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-28T00:00:00.000Z"
-    },
-    {
       "projectId": 2027,
       "jobNumber": "117825",
       "projectName": "22 Manchester Square",
@@ -5726,6 +5707,25 @@
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Disputed",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-08T00:00:00.000Z"
+    },
+    {
+      "projectId": 2029,
+      "jobNumber": "117827",
+      "projectName": "5 Denmark Street",
+      "companyName": null,
+      "value": null,
+      "phaseStatus": null,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "quoteDateReceived": "2026-09-16T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-08T00:00:00.000Z",
+      "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-08T00:00:00.000Z"
