@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T14:33:27.565Z",
+  "generatedAt": "2026-09-17T14:38:27.609Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -198,8 +198,8 @@
       "releasedAt": null,
       "depositPaidAt": "2025-10-03T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "1 Frame, 1 Miscellaneous",
+      "materialSummaryText": "Accoya, Sapele, Flush",
       "estimatorName": "Matthew Thomas",
       "schedulerName": "Beth Williams",
       "quoteDateReceived": null,
