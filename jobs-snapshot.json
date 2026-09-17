@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T07:50:08.486Z",
+  "generatedAt": "2026-09-17T08:00:08.542Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -548,7 +548,7 @@
       "jobNumber": "117740",
       "projectName": "30 Sackville Street",
       "companyName": "A. D. DESIGN CONCEPTS LIMITED",
-      "value": 40426.46,
+      "value": 39975.11,
       "phaseStatus": "Scheduling WIP",
       "orderDate": "2026-07-07T00:00:00.000Z",
       "releasedAt": null,
