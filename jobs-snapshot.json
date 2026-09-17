@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T07:40:08.453Z",
+  "generatedAt": "2026-09-17T07:50:08.486Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3888,6 +3888,25 @@
       "sortDate": "2026-07-20T00:00:00.000Z"
     },
     {
+      "projectId": 1990,
+      "jobNumber": "117788",
+      "projectName": "Archers Hall",
+      "companyName": "GLM Architecture",
+      "value": null,
+      "phaseStatus": null,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "quoteDateReceived": "2026-09-17T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-07-20T00:00:00.000Z"
+    },
+    {
       "projectId": 1991,
       "jobNumber": "117789",
       "projectName": "Stype Wood Stud",
@@ -5990,25 +6009,6 @@
       "estimatorName": null,
       "schedulerName": null,
       "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": null
-    },
-    {
-      "projectId": 1990,
-      "jobNumber": "117788",
-      "projectName": "Archers Hall",
-      "companyName": "GLM Architecture",
-      "value": null,
-      "phaseStatus": null,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "quoteDateReceived": "2026-09-17T00:00:00.000Z",
       "quoteEstReturnDate": null,
       "stage": "Quoting",
       "phaseId": null,
