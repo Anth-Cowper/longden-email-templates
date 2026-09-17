@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T13:15:09.836Z",
+  "generatedAt": "2026-09-17T13:34:05.972Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -856,7 +856,7 @@
       "jobNumber": "117750",
       "projectName": "Apartment 9C",
       "companyName": "Malcolm Charles Conservation Ltd",
-      "value": 9224.32,
+      "value": 8935.05,
       "phaseStatus": "Scheduling WIP",
       "orderDate": "2026-06-04T00:00:00.000Z",
       "releasedAt": null,
