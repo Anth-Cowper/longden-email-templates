@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T10:41:19.626Z",
+  "generatedAt": "2026-09-17T10:43:28.517Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5826,6 +5826,25 @@
       "sortDate": "2026-09-10T00:00:00.000Z"
     },
     {
+      "projectId": 2037,
+      "jobNumber": "117835",
+      "projectName": "The Columbia Hotel",
+      "companyName": null,
+      "value": null,
+      "phaseStatus": null,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "quoteDateReceived": "2026-09-14T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-21T00:00:00.000Z"
+    },
+    {
       "projectId": 2039,
       "jobNumber": "117837",
       "projectName": "Christ's College Library",
@@ -5971,25 +5990,6 @@
       "estimatorName": null,
       "schedulerName": null,
       "quoteDateReceived": "2026-07-23T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-12-01T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-12-01T00:00:00.000Z"
-    },
-    {
-      "projectId": 2037,
-      "jobNumber": "117835",
-      "projectName": "The Columbia Hotel",
-      "companyName": null,
-      "value": null,
-      "phaseStatus": null,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "quoteDateReceived": "2026-09-14T00:00:00.000Z",
       "quoteEstReturnDate": "2026-12-01T00:00:00.000Z",
       "stage": "Quoting",
       "phaseId": null,
