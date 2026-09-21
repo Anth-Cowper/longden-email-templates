@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T08:49:29.911Z",
+  "generatedAt": "2026-09-21T08:54:29.903Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3680,7 +3680,7 @@
       "releasedAt": null,
       "depositPaidAt": "2026-08-20T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "4 Leaves, 4 Frames, 3 Miscellaneous",
+      "jobSummaryText": "4 Leaves, 4 Frames, 2 Miscellaneous",
       "materialSummaryText": "European Oak",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
