@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T09:04:29.939Z",
+  "generatedAt": "2026-09-21T09:14:29.943Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2908,6 +2908,29 @@
       "phaseId": 986,
       "phaseNumber": "1",
       "sortDate": "2026-09-21T09:57:45.270Z"
+    },
+    {
+      "projectId": 2035,
+      "jobNumber": "117833",
+      "projectName": "Dumfries House",
+      "companyName": null,
+      "value": 42428.7,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": "2026-09-18T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-18T00:00:00.000Z"
     },
     {
       "projectId": 1578,
@@ -7278,29 +7301,6 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-11-28T00:00:00.000Z"
-    },
-    {
-      "projectId": 2035,
-      "jobNumber": "117833",
-      "projectName": "Dumfries House",
-      "companyName": null,
-      "value": 42428.7,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Orders",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": null
     }
   ],
   "allJobs": [
