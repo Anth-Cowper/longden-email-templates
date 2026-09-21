@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T08:59:29.905Z",
+  "generatedAt": "2026-09-21T09:04:29.939Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3358,8 +3358,8 @@
       "releasedAt": null,
       "depositPaidAt": "2026-05-01T00:00:00.000Z",
       "estimatedSignOff": "2026-09-18T00:00:00.000Z",
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "21 Leaves, 8 Frames, 2 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Tony Oliver",
       "quoteDateReceived": null,
