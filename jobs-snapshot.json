@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:31:44.562Z",
+  "generatedAt": "2026-09-21T10:46:44.579Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4230,7 +4230,7 @@
       "jobNumber": "117653",
       "projectName": "Flat 4",
       "companyName": "G4 Projects Ltd",
-      "value": 19517.75,
+      "value": 19675.14,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-03-16T00:00:00.000Z",
@@ -4622,7 +4622,7 @@
       "jobNumber": "117833",
       "projectName": "Dumfries House",
       "companyName": null,
-      "value": 42410.86,
+      "value": 0,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": null,
@@ -4633,7 +4633,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Williams",
-      "schedulingStatusName": "Compiling RFI",
+      "schedulingStatusName": "Initial RFI Sent",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Scheduling",
