@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T13:59:23.334Z",
+  "generatedAt": "2026-09-21T14:13:30.929Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4286,14 +4286,14 @@
       "jobNumber": "117709",
       "projectName": "Building B5",
       "companyName": "Mayron Ltd",
-      "value": 36556.95,
+      "value": 32490.16,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-04-29T00:00:00.000Z",
       "releasedAt": null,
       "depositPaidAt": "2026-06-24T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "20 Leaves, 6 Frames, 2 Miscellaneous",
+      "jobSummaryText": "17 Leaves, 5 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Tony Oliver",
