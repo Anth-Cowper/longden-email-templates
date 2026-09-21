@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:53:19.169Z",
+  "generatedAt": "2026-09-21T11:03:19.197Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4605,7 +4605,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Initial RFI Sent",
+      "schedulingStatusName": "Rev A Drawing in Process",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Scheduling",
