@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T14:21:31.257Z",
+  "generatedAt": "2026-09-21T14:26:31.305Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -7761,6 +7761,34 @@
       }
     },
     {
+      "projectId": 1765,
+      "jobNumber": "117563",
+      "projectName": "44-47 Lowndes Square",
+      "companyName": "Detailed Estimating",
+      "value": 102182.55,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-21T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2025-11-27T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1751,
       "jobNumber": "117549",
       "projectName": "12 Albion Drive",
@@ -8763,34 +8791,6 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2027-01-18T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1765,
-      "jobNumber": "117563",
-      "projectName": "44-47 Lowndes Square",
-      "companyName": "Detailed Estimating",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-21T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": null,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
