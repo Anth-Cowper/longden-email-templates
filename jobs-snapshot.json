@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T12:31:02.535Z",
+  "generatedAt": "2026-09-21T12:40:20.067Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8657,34 +8657,6 @@
       }
     },
     {
-      "projectId": 1765,
-      "jobNumber": "117563",
-      "projectName": "44-47 Lowndes Square",
-      "companyName": "Detailed Estimating",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "Tony Oliver",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-01T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-24T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-24T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 1969,
       "jobNumber": "117767",
       "projectName": "BRNC Dartmouth College",
@@ -8791,6 +8763,34 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2027-01-18T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1765,
+      "jobNumber": "117563",
+      "projectName": "44-47 Lowndes Square",
+      "companyName": "Detailed Estimating",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-21T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": null,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
