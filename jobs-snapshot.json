@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T10:20:26.697Z",
+  "generatedAt": "2026-09-21T10:23:07.910Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1379,7 +1379,7 @@
       "phaseNumber": "3",
       "sortDate": "2024-09-13T00:00:00.000Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -2639,7 +2639,7 @@
       "phaseNumber": "3",
       "sortDate": "2025-12-08T00:00:00.000Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -2975,7 +2975,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-07-14T14:56:41.763Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3059,7 +3059,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-07-20T08:52:32.243Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3318,7 +3318,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-08-18T10:56:11.180Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3346,7 +3346,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-08-18T14:40:11.447Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3374,7 +3374,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-08-26T10:21:43.610Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": [
           {
             "id": 632,
@@ -3437,7 +3437,7 @@
       "phaseNumber": "2",
       "sortDate": "2026-09-02T15:08:05.203Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3493,7 +3493,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-09-08T15:10:40.243Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3521,7 +3521,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-09-21T09:11:07.397Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": []
       }
     },
@@ -3549,7 +3549,7 @@
       "phaseNumber": "1",
       "sortDate": "2026-09-21T09:57:45.270Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": [
           {
             "id": 937,
@@ -4237,7 +4237,7 @@
       "releasedAt": null,
       "depositPaidAt": "2026-06-15T00:00:00.000Z",
       "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
+      "jobSummaryText": "9 Leaves, 4 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": null,
       "schedulerName": "Tony Oliver",
@@ -4629,7 +4629,7 @@
       "releasedAt": null,
       "depositPaidAt": "2026-09-18T00:00:00.000Z",
       "estimatedSignOff": "2026-11-02T00:00:00.000Z",
-      "jobSummaryText": "22 Leaves, 12 Frames",
+      "jobSummaryText": "27 Leaves, 14 Frames, 7 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Williams",
