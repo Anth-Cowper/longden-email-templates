@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T14:02:18.955Z",
+  "generatedAt": "2026-09-22T14:32:18.996Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3852,8 +3852,8 @@
       "releasedAt": null,
       "depositPaidAt": "2025-11-04T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "25 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Sapele, Flush",
       "estimatorName": "Madi Glen",
       "schedulerName": "Madi Glen",
       "schedulingStatusName": null,
