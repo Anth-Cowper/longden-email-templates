@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T10:32:49.397Z",
+  "generatedAt": "2026-09-22T10:42:49.391Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4758,6 +4758,34 @@
       }
     },
     {
+      "projectId": 2043,
+      "jobNumber": "117841",
+      "projectName": "Project Telecaster",
+      "companyName": null,
+      "value": 30331.51,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-16T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-16T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 2042,
       "jobNumber": "117840",
       "projectName": "BYD / Honda Development",
@@ -8618,34 +8646,6 @@
       "schedulerName": null,
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-15T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-21T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2043,
-      "jobNumber": "117841",
-      "projectName": "Project Telecaster",
-      "companyName": null,
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-16T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
       "stage": "Quoting",
       "phaseId": null,
