@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:47:25.162Z",
+  "generatedAt": "2026-09-22T07:52:25.138Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8869,7 +8869,7 @@
       "estimatorName": null,
       "schedulerName": null,
       "schedulingStatusName": null,
-      "quoteDateReceived": null,
+      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
       "quoteEstReturnDate": null,
       "stage": "Quoting",
       "phaseId": null,
