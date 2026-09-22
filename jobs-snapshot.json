@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T12:47:18.801Z",
+  "generatedAt": "2026-09-22T12:52:18.841Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8713,34 +8713,6 @@
       }
     },
     {
-      "projectId": 2040,
-      "jobNumber": "117838",
-      "projectName": "St Michael le Belfrey",
-      "companyName": null,
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-09-15T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-25T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-25T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 2044,
       "jobNumber": "117842",
       "projectName": "Times House and Laundry Building",
@@ -8763,6 +8735,34 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-25T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2040,
+      "jobNumber": "117838",
+      "projectName": "St Michael le Belfrey",
+      "companyName": null,
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-09-15T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-26T00:00:00.000Z",
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-26T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
