@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T11:32:18.632Z",
+  "generatedAt": "2026-09-22T11:37:18.736Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5465,34 +5465,6 @@
       }
     },
     {
-      "projectId": 2007,
-      "jobNumber": "117805",
-      "projectName": "Atlas House",
-      "companyName": "McAleer & Rushe Contracts UK Ltd",
-      "value": 1437491.35,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-02T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-08-26T00:00:00.000Z",
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-11T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 2008,
       "jobNumber": "117806",
       "projectName": "Ronnie Scott's (1st Floor)",
@@ -8842,6 +8814,34 @@
       "schedulerName": null,
       "schedulingStatusName": null,
       "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": null,
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2007,
+      "jobNumber": "117805",
+      "projectName": "Atlas House",
+      "companyName": "McAleer & Rushe Contracts UK Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
       "quoteEstReturnDate": null,
       "stage": "Quoting",
       "phaseId": null,
