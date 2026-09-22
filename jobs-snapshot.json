@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:22:25.037Z",
+  "generatedAt": "2026-09-22T07:37:25.156Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4633,12 +4633,40 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Williams",
-      "schedulingStatusName": "Initial RFI Sent",
+      "schedulingStatusName": "Rev A Drawing in Process",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Scheduling",
       "phaseId": 1012,
       "phaseNumber": "1",
+      "sortDate": "2026-09-18T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2035,
+      "jobNumber": "117833",
+      "projectName": "Dumfries House",
+      "companyName": null,
+      "value": 0,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": "2026-09-18T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Beth Williams",
+      "schedulingStatusName": "Rev A Drawing in Process",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 1013,
+      "phaseNumber": "2",
       "sortDate": "2026-09-18T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
