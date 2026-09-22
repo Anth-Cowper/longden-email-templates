@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:37:25.156Z",
+  "generatedAt": "2026-09-22T07:42:25.146Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4629,7 +4629,7 @@
       "releasedAt": null,
       "depositPaidAt": "2026-09-18T00:00:00.000Z",
       "estimatedSignOff": "2026-11-02T00:00:00.000Z",
-      "jobSummaryText": "27 Leaves, 14 Frames, 7 Miscellaneous",
+      "jobSummaryText": "10 Leaves, 7 Frames, 5 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Williams",
@@ -4657,8 +4657,8 @@
       "releasedAt": null,
       "depositPaidAt": "2026-09-18T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "17 Leaves, 7 Frames, 2 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Williams",
       "schedulingStatusName": "Rev A Drawing in Process",
