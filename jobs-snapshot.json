@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T12:52:18.841Z",
+  "generatedAt": "2026-09-22T14:02:18.955Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3835,6 +3835,34 @@
       "phaseId": 939,
       "phaseNumber": "2",
       "sortDate": "2025-08-21T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1719,
+      "jobNumber": "117517",
+      "projectName": "Holiday Inn Bimingham",
+      "companyName": "Surefit Joinery Ltd ",
+      "value": 0,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2025-10-10T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2025-11-04T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Madi Glen",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": null,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 1014,
+      "phaseNumber": "2",
+      "sortDate": "2025-11-04T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
