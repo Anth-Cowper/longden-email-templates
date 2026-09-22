@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T08:08:45.181Z",
+  "generatedAt": "2026-09-22T08:53:45.269Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4622,7 +4622,7 @@
       "jobNumber": "117833",
       "projectName": "Dumfries House",
       "companyName": null,
-      "value": 42410.86,
+      "value": 16751.68,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": null,
@@ -4650,7 +4650,7 @@
       "jobNumber": "117833",
       "projectName": "Dumfries House",
       "companyName": null,
-      "value": 0,
+      "value": 25945.17,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": null,
