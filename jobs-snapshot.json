@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T14:08:45.289Z",
+  "generatedAt": "2026-09-23T14:09:09.332Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -6629,36 +6629,6 @@
             "assignedTo": "Daniella Jackson"
           }
         ]
-      }
-    },
-    {
-      "projectId": 1105,
-      "jobNumber": "116901",
-      "projectName": "The Barracks Watton",
-      "companyName": "Owen Pell",
-      "value": 0.34,
-      "phaseStatus": "Complete",
-      "remake": false,
-      "orderDate": "2024-07-18T00:00:00.000Z",
-      "releasedAt": "2026-01-30T08:14:59.000Z",
-      "depositPaidAt": "2024-09-13T00:00:00.000Z",
-      "estimatedSignOff": "2026-02-03T00:00:00.000Z",
-      "jobSummaryText": "15 Leaves, 15 Frames, 19 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood)",
-      "estimatorName": "Maddie Ferguson",
-      "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Post production/delivery",
-      "phaseId": 644,
-      "phaseNumber": "3",
-      "sortDate": "2024-09-13T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
       }
     },
     {
