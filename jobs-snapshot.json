@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T13:23:22.780Z",
+  "generatedAt": "2026-09-23T13:25:42.553Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4801,6 +4801,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-25T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": [
@@ -4836,6 +4837,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-16T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -4864,6 +4866,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-15T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -4892,6 +4895,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -4920,6 +4924,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -4948,6 +4953,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -4976,6 +4982,36 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-08T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2031,
+      "jobNumber": "117829",
+      "projectName": " Flat 49 Cheniston Gardens",
+      "companyName": null,
+      "value": 24176.2,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-09-07T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "13 Doors, 11 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-07T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-09T00:00:00.000Z",
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-07T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5004,6 +5040,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-07T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5032,6 +5069,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5060,6 +5098,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-28T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5088,6 +5127,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-28T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5116,6 +5156,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-25T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5144,6 +5185,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-24T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5172,6 +5214,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-21T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5200,6 +5243,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5228,6 +5272,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5256,6 +5301,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5284,6 +5330,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5312,6 +5359,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5340,6 +5388,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-17T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5368,6 +5417,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-17T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5396,6 +5446,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5424,6 +5475,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5452,6 +5504,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5480,6 +5533,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-12T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5508,6 +5562,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5536,6 +5591,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5564,6 +5620,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5592,6 +5649,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5620,6 +5678,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5648,6 +5707,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-07T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5676,6 +5736,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-06T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5704,6 +5765,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-05T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5732,6 +5794,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-05T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5760,6 +5823,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-08-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5788,6 +5852,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-22T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5816,6 +5881,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-22T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5844,6 +5910,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5872,6 +5939,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5900,6 +5968,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5928,6 +5997,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5956,6 +6026,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -5984,6 +6055,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6012,6 +6084,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6040,6 +6113,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-09T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6068,6 +6142,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-09T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6096,6 +6171,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-07-06T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6124,6 +6200,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-26T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6152,6 +6229,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-26T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6180,6 +6258,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6208,6 +6287,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-17T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6236,6 +6316,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-15T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6264,6 +6345,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6292,6 +6374,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-04T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6320,6 +6403,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-02T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6348,6 +6432,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6376,6 +6461,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-29T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6404,6 +6490,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6432,6 +6519,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6460,6 +6548,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6488,6 +6577,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6516,6 +6606,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6544,6 +6635,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-12T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6572,6 +6664,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6600,6 +6693,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-05-06T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6628,6 +6722,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-22T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6656,6 +6751,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6684,6 +6780,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6712,6 +6809,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-17T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6740,6 +6838,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-17T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6768,6 +6867,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-16T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6796,6 +6896,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-16T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6824,6 +6925,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6852,6 +6954,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-10T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6880,6 +6983,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-02T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6908,6 +7012,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-04-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6936,6 +7041,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-31T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6964,6 +7070,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-30T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -6992,6 +7099,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-30T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7020,6 +7128,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-26T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7048,6 +7157,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7076,6 +7186,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7104,6 +7215,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7132,6 +7244,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-16T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7160,6 +7273,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7188,6 +7302,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7216,6 +7331,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-13T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7244,6 +7360,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-12T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7272,6 +7389,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7300,6 +7418,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-10T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7328,6 +7447,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-05T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7356,6 +7476,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-03-04T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7384,6 +7505,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-25T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7412,6 +7534,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-25T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7440,6 +7563,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7468,6 +7592,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7496,6 +7621,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-18T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7524,6 +7650,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-10T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7552,6 +7679,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-05T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7580,6 +7708,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7608,6 +7737,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-02-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7636,6 +7766,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-01-21T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7664,6 +7795,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-01-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7692,6 +7824,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-01-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7720,6 +7853,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-01-08T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7748,6 +7882,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-01-05T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7776,6 +7911,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-12-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7804,6 +7940,36 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-12-04T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1771,
+      "jobNumber": "117569",
+      "projectName": "The Oberoi Hotel",
+      "companyName": "Gardiner & Theobald",
+      "value": 19857.74,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "17 Doors, 11 Frames, 80 Miscellaneous",
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2025-12-01T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2025-12-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7832,6 +7998,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-11-28T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7860,6 +8027,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-11-27T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7888,6 +8056,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-11-10T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7916,6 +8085,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-11-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7944,6 +8114,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-11-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7972,6 +8143,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-10-27T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8000,6 +8172,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-09-16T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8028,6 +8201,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-09-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8056,6 +8230,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-09-02T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8084,6 +8259,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-08-19T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8112,6 +8288,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-08-14T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8140,6 +8317,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8168,6 +8346,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-07-03T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8196,6 +8375,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-05-30T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8224,6 +8404,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-05-08T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8252,6 +8433,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-04-28T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8280,6 +8462,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-04-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8308,6 +8491,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-03-07T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8336,6 +8520,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2025-01-20T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8364,6 +8549,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2024-11-22T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8392,6 +8578,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2024-10-30T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8420,6 +8607,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2024-09-17T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8448,6 +8636,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2024-05-22T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8476,6 +8665,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2024-02-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8504,6 +8694,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2023-05-22T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8594,34 +8785,6 @@
       }
     },
     {
-      "projectId": 2031,
-      "jobNumber": "117829",
-      "projectName": " Flat 49 Cheniston Gardens",
-      "companyName": null,
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-09-07T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-07T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-09T00:00:00.000Z",
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-09T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 1731,
       "jobNumber": "117529",
       "projectName": "116 Regent Park Road",
@@ -8644,6 +8807,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-21T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8672,6 +8836,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-23T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8700,6 +8865,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-23T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8728,6 +8894,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-24T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8756,6 +8923,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-25T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8784,6 +8952,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-26T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8812,6 +8981,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-10-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8840,6 +9010,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-10-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8868,6 +9039,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-12-01T00:00:00.000Z",
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8896,34 +9068,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2027-01-18T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1771,
-      "jobNumber": "117569",
-      "projectName": "The Oberoi Hotel",
-      "companyName": "Gardiner & Theobald",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": null,
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8952,6 +9097,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": null,
+      "noQuotedCompany": true,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8980,6 +9126,7 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": null,
+      "noQuotedCompany": true,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
