@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:55:35.226Z",
+  "generatedAt": "2026-09-23T13:00:35.250Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3565,7 +3565,7 @@
       "jobNumber": "117376",
       "projectName": "The Worshipfull Company of Dyers",
       "companyName": "Whistlers Limited",
-      "value": 0,
+      "value": 0.02,
       "phaseStatus": "Scheduling WIP",
       "remake": true,
       "orderDate": "2025-09-10T00:00:00.000Z",
@@ -3576,7 +3576,7 @@
       "materialSummaryText": "Accoya, Sapele, Flush",
       "estimatorName": "Matthew Thomas",
       "schedulerName": "Beth Williams",
-      "schedulingStatusName": "Rev A Drawing in Process",
+      "schedulingStatusName": "Rev A Drawing sent",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Scheduling",
@@ -3702,7 +3702,7 @@
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele",
       "estimatorName": "Tony Oliver",
       "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Final Approval",
+      "schedulingStatusName": "Production Ticket Check",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Scheduling",
@@ -3710,15 +3710,8 @@
       "phaseNumber": "1",
       "sortDate": "2026-06-15T00:00:00.000Z",
       "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 926,
-            "action": "update",
-            "target": null,
-            "assignedTo": "Tony Oliver"
-          }
-        ]
+        "statusFlag": "Production Ticket Check",
+        "openNotes": []
       }
     },
     {
