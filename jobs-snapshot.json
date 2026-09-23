@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T10:18:53.596Z",
+  "generatedAt": "2026-09-23T10:28:53.621Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4678,7 +4678,7 @@
       "jobNumber": "117369",
       "projectName": "Moseley Road Baths",
       "companyName": "Construction Services Ltd (Mansfield) ",
-      "value": 0,
+      "value": 32618.81,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2025-11-28T00:00:00.000Z",
