@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T13:41:22.124Z",
+  "generatedAt": "2026-09-23T13:46:22.126Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3995,8 +3995,8 @@
       "releasedAt": null,
       "depositPaidAt": "2024-02-29T00:00:00.000Z",
       "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 2 Frames",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele",
+      "jobSummaryText": "15 Leaves, 16 Frames, 40 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Jon Wass",
       "schedulerName": "Anthony Cowper",
       "schedulingStatusName": "Ironmongery Queries Client",
