@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:15:35.137Z",
+  "generatedAt": "2026-09-23T12:55:35.226Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,34 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 341,
-      "jobNumber": "116128",
-      "projectName": "Longden Doors Test doors",
-      "companyName": "Longden Doors UK Ltd",
-      "value": 0.04,
-      "phaseStatus": "Complete",
-      "remake": false,
-      "orderDate": "2020-12-07T00:00:00.000Z",
-      "releasedAt": "2021-02-04T10:46:59.927Z",
-      "depositPaidAt": "2026-08-13T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "4 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "Steve Brook",
-      "schedulerName": "Shaun Senior",
-      "schedulingStatusName": null,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Post production/delivery",
-      "phaseId": 159,
-      "phaseNumber": "5",
-      "sortDate": "2026-08-13T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
     {
       "projectId": 341,
       "jobNumber": "116128",
