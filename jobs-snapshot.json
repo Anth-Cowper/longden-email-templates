@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:53:53.492Z",
+  "generatedAt": "2026-09-23T10:13:53.613Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3107,34 +3107,6 @@
       "phaseId": 906,
       "phaseNumber": "2",
       "sortDate": "2026-07-15T14:14:19.177Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1704,
-      "jobNumber": "117502",
-      "projectName": "A&M Fife Golf Resort",
-      "companyName": "Robertson Construction Tayside Ltd",
-      "value": 166476.62,
-      "phaseStatus": "Manufacture",
-      "remake": false,
-      "orderDate": "2025-10-16T00:00:00.000Z",
-      "releasedAt": "2026-07-16T15:04:55.470Z",
-      "depositPaidAt": "2025-12-02T00:00:00.000Z",
-      "estimatedSignOff": "2026-07-10T00:00:00.000Z",
-      "jobSummaryText": "54 Frames, 79 Miscellaneous",
-      "materialSummaryText": "American White Oak, Flush",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": "Manufacturing Paperwork Produced",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Production",
-      "phaseId": 948,
-      "phaseNumber": "2",
-      "sortDate": "2026-07-16T15:04:55.470Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
