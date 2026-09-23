@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:50:51.780Z",
+  "generatedAt": "2026-09-23T09:52:25.696Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3589,34 +3589,6 @@
       }
     },
     {
-      "projectId": 1571,
-      "jobNumber": "117369",
-      "projectName": "Moseley Road Baths",
-      "companyName": "Construction Services Ltd (Mansfield) ",
-      "value": 36155.63,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2025-11-28T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-09-22T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "8 Leaves, 15 Frames, 4 Miscellaneous",
-      "materialSummaryText": "Douglas Fir, Poplar (Tulipwood), Sapele, Flush",
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-08-12T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-22T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 1578,
       "jobNumber": "117376",
       "projectName": "The Worshipfull Company of Dyers",
@@ -4724,6 +4696,34 @@
       "phaseId": 1013,
       "phaseNumber": "2",
       "sortDate": "2026-09-18T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1571,
+      "jobNumber": "117369",
+      "projectName": "Moseley Road Baths",
+      "companyName": "Construction Services Ltd (Mansfield) ",
+      "value": 0,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2025-11-28T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-09-22T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": null,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 1015,
+      "phaseNumber": "1",
+      "sortDate": "2026-09-22T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
