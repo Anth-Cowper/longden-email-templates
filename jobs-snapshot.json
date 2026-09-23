@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T14:07:36.111Z",
+  "generatedAt": "2026-09-23T14:08:44.576Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -6629,66 +6629,6 @@
             "assignedTo": "Daniella Jackson"
           }
         ]
-      }
-    },
-    {
-      "projectId": 1104,
-      "jobNumber": "116900",
-      "projectName": "36-38 Grosvenor Gardens",
-      "companyName": "Culena London",
-      "value": 20.75,
-      "phaseStatus": "Complete",
-      "remake": false,
-      "orderDate": "2024-02-23T00:00:00.000Z",
-      "releasedAt": "2025-11-24T11:12:23.340Z",
-      "depositPaidAt": "2025-11-24T00:00:00.000Z",
-      "estimatedSignOff": "2025-11-24T00:00:00.000Z",
-      "jobSummaryText": "2 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "Maddie Ferguson",
-      "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": null,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Post production/delivery",
-      "phaseId": 641,
-      "phaseNumber": "4",
-      "sortDate": "2025-11-24T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1105,
-      "jobNumber": "116901",
-      "projectName": "The Barracks Watton",
-      "companyName": "Owen Pell",
-      "value": 0.02,
-      "phaseStatus": "Complete",
-      "remake": false,
-      "orderDate": "2024-07-18T00:00:00.000Z",
-      "releasedAt": "2025-08-28T13:10:57.640Z",
-      "depositPaidAt": "2024-09-13T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "2 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "Maddie Ferguson",
-      "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": null,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Post production/delivery",
-      "phaseId": 643,
-      "phaseNumber": "2",
-      "sortDate": "2024-09-13T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
       }
     },
     {
