@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T10:38:53.649Z",
+  "generatedAt": "2026-09-23T10:48:53.655Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4678,14 +4678,14 @@
       "jobNumber": "117369",
       "projectName": "Moseley Road Baths",
       "companyName": "Construction Services Ltd (Mansfield) ",
-      "value": 38555.63,
+      "value": 36155.63,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2025-11-28T00:00:00.000Z",
       "releasedAt": null,
       "depositPaidAt": "2026-09-22T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "8 Leaves, 15 Frames, 6 Miscellaneous",
+      "jobSummaryText": "8 Leaves, 15 Frames, 5 Miscellaneous",
       "materialSummaryText": "Douglas Fir, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
