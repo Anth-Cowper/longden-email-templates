@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T14:14:29.390Z",
+  "generatedAt": "2026-09-23T14:19:29.389Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1408,7 +1408,7 @@
       "jobNumber": "117653",
       "projectName": "Flat 4",
       "companyName": "G4 Projects Ltd",
-      "value": 19675.14,
+      "value": 20440.71,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-03-16T00:00:00.000Z",
