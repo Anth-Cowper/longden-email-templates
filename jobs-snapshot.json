@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T14:09:29.289Z",
+  "generatedAt": "2026-09-23T14:14:29.390Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -44,6 +44,43 @@
             "action": "Courtsey Check",
             "target": "D",
             "assignedTo": "Daniella Jackson"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": 1954,
+      "jobNumber": "117752",
+      "projectName": "46 Chelsea Square",
+      "companyName": "Property Eye Building Services",
+      "value": 2867.84,
+      "phaseStatus": "Manufacture",
+      "remake": false,
+      "orderDate": "2026-06-08T00:00:00.000Z",
+      "releasedAt": "2026-08-18T10:56:11.180Z",
+      "depositPaidAt": "2026-06-16T00:00:00.000Z",
+      "estimatedSignOff": "2026-08-07T00:00:00.000Z",
+      "jobSummaryText": "1 Leaf, 1 Miscellaneous",
+      "materialSummaryText": "Sapele",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 1000,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-18T10:56:11.180Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 2251,
+            "action": "Check up Call",
+            "target": "D",
+            "assignedTo": "Graeme Vickers"
           }
         ]
       }
@@ -447,36 +484,6 @@
       "phaseId": 175,
       "phaseNumber": "22",
       "sortDate": "2026-08-13T12:52:52.750Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1954,
-      "jobNumber": "117752",
-      "projectName": "46 Chelsea Square",
-      "companyName": "Property Eye Building Services",
-      "value": 2867.84,
-      "phaseStatus": "Manufacture",
-      "remake": false,
-      "orderDate": "2026-06-08T00:00:00.000Z",
-      "releasedAt": "2026-08-18T10:56:11.180Z",
-      "depositPaidAt": "2026-06-16T00:00:00.000Z",
-      "estimatedSignOff": "2026-08-07T00:00:00.000Z",
-      "jobSummaryText": "1 Leaf, 1 Miscellaneous",
-      "materialSummaryText": "Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 1000,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-18T10:56:11.180Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -1408,7 +1415,7 @@
       "releasedAt": null,
       "depositPaidAt": "2026-06-15T00:00:00.000Z",
       "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 4 Frames, 2 Miscellaneous",
+      "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": null,
       "schedulerName": "Tony Oliver",
@@ -1742,7 +1749,7 @@
       "materialSummaryText": "American White Oak, Poplar (Tulipwood)",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Revised drawings sent [4]",
+      "schedulingStatusName": "Revised drawings sent [5]",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
