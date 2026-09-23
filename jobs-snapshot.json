@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T11:40:35.066Z",
+  "generatedAt": "2026-09-23T11:45:35.071Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3761,8 +3761,8 @@
       "releasedAt": null,
       "depositPaidAt": "2026-07-09T00:00:00.000Z",
       "estimatedSignOff": "2026-10-19T00:00:00.000Z",
-      "jobSummaryText": "14 Leaves, 14 Frames, 23 Miscellaneous",
-      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele",
+      "jobSummaryText": "14 Frames, 20 Miscellaneous",
+      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Williams",
       "schedulingStatusName": "First Off Drawing Check",
@@ -4717,7 +4717,7 @@
       "materialSummaryText": "Douglas Fir, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": null,
+      "schedulingStatusName": "Initial RFI Sent",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "stage": "Scheduling",
