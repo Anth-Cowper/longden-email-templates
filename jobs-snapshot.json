@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T11:45:35.071Z",
+  "generatedAt": "2026-09-23T12:00:35.111Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3754,14 +3754,14 @@
       "jobNumber": "117740",
       "projectName": "30 Sackville Street",
       "companyName": "A. D. DESIGN CONCEPTS LIMITED",
-      "value": 36886.26,
+      "value": 37579.56,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-07-07T00:00:00.000Z",
       "releasedAt": null,
       "depositPaidAt": "2026-07-09T00:00:00.000Z",
       "estimatedSignOff": "2026-10-19T00:00:00.000Z",
-      "jobSummaryText": "14 Frames, 20 Miscellaneous",
+      "jobSummaryText": "1 Leaf, 14 Frames, 20 Miscellaneous",
       "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Williams",
