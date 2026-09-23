@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T07:01:26.215Z",
+  "generatedAt": "2026-09-23T07:01:32.233Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3617,6 +3617,167 @@
       }
     },
     {
+      "projectId": 1640,
+      "jobNumber": "117438",
+      "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
+      "companyName": "Mace Group",
+      "value": 133492.61,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-02-02T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-03-03T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
+      "jobSummaryText": "23 Leaves, 15 Frames, 9 Screens, 5 Miscellaneous",
+      "materialSummaryText": "European Oak, Sapele",
+      "estimatorName": "Beth Williams",
+      "schedulerName": "Beth Williams",
+      "schedulingStatusName": "Redrawing following Comments [1]",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 918,
+      "phaseNumber": "2",
+      "sortDate": "2026-03-03T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 943,
+            "action": "Phs2 production drawings sent for JQA sign off ",
+            "target": null,
+            "assignedTo": "Beth Williams"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": 1362,
+      "jobNumber": "117159",
+      "projectName": "William Hunt Mansions",
+      "companyName": "Lando Design & Build Ltd",
+      "value": 3290.55,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2025-02-10T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-03-11T00:00:00.000Z",
+      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
+      "jobSummaryText": "2 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Sapele, Flush",
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Waiting for Sign Off",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 810,
+      "phaseNumber": "2",
+      "sortDate": "2026-03-11T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 958,
+            "action": "REV A drawings sent for phase two ",
+            "target": null,
+            "assignedTo": "Madi Glen"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": 1480,
+      "jobNumber": "117278",
+      "projectName": "Spalding Gentlemens Society Club",
+      "companyName": "Turnbull & Company Ltd",
+      "value": 23190.89,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2025-09-30T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-06-03T00:00:00.000Z",
+      "estimatedSignOff": "2026-08-21T00:00:00.000Z",
+      "jobSummaryText": "6 Leaves, 3 Frames, 9 Miscellaneous",
+      "materialSummaryText": "European Oak, Sapele",
+      "estimatorName": "Tony Oliver",
+      "schedulerName": "Tony Oliver",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 847,
+      "phaseNumber": "1",
+      "sortDate": "2026-06-03T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": "Production Ticket Check",
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1760,
+      "jobNumber": "117558",
+      "projectName": "33a Pembroke Square",
+      "companyName": "B4W Solution Ltd",
+      "value": 7719.92,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2025-11-21T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-06-15T00:00:00.000Z",
+      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
+      "jobSummaryText": "4 Leaves, 3 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele",
+      "estimatorName": "Tony Oliver",
+      "schedulerName": "Tony Oliver",
+      "schedulingStatusName": "Final Approval",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 967,
+      "phaseNumber": "1",
+      "sortDate": "2026-06-15T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 926,
+            "action": "update",
+            "target": null,
+            "assignedTo": "Tony Oliver"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": 1942,
+      "jobNumber": "117740",
+      "projectName": "30 Sackville Street",
+      "companyName": "A. D. DESIGN CONCEPTS LIMITED",
+      "value": 36886.26,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-07-07T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-07-09T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-19T00:00:00.000Z",
+      "jobSummaryText": "14 Leaves, 14 Frames, 19 Miscellaneous",
+      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Beth Williams",
+      "schedulingStatusName": "First Off Drawing Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 1009,
+      "phaseNumber": "3",
+      "sortDate": "2026-07-09T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": "First Off Drawing Check",
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 486,
       "jobNumber": "116273",
       "projectName": "26 Gilston Road",
@@ -3985,41 +4146,6 @@
       "jobNumber": "117438",
       "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
       "companyName": "Mace Group",
-      "value": 133492.61,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-02-02T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-03-03T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "23 Leaves, 15 Frames, 9 Screens, 5 Miscellaneous",
-      "materialSummaryText": "European Oak, Sapele",
-      "estimatorName": "Beth Williams",
-      "schedulerName": "Beth Williams",
-      "schedulingStatusName": "Redrawing following Comments [1]",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 918,
-      "phaseNumber": "2",
-      "sortDate": "2026-03-03T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 943,
-            "action": "Phs2 production drawings sent for JQA sign off ",
-            "target": null,
-            "assignedTo": "Beth Williams"
-          }
-        ]
-      }
-    },
-    {
-      "projectId": 1640,
-      "jobNumber": "117438",
-      "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
-      "companyName": "Mace Group",
       "value": 78844.15,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
@@ -4100,41 +4226,6 @@
       }
     },
     {
-      "projectId": 1362,
-      "jobNumber": "117159",
-      "projectName": "William Hunt Mansions",
-      "companyName": "Lando Design & Build Ltd",
-      "value": 3290.55,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2025-02-10T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-03-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
-      "jobSummaryText": "2 Frames, 1 Miscellaneous",
-      "materialSummaryText": "Sapele, Flush",
-      "estimatorName": "Alfie Price",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Waiting for Sign Off",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 810,
-      "phaseNumber": "2",
-      "sortDate": "2026-03-11T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 958,
-            "action": "REV A drawings sent for phase two ",
-            "target": null,
-            "assignedTo": "Madi Glen"
-          }
-        ]
-      }
-    },
-    {
       "projectId": 1788,
       "jobNumber": "117586",
       "projectName": "1b Chester Row",
@@ -4159,34 +4250,6 @@
       "sortDate": "2026-03-11T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1480,
-      "jobNumber": "117278",
-      "projectName": "Spalding Gentlemens Society Club",
-      "companyName": "Turnbull & Company Ltd",
-      "value": 23190.89,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2025-09-30T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-06-03T00:00:00.000Z",
-      "estimatedSignOff": "2026-08-21T00:00:00.000Z",
-      "jobSummaryText": "6 Leaves, 3 Frames, 9 Miscellaneous",
-      "materialSummaryText": "European Oak, Sapele",
-      "estimatorName": "Tony Oliver",
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 847,
-      "phaseNumber": "1",
-      "sortDate": "2026-06-03T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": "Production Ticket Check",
         "openNotes": []
       }
     },
@@ -4216,41 +4279,6 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": []
-      }
-    },
-    {
-      "projectId": 1760,
-      "jobNumber": "117558",
-      "projectName": "33a Pembroke Square",
-      "companyName": "B4W Solution Ltd",
-      "value": 7719.92,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2025-11-21T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-06-15T00:00:00.000Z",
-      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
-      "jobSummaryText": "4 Leaves, 3 Frames, 1 Miscellaneous",
-      "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele",
-      "estimatorName": "Tony Oliver",
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Final Approval",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 967,
-      "phaseNumber": "1",
-      "sortDate": "2026-06-15T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 926,
-            "action": "update",
-            "target": null,
-            "assignedTo": "Tony Oliver"
-          }
-        ]
       }
     },
     {
@@ -4446,34 +4474,6 @@
       "sortDate": "2026-07-09T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1942,
-      "jobNumber": "117740",
-      "projectName": "30 Sackville Street",
-      "companyName": "A. D. DESIGN CONCEPTS LIMITED",
-      "value": 36886.26,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-07-07T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-07-09T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-19T00:00:00.000Z",
-      "jobSummaryText": "14 Leaves, 14 Frames, 19 Miscellaneous",
-      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Beth Williams",
-      "schedulingStatusName": "First Off Drawing Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 1009,
-      "phaseNumber": "3",
-      "sortDate": "2026-07-09T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": "First Off Drawing Check",
         "openNotes": []
       }
     },
