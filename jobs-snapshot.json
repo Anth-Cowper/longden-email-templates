@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T10:28:53.621Z",
+  "generatedAt": "2026-09-23T10:33:53.638Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4685,8 +4685,8 @@
       "releasedAt": null,
       "depositPaidAt": "2026-09-22T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "8 Leaves, 15 Frames, 6 Miscellaneous",
-      "materialSummaryText": "Douglas Fir, Poplar (Tulipwood), Sapele, Flush",
+      "jobSummaryText": "1 Leaf, 2 Frames",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
       "schedulingStatusName": null,
