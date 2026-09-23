@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T14:37:22.379Z",
+  "generatedAt": "2026-09-23T14:42:22.473Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2394,39 +2394,6 @@
       "quoteCustomerReturn": null,
       "quotedCompanies": [
         "New Age Construction Ltd"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-28T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2029,
-      "jobNumber": "117827",
-      "projectName": "5 Denmark Street",
-      "companyName": "Sterling Property Developments Limited",
-      "value": 28762.67,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "22 Doors, 20 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-21T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Sterling Property Developments Limited"
       ],
       "stage": "Estimating",
       "phaseId": null,
@@ -8823,6 +8790,38 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-06-10T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2029,
+      "jobNumber": "117827",
+      "projectName": "5 Denmark Street",
+      "companyName": "Sterling Property Developments Limited",
+      "value": 28762.67,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "22 Doors, 20 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-21T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Sterling Property Developments Limited"
+      ],
+      "stage": "Orders",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": null,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
