@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:10:35.132Z",
+  "generatedAt": "2026-09-23T12:15:35.137Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3750,34 +3750,6 @@
       }
     },
     {
-      "projectId": 1942,
-      "jobNumber": "117740",
-      "projectName": "30 Sackville Street",
-      "companyName": "A. D. DESIGN CONCEPTS LIMITED",
-      "value": 38517.12,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-07-07T00:00:00.000Z",
-      "releasedAt": null,
-      "depositPaidAt": "2026-07-09T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-19T00:00:00.000Z",
-      "jobSummaryText": "1 Leaf, 14 Frames, 20 Miscellaneous",
-      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Beth Williams",
-      "schedulingStatusName": "First Off Drawing Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "stage": "Scheduling",
-      "phaseId": 1009,
-      "phaseNumber": "3",
-      "sortDate": "2026-07-09T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": "First Off Drawing Check",
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 486,
       "jobNumber": "116273",
       "projectName": "26 Gilston Road",
@@ -4471,6 +4443,34 @@
       "stage": "Scheduling",
       "phaseId": 998,
       "phaseNumber": "2",
+      "sortDate": "2026-07-09T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1942,
+      "jobNumber": "117740",
+      "projectName": "30 Sackville Street",
+      "companyName": "A. D. DESIGN CONCEPTS LIMITED",
+      "value": 38517.12,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-07-07T00:00:00.000Z",
+      "releasedAt": null,
+      "depositPaidAt": "2026-07-09T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-19T00:00:00.000Z",
+      "jobSummaryText": "1 Leaf, 14 Frames, 20 Miscellaneous",
+      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Beth Williams",
+      "schedulingStatusName": "Revised drawings sent [1]",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "stage": "Scheduling",
+      "phaseId": 1009,
+      "phaseNumber": "3",
       "sortDate": "2026-07-09T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
