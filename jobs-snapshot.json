@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T13:36:22.032Z",
+  "generatedAt": "2026-09-23T13:41:22.124Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3132,6 +3132,43 @@
       }
     },
     {
+      "projectId": 1641,
+      "jobNumber": "117439",
+      "projectName": "West Caldergate",
+      "companyName": "Bentleys Shopfitting Ltd",
+      "value": 26964.34,
+      "phaseStatus": "Manufacture",
+      "remake": false,
+      "orderDate": "2025-12-02T00:00:00.000Z",
+      "releasedAt": "2026-07-20T08:52:32.243Z",
+      "depositPaidAt": "2026-04-29T00:00:00.000Z",
+      "estimatedSignOff": "2026-07-10T00:00:00.000Z",
+      "jobSummaryText": "10 Leaves, 9 Frames, 3 Miscellaneous",
+      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Tony Oliver",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 922,
+      "phaseNumber": "1",
+      "sortDate": "2026-07-20T08:52:32.243Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 2246,
+            "action": "Courtsey Check",
+            "target": "D",
+            "assignedTo": "Daniella Jackson"
+          }
+        ]
+      }
+    },
+    {
       "projectId": 1578,
       "jobNumber": "117376",
       "projectName": "The Worshipfull Company of Dyers",
@@ -3327,36 +3364,6 @@
       "phaseId": 906,
       "phaseNumber": "2",
       "sortDate": "2026-07-15T14:14:19.177Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1641,
-      "jobNumber": "117439",
-      "projectName": "West Caldergate",
-      "companyName": "Bentleys Shopfitting Ltd",
-      "value": 26964.34,
-      "phaseStatus": "Manufacture",
-      "remake": false,
-      "orderDate": "2025-12-02T00:00:00.000Z",
-      "releasedAt": "2026-07-20T08:52:32.243Z",
-      "depositPaidAt": "2026-04-29T00:00:00.000Z",
-      "estimatedSignOff": "2026-07-10T00:00:00.000Z",
-      "jobSummaryText": "10 Leaves, 9 Frames, 3 Miscellaneous",
-      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 922,
-      "phaseNumber": "1",
-      "sortDate": "2026-07-20T08:52:32.243Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -9720,7 +9727,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-17T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-24T00:00:00.000Z",
       "quotedCompanies": [
         "Vitpol Building Services Ltd"
       ],
@@ -9753,7 +9760,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-22T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-29T00:00:00.000Z",
       "quotedCompanies": [
         "Barnes Construction Ltd - Ipswich"
       ],
@@ -9786,7 +9793,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-15T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
       "quotedCompanies": [
         "PJ Spillings Ltd"
       ],
@@ -9819,7 +9826,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-15T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
       "quotedCompanies": [
         "Whistlers Limited"
       ],
@@ -9852,7 +9859,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-22T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-24T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-29T00:00:00.000Z",
       "quotedCompanies": [
         "West End Esher Village Hall"
       ],
@@ -9885,7 +9892,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-22T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-25T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-29T00:00:00.000Z",
       "quotedCompanies": [
         "McAleer & Rushe Contracts UK Ltd"
       ],
@@ -9918,7 +9925,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-15T00:00:00.000Z",
       "quoteEstReturnDate": "2026-09-26T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
       "quotedCompanies": [
         "Egg Contracts Ltd"
       ],
@@ -9951,7 +9958,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-08-25T00:00:00.000Z",
       "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-09-01T00:00:00.000Z",
       "quotedCompanies": [
         "Optimum Carpentry & Joinery Ltd"
       ],
@@ -9984,7 +9991,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-07-29T00:00:00.000Z",
       "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-08-05T00:00:00.000Z",
       "quotedCompanies": [
         "Urban Interior Solutions"
       ],
@@ -10017,7 +10024,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-07-23T00:00:00.000Z",
       "quoteEstReturnDate": "2026-12-01T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-07-30T00:00:00.000Z",
       "quotedCompanies": [
         "Tailored Living Solutions"
       ],
@@ -10050,7 +10057,7 @@
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-08-12T00:00:00.000Z",
       "quoteEstReturnDate": "2027-01-18T00:00:00.000Z",
-      "quoteCustomerReturn": null,
+      "quoteCustomerReturn": "2026-08-19T00:00:00.000Z",
       "quotedCompanies": [
         "Purcell (Manchester)"
       ],
