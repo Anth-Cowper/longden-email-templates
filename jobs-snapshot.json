@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T08:41:45.293Z",
+  "generatedAt": "2026-09-24T08:51:45.354Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -97,96 +97,6 @@
             "action": "Courtesy Call",
             "target": "D",
             "assignedTo": "Daniella Jackson"
-          }
-        ]
-      }
-    },
-    {
-      "projectId": 1954,
-      "jobNumber": "117752",
-      "projectName": "46 Chelsea Square",
-      "companyName": "Property Eye Building Services",
-      "value": 2867.84,
-      "phaseStatus": "Manufacture",
-      "remake": false,
-      "orderDate": "2026-06-08T00:00:00.000Z",
-      "orderTriggeredAt": "2026-06-15T15:59:15.571Z",
-      "releasedAt": "2026-08-18T10:56:11.180Z",
-      "deliveryDate": "2026-10-27T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-06-16T00:00:00.000Z",
-      "estimatedSignOff": "2026-08-07T00:00:00.000Z",
-      "jobSummaryText": "1 Leaf, 1 Miscellaneous",
-      "materialSummaryText": "Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 1000,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-18T10:56:11.180Z",
-      "stageEnteredAt": "2026-08-18T10:56:11.180Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2251,
-            "action": "Check up Call",
-            "target": "D",
-            "assignedTo": "Graeme Vickers"
-          },
-          {
-            "id": 2253,
-            "action": "Courtesy Call",
-            "target": "D",
-            "assignedTo": "Daniella Jackson"
-          }
-        ]
-      }
-    },
-    {
-      "projectId": 1864,
-      "jobNumber": "117662",
-      "projectName": "Gonville & Caius College",
-      "companyName": "Cocksedge Building Contractors Ltd",
-      "value": 9362.1,
-      "phaseStatus": "Planning Pool",
-      "remake": false,
-      "orderDate": "2026-05-08T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-17T12:51:44.242Z",
-      "releasedAt": "2026-09-21T09:57:45.270Z",
-      "deliveryDate": "2026-12-10T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-08-20T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "4 Leaves, 4 Frames, 3 Miscellaneous",
-      "materialSummaryText": "European Oak",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 986,
-      "phaseNumber": "1",
-      "sortDate": "2026-09-21T09:57:45.270Z",
-      "stageEnteredAt": "2026-09-21T09:57:45.270Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 937,
-            "action": "drawings complete and sent to anth ",
-            "target": null,
-            "assignedTo": "Madi Glen"
           }
         ]
       }
@@ -542,6 +452,41 @@
       }
     },
     {
+      "projectId": 1954,
+      "jobNumber": "117752",
+      "projectName": "46 Chelsea Square",
+      "companyName": "Property Eye Building Services",
+      "value": 2867.84,
+      "phaseStatus": "Manufacture",
+      "remake": false,
+      "orderDate": "2026-06-08T00:00:00.000Z",
+      "orderTriggeredAt": "2026-06-15T15:59:15.571Z",
+      "releasedAt": "2026-08-18T10:56:11.180Z",
+      "deliveryDate": "2026-10-27T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-06-16T00:00:00.000Z",
+      "estimatedSignOff": "2026-08-07T00:00:00.000Z",
+      "jobSummaryText": "1 Leaf, 1 Miscellaneous",
+      "materialSummaryText": "Sapele",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 1000,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-18T10:56:11.180Z",
+      "stageEnteredAt": "2026-08-18T10:56:11.180Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1584,
       "jobNumber": "117382",
       "projectName": "5 Fitzharding Street",
@@ -787,6 +732,41 @@
       }
     },
     {
+      "projectId": 1864,
+      "jobNumber": "117662",
+      "projectName": "Gonville & Caius College",
+      "companyName": "Cocksedge Building Contractors Ltd",
+      "value": 9362.1,
+      "phaseStatus": "Planning Pool",
+      "remake": false,
+      "orderDate": "2026-05-08T00:00:00.000Z",
+      "orderTriggeredAt": "2026-08-17T12:51:44.242Z",
+      "releasedAt": "2026-09-21T09:57:45.270Z",
+      "deliveryDate": "2026-12-10T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-08-20T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": "4 Leaves, 4 Frames, 3 Miscellaneous",
+      "materialSummaryText": "European Oak",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 986,
+      "phaseNumber": "1",
+      "sortDate": "2026-09-21T09:57:45.270Z",
+      "stageEnteredAt": "2026-09-21T09:57:45.270Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1735,
       "jobNumber": "117533",
       "projectName": "Naome Acres",
@@ -854,48 +834,6 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": []
-      }
-    },
-    {
-      "projectId": 1362,
-      "jobNumber": "117159",
-      "projectName": "William Hunt Mansions",
-      "companyName": "Lando Design & Build Ltd",
-      "value": 3290.55,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2025-02-10T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-04T07:47:25.098Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-03-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
-      "jobSummaryText": "2 Frames, 1 Miscellaneous",
-      "materialSummaryText": "Sapele, Flush",
-      "estimatorName": "Alfie Price",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Waiting for Sign Off",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 810,
-      "phaseNumber": "2",
-      "sortDate": "2026-03-11T00:00:00.000Z",
-      "stageEnteredAt": "2026-03-11T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 958,
-            "action": "REV A drawings sent for phase two ",
-            "target": null,
-            "assignedTo": "Madi Glen"
-          }
-        ]
       }
     },
     {
@@ -1523,6 +1461,41 @@
       "phaseNumber": "5",
       "sortDate": "2026-03-03T00:00:00.000Z",
       "stageEnteredAt": "2026-03-03T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1362,
+      "jobNumber": "117159",
+      "projectName": "William Hunt Mansions",
+      "companyName": "Lando Design & Build Ltd",
+      "value": 3290.55,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2025-02-10T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-04T07:47:25.098Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-03-11T00:00:00.000Z",
+      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
+      "jobSummaryText": "2 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Sapele, Flush",
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Waiting for Sign Off",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 810,
+      "phaseNumber": "2",
+      "sortDate": "2026-03-11T00:00:00.000Z",
+      "stageEnteredAt": "2026-03-11T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
