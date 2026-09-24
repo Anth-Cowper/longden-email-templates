@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T09:29:17.611Z",
+  "generatedAt": "2026-09-24T09:34:17.727Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1836,7 +1836,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Final Approval",
+      "schedulingStatusName": "Signed off into Production",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
