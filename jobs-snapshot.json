@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T08:25:52.712Z",
+  "generatedAt": "2026-09-24T08:26:11.952Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -145,48 +145,6 @@
             "action": "Courtesy Call",
             "target": "D",
             "assignedTo": "Daniella Jackson"
-          }
-        ]
-      }
-    },
-    {
-      "projectId": 1362,
-      "jobNumber": "117159",
-      "projectName": "William Hunt Mansions",
-      "companyName": "Lando Design & Build Ltd",
-      "value": 44457.21,
-      "phaseStatus": "Planning Pool",
-      "remake": false,
-      "orderDate": "2025-02-10T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-04T07:47:25.098Z",
-      "releasedAt": "2026-08-26T10:21:43.610Z",
-      "deliveryDate": "2026-10-07T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-03-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-08-12T00:00:00.000Z",
-      "jobSummaryText": "19 Leaves, 22 Frames, 8 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
-      "estimatorName": "Alfie Price",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 809,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-26T10:21:43.610Z",
-      "stageEnteredAt": "2026-08-26T10:21:43.610Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 632,
-            "action": "request for meeting ",
-            "target": null,
-            "assignedTo": "Madi Glen"
           }
         ]
       }
@@ -619,6 +577,41 @@
       }
     },
     {
+      "projectId": 1362,
+      "jobNumber": "117159",
+      "projectName": "William Hunt Mansions",
+      "companyName": "Lando Design & Build Ltd",
+      "value": 44457.21,
+      "phaseStatus": "Planning Pool",
+      "remake": false,
+      "orderDate": "2025-02-10T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-04T07:47:25.098Z",
+      "releasedAt": "2026-08-26T10:21:43.610Z",
+      "deliveryDate": "2026-10-07T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-03-11T00:00:00.000Z",
+      "estimatedSignOff": "2026-08-12T00:00:00.000Z",
+      "jobSummaryText": "19 Leaves, 22 Frames, 8 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 809,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-26T10:21:43.610Z",
+      "stageEnteredAt": "2026-08-26T10:21:43.610Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1892,
       "jobNumber": "117690",
       "projectName": "Northwick Park Primary Academy",
@@ -861,48 +854,6 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": []
-      }
-    },
-    {
-      "projectId": 1640,
-      "jobNumber": "117438",
-      "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
-      "companyName": "Mace Group",
-      "value": 133492.61,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-02-02T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-03-03T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "23 Leaves, 15 Frames, 9 Screens, 5 Miscellaneous",
-      "materialSummaryText": "European Oak, Sapele",
-      "estimatorName": "Beth Oliver-Williams",
-      "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Redrawing following Comments [1]",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 918,
-      "phaseNumber": "2",
-      "sortDate": "2026-03-03T00:00:00.000Z",
-      "stageEnteredAt": "2026-03-03T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 943,
-            "action": "Phs2 production drawings sent for JQA sign off ",
-            "target": null,
-            "assignedTo": "Beth Oliver-Williams"
-          }
-        ]
       }
     },
     {
@@ -1432,6 +1383,41 @@
       "phaseNumber": "6",
       "sortDate": "2026-01-29T00:00:00.000Z",
       "stageEnteredAt": "2026-01-29T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1640,
+      "jobNumber": "117438",
+      "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
+      "companyName": "Mace Group",
+      "value": 133492.61,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-02-02T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-03-03T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
+      "jobSummaryText": "23 Leaves, 15 Frames, 9 Screens, 5 Miscellaneous",
+      "materialSummaryText": "European Oak, Sapele",
+      "estimatorName": "Beth Oliver-Williams",
+      "schedulerName": "Beth Oliver-Williams",
+      "schedulingStatusName": "Redrawing following Comments [1]",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 918,
+      "phaseNumber": "2",
+      "sortDate": "2026-03-03T00:00:00.000Z",
+      "stageEnteredAt": "2026-03-03T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
