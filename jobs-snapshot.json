@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T08:33:25.408Z",
+  "generatedAt": "2026-09-24T08:38:25.498Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5234,7 +5234,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": "59 Doors, 52 Frames",
       "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
+      "estimatorName": "Madi Glen",
       "schedulerName": null,
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-04-10T00:00:00.000Z",
