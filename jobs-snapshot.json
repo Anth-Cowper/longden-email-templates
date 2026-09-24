@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T23:29:17.789Z",
+  "generatedAt": "2026-09-24T06:59:18.691Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -7082,7 +7082,7 @@
       "projectId": 2047,
       "jobNumber": "117845",
       "projectName": "Oak Lodge, Bushey",
-      "companyName": null,
+      "companyName": "RYE Design Ltd",
       "value": null,
       "phaseStatus": null,
       "remake": false,
@@ -7095,15 +7095,17 @@
       "estimatorName": null,
       "schedulerName": null,
       "schedulingStatusName": null,
-      "quoteDateReceived": null,
+      "quoteDateReceived": "2026-09-24T00:00:00.000Z",
       "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
+      "quoteCustomerReturn": "2026-10-01T00:00:00.000Z",
+      "quotedCompanies": [
+        "RYE Design Ltd"
+      ],
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": null,
-      "noQuotedCompany": true,
+      "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
         "openNotes": []
