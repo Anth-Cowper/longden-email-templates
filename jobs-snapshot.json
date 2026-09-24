@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T08:59:45.106Z",
+  "generatedAt": "2026-09-24T09:23:09.116Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -903,6 +903,41 @@
       "stageEnteredAt": "2026-06-15T00:00:00.000Z",
       "flagged": {
         "statusFlag": "Production Ticket Check",
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2035,
+      "jobNumber": "117833",
+      "projectName": "Dumfries House",
+      "companyName": null,
+      "value": 16751.68,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": "2026-09-16T07:07:48.953Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-09-18T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-26T00:00:00.000Z",
+      "jobSummaryText": "10 Leaves, 7 Frames, 5 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele",
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Beth Oliver-Williams",
+      "schedulingStatusName": "First Off Drawing Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 1012,
+      "phaseNumber": "1",
+      "sortDate": "2026-09-18T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-18T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": "First Off Drawing Check",
         "openNotes": []
       }
     },
@@ -2056,41 +2091,6 @@
       "phaseNumber": "1",
       "sortDate": "2026-09-09T00:00:00.000Z",
       "stageEnteredAt": "2026-09-09T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2035,
-      "jobNumber": "117833",
-      "projectName": "Dumfries House",
-      "companyName": null,
-      "value": 16751.68,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": "2026-09-16T07:07:48.953Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-09-18T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-26T00:00:00.000Z",
-      "jobSummaryText": "10 Leaves, 7 Frames, 5 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele",
-      "estimatorName": "Alfie Price",
-      "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Rev A Drawing in Process",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 1012,
-      "phaseNumber": "1",
-      "sortDate": "2026-09-18T00:00:00.000Z",
-      "stageEnteredAt": "2026-09-18T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
