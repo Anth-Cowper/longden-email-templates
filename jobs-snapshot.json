@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T07:32:09.007Z",
+  "generatedAt": "2026-09-24T07:37:09.121Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1408,7 +1408,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": null,
       "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Revised drawings sent [2]",
+      "schedulingStatusName": "Revised drawings sent [3]",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -2072,6 +2072,39 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-16T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2041,
+      "jobNumber": "117839",
+      "projectName": "67 Gloucester Place",
+      "companyName": "Whistlers Limited",
+      "value": 5834.2,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "releasedAt": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "2 Doors, 2 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Whistlers Limited"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-15T00:00:00.000Z",
       "noQuotedCompany": false,
       "flagged": {
         "statusFlag": null,
@@ -6772,39 +6805,6 @@
       "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
       "quotedCompanies": [
         "PJ Spillings Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-23T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2041,
-      "jobNumber": "117839",
-      "projectName": "67 Gloucester Place",
-      "companyName": "Whistlers Limited",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "releasedAt": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
-      "quotedCompanies": [
-        "Whistlers Limited"
       ],
       "stage": "Quoting",
       "phaseId": null,
