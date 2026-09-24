@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T11:23:50.024Z",
+  "generatedAt": "2026-09-24T12:38:50.243Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -936,6 +936,41 @@
       "phaseNumber": "1",
       "sortDate": "2026-07-22T00:00:00.000Z",
       "stageEnteredAt": "2026-07-22T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": "Production Ticket Check",
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1952,
+      "jobNumber": "117750",
+      "projectName": "Apartment 9C",
+      "companyName": "Malcolm Charles Conservation Ltd",
+      "value": 9743.35,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-06-04T00:00:00.000Z",
+      "orderTriggeredAt": "2026-08-25T13:18:27.466Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-08-27T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": "3 Leaves, 3 Frames, 2 Miscellaneous",
+      "materialSummaryText": "American White Oak, Poplar (Tulipwood)",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Production Ticket Check",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 999,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-27T00:00:00.000Z",
+      "stageEnteredAt": "2026-08-27T00:00:00.000Z",
       "flagged": {
         "statusFlag": "Production Ticket Check",
         "openNotes": []
@@ -1986,41 +2021,6 @@
       "phaseNumber": "1",
       "sortDate": "2026-08-06T00:00:00.000Z",
       "stageEnteredAt": "2026-08-06T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1952,
-      "jobNumber": "117750",
-      "projectName": "Apartment 9C",
-      "companyName": "Malcolm Charles Conservation Ltd",
-      "value": 9743.35,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-06-04T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-25T13:18:27.466Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-08-27T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "3 Leaves, 3 Frames, 2 Miscellaneous",
-      "materialSummaryText": "American White Oak, Poplar (Tulipwood)",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Signed off into Production",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 999,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-27T00:00:00.000Z",
-      "stageEnteredAt": "2026-08-27T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7699,44 +7699,6 @@
       }
     },
     {
-      "projectId": 1731,
-      "jobNumber": "117529",
-      "projectName": "116 Regent Park Road",
-      "companyName": "Vitpol Building Services Ltd",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-08-19T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-19T00:00:00.000Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-17T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-24T00:00:00.000Z",
-      "quotedCompanies": [
-        "Vitpol Building Services Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-21T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-17T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 2039,
       "jobNumber": "117837",
       "projectName": "Christ's College Library",
@@ -7771,7 +7733,14 @@
       "stageEnteredAt": "2026-09-22T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
-        "openNotes": []
+        "openNotes": [
+          {
+            "id": 2267,
+            "action": "Request additional info",
+            "target": null,
+            "assignedTo": "George Bramley"
+          }
+        ]
       }
     },
     {
@@ -7807,6 +7776,51 @@
       "sortDate": "2026-09-23T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-15T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 2267,
+            "action": "Request additional info",
+            "target": null,
+            "assignedTo": "George Bramley"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": 1731,
+      "jobNumber": "117529",
+      "projectName": "116 Regent Park Road",
+      "companyName": "Vitpol Building Services Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-08-19T00:00:00.000Z",
+      "orderTriggeredAt": "2026-08-19T00:00:00.000Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-17T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-09-24T00:00:00.000Z",
+      "quotedCompanies": [
+        "Vitpol Building Services Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-21T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-17T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
