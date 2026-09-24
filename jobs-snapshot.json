@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T08:16:14.429Z",
+  "generatedAt": "2026-09-24T08:25:52.712Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2326,51 +2326,6 @@
       }
     },
     {
-      "projectId": 2026,
-      "jobNumber": "117824",
-      "projectName": "Epic Long Ashton",
-      "companyName": "Gilbert-Ash Limited",
-      "value": 135391.92,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-18T08:27:54.870Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "91 Doors, 89 Frames",
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-08-25T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-10T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Gilbert-Ash Limited"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-25T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-18T08:27:54.870Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2203,
-            "action": "Ready to quote",
-            "target": null,
-            "assignedTo": "Beth Oliver-Williams"
-          }
-        ]
-      }
-    },
-    {
       "projectId": 2043,
       "jobNumber": "117841",
       "projectName": "Project Telecaster",
@@ -2783,6 +2738,44 @@
       "sortDate": "2026-08-28T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-01T15:47:32.200Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2026,
+      "jobNumber": "117824",
+      "projectName": "Epic Long Ashton",
+      "companyName": "Gilbert-Ash Limited",
+      "value": 135391.92,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-18T08:27:54.870Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "91 Doors, 89 Frames",
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-08-25T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-10T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Gilbert-Ash Limited"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-08-25T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-18T08:27:54.870Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
