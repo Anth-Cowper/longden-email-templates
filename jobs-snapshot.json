@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:29:13.461Z",
+  "generatedAt": "2026-09-24T10:34:13.474Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1401,7 +1401,7 @@
       "jobNumber": "117438",
       "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
       "companyName": "Gariff Construction Ltd",
-      "value": 133492.61,
+      "value": 125786.91,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-02-02T00:00:00.000Z",
@@ -1412,7 +1412,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-03T00:00:00.000Z",
       "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "5 Leaves, 5 Frames",
+      "jobSummaryText": "14 Leaves, 7 Overpanels, 13 Frames, 5 Miscellaneous",
       "materialSummaryText": "European Oak, Sapele",
       "estimatorName": "Beth Oliver-Williams",
       "schedulerName": "Beth Oliver-Williams",
