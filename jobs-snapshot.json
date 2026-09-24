@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:09:13.336Z",
+  "generatedAt": "2026-09-24T10:19:13.425Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4922,45 +4922,6 @@
       }
     },
     {
-      "projectId": 1899,
-      "jobNumber": "117697",
-      "projectName": "Ruskin School of Art",
-      "companyName": "Beard Construction (Oxford) · Overbury - Southern",
-      "value": 26740.68,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-08-27T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-27T00:00:00.000Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-04-23T08:25:20.797Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "17 Doors, 14 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Tony Oliver",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-04-17T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-04-20T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Beard Construction (Oxford)",
-        "Overbury - Southern"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-04-17T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-04-23T08:25:20.797Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 1900,
       "jobNumber": "117698",
       "projectName": "Alum Bay Cottage",
@@ -8074,6 +8035,44 @@
       "sortDate": "2027-01-18T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-08-12T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1899,
+      "jobNumber": "117697",
+      "projectName": "Ruskin School of Art",
+      "companyName": "Beard Construction (Oxford)",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-08-27T00:00:00.000Z",
+      "orderTriggeredAt": "2026-08-27T00:00:00.000Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Tony Oliver",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-24T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": "2026-10-01T00:00:00.000Z",
+      "quotedCompanies": [
+        "Beard Construction (Oxford)"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": null,
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-24T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
