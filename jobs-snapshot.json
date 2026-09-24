@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T10:59:13.482Z",
+  "generatedAt": "2026-09-24T11:09:13.516Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2279,6 +2279,44 @@
       "phaseNumber": "2",
       "sortDate": "2026-09-14T16:05:14.900Z",
       "stageEnteredAt": "2026-09-14T16:05:14.900Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2045,
+      "jobNumber": "117843",
+      "projectName": "West End Village Hall",
+      "companyName": "West End Esher Village Hall",
+      "value": 7451.42,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-24T12:03:56.637Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "2 Doors, 1 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-24T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "West End Esher Village Hall"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-22T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-24T12:03:56.637Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7769,44 +7807,6 @@
       "sortDate": "2026-09-23T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-15T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2045,
-      "jobNumber": "117843",
-      "projectName": "West End Village Hall",
-      "companyName": "West End Esher Village Hall",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-24T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-29T00:00:00.000Z",
-      "quotedCompanies": [
-        "West End Esher Village Hall"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-24T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-22T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
