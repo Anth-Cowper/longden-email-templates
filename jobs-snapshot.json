@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T13:54:33.327Z",
+  "generatedAt": "2026-09-24T15:19:33.396Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1976,7 +1976,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Waiting for templates",
+      "schedulingStatusName": "Rev A Drawing in Process",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
