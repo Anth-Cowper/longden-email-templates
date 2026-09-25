@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T11:17:06.921Z",
+  "generatedAt": "2026-09-25T11:22:06.928Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2317,6 +2317,52 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": []
+      }
+    },
+    {
+      "projectId": 2039,
+      "jobNumber": "117837",
+      "projectName": "Christ's College Library",
+      "companyName": "Barnes Construction Ltd - Ipswich · PJ Spillings Ltd",
+      "value": 17540.44,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-25T12:19:37.673Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "4 Doors, 4 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Barnes Construction Ltd - Ipswich",
+        "PJ Spillings Ltd"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-15T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-25T12:19:37.673Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 2267,
+            "action": "Request additional info",
+            "target": null,
+            "assignedTo": "George Bramley"
+          }
+        ]
       }
     },
     {
@@ -7807,52 +7853,6 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": []
-      }
-    },
-    {
-      "projectId": 2039,
-      "jobNumber": "117837",
-      "projectName": "Christ's College Library",
-      "companyName": "Barnes Construction Ltd - Ipswich · PJ Spillings Ltd",
-      "value": 17540.44,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-25T12:15:49.110Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "4 Doors, 4 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-29T00:00:00.000Z",
-      "quotedCompanies": [
-        "Barnes Construction Ltd - Ipswich",
-        "PJ Spillings Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-23T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-22T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2267,
-            "action": "Request additional info",
-            "target": null,
-            "assignedTo": "George Bramley"
-          }
-        ]
       }
     },
     {
