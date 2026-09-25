@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T06:47:15.471Z",
+  "generatedAt": "2026-09-25T06:57:15.564Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8058,8 +8058,8 @@
       "projectId": 1806,
       "jobNumber": "117604",
       "projectName": "38 Hill Street",
-      "companyName": "McCue · Warhurst Bourne",
-      "value": 62818.83,
+      "companyName": "Warhurst Bourne",
+      "value": null,
       "phaseStatus": null,
       "remake": false,
       "orderDate": "2026-07-02T00:00:00.000Z",
@@ -8067,19 +8067,18 @@
       "releasedAt": null,
       "deliveryDate": null,
       "disputedOn": null,
-      "quoteDateSent": "2026-02-05T09:31:41.343Z",
+      "quoteDateSent": null,
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": "15 Doors, 15 Frames, 90 Miscellaneous",
+      "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": "Tony Oliver",
+      "estimatorName": "George Bramley",
       "schedulerName": null,
       "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-24T00:00:00.000Z",
+      "quoteDateReceived": "2026-09-25T00:00:00.000Z",
       "quoteEstReturnDate": null,
-      "quoteCustomerReturn": "2026-10-01T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-02T00:00:00.000Z",
       "quotedCompanies": [
-        "McCue",
         "Warhurst Bourne"
       ],
       "stage": "Quoting",
@@ -8087,7 +8086,7 @@
       "phaseNumber": null,
       "sortDate": null,
       "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-24T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-25T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
