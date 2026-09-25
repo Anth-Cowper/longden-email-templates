@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T10:47:06.859Z",
+  "generatedAt": "2026-09-25T11:12:06.914Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2171,7 +2171,7 @@
       "jobNumber": "117827",
       "projectName": "5 Denmark Street",
       "companyName": "Sterling Property Holdings Ltd",
-      "value": 0,
+      "value": 27162.67,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": null,
