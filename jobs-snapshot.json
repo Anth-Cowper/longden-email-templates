@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T10:42:06.855Z",
+  "generatedAt": "2026-09-25T10:47:06.859Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2182,8 +2182,8 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-25T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "2 Leaves, 20 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": "Tony Oliver",
       "schedulingStatusName": "Compiling RFI",
