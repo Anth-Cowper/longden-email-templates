@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T09:02:06.659Z",
+  "generatedAt": "2026-09-25T09:22:06.699Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1764,7 +1764,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-06-19T00:00:00.000Z",
       "estimatedSignOff": "2026-10-02T00:00:00.000Z",
-      "jobSummaryText": "4 Leaves, 3 Overpanels, 4 Frames, 1 Miscellaneous",
+      "jobSummaryText": "1 Leaf, 1 Frame",
       "materialSummaryText": "Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Tony Oliver",
