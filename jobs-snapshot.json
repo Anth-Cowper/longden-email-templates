@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T09:57:06.758Z",
+  "generatedAt": "2026-09-25T10:07:06.786Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -958,7 +958,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-07-22T00:00:00.000Z",
-      "estimatedSignOff": null,
+      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
       "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
@@ -1798,7 +1798,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-06-24T00:00:00.000Z",
-      "estimatedSignOff": null,
+      "estimatedSignOff": "2026-11-28T00:00:00.000Z",
       "jobSummaryText": "17 Leaves, 5 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
