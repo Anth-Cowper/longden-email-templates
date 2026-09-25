@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:52:15.648Z",
+  "generatedAt": "2026-09-25T08:42:15.785Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8331,8 +8331,8 @@
       "quoteDateSent": "2026-09-21T07:49:24.240Z",
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": "22 Doors, 20 Frames",
-      "materialSummaryText": null,
+      "jobSummaryText": "2 Leaves, 20 Frames",
+      "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": null,
       "schedulingStatusName": null,
