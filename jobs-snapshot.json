@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T11:37:06.939Z",
+  "generatedAt": "2026-09-25T11:52:06.995Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2088,7 +2088,7 @@
       "jobNumber": "117827",
       "projectName": "5 Denmark Street",
       "companyName": "Sterling Property Holdings Ltd",
-      "value": 28762.67,
+      "value": 0,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": null,
@@ -2103,7 +2103,7 @@
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Compiling RFI",
+      "schedulingStatusName": "Initial RFI Sent",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
