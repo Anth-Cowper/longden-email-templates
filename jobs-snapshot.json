@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T06:55:08.727Z",
+  "generatedAt": "2026-09-28T07:30:08.810Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1994,7 +1994,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-18T00:00:00.000Z",
       "estimatedSignOff": "2026-10-26T00:00:00.000Z",
-      "jobSummaryText": "10 Leaves, 7 Frames, 5 Miscellaneous",
+      "jobSummaryText": "10 Leaves, 7 Frames, 141 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Oliver-Williams",
