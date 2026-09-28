@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T10:45:09.208Z",
+  "generatedAt": "2026-09-28T10:50:09.203Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -713,6 +713,43 @@
       "phaseNumber": "4",
       "sortDate": "2026-09-21T14:07:45.520Z",
       "stageEnteredAt": "2026-09-21T14:07:45.520Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1978,
+      "jobNumber": "117776",
+      "projectName": "Bunchrew House Hotel (First Floor)",
+      "companyName": "Doras Hardware Ltd",
+      "value": 18681.27,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-06-25T00:00:00.000Z",
+      "orderTriggeredAt": "2026-09-01T14:27:42.508Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-18T10:56:10.993Z",
+      "depositPaidAt": "2026-09-28T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": "7 Leaves, 7 Frames",
+      "materialSummaryText": "Sapele",
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-18T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Doras Hardware Ltd"
+      ],
+      "stage": "Scheduling",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-28T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8400,43 +8437,6 @@
       "phaseNumber": null,
       "sortDate": "2026-09-08T00:00:00.000Z",
       "stageEnteredAt": "2026-09-08T15:23:28.474Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1978,
-      "jobNumber": "117776",
-      "projectName": "Bunchrew House Hotel (First Floor)",
-      "companyName": "Doras Hardware Ltd",
-      "value": 18681.27,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-06-25T00:00:00.000Z",
-      "orderTriggeredAt": "2026-09-01T14:27:42.508Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-18T10:56:10.993Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "7 Leaves, 7 Frames",
-      "materialSummaryText": "Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-18T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Doras Hardware Ltd"
-      ],
-      "stage": "Orders",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-06-25T00:00:00.000Z",
-      "stageEnteredAt": "2026-09-01T14:27:42.508Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
