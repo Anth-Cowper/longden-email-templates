@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T09:10:09.055Z",
+  "generatedAt": "2026-09-28T09:25:09.065Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -6865,6 +6865,44 @@
       }
     },
     {
+      "projectId": 1696,
+      "jobNumber": "117494",
+      "projectName": "31 Wilton Place",
+      "companyName": "InteriorLAB",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-02-24T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-24T00:00:00.000Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-28T10:23:53.700Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "InteriorLAB"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2025-09-02T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-28T10:23:53.700Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1682,
       "jobNumber": "117480",
       "projectName": "Magdalen College",
@@ -7757,44 +7795,6 @@
       "phaseNumber": "1",
       "sortDate": "2026-06-16T00:00:00.000Z",
       "stageEnteredAt": "2026-10-27T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1696,
-      "jobNumber": "117494",
-      "projectName": "31 Wilton Place",
-      "companyName": "InteriorLAB",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-02-24T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-24T00:00:00.000Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-21T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
-      "quotedCompanies": [
-        "InteriorLAB"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-21T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
