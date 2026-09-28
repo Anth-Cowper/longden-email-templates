@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:45:09.317Z",
+  "generatedAt": "2026-09-28T11:50:09.359Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4187,44 +4187,6 @@
       }
     },
     {
-      "projectId": 1979,
-      "jobNumber": "117777",
-      "projectName": "The White House",
-      "companyName": "Tavener (CT & S) Joinery Ltd",
-      "value": 62325.14,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-07-02T14:37:16.680Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "40 Doors, 22 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-06-26T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-05-21T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Tavener (CT & S) Joinery Ltd"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-06-26T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-07-02T14:37:16.680Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 1980,
       "jobNumber": "117778",
       "projectName": "6 Launceston Place",
@@ -4791,44 +4753,6 @@
       "sortDate": "2026-05-11T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-05-22T11:39:50.953Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1914,
-      "jobNumber": "117712",
-      "projectName": "Flat 3",
-      "companyName": "Stella Rossa",
-      "value": 7723.78,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-05-11T12:41:28.630Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "6 Doors, 5 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Tony Oliver",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-05-06T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-05-12T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Stella Rossa"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-05-06T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-05-11T12:41:28.630Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
