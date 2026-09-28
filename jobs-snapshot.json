@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T13:40:49.048Z",
+  "generatedAt": "2026-09-28T14:10:49.094Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2617,6 +2617,44 @@
       }
     },
     {
+      "projectId": 2031,
+      "jobNumber": "117829",
+      "projectName": " Flat 49 Cheniston Gardens",
+      "companyName": "Four Square Design & Build",
+      "value": 24176.2,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-09-07T00:00:00.000Z",
+      "orderTriggeredAt": "2026-09-07T00:00:00.000Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-23T14:22:09.290Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "13 Doors, 11 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-07T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-09T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Four Square Design & Build"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-07T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-23T14:22:09.290Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 2032,
       "jobNumber": "117830",
       "projectName": "Al Jawhara",
@@ -2649,6 +2687,44 @@
       "sortDate": "2026-09-07T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-09T15:15:03.770Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2030,
+      "jobNumber": "117828",
+      "projectName": "12 Holland Park",
+      "companyName": "Savile Brown Associates",
+      "value": 114103.78,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-11T08:29:36.490Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "63 Doors, 48 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-03T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-06T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Savile Brown Associates"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-03T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-11T08:29:36.490Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7678,82 +7754,6 @@
       "phaseNumber": null,
       "sortDate": "2026-06-10T00:00:00.000Z",
       "stageEnteredAt": "2026-07-07T14:23:52.891Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2030,
-      "jobNumber": "117828",
-      "projectName": "12 Holland Park",
-      "companyName": "Savile Brown Associates",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-22T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
-      "quotedCompanies": [
-        "Savile Brown Associates"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-22T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2031,
-      "jobNumber": "117829",
-      "projectName": " Flat 49 Cheniston Gardens",
-      "companyName": "Four Square Design & Build",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-09-07T00:00:00.000Z",
-      "orderTriggeredAt": "2026-09-07T00:00:00.000Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-22T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
-      "quotedCompanies": [
-        "Four Square Design & Build"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-22T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
