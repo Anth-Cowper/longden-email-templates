@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T08:35:08.950Z",
+  "generatedAt": "2026-09-28T08:40:08.976Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -7877,6 +7877,44 @@
       }
     },
     {
+      "projectId": 2047,
+      "jobNumber": "117845",
+      "projectName": "Oak Lodge, Bushey",
+      "companyName": "RYE Design Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-24T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-01T00:00:00.000Z",
+      "quotedCompanies": [
+        "RYE Design Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-23T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-24T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 2044,
       "jobNumber": "117842",
       "projectName": "Times House and Laundry Building",
@@ -7947,44 +7985,6 @@
       "sortDate": "2026-09-28T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-28T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2047,
-      "jobNumber": "117845",
-      "projectName": "Oak Lodge, Bushey",
-      "companyName": "RYE Design Ltd",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-24T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-29T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-01T00:00:00.000Z",
-      "quotedCompanies": [
-        "RYE Design Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-29T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-24T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
