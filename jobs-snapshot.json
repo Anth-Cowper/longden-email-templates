@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T09:05:09.028Z",
+  "generatedAt": "2026-09-28T09:10:09.055Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8021,6 +8021,44 @@
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-29T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2051,
+      "jobNumber": "117849",
+      "projectName": "Red Lion House",
+      "companyName": "LDB Construction UK Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-30T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
+      "quotedCompanies": [
+        "LDB Construction UK Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-30T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
@@ -18610,6 +18648,11 @@
     {
       "jobNumber": "117848",
       "projectName": "The Bonham Hotel",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117849",
+      "projectName": "Red Lion House",
       "companyName": null
     }
   ]
