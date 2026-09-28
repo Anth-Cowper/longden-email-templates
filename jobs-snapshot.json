@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:10:49.203Z",
+  "generatedAt": "2026-09-28T15:20:49.224Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3079,44 +3079,6 @@
       }
     },
     {
-      "projectId": 2020,
-      "jobNumber": "117818",
-      "projectName": "1-3 Arlington Street (Residents)",
-      "companyName": "Heritage 1947 Ltd",
-      "value": 11125.63,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-08-18T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-18T00:00:00.000Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-08-20T08:03:36.167Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "8 Doors, 8 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-08-18T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-08-16T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Heritage 1947 Ltd"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-18T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-08-20T08:03:36.167Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 2017,
       "jobNumber": "117815",
       "projectName": "Amazon Bray Studio",
@@ -5288,44 +5250,6 @@
       "sortDate": "2026-03-26T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-04-02T15:38:58.007Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1867,
-      "jobNumber": "117665",
-      "projectName": "1-3 Arlington Street (Management)",
-      "companyName": "Heritage 1947 Ltd",
-      "value": 18293.48,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-03-18T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-04T08:03:06.071Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-08-19T11:50:46.087Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "9 Doors, 8 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-08-13T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-08-16T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Heritage 1947 Ltd"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-03-18T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-08-19T11:50:46.087Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
