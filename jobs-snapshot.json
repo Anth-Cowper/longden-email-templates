@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T13:15:48.990Z",
+  "generatedAt": "2026-09-28T13:40:49.048Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2649,44 +2649,6 @@
       "sortDate": "2026-09-07T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-09T15:15:03.770Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2030,
-      "jobNumber": "117828",
-      "projectName": "12 Holland Park",
-      "companyName": "Savile Brown Associates",
-      "value": 114103.78,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-11T08:29:36.490Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "63 Doors, 48 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-03T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-06T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Savile Brown Associates"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-03T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-11T08:29:36.490Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7716,6 +7678,44 @@
       "phaseNumber": null,
       "sortDate": "2026-06-10T00:00:00.000Z",
       "stageEnteredAt": "2026-07-07T14:23:52.891Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2030,
+      "jobNumber": "117828",
+      "projectName": "12 Holland Park",
+      "companyName": "Savile Brown Associates",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-22T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
+      "quotedCompanies": [
+        "Savile Brown Associates"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-22T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
