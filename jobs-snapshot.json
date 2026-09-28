@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:40:09.321Z",
+  "generatedAt": "2026-09-28T11:45:09.317Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4410,44 +4410,6 @@
       "sortDate": "2026-06-11T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-07-16T09:05:44.420Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1953,
-      "jobNumber": "117751",
-      "projectName": "4 Anderson Street",
-      "companyName": "Stella Rossa",
-      "value": 10170.82,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-06-15T11:39:02.343Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "7 Doors, 5 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-06-04T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-06-09T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Stella Rossa"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-06-04T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-06-15T11:39:02.343Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
