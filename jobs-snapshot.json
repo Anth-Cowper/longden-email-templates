@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T10:50:09.203Z",
+  "generatedAt": "2026-09-28T11:40:09.321Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -5440,44 +5440,6 @@
       "sortDate": "2026-03-26T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-04-02T15:38:58.007Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1873,
-      "jobNumber": "117671",
-      "projectName": "33A Dean Street",
-      "companyName": "Stella Rossa",
-      "value": 19630.58,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-08-18T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-18T00:00:00.000Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-08-21T08:14:43.760Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "16 Doors, 16 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-08-18T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-08-13T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Stella Rossa"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-03-20T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-08-21T08:14:43.760Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
