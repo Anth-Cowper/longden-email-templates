@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:05:09.354Z",
+  "generatedAt": "2026-09-28T12:10:09.369Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4868,44 +4868,6 @@
       "sortDate": "2026-04-17T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-25T08:49:21.127Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1900,
-      "jobNumber": "117698",
-      "projectName": "Alum Bay Cottage",
-      "companyName": "Stella Rossa",
-      "value": 43457.52,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-04-21T10:05:38.370Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "16 Doors, 15 Frames, 63 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-04-17T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-04-21T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Stella Rossa"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-04-17T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-04-21T10:05:38.370Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
