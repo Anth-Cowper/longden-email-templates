@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:11:02.487Z",
+  "generatedAt": "2026-09-29T08:16:02.484Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2226,44 +2226,6 @@
       "phaseNumber": "2",
       "sortDate": "2026-09-14T16:05:14.900Z",
       "stageEnteredAt": "2026-09-14T16:05:14.900Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2049,
-      "jobNumber": "117847",
-      "projectName": "Holiday Inn Birmingham (PH2)",
-      "companyName": "Surefit Joinery Ltd",
-      "value": 10699.5,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-29T08:24:36.147Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "25 Doors, 25 Frames",
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-22T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Surefit Joinery Ltd"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-28T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-29T08:24:36.147Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
