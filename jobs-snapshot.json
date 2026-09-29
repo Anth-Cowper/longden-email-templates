@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T13:06:05.525Z",
+  "generatedAt": "2026-09-29T13:51:05.791Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -7840,15 +7840,15 @@
       }
     },
     {
-      "projectId": 1969,
-      "jobNumber": "117767",
-      "projectName": "BRNC Dartmouth College",
-      "companyName": "Optimum Carpentry & Joinery Ltd",
+      "projectId": 2054,
+      "jobNumber": "117852",
+      "projectName": "20 Hillside ",
+      "companyName": "Verve Concepts",
       "value": null,
       "phaseStatus": null,
       "remake": false,
-      "orderDate": "2026-06-18T00:00:00.000Z",
-      "orderTriggeredAt": "2026-06-18T00:00:00.000Z",
+      "orderDate": null,
+      "orderTriggeredAt": null,
       "releasedAt": null,
       "deliveryDate": null,
       "disputedOn": null,
@@ -7857,21 +7857,21 @@
       "estimatedSignOff": null,
       "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
+      "estimatorName": null,
       "schedulerName": null,
       "schedulingStatusName": null,
-      "quoteDateReceived": "2026-08-25T00:00:00.000Z",
+      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
       "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-01T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
       "quotedCompanies": [
-        "Optimum Carpentry & Joinery Ltd"
+        "Verve Concepts"
       ],
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-10-01T00:00:00.000Z",
       "noQuotedCompany": false,
-      "stageEnteredAt": "2026-08-25T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7899,7 +7899,7 @@
       "schedulerName": null,
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-07-29T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-06T00:00:00.000Z",
       "quoteCustomerReturn": "2026-08-05T00:00:00.000Z",
       "quotedCompanies": [
         "Urban Interior Solutions"
@@ -7907,7 +7907,7 @@
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-10-01T00:00:00.000Z",
+      "sortDate": "2026-10-06T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-07-29T00:00:00.000Z",
       "flagged": {
@@ -7937,7 +7937,7 @@
       "schedulerName": null,
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-15T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-08T00:00:00.000Z",
       "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
       "quotedCompanies": [
         "Egg Contracts Ltd"
@@ -7945,47 +7945,9 @@
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-10-01T00:00:00.000Z",
+      "sortDate": "2026-10-08T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-15T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2054,
-      "jobNumber": "117852",
-      "projectName": "20 Hillside ",
-      "companyName": "Verve Concepts",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-02T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
-      "quotedCompanies": [
-        "Verve Concepts"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-10-02T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8024,6 +7986,44 @@
       "sortDate": "2026-12-01T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-07-23T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1969,
+      "jobNumber": "117767",
+      "projectName": "BRNC Dartmouth College",
+      "companyName": "Optimum Carpentry & Joinery Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": "2026-06-18T00:00:00.000Z",
+      "orderTriggeredAt": "2026-06-18T00:00:00.000Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-08-25T00:00:00.000Z",
+      "quoteEstReturnDate": "2027-01-15T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-09-01T00:00:00.000Z",
+      "quotedCompanies": [
+        "Optimum Carpentry & Joinery Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2027-01-15T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-08-25T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
