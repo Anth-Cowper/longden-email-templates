@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:16:02.484Z",
+  "generatedAt": "2026-09-29T08:31:02.523Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1424,7 +1424,7 @@
       "orderDate": "2025-02-10T00:00:00.000Z",
       "orderTriggeredAt": "2026-02-04T07:47:25.098Z",
       "releasedAt": null,
-      "deliveryDate": null,
+      "deliveryDate": "2026-12-17T00:00:00.000Z",
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-11T00:00:00.000Z",
