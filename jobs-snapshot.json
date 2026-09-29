@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T07:11:02.299Z",
+  "generatedAt": "2026-09-29T07:16:02.384Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1716,7 +1716,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-07-07T00:00:00.000Z",
       "estimatedSignOff": "2026-10-19T00:00:00.000Z",
-      "jobSummaryText": "18 Leaves, 16 Frames, 4 Miscellaneous",
+      "jobSummaryText": "7 Leaves, 5 Frames",
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Oliver-Williams",
