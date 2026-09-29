@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T07:26:02.390Z",
+  "generatedAt": "2026-09-29T07:41:02.387Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1740,7 +1740,7 @@
       "jobNumber": "117245",
       "projectName": "71 Gloucester Place",
       "companyName": "GD Construction Ltd",
-      "value": 11896.17,
+      "value": 12596.73,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-06-29T00:00:00.000Z",
