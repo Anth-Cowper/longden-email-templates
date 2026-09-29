@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:36:02.523Z",
+  "generatedAt": "2026-09-29T08:41:02.577Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1254,7 +1254,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-01-29T00:00:00.000Z",
       "estimatedSignOff": "2026-10-02T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 7 Frames",
+      "jobSummaryText": "18 Leaves, 15 Frames, 16 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Oliver-Williams",
