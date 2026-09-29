@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T12:36:05.314Z",
+  "generatedAt": "2026-09-29T12:51:05.395Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2270,6 +2270,44 @@
       "phaseNumber": "2",
       "sortDate": "2026-09-14T16:05:14.900Z",
       "stageEnteredAt": "2026-09-14T16:05:14.900Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2048,
+      "jobNumber": "117846",
+      "projectName": "15 Grosvenor Square",
+      "companyName": "Vitpol Building Services Ltd",
+      "value": 5718.36,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-29T13:48:35.600Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "4 Doors, 1 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-28T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Vitpol Building Services Ltd"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-28T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-29T13:48:35.600Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7682,44 +7720,6 @@
       "sortDate": "2026-09-25T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-22T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2048,
-      "jobNumber": "117846",
-      "projectName": "15 Grosvenor Square",
-      "companyName": "Vitpol Building Services Ltd",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-28T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-28T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-05T00:00:00.000Z",
-      "quotedCompanies": [
-        "Vitpol Building Services Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-28T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-28T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
