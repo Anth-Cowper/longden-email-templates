@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T07:56:02.436Z",
+  "generatedAt": "2026-09-29T08:01:02.467Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1576,7 +1576,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-06-12T00:00:00.000Z",
       "estimatedSignOff": "2026-10-23T00:00:00.000Z",
-      "jobSummaryText": "4 Leaves, 1 Overpanel, 4 Frames",
+      "jobSummaryText": "4 Leaves, 1 Overpanel, 13 Frames, 4 Miscellaneous",
       "materialSummaryText": "Accoya, Sapele, Flush",
       "estimatorName": null,
       "schedulerName": "Tony Oliver",
