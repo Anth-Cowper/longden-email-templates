@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T09:11:02.582Z",
+  "generatedAt": "2026-09-29T09:56:04.416Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -311,7 +311,7 @@
       "materialSummaryText": "Maple, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": null,
+      "schedulingStatusName": "On Hold Client",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
