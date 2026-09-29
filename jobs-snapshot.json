@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:20:49.224Z",
+  "generatedAt": "2026-09-29T06:55:51.561Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1720,7 +1720,7 @@
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Rev A Drawing sent",
+      "schedulingStatusName": "Redrawing following Comments [1]",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
