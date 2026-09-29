@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:01:02.467Z",
+  "generatedAt": "2026-09-29T08:11:02.487Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,48 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 1641,
-      "jobNumber": "117439",
-      "projectName": "West Caldergate",
-      "companyName": "Bentleys Shopfitting Ltd",
-      "value": 26964.34,
-      "phaseStatus": "Manufacture",
-      "remake": false,
-      "orderDate": "2025-12-02T00:00:00.000Z",
-      "orderTriggeredAt": "2026-04-17T08:02:25.797Z",
-      "releasedAt": "2026-07-20T08:52:32.243Z",
-      "deliveryDate": "2026-09-21T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-04-29T00:00:00.000Z",
-      "estimatedSignOff": "2026-07-10T00:00:00.000Z",
-      "jobSummaryText": "10 Leaves, 9 Frames, 3 Miscellaneous",
-      "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 922,
-      "phaseNumber": "1",
-      "sortDate": "2026-07-20T08:52:32.243Z",
-      "stageEnteredAt": "2026-07-20T08:52:32.243Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2246,
-            "action": "Courtsey Check",
-            "target": "D",
-            "assignedTo": "Daniella Jackson"
-          }
-        ]
-      }
-    },
     {
       "projectId": 1780,
       "jobNumber": "117578",
