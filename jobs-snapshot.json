@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T07:08:14.370Z",
+  "generatedAt": "2026-09-30T08:18:14.679Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1053,7 +1053,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2024-02-29T00:00:00.000Z",
       "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "15 Leaves, 16 Frames, 40 Miscellaneous",
+      "jobSummaryText": "13 Leaves, 14 Frames",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Jon Wass",
       "schedulerName": "Anthony Cowper",
