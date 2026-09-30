@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T12:13:15.197Z",
+  "generatedAt": "2026-09-30T12:58:15.299Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -741,43 +741,6 @@
       "phaseNumber": "1",
       "sortDate": "2026-09-30T12:47:53.893Z",
       "stageEnteredAt": "2026-09-30T12:47:53.893Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1820,
-      "jobNumber": "117618",
-      "projectName": "Alfred Dunhill",
-      "companyName": "Powells Limited",
-      "value": 62062.28,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": "2026-06-10T00:00:00.000Z",
-      "orderTriggeredAt": "2026-07-07T14:23:52.891Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-06-25T15:45:32.073Z",
-      "depositPaidAt": "2026-09-25T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "29 Frames, 194 Miscellaneous",
-      "materialSummaryText": "American White Ash, European Oak, Poplar (Tulipwood), Sapele, Flush",
-      "estimatorName": "Alfie Price",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-06-25T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-06-25T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Powells Limited"
-      ],
-      "stage": "Scheduling",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-25T00:00:00.000Z",
-      "stageEnteredAt": "2026-09-25T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -2117,6 +2080,41 @@
       "phaseNumber": "1",
       "sortDate": "2026-09-22T00:00:00.000Z",
       "stageEnteredAt": "2026-09-22T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1820,
+      "jobNumber": "117618",
+      "projectName": "Alfred Dunhill",
+      "companyName": "Powells Limited",
+      "value": 0,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-06-10T00:00:00.000Z",
+      "orderTriggeredAt": "2026-07-07T14:23:52.891Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-09-25T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": "14 Frames",
+      "materialSummaryText": "American White Ash, European Oak, Poplar (Tulipwood), Sapele, Flush",
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Compiling RFI",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 1017,
+      "phaseNumber": "1",
+      "sortDate": "2026-09-25T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-25T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
