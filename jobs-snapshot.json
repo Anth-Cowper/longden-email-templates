@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T14:23:17.425Z",
+  "generatedAt": "2026-09-30T14:28:17.444Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2134,7 +2134,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-28T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "7 Leaves, 7 Frames",
+      "jobSummaryText": "7 Leaves, 7 Frames, 1 Miscellaneous",
       "materialSummaryText": "Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
