@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T13:58:17.401Z",
+  "generatedAt": "2026-09-30T14:13:17.398Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2105,7 +2105,7 @@
       "materialSummaryText": "American White Ash, European Oak, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Compiling RFI",
+      "schedulingStatusName": "Initial RFI Sent",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
