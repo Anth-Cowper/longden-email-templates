@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T10:43:15.038Z",
+  "generatedAt": "2026-09-30T11:18:15.110Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -860,41 +860,6 @@
             "assignedTo": "Madi Glen"
           }
         ]
-      }
-    },
-    {
-      "projectId": 1952,
-      "jobNumber": "117750",
-      "projectName": "Apartment 9C",
-      "companyName": "Malcolm Charles Conservation Ltd",
-      "value": 9743.35,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-06-04T00:00:00.000Z",
-      "orderTriggeredAt": "2026-08-25T13:18:27.466Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-08-27T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "3 Leaves, 3 Frames, 2 Miscellaneous",
-      "materialSummaryText": "American White Oak, Poplar (Tulipwood)",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Production Ticket Check",
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 999,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-27T00:00:00.000Z",
-      "stageEnteredAt": "2026-08-27T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": "Production Ticket Check",
-        "openNotes": []
       }
     },
     {
@@ -1942,6 +1907,41 @@
       "phaseNumber": "1",
       "sortDate": "2026-08-06T00:00:00.000Z",
       "stageEnteredAt": "2026-08-06T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1952,
+      "jobNumber": "117750",
+      "projectName": "Apartment 9C",
+      "companyName": "Malcolm Charles Conservation Ltd",
+      "value": 9743.35,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-06-04T00:00:00.000Z",
+      "orderTriggeredAt": "2026-08-25T13:18:27.466Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-08-27T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": "3 Leaves, 3 Frames, 2 Miscellaneous",
+      "materialSummaryText": "American White Oak, Poplar (Tulipwood)",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Production ticket check complete",
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 999,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-27T00:00:00.000Z",
+      "stageEnteredAt": "2026-08-27T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
