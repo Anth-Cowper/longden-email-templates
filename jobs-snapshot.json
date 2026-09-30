@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T08:18:14.679Z",
+  "generatedAt": "2026-09-30T08:23:14.678Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1042,7 +1042,7 @@
       "jobNumber": "116273",
       "projectName": "26 Gilston Road",
       "companyName": "Spratley & Partners",
-      "value": 37778.84,
+      "value": 39629.4,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2024-02-23T00:00:00.000Z",
@@ -1053,7 +1053,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2024-02-29T00:00:00.000Z",
       "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "13 Leaves, 14 Frames",
+      "jobSummaryText": "15 Leaves, 16 Frames, 42 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Jon Wass",
       "schedulerName": "Anthony Cowper",
