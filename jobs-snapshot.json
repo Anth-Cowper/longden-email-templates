@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T15:38:31.968Z",
+  "generatedAt": "2026-10-01T06:53:33.787Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1963,7 +1963,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Rev A Drawing sent",
+      "schedulingStatusName": "Signed off into Production",
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -2380,6 +2380,46 @@
       "sortDate": "2026-09-16T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-22T11:36:07.343Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2039,
+      "jobNumber": "117837",
+      "projectName": "Christ's College Library",
+      "companyName": "Barnes Construction Ltd - Ipswich · Gamma Construction Services · PJ Spillings Ltd",
+      "value": 17540.44,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-10-01T07:50:53.693Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "4 Doors, 4 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George Bramley",
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-23T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Barnes Construction Ltd - Ipswich",
+        "Gamma Construction Services",
+        "PJ Spillings Ltd"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-15T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-10-01T07:50:53.693Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -7791,46 +7831,6 @@
       "sortDate": "2026-09-30T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-28T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2039,
-      "jobNumber": "117837",
-      "projectName": "Christ's College Library",
-      "companyName": "Barnes Construction Ltd - Ipswich · Gamma Construction Services · PJ Spillings Ltd",
-      "value": 17540.44,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-25T12:19:37.673Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "4 Doors, 4 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "quoteDateReceived": "2026-09-29T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-01T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-06T00:00:00.000Z",
-      "quotedCompanies": [
-        "Barnes Construction Ltd - Ipswich",
-        "Gamma Construction Services",
-        "PJ Spillings Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-10-01T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-29T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
