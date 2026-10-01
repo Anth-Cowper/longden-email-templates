@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T08:38:33.883Z",
+  "generatedAt": "2026-10-01T08:53:34.523Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2633,7 +2633,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": "46 Doors, 26 Frames",
       "materialSummaryText": null,
-      "estimatorName": "George Bramley",
+      "estimatorName": "Alfie Price",
       "schedulerName": null,
       "schedulingStatusName": null,
       "quoteDateReceived": "2026-09-08T00:00:00.000Z",
