@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T07:09:11.319Z",
+  "generatedAt": "2026-10-02T07:24:11.347Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1163,7 +1163,7 @@
       "jobNumber": "117424",
       "projectName": "Flat 8, 61 Onslow Square",
       "companyName": "Brecons Design & Build",
-      "value": 1392.81,
+      "value": 1652.99,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2025-07-04T00:00:00.000Z",
@@ -2501,6 +2501,46 @@
       "sortDate": "2026-09-28T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-09-29T13:48:35.600Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2044,
+      "jobNumber": "117842",
+      "projectName": "Times House and Laundry Building",
+      "companyName": "McAleer & Rushe Contracts UK Ltd",
+      "value": 178143.93,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-10-02T08:19:21.610Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "321 Doors, 246 Frames",
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-25T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "McAleer & Rushe Contracts UK Ltd"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-09-22T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-10-02T08:19:21.610Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8195,46 +8235,6 @@
       "phaseNumber": "1",
       "sortDate": "2026-06-16T00:00:00.000Z",
       "stageEnteredAt": "2026-10-27T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2044,
-      "jobNumber": "117842",
-      "projectName": "Times House and Laundry Building",
-      "companyName": "McAleer & Rushe Contracts UK Ltd",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-09-22T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-25T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-29T00:00:00.000Z",
-      "quotedCompanies": [
-        "McAleer & Rushe Contracts UK Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-25T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-22T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
