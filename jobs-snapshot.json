@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T07:04:11.295Z",
+  "generatedAt": "2026-10-02T07:09:11.319Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1163,7 +1163,7 @@
       "jobNumber": "117424",
       "projectName": "Flat 8, 61 Onslow Square",
       "companyName": "Brecons Design & Build",
-      "value": 0,
+      "value": 1392.81,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2025-07-04T00:00:00.000Z",
