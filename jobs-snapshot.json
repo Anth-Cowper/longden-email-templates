@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:49:11.570Z",
+  "generatedAt": "2026-10-02T09:54:11.628Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -48,7 +48,7 @@
         "openNotes": [
           {
             "id": 2312,
-            "action": "phone call from bill richardson ",
+            "action": "phone call from bill richardson - FOLLOW UP CALL REQUIRED",
             "target": null,
             "assignedTo": "Graeme Vickers"
           }
