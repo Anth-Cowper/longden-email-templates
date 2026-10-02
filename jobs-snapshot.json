@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T07:24:11.347Z",
+  "generatedAt": "2026-10-02T07:34:11.375Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2325,9 +2325,9 @@
       "materialSummaryText": "Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Rev A Drawing sent",
+      "schedulingStatusName": "Stain Samples Client",
       "schedulingPosition": "T",
-      "percentComplete": 18,
+      "percentComplete": 59,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
