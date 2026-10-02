@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:59:11.632Z",
+  "generatedAt": "2026-10-02T10:04:11.634Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1217,7 +1217,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2025-07-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-30T00:00:00.000Z",
       "jobSummaryText": "21 Leaves, 45 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Beth Oliver-Williams",
@@ -1550,7 +1550,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-23T00:00:00.000Z",
       "jobSummaryText": "2 Leaves, 1 Miscellaneous",
       "materialSummaryText": "American White Oak",
       "estimatorName": "Tony Oliver",
