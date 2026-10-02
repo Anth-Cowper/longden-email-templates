@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T08:14:11.422Z",
+  "generatedAt": "2026-10-02T08:24:11.457Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1178,9 +1178,9 @@
       "materialSummaryText": "Poplar (Tulipwood), Flush",
       "estimatorName": "Madi Glen",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Repricing all Items",
-      "schedulingPosition": "U",
-      "percentComplete": 23,
+      "schedulingStatusName": "Pricing sent",
+      "schedulingPosition": "T",
+      "percentComplete": 27,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
