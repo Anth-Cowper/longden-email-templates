@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T06:54:11.249Z",
+  "generatedAt": "2026-10-02T06:59:11.295Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1174,8 +1174,8 @@
       "quoteDateSent": null,
       "depositPaidAt": "2025-07-07T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "2 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Flush",
       "estimatorName": "Madi Glen",
       "schedulerName": "Beth Oliver-Williams",
       "schedulingStatusName": "Repricing all Items",
@@ -2564,7 +2564,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": "57 Doors, 52 Frames",
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "George Bramley",
       "schedulerName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
