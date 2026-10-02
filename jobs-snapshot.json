@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:47:00.437Z",
+  "generatedAt": "2026-10-02T15:52:00.452Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8528,46 +8528,6 @@
       }
     },
     {
-      "projectId": 2040,
-      "jobNumber": "117838",
-      "projectName": "St Michael le Belfrey",
-      "companyName": "Egg Contracts Ltd",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-13T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
-      "quotedCompanies": [
-        "Egg Contracts Ltd"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-10-13T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-15T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
       "projectId": 1998,
       "jobNumber": "117796",
       "projectName": "34 Berkeley Square",
@@ -8602,6 +8562,46 @@
       "sortDate": "2026-10-15T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-07-29T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2040,
+      "jobNumber": "117838",
+      "projectName": "St Michael le Belfrey",
+      "companyName": "Egg Contracts Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-09-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-16T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-09-22T00:00:00.000Z",
+      "quotedCompanies": [
+        "Egg Contracts Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-16T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-15T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
