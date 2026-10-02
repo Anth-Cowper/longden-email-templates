@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T11:19:13.557Z",
+  "generatedAt": "2026-10-02T11:29:13.663Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -944,6 +944,50 @@
       }
     },
     {
+      "projectId": 1788,
+      "jobNumber": "117586",
+      "projectName": "1b Chester Row",
+      "companyName": "Volute London Limited",
+      "value": 5103.77,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-02-22T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-22T19:18:47.376Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-03-11T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-23T00:00:00.000Z",
+      "jobSummaryText": "2 Leaves, 1 Miscellaneous",
+      "materialSummaryText": "American White Oak",
+      "estimatorName": "Tony Oliver",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Waiting for Sign Off",
+      "schedulingPosition": "T",
+      "percentComplete": 79,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 975,
+      "phaseNumber": "1",
+      "sortDate": "2026-03-11T00:00:00.000Z",
+      "stageEnteredAt": "2026-03-11T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": [
+          {
+            "id": 2313,
+            "action": "request for additional sheen samples",
+            "target": null,
+            "assignedTo": "Madi Glen"
+          }
+        ]
+      }
+    },
+    {
       "projectId": 1942,
       "jobNumber": "117740",
       "projectName": "30 Sackville Street",
@@ -1567,43 +1611,6 @@
       "phaseNumber": "5",
       "sortDate": "2026-03-03T00:00:00.000Z",
       "stageEnteredAt": "2026-03-03T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1788,
-      "jobNumber": "117586",
-      "projectName": "1b Chester Row",
-      "companyName": "Volute London Limited",
-      "value": 5103.77,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-02-22T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-22T19:18:47.376Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-03-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-23T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 1 Miscellaneous",
-      "materialSummaryText": "American White Oak",
-      "estimatorName": "Tony Oliver",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Waiting for Sign Off",
-      "schedulingPosition": "T",
-      "percentComplete": 79,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 975,
-      "phaseNumber": "1",
-      "sortDate": "2026-03-11T00:00:00.000Z",
-      "stageEnteredAt": "2026-03-11T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
