@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:54:11.628Z",
+  "generatedAt": "2026-10-02T09:59:11.632Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8019,50 +8019,6 @@
       }
     },
     {
-      "projectId": 1704,
-      "jobNumber": "117502",
-      "projectName": "A&M Fife Golf Resort",
-      "companyName": "Robertson Construction Tayside Ltd",
-      "value": 166476.62,
-      "phaseStatus": "Complete",
-      "remake": false,
-      "orderDate": "2025-11-26T00:00:00.000Z",
-      "orderTriggeredAt": "2025-11-26T15:04:17.212Z",
-      "releasedAt": "2026-07-16T15:04:55.470Z",
-      "deliveryDate": "2026-09-17T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2025-12-02T00:00:00.000Z",
-      "estimatedSignOff": "2026-07-10T00:00:00.000Z",
-      "jobSummaryText": "54 Frames, 79 Miscellaneous",
-      "materialSummaryText": "American White Oak, Flush",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": "Manufacturing Paperwork Produced",
-      "schedulingPosition": "U",
-      "percentComplete": 100,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Post production/delivery",
-      "phaseId": 948,
-      "phaseNumber": "2",
-      "sortDate": "2025-12-02T00:00:00.000Z",
-      "stageEnteredAt": "2026-09-17T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2248,
-            "action": "Courtesy Call",
-            "target": "D",
-            "assignedTo": "Daniella Jackson"
-          }
-        ]
-      }
-    },
-    {
       "projectId": 1559,
       "jobNumber": "117357",
       "projectName": "50 Chelsea Park Gardens",
@@ -8211,6 +8167,43 @@
       }
     },
     {
+      "projectId": 1704,
+      "jobNumber": "117502",
+      "projectName": "A&M Fife Golf Resort",
+      "companyName": "Robertson Construction Tayside Ltd",
+      "value": 166476.62,
+      "phaseStatus": "Complete",
+      "remake": false,
+      "orderDate": "2025-11-26T00:00:00.000Z",
+      "orderTriggeredAt": "2025-11-26T15:04:17.212Z",
+      "releasedAt": "2026-07-16T15:04:55.470Z",
+      "deliveryDate": "2026-09-17T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2025-12-02T00:00:00.000Z",
+      "estimatedSignOff": "2026-07-10T00:00:00.000Z",
+      "jobSummaryText": "54 Frames, 79 Miscellaneous",
+      "materialSummaryText": "American White Oak, Flush",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Anthony Cowper",
+      "schedulingStatusName": "Manufacturing Paperwork Produced",
+      "schedulingPosition": "U",
+      "percentComplete": 100,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Post production/delivery",
+      "phaseId": 948,
+      "phaseNumber": "2",
+      "sortDate": "2025-12-02T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-17T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1954,
       "jobNumber": "117752",
       "projectName": "46 Chelsea Square",
@@ -8305,7 +8298,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "George Bramley",
       "schedulerName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
