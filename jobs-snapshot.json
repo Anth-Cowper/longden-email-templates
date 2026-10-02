@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T06:59:11.295Z",
+  "generatedAt": "2026-10-02T07:04:11.295Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1174,7 +1174,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2025-07-07T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "2 Miscellaneous",
+      "jobSummaryText": "1 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Flush",
       "estimatorName": "Madi Glen",
       "schedulerName": "Beth Oliver-Williams",
