@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T10:09:12.406Z",
+  "generatedAt": "2026-10-02T10:14:12.406Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2327,7 +2327,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-28T00:00:00.000Z",
-      "estimatedSignOff": null,
+      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
       "jobSummaryText": "7 Leaves, 7 Frames, 1 Miscellaneous",
       "materialSummaryText": "Sapele",
       "estimatorName": "George Bramley",
