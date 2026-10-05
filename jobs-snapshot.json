@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:34:57.137Z",
+  "generatedAt": "2026-10-05T14:49:57.602Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -51,50 +51,6 @@
             "action": "phone call from bill richardson - FOLLOW UP CALL REQUIRED",
             "target": null,
             "assignedTo": "Graeme Vickers"
-          }
-        ]
-      }
-    },
-    {
-      "projectId": 1912,
-      "jobNumber": "117710",
-      "projectName": "48 Campden Hill Square",
-      "companyName": "Belrock Construction",
-      "value": 13090.03,
-      "phaseStatus": "Planning Pool",
-      "remake": false,
-      "orderDate": "2026-07-22T00:00:00.000Z",
-      "orderTriggeredAt": "2026-07-22T09:18:59.204Z",
-      "releasedAt": "2026-10-05T11:15:34.837Z",
-      "deliveryDate": "2026-11-27T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-07-22T00:00:00.000Z",
-      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele",
-      "estimatorName": "George Bramley",
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production ticket check complete",
-      "schedulingPosition": "U",
-      "percentComplete": 100,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 993,
-      "phaseNumber": "1",
-      "sortDate": "2026-10-05T11:15:34.837Z",
-      "stageEnteredAt": "2026-10-05T11:15:34.837Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2315,
-            "action": "ticket Check",
-            "target": null,
-            "assignedTo": "Anthony Cowper"
           }
         ]
       }
@@ -840,6 +796,43 @@
       }
     },
     {
+      "projectId": 1912,
+      "jobNumber": "117710",
+      "projectName": "48 Campden Hill Square",
+      "companyName": "Belrock Construction",
+      "value": 13090.03,
+      "phaseStatus": "Planning Pool",
+      "remake": false,
+      "orderDate": "2026-07-22T00:00:00.000Z",
+      "orderTriggeredAt": "2026-07-22T09:18:59.204Z",
+      "releasedAt": "2026-10-05T11:15:34.837Z",
+      "deliveryDate": "2026-11-27T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-07-22T00:00:00.000Z",
+      "estimatedSignOff": "2026-09-25T00:00:00.000Z",
+      "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele",
+      "estimatorName": "George Bramley",
+      "schedulerName": "Tony Oliver",
+      "schedulingStatusName": "Production ticket check complete",
+      "schedulingPosition": "U",
+      "percentComplete": 100,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 993,
+      "phaseNumber": "1",
+      "sortDate": "2026-10-05T11:15:34.837Z",
+      "stageEnteredAt": "2026-10-05T11:15:34.837Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 1578,
       "jobNumber": "117376",
       "projectName": "The Worshipfull Company of Dyers",
@@ -953,50 +946,6 @@
             "action": "request for additional sheen samples",
             "target": null,
             "assignedTo": "Madi Glen"
-          }
-        ]
-      }
-    },
-    {
-      "projectId": 1855,
-      "jobNumber": "117653",
-      "projectName": "Flat 4",
-      "companyName": "G4 Projects Ltd",
-      "value": 20424.94,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-06-01T00:00:00.000Z",
-      "orderTriggeredAt": "2026-06-01T10:13:04.969Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-06-15T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
-      "estimatorName": null,
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production ticket check complete",
-      "schedulingPosition": "U",
-      "percentComplete": 100,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 983,
-      "phaseNumber": "1",
-      "sortDate": "2026-06-15T00:00:00.000Z",
-      "stageEnteredAt": "2026-06-15T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2317,
-            "action": "Ticket Check",
-            "target": null,
-            "assignedTo": "Anthony Cowper"
           }
         ]
       }
@@ -1659,6 +1608,43 @@
       "quotedCompanies": [],
       "stage": "Scheduling",
       "phaseId": 967,
+      "phaseNumber": "1",
+      "sortDate": "2026-06-15T00:00:00.000Z",
+      "stageEnteredAt": "2026-06-15T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1855,
+      "jobNumber": "117653",
+      "projectName": "Flat 4",
+      "companyName": "G4 Projects Ltd",
+      "value": 20424.94,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-06-01T00:00:00.000Z",
+      "orderTriggeredAt": "2026-06-01T10:13:04.969Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-06-15T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
+      "jobSummaryText": "9 Leaves, 5 Frames, 2 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
+      "estimatorName": null,
+      "schedulerName": "Tony Oliver",
+      "schedulingStatusName": "Production ticket check complete",
+      "schedulingPosition": "U",
+      "percentComplete": 100,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 983,
       "phaseNumber": "1",
       "sortDate": "2026-06-15T00:00:00.000Z",
       "stageEnteredAt": "2026-06-15T00:00:00.000Z",
