@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T10:03:10.164Z",
+  "generatedAt": "2026-10-05T10:08:10.198Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2120,7 +2120,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-09T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "3 Leaves, 1 Overpanel, 2 Frames",
+      "jobSummaryText": "4 Leaves, 1 Overpanel, 4 Frames, 1 Miscellaneous",
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
