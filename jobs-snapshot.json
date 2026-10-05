@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:38:10.141Z",
+  "generatedAt": "2026-10-05T09:43:10.139Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1007,7 +1007,7 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production Ticket Check",
+      "schedulingStatusName": "Production ticket check complete",
       "schedulingPosition": "U",
       "percentComplete": 100,
       "quoteDateReceived": null,
@@ -1020,7 +1020,7 @@
       "sortDate": "2026-07-22T00:00:00.000Z",
       "stageEnteredAt": "2026-07-22T00:00:00.000Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": [
           {
             "id": 2315,
@@ -2109,7 +2109,7 @@
       "jobNumber": "117730",
       "projectName": "12A St Vincent Street",
       "companyName": "Invicta Construction Ltd",
-      "value": 12259.58,
+      "value": 12280.4,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-08-28T00:00:00.000Z",
