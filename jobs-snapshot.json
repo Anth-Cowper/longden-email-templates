@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:51:54.644Z",
+  "generatedAt": "2026-10-05T13:06:54.669Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -977,9 +977,9 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": null,
       "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Production Ticket Check",
+      "schedulingStatusName": "Production ticket check complete",
       "schedulingPosition": "U",
-      "percentComplete": 98,
+      "percentComplete": 100,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -990,7 +990,7 @@
       "sortDate": "2026-06-15T00:00:00.000Z",
       "stageEnteredAt": "2026-06-15T00:00:00.000Z",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
+        "statusFlag": null,
         "openNotes": [
           {
             "id": 2317,
