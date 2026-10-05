@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T11:08:10.337Z",
+  "generatedAt": "2026-10-05T12:03:10.387Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -6760,49 +6760,6 @@
       "sortDate": "2025-12-11T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2025-12-15T10:24:20.073Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1774,
-      "jobNumber": "117572",
-      "projectName": "Horseshoe Gallery",
-      "companyName": "Donald Insall Associates · Robertson Construction North West · Walter Carefoot & Sons (Construction) Ltd · Whitfield & Brown",
-      "value": 9754.77,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-03-11T13:48:27.867Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "2 Doors, 1 Frames, 16 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "George Bramley",
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2025-12-04T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Donald Insall Associates",
-        "Robertson Construction North West",
-        "Walter Carefoot & Sons (Construction) Ltd",
-        "Whitfield & Brown"
-      ],
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2025-12-04T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-03-11T13:48:27.867Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
