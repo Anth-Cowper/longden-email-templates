@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:16:20.437Z",
+  "generatedAt": "2026-10-05T15:21:20.435Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1850,7 +1850,7 @@
       "depositPaidAt": "2026-06-19T00:00:00.000Z",
       "estimatedSignOff": "2026-10-02T00:00:00.000Z",
       "jobSummaryText": "4 Leaves, 4 Frames, 5 Miscellaneous",
-      "materialSummaryText": "Sapele",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Tony Oliver",
       "schedulingStatusName": "Production ticket check complete",
