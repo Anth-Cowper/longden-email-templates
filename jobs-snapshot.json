@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:13:10.079Z",
+  "generatedAt": "2026-10-05T09:18:10.085Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1021,7 +1021,14 @@
       "stageEnteredAt": "2026-07-22T00:00:00.000Z",
       "flagged": {
         "statusFlag": "Production Ticket Check",
-        "openNotes": []
+        "openNotes": [
+          {
+            "id": 2315,
+            "action": "ticket Check",
+            "target": null,
+            "assignedTo": "Anthony Cowper"
+          }
+        ]
       }
     },
     {
