@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:03:10.387Z",
+  "generatedAt": "2026-10-05T12:13:10.396Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8276,7 +8276,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "George Bramley",
       "schedulerName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
