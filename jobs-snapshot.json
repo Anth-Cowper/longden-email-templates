@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T07:36:24.376Z",
+  "generatedAt": "2026-10-05T07:41:24.420Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1743,7 +1743,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-06-24T00:00:00.000Z",
       "estimatedSignOff": "2026-11-28T00:00:00.000Z",
-      "jobSummaryText": "17 Leaves, 5 Frames, 2 Miscellaneous",
+      "jobSummaryText": "16 Leaves, 4 Frames, 2 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Tony Oliver",
