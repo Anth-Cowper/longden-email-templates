@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T12:13:10.396Z",
+  "generatedAt": "2026-10-05T12:36:54.548Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2057,9 +2057,9 @@
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Revised drawings sent [1]",
+      "schedulingStatusName": "Revised drawings sent [2]",
       "schedulingPosition": "T",
-      "percentComplete": 39,
+      "percentComplete": 45,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
