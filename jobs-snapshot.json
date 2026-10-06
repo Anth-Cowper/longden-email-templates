@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:25:30.420Z",
+  "generatedAt": "2026-10-06T09:35:30.453Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2609,6 +2609,50 @@
       "phaseNumber": "2",
       "sortDate": "2026-06-25T13:08:19.277Z",
       "stageEnteredAt": "2026-06-25T13:08:19.277Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2058,
+      "jobNumber": "117856",
+      "projectName": "94 & 95 Park Lane",
+      "companyName": "Bourne Construction & Refurbishment",
+      "value": 63617.57,
+      "phaseStatus": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-10-06T10:32:45.903Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "55 Doors, 24 Frames",
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-10-05T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-30T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Bourne Construction & Refurbishment"
+      ],
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-05T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-10-06T10:32:45.903Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -8703,50 +8747,6 @@
       "sortDate": "2026-04-30T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-10-06T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 2058,
-      "jobNumber": "117856",
-      "projectName": "94 & 95 Park Lane",
-      "companyName": "Bourne Construction & Refurbishment",
-      "value": null,
-      "phaseStatus": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "schedulerName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-10-05T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-30T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-10-12T00:00:00.000Z",
-      "quotedCompanies": [
-        "Bourne Construction & Refurbishment"
-      ],
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-30T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-10-05T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
