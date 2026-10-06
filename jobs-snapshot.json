@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T12:30:30.762Z",
+  "generatedAt": "2026-10-06T13:05:30.826Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -475,7 +475,7 @@
       "projectName": "Northwick Park Primary Academy",
       "companyName": "Bakers of Danbury Ltd",
       "value": 11151.3,
-      "phaseStatus": "Planning Pool",
+      "phaseStatus": "Manufacture",
       "remake": false,
       "orderDate": "2026-07-16T00:00:00.000Z",
       "orderTriggeredAt": "2026-07-16T12:55:07.254Z",
@@ -484,7 +484,7 @@
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
       "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
+      "expectedCompletionDate": "2026-10-19T00:00:00.000Z",
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-07-23T00:00:00.000Z",
