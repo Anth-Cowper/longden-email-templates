@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T13:05:30.826Z",
+  "generatedAt": "2026-10-06T13:10:30.825Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -197,7 +197,7 @@
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
       "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": "2026-10-26T00:00:00.000Z",
+      "expectedCompletionDate": "2026-10-19T00:00:00.000Z",
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-05-15T00:00:00.000Z",
@@ -443,7 +443,7 @@
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
       "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": "2026-11-02T00:00:00.000Z",
+      "expectedCompletionDate": "2026-10-26T00:00:00.000Z",
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-11T00:00:00.000Z",
