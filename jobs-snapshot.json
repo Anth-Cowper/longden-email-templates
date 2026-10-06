@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T11:30:30.684Z",
+  "generatedAt": "2026-10-06T12:00:30.732Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1842,7 +1842,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-11T00:00:00.000Z",
       "estimatedSignOff": "2026-10-23T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 1 Frame, 1 Miscellaneous",
+      "jobSummaryText": "1 Leaf",
       "materialSummaryText": "American White Oak",
       "estimatorName": "Tony Oliver",
       "schedulerName": "Madi Glen",
