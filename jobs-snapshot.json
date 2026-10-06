@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T07:10:28.773Z",
+  "generatedAt": "2026-10-06T07:15:28.791Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -889,7 +889,7 @@
       "remake": false,
       "orderDate": "2026-07-07T00:00:00.000Z",
       "orderTriggeredAt": "2026-07-07T12:17:20.761Z",
-      "releasedAt": null,
+      "releasedAt": "2026-10-06T08:09:30.373Z",
       "deliveryDate": "2026-12-14T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -913,8 +913,8 @@
       "stage": "Production",
       "phaseId": 998,
       "phaseNumber": "2",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-10-06T08:09:30.373Z",
+      "stageEnteredAt": "2026-10-06T08:09:30.373Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
@@ -1041,54 +1041,6 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": []
-      }
-    },
-    {
-      "projectId": 1788,
-      "jobNumber": "117586",
-      "projectName": "1b Chester Row",
-      "companyName": "Volute London Limited",
-      "value": 5683.16,
-      "phaseStatus": "Scheduling WIP",
-      "remake": false,
-      "orderDate": "2026-02-22T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-22T19:18:47.376Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-03-11T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-23T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 1 Frame, 1 Miscellaneous",
-      "materialSummaryText": "American White Oak",
-      "estimatorName": "Tony Oliver",
-      "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Revised drawings sent [5]",
-      "schedulingPosition": "T",
-      "percentComplete": 79,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Scheduling",
-      "phaseId": 975,
-      "phaseNumber": "1",
-      "sortDate": "2026-03-11T00:00:00.000Z",
-      "stageEnteredAt": "2026-03-11T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "openNotes": [
-          {
-            "id": 2313,
-            "action": "request for additional sheen samples",
-            "target": null,
-            "assignedTo": "Madi Glen"
-          }
-        ]
       }
     },
     {
@@ -1783,6 +1735,47 @@
       "phaseNumber": "5",
       "sortDate": "2026-03-03T00:00:00.000Z",
       "stageEnteredAt": "2026-03-03T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 1788,
+      "jobNumber": "117586",
+      "projectName": "1b Chester Row",
+      "companyName": "Volute London Limited",
+      "value": 5683.16,
+      "phaseStatus": "Scheduling WIP",
+      "remake": false,
+      "orderDate": "2026-02-22T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-22T19:18:47.376Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-03-11T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-23T00:00:00.000Z",
+      "jobSummaryText": "2 Leaves, 1 Frame, 1 Miscellaneous",
+      "materialSummaryText": "American White Oak",
+      "estimatorName": "Tony Oliver",
+      "schedulerName": "Madi Glen",
+      "schedulingStatusName": "Revised drawings sent [5]",
+      "schedulingPosition": "T",
+      "percentComplete": 79,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Scheduling",
+      "phaseId": 975,
+      "phaseNumber": "1",
+      "sortDate": "2026-03-11T00:00:00.000Z",
+      "stageEnteredAt": "2026-03-11T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "openNotes": []
