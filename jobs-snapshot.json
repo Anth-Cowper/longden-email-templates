@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T12:00:30.732Z",
+  "generatedAt": "2026-10-06T12:05:30.724Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1827,7 +1827,7 @@
       "jobNumber": "117586",
       "projectName": "1b Chester Row",
       "companyName": "Volute London Limited",
-      "value": 5683.16,
+      "value": 3571.26,
       "phaseStatus": "Scheduling WIP",
       "remake": false,
       "orderDate": "2026-02-22T00:00:00.000Z",
@@ -1842,7 +1842,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-11T00:00:00.000Z",
       "estimatedSignOff": "2026-10-23T00:00:00.000Z",
-      "jobSummaryText": "1 Leaf",
+      "jobSummaryText": "2 Leaves, 1 Miscellaneous",
       "materialSummaryText": "American White Oak",
       "estimatorName": "Tony Oliver",
       "schedulerName": "Madi Glen",
