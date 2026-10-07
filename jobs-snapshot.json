@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T09:12:21.622Z",
+  "generatedAt": "2026-10-07T09:42:24.042Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -799,8 +799,8 @@
       "materialSummaryText": "Sapele, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Comments recieved Redrawing",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Final Approval",
+      "schedulingPosition": "T",
       "percentComplete": 100,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
