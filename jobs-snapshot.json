@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T09:42:24.042Z",
+  "generatedAt": "2026-10-07T10:12:24.113Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1920,7 +1920,7 @@
       "orderDate": "2026-05-27T00:00:00.000Z",
       "orderTriggeredAt": "2026-05-27T19:33:46.426Z",
       "releasedAt": null,
-      "deliveryDate": null,
+      "deliveryDate": "2026-12-14T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
       "deliveryDateConfirmedAt": null,
