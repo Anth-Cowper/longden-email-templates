@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:02:20.801Z",
+  "generatedAt": "2026-10-07T08:07:20.815Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1674,8 +1674,8 @@
       "materialSummaryText": "European Oak, Sapele",
       "estimatorName": "Beth Oliver-Williams",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Redrawing following Comments [1]",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Final Approval",
+      "schedulingPosition": "T",
       "percentComplete": 98,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
