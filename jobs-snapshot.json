@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T06:57:19.481Z",
+  "generatedAt": "2026-10-07T07:17:19.514Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2227,7 +2227,7 @@
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Waiting Client Response",
+      "schedulingStatusName": "Initial RFI Sent",
       "schedulingPosition": "T",
       "percentComplete": 30,
       "quoteDateReceived": null,
