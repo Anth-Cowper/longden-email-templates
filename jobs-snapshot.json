@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T07:52:19.682Z",
+  "generatedAt": "2026-10-07T07:57:19.650Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1654,7 +1654,7 @@
       "jobNumber": "117438",
       "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
       "companyName": "Gariff Construction Ltd",
-      "value": 126116.84,
+      "value": 119188.4,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "c",
       "remake": false,
@@ -2178,8 +2178,8 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George Bramley",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Redrawing following Comments [1]",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Revised drawings sent [1]",
+      "schedulingPosition": "T",
       "percentComplete": 42,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
