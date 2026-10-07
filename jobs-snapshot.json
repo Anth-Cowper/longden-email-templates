@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T11:12:24.216Z",
+  "generatedAt": "2026-10-07T11:57:24.251Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1765,7 +1765,7 @@
       "materialSummaryText": "American White Oak",
       "estimatorName": "Tony Oliver",
       "schedulerName": "Madi Glen",
-      "schedulingStatusName": "Revised drawings sent [6]",
+      "schedulingStatusName": "Waiting for Sign Off",
       "schedulingPosition": "T",
       "percentComplete": 86,
       "quoteDateReceived": null,
