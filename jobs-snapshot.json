@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T10:58:45.227Z",
+  "generatedAt": "2026-10-08T12:18:45.375Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2353,9 +2353,9 @@
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "First off drawings check complete",
-      "schedulingPosition": "U",
-      "percentComplete": 17,
+      "schedulingStatusName": "Rev A Drawing sent",
+      "schedulingPosition": "T",
+      "percentComplete": 18,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
