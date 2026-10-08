@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T14:23:47.924Z",
+  "generatedAt": "2026-10-08T14:28:47.940Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1115,7 +1115,7 @@
       "jobNumber": "117740",
       "projectName": "30 Sackville Street",
       "companyName": "AFKS Construction & Joinery Ltd",
-      "value": 22656.87,
+      "value": 24600.37,
       "phaseStatus": "On Amend",
       "drawingRevision": "c",
       "remake": false,
@@ -1604,8 +1604,8 @@
       "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Anthony Cowper",
-      "schedulingStatusName": "Stain Samples Longden",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Stain Samples Client",
+      "schedulingPosition": "T",
       "percentComplete": 80,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
