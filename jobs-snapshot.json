@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T14:28:47.940Z",
+  "generatedAt": "2026-10-08T14:48:48.003Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1135,8 +1135,8 @@
       "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Production ticket check complete",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Final Approval",
+      "schedulingPosition": "T",
       "percentComplete": 100,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
