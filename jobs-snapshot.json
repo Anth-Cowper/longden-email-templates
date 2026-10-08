@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T09:28:45.109Z",
+  "generatedAt": "2026-10-08T09:58:45.177Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2508,7 +2508,7 @@
       "orderDate": "2026-09-01T00:00:00.000Z",
       "orderTriggeredAt": "2026-09-01T14:27:42.508Z",
       "releasedAt": null,
-      "deliveryDate": null,
+      "deliveryDate": "2026-12-18T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
       "deliveryDateConfirmedAt": null,
@@ -2516,7 +2516,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-28T00:00:00.000Z",
-      "estimatedSignOff": "2026-10-09T00:00:00.000Z",
+      "estimatedSignOff": "2026-10-16T00:00:00.000Z",
       "jobSummaryText": "7 Leaves, 7 Frames, 1 Miscellaneous",
       "materialSummaryText": "Sapele",
       "estimatorName": "George Bramley",
