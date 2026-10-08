@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T15:24:03.665Z",
+  "generatedAt": "2026-10-08T15:29:03.771Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -989,7 +989,7 @@
       "jobNumber": "117376",
       "projectName": "The Worshipfull Company of Dyers",
       "companyName": "CLIVE GRAHAM ASSOCIATES LIMITED",
-      "value": 4606.16,
+      "value": 3789.29,
       "phaseStatus": "On Amend",
       "drawingRevision": "e",
       "remake": false,
