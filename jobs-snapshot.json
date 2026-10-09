@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T10:44:05.763Z",
+  "generatedAt": "2026-10-09T10:54:05.792Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2298,7 +2298,7 @@
       "jobNumber": "117833",
       "projectName": "Dumfries House",
       "companyName": "Dumfries Farming and Land Ltd",
-      "value": 17603.66,
+      "value": 10787.92,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "b",
       "remake": false,
@@ -2314,8 +2314,8 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-18T00:00:00.000Z",
       "estimatedSignOff": "2026-10-26T00:00:00.000Z",
-      "jobSummaryText": "10 Leaves, 7 Frames, 141 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele",
+      "jobSummaryText": "4 Leaves, 4 Frames, 141 Miscellaneous",
+      "materialSummaryText": "Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Oliver-Williams",
       "schedulingStatusName": "Signed off into Production",
