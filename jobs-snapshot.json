@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:04:05.833Z",
+  "generatedAt": "2026-10-09T11:09:05.836Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2298,7 +2298,7 @@
       "jobNumber": "117833",
       "projectName": "Dumfries House",
       "companyName": "Dumfries Farming and Land Ltd",
-      "value": 9832.4,
+      "value": 9503.12,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "b",
       "remake": false,
@@ -2314,7 +2314,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-18T00:00:00.000Z",
       "estimatedSignOff": "2026-10-26T00:00:00.000Z",
-      "jobSummaryText": "4 Leaves, 4 Frames, 37 Miscellaneous",
+      "jobSummaryText": "4 Leaves, 4 Frames, 31 Miscellaneous",
       "materialSummaryText": "Sapele",
       "estimatorName": "Alfie Price",
       "schedulerName": "Beth Oliver-Williams",
