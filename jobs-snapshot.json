@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T11:55:39.040Z",
+  "generatedAt": "2026-10-12T12:05:39.066Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2627,12 +2627,6 @@
       "flagged": {
         "statusFlag": null,
         "openNotes": [
-          {
-            "id": 2249,
-            "action": "delivery check up",
-            "target": "D",
-            "assignedTo": "Graeme Vickers"
-          },
           {
             "id": 2250,
             "action": "Courtesy Call",
