@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T11:25:38.997Z",
+  "generatedAt": "2026-10-12T11:30:38.998Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1031,7 +1031,7 @@
       "jobNumber": "117278",
       "projectName": "Spalding Gentlemens Society Club",
       "companyName": "Messenger Construction Limited ",
-      "value": 23190.89,
+      "value": 23370.89,
       "phaseStatus": "On Amend",
       "drawingRevision": "d",
       "remake": false,
