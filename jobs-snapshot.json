@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T15:42:44.784Z",
+  "generatedAt": "2026-10-13T07:32:46.854Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -9878,6 +9878,52 @@
       "sortDate": "2026-10-15T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-10-12T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2066,
+      "jobNumber": "117864",
+      "projectName": "20 Princedale Road",
+      "companyName": "Invicta Construction Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-10-13T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-15T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-20T00:00:00.000Z",
+      "quotedCompanies": [
+        "Invicta Construction Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-15T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-10-13T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -20476,6 +20522,11 @@
     {
       "jobNumber": "117863",
       "projectName": "85 Gracechurch Street",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117864",
+      "projectName": "20 Princedale Road",
       "companyName": null
     }
   ]
