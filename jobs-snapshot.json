@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T13:42:51.043Z",
+  "generatedAt": "2026-10-13T13:57:51.064Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1899,7 +1899,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-03T00:00:00.000Z",
       "estimatedSignOff": "2026-10-30T00:00:00.000Z",
-      "jobSummaryText": "6 Leaves, 3 Overpanels, 5 Frames, 5 Miscellaneous",
+      "jobSummaryText": "2 Leaves, 1 Frame, 4 Miscellaneous",
       "materialSummaryText": "European Oak",
       "estimatorName": "Beth Oliver-Williams",
       "schedulerName": "Beth Oliver-Williams",
