@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T10:37:47.145Z",
+  "generatedAt": "2026-10-13T10:47:47.918Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1860,8 +1860,8 @@
       "materialSummaryText": "European Oak",
       "estimatorName": "Beth Oliver-Williams",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "On Hold Client",
-      "schedulingPosition": "T",
+      "schedulingStatusName": "Final Drawing [6]",
+      "schedulingPosition": "U",
       "percentComplete": 91,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
@@ -1903,8 +1903,8 @@
       "materialSummaryText": "European Oak",
       "estimatorName": "Beth Oliver-Williams",
       "schedulerName": "Beth Oliver-Williams",
-      "schedulingStatusName": "On Hold Client",
-      "schedulingPosition": "T",
+      "schedulingStatusName": "Final Drawing [6]",
+      "schedulingPosition": "U",
       "percentComplete": 93,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
