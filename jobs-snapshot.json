@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T13:27:30.904Z",
+  "generatedAt": "2026-10-14T13:37:30.904Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -8355,7 +8355,7 @@
       "quoteDateSent": "2026-10-14T13:13:32.293Z",
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": "20 Doors, 20 Frames",
+      "jobSummaryText": "19 Doors, 19 Frames",
       "materialSummaryText": null,
       "estimatorName": "Alfie Price",
       "schedulerName": null,
