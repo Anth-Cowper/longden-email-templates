@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T12:32:30.799Z",
+  "generatedAt": "2026-10-14T12:37:30.799Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1193,7 +1193,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-07-09T00:00:00.000Z",
       "estimatedSignOff": "2026-10-12T00:00:00.000Z",
-      "jobSummaryText": "5 Leaves, 11 Frames, 10 Miscellaneous",
+      "jobSummaryText": "5 Leaves, 11 Frames, 15 Miscellaneous",
       "materialSummaryText": "European Oak, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George Bramley",
       "schedulerName": "Beth Oliver-Williams",
@@ -9572,7 +9572,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "Alfie Price",
       "schedulerName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
