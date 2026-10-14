@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T10:47:30.573Z",
+  "generatedAt": "2026-10-14T10:52:30.593Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -9575,7 +9575,7 @@
       "estimatedSignOff": null,
       "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "Alfie Price",
       "schedulerName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
