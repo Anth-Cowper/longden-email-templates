@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T15:42:33.903Z",
+  "generatedAt": "2026-10-15T07:07:37.402Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1187,7 +1187,7 @@
       "jobNumber": "117740",
       "projectName": "30 Sackville Street",
       "companyName": "AFKS Construction & Joinery Ltd",
-      "value": 24600.37,
+      "value": 27172.51,
       "phaseStatus": "On Amend",
       "drawingRevision": "c",
       "remake": false,
