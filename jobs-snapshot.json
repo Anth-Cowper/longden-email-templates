@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T12:57:45.135Z",
+  "generatedAt": "2026-10-15T13:02:45.160Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1820,7 +1820,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-01-14T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "4 Miscellaneous",
       "materialSummaryText": null,
       "estimatorName": "Madi Glen",
       "schedulerName": "Madi Glen",
