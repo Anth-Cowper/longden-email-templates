@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T14:07:46.754Z",
+  "generatedAt": "2026-10-15T14:32:47.354Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -10152,6 +10152,52 @@
       "sortDate": "2026-10-15T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-10-13T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": []
+      }
+    },
+    {
+      "projectId": 2068,
+      "jobNumber": "117866",
+      "projectName": "The Hereford Arms",
+      "companyName": "Fairland Contractors",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-10-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-16T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-22T00:00:00.000Z",
+      "quotedCompanies": [
+        "Fairland Contractors"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-16T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-10-15T00:00:00.000Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -20716,6 +20762,11 @@
     {
       "jobNumber": "117865",
       "projectName": "The Kensington Hotel",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117866",
+      "projectName": "The Hereford Arms",
       "companyName": null
     }
   ]
