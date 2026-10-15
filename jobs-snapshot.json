@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T10:37:42.029Z",
+  "generatedAt": "2026-10-15T10:42:42.065Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -219,6 +219,15 @@
             "createdAt": "2026-10-15T08:00:47.464Z",
             "completeBy": "2026-11-04T00:00:00.000Z",
             "kind": "todo"
+          },
+          {
+            "id": 2385,
+            "action": "Pallet 1_rev2 ready for delivery (Phs1) - 10 items, sent by Peter Morton",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-10-15T10:37:49Z",
+            "completeBy": null,
+            "kind": "task"
           }
         ]
       }
