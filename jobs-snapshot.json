@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:50:24.672Z",
+  "generatedAt": "2026-10-15T17:50:25.052Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -10653,6 +10653,54 @@
       }
     },
     {
+      "projectId": 2069,
+      "jobNumber": "117867",
+      "projectName": "13 Carlyle Square",
+      "companyName": "Scapolan Burney Architects Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-10-15T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-20T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-10-22T00:00:00.000Z",
+      "quotedCompanies": [
+        "Scapolan Burney Architects Ltd"
+      ],
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-20T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-10-15T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": []
+      }
+    },
+    {
       "projectId": 2067,
       "jobNumber": "117865",
       "projectName": "The Kensington Hotel",
@@ -21225,6 +21273,11 @@
     {
       "jobNumber": "117866",
       "projectName": "The Hereford Arms",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117867",
+      "projectName": "13 Carlyle Square",
       "companyName": null
     }
   ]
