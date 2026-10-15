@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:32:40.698Z",
+  "generatedAt": "2026-10-15T10:37:42.029Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -211,15 +211,6 @@
         "statusFlag": null,
         "statusSince": null,
         "openNotes": [
-          {
-            "id": 2366,
-            "action": "Pallet 1_rev1 ready for delivery (Phs1) - 8 items, sent by Peter Morton",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-10-14T14:09:07Z",
-            "completeBy": null,
-            "kind": "task"
-          },
           {
             "id": 2379,
             "action": "Courtesy Call",
