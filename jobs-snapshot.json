@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T13:22:45.735Z",
+  "generatedAt": "2026-10-15T13:27:45.806Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1892,7 +1892,7 @@
       "companyName": "Gariff Construction Ltd",
       "value": 119188.38,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "c",
+      "drawingRevision": "C",
       "remake": false,
       "orderDate": "2026-02-13T00:00:00.000Z",
       "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
