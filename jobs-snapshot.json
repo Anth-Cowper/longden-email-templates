@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T07:57:38.435Z",
+  "generatedAt": "2026-10-15T08:02:38.419Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -118,6 +118,59 @@
       }
     },
     {
+      "projectId": 1631,
+      "jobNumber": "117429",
+      "projectName": "Magdalen College",
+      "companyName": "Benfield & Loxley (Oxford)",
+      "value": 19837.03,
+      "phaseStatus": "Manufacture",
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": "2026-04-24T00:00:00.000Z",
+      "orderTriggeredAt": "2026-04-24T14:35:01.475Z",
+      "releasedAt": "2026-08-05T14:59:33.550Z",
+      "deliveryDate": "2026-10-27T00:00:00.000Z",
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": "2026-10-12T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-04-29T00:00:00.000Z",
+      "estimatedSignOff": "2026-07-31T00:00:00.000Z",
+      "jobSummaryText": "3 Leaves, 9 Frames, 4 Miscellaneous",
+      "materialSummaryText": "European Oak, Poplar (Tulipwood), Flush",
+      "estimatorName": "Alfie Price",
+      "schedulerName": "Tony Oliver",
+      "schedulingStatusName": "Signed off into Production",
+      "schedulingPosition": "U",
+      "percentComplete": 95,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "stage": "Production",
+      "phaseId": 912,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-05T14:59:33.550Z",
+      "stageEnteredAt": "2026-08-05T14:59:33.550Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 2378,
+            "action": "Courtesy Call",
+            "target": "D",
+            "assignedTo": "Daniella Jackson",
+            "createdAt": "2026-10-15T07:59:16.807Z",
+            "completeBy": "2026-11-04T00:00:00.000Z",
+            "kind": "todo"
+          }
+        ]
+      }
+    },
+    {
       "projectId": 1976,
       "jobNumber": "117774",
       "projectName": "29 The Little Boltons",
@@ -166,6 +219,15 @@
             "createdAt": "2026-10-14T14:09:07Z",
             "completeBy": null,
             "kind": "task"
+          },
+          {
+            "id": 2379,
+            "action": "Courtesy Call",
+            "target": "D",
+            "assignedTo": "Daniella Jackson",
+            "createdAt": "2026-10-15T08:00:47.464Z",
+            "completeBy": "2026-11-04T00:00:00.000Z",
+            "kind": "todo"
           }
         ]
       }
@@ -293,49 +355,6 @@
       "phaseNumber": "2",
       "sortDate": "2026-08-03T13:53:39.227Z",
       "stageEnteredAt": "2026-08-03T13:53:39.227Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": []
-      }
-    },
-    {
-      "projectId": 1631,
-      "jobNumber": "117429",
-      "projectName": "Magdalen College",
-      "companyName": "Benfield & Loxley (Oxford)",
-      "value": 19837.03,
-      "phaseStatus": "Manufacture",
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": "2026-04-24T00:00:00.000Z",
-      "orderTriggeredAt": "2026-04-24T14:35:01.475Z",
-      "releasedAt": "2026-08-05T14:59:33.550Z",
-      "deliveryDate": "2026-10-27T00:00:00.000Z",
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": "2026-10-12T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-04-29T00:00:00.000Z",
-      "estimatedSignOff": "2026-07-31T00:00:00.000Z",
-      "jobSummaryText": "3 Leaves, 9 Frames, 4 Miscellaneous",
-      "materialSummaryText": "European Oak, Poplar (Tulipwood), Flush",
-      "estimatorName": "Alfie Price",
-      "schedulerName": "Tony Oliver",
-      "schedulingStatusName": "Signed off into Production",
-      "schedulingPosition": "U",
-      "percentComplete": 95,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "stage": "Production",
-      "phaseId": 912,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-05T14:59:33.550Z",
-      "stageEnteredAt": "2026-08-05T14:59:33.550Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
