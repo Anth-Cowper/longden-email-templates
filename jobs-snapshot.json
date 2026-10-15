@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:22:40.290Z",
+  "generatedAt": "2026-10-15T09:32:40.698Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2698,7 +2698,7 @@
       "jobNumber": "117776",
       "projectName": "Bunchrew House Hotel (First Floor)",
       "companyName": "Doras Hardware Ltd",
-      "value": 19869.05,
+      "value": 19390,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "a",
       "remake": false,
