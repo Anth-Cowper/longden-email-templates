@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T14:02:46.753Z",
+  "generatedAt": "2026-10-15T14:07:46.754Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1761,7 +1761,7 @@
       "jobNumber": "117467",
       "projectName": "Amcore Doors",
       "companyName": "Amcore Conservatories Ltd ",
-      "value": 0,
+      "value": 1215.3,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": null,
       "remake": false,
