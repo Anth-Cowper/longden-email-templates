@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T10:05:28.319Z",
+  "generatedAt": "2026-10-16T10:20:28.362Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2073,9 +2073,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "Tony Oliver",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Waiting for Sign Off",
-      "schedulingPosition": "T",
-      "percentComplete": 86,
+      "schedulingStatusName": "Signed off into Production",
+      "schedulingPosition": "U",
+      "percentComplete": 93,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
