@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T12:28:51.298Z",
+  "generatedAt": "2026-10-16T15:03:52.976Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1308,8 +1308,8 @@
       "schedulerName": "Anth",
       "estimatorFullName": "Jon Wass",
       "schedulerFullName": "Anthony Cowper",
-      "schedulingStatusName": "Redrawing following Comments [1]",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Revised drawings sent [1]",
+      "schedulingPosition": "T",
       "percentComplete": 72,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
