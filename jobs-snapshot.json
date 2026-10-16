@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:00:28.197Z",
+  "generatedAt": "2026-10-16T09:20:28.281Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2613,9 +2613,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Initial RFI Sent",
-      "schedulingPosition": "T",
-      "percentComplete": 9,
+      "schedulingStatusName": "Rev A Drawing in Process",
+      "schedulingPosition": "U",
+      "percentComplete": 16,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
