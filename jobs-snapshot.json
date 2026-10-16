@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T10:20:28.362Z",
+  "generatedAt": "2026-10-16T10:25:28.363Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1288,7 +1288,7 @@
       "companyName": "Spratley & Partners",
       "value": 26997.62,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": null,
+      "drawingRevision": "L",
       "remake": false,
       "orderDate": "2024-02-27T00:00:00.000Z",
       "orderTriggeredAt": "2024-02-27T10:40:16.930Z",
