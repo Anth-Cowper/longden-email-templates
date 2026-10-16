@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T17:50:25.052Z",
+  "generatedAt": "2026-10-16T06:55:27.947Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2530,7 +2530,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-07-09T00:00:00.000Z",
       "estimatedSignOff": "2026-10-19T00:00:00.000Z",
-      "jobSummaryText": "7 Frames, 12 Miscellaneous",
+      "jobSummaryText": "7 Frames, 11 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Porgemeister",
       "schedulerName": "Beef",
