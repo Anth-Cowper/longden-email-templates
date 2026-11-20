@@ -2258,16 +2258,18 @@
             try {
                 const { allJobs } = await getJobsSnapshot();
                 const p = allJobs.find((j) => j.jobNumber === jobNumber);
-                if (!p) {
-                    setStatus(tagStatus, `No project found with job number "${jobNumber}".`, true);
-                    return;
-                }
                 setStatus(tagStatus, '', false);
-                const clientLine = p.companyName ? ` (client: "${p.companyName}")` : '';
+                // Not in the list is NOT a refusal: the list is a copy that can lag behind new jobs
+                // (20 Nov 2026 - it stopped updating 16 Oct and blocked George tagging 117889).
+                // DorWaze matches the category against its own projects when the tag lands.
+                const clientLine = p && p.companyName ? ` (client: "${p.companyName}")` : '';
+                const question = p
+                    ? `Add this email to job ${jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?`
+                    : `Job ${jobNumber} isn’t in the add-in’s job list yet (it may be a new job). Check the number is right, then tag it anyway?`;
                 tagDirectResult.innerHTML = `
                     <div style="padding:0.5rem 0.6rem;border:1px solid #ddd9d0;border-radius:6px;background:#f7f5f0">
                         <div style="margin-bottom:0.5rem">
-                            Add this email to job ${jobNumber} — "<strong>${p.projectName}</strong>"${clientLine}?
+                            ${question}
                         </div>
                         <button type="button" class="btn btn-primary" id="tagDirectConfirmYes" style="margin-right:0.4rem">Yes, tag it</button>
                         <button type="button" class="btn btn-secondary" id="tagDirectConfirmNo">Cancel</button>
