@@ -30,7 +30,7 @@ function handleSave(fileName, gitMessage, req, res) {
         fs.writeFileSync(path.join(DIR, fileName), body);
 
         exec(
-            `git add ${fileName} && git commit -m "${gitMessage}" && git push`,
+            `git add ${fileName} && git commit -m "${gitMessage}" && git pull --rebase --autostash && git push`,
             { cwd: DIR },
             (err, stdout, stderr) => {
                 const out = stdout + stderr;
