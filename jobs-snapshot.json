@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T02:35:30.543Z",
+  "generatedAt": "2026-11-21T02:40:34.707Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -17102,7 +17102,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-25T00:00:00.000Z",
       "estimatedSignOff": "2026-12-04T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 15 Frames, 1 Miscellaneous",
+      "jobSummaryText": "2 Leaves, 17 Frames, 1 Miscellaneous",
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "priceOrder": null,
