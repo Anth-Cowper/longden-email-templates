@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T09:50:38.568Z",
+  "generatedAt": "2026-11-23T11:00:38.670Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -517,11 +517,11 @@
             "lineTag": null
           },
           {
-            "id": "crm-8907",
+            "id": "crm-369994",
             "action": "CRM event - Stella Rossa",
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-09-28T12:08:00.864Z",
-            "completeBy": "2027-01-26",
+            "createdAt": "2026-11-23T10:58:02.643Z",
+            "completeBy": "2026-12-15",
             "kind": "crm",
             "level": "green"
           }
@@ -29003,13 +29003,13 @@
       "companyName": null
     },
     {
-      "jobNumber": "117680",
-      "projectName": "1 Elia Street",
+      "jobNumber": "117682",
+      "projectName": "46 Manchester Street",
       "companyName": null
     },
     {
-      "jobNumber": "117682",
-      "projectName": "46 Manchester Street",
+      "jobNumber": "117680",
+      "projectName": "1 Elia Street",
       "companyName": null
     },
     {
