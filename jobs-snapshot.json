@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T12:40:38.705Z",
+  "generatedAt": "2026-11-23T12:50:38.707Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16394,7 +16394,7 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Design Query Client",
+      "schedulingStatusName": "Revised drawings sent [2]",
       "schedulingPosition": "T",
       "percentComplete": 68,
       "quoteDateReceived": null,
@@ -16438,10 +16438,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Design Query Client",
-          "since": "2026-11-16",
-          "days": 5,
-          "calDays": 7
+          "name": "Revised drawings sent [2]",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -16520,9 +16520,17 @@
             "status": "Design Query Client",
             "position": "T",
             "from": "2026-11-16",
-            "to": null,
+            "to": "2026-11-23",
             "days": 5,
             "calDays": 7
+          },
+          {
+            "status": "Revised drawings sent [2]",
+            "position": "T",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
