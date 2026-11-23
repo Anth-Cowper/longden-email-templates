@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T14:45:38.744Z",
+  "generatedAt": "2026-11-23T15:00:38.745Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -665,7 +665,7 @@
       "jobNumber": "117893",
       "projectName": "Ebury Street Mews",
       "companyName": "GPF Lewis PLC (London Office)",
-      "value": null,
+      "value": 25783.54,
       "phaseStatus": null,
       "drawingRevision": null,
       "remake": false,
@@ -681,7 +681,7 @@
       "quoteDateSent": null,
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "18 Doors, 15 Frames",
       "materialSummaryText": null,
       "estimatorName": "George",
       "priceOrder": null,
