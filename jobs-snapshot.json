@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T11:35:38.736Z",
+  "generatedAt": "2026-11-23T12:40:38.705Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16373,7 +16373,7 @@
       "companyName": "Invicta Construction Ltd",
       "value": 12200.52,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": null,
+      "drawingRevision": "C",
       "remake": false,
       "orderDate": "2026-08-28T00:00:00.000Z",
       "orderTriggeredAt": "2026-08-28T10:28:27.349Z",
