@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:15:38.734Z",
+  "generatedAt": "2026-11-23T15:20:38.723Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15804,9 +15804,9 @@
       "schedulerName": "Toe-knee",
       "estimatorFullName": "Alfie Price",
       "schedulerFullName": "Tony Oliver",
-      "schedulingStatusName": "Redrawing following Comments [1]",
-      "schedulingPosition": "U",
-      "percentComplete": 36,
+      "schedulingStatusName": "Revised drawings sent [2]",
+      "schedulingPosition": "T",
+      "percentComplete": 45,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -15848,10 +15848,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Redrawing following Comments [1]",
-          "since": "2026-11-18",
-          "days": 3,
-          "calDays": 5
+          "name": "Revised drawings sent [2]",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -15970,9 +15970,17 @@
             "status": "Redrawing following Comments [1]",
             "position": "U",
             "from": "2026-11-18",
-            "to": null,
+            "to": "2026-11-23",
             "days": 3,
             "calDays": 5
+          },
+          {
+            "status": "Revised drawings sent [2]",
+            "position": "T",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
