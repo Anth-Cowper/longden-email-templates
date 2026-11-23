@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:05:38.722Z",
+  "generatedAt": "2026-11-23T15:15:38.734Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15783,7 +15783,7 @@
       "companyName": "Morrison Construction - Central",
       "value": 68945.99,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "A",
+      "drawingRevision": "C",
       "remake": false,
       "orderDate": "2026-06-29T00:00:00.000Z",
       "orderTriggeredAt": "2026-06-29T14:15:29.420Z",
