@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:20:38.723Z",
+  "generatedAt": "2026-11-23T15:30:38.723Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14661,7 +14661,7 @@
       "companyName": "O & D Construction Ltd",
       "value": 4014.49,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": null,
+      "drawingRevision": "A",
       "remake": false,
       "orderDate": "2026-04-28T00:00:00.000Z",
       "orderTriggeredAt": "2026-04-28T08:35:05.191Z",
@@ -16030,7 +16030,7 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Signed off into Production",
+      "schedulingStatusName": "Pre-release handover meeting",
       "schedulingPosition": "U",
       "percentComplete": 93,
       "quoteDateReceived": null,
@@ -16074,7 +16074,7 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Signed off into Production",
+          "name": "Pre-release handover meeting",
           "since": "2026-11-23",
           "days": 0,
           "calDays": 0
@@ -16170,6 +16170,14 @@
           },
           {
             "status": "Signed off into Production",
+            "position": "U",
+            "from": "2026-11-23",
+            "to": "2026-11-23",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Pre-release handover meeting",
             "position": "U",
             "from": "2026-11-23",
             "to": null,
@@ -18724,7 +18732,7 @@
         "working": 54,
         "calendar": 76
       },
-      "invoiceMarker": null,
+      "invoiceMarker": "Invoiced",
       "cnc": {
         "status": "done",
         "statusLabel": "CNC complete",
