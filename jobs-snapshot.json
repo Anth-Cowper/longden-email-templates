@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T08:30:38.362Z",
+  "generatedAt": "2026-11-23T08:35:38.396Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12447,7 +12447,7 @@
       "jobNumber": "116128",
       "projectName": "Longden Doors Test doors",
       "companyName": "Longden Doors UK Ltd",
-      "value": 0.02,
+      "value": 0.01,
       "phaseStatus": "On Amend",
       "drawingRevision": null,
       "remake": false,
@@ -12463,7 +12463,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-08-13T00:00:00.000Z",
       "estimatedSignOff": "2030-04-11T00:00:00.000Z",
-      "jobSummaryText": "1 Leaf, 1 Frame, 1 Miscellaneous",
+      "jobSummaryText": "1 Leaf, 1 Frame",
       "materialSummaryText": "Sapele",
       "estimatorName": "Steve Brook",
       "priceOrder": null,
@@ -12506,7 +12506,7 @@
         "job": "116128",
         "project": "Longden Doors Test doors",
         "phase": "22",
-        "value": 0.02,
+        "value": 0.01,
         "start": "2026-08-13",
         "startedBy": "deposit",
         "cancelled": false,
