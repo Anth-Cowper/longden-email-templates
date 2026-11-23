@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:30:38.729Z",
+  "generatedAt": "2026-11-23T13:55:38.728Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14537,7 +14537,7 @@
       "jobNumber": "117438",
       "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
       "companyName": "Gariff Construction Ltd",
-      "value": 2157.28,
+      "value": 47966.81,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": null,
       "remake": false,
@@ -14584,7 +14584,7 @@
         "job": "117438",
         "project": "Manchester Town Hall (Our Town Hall - Doorsets)",
         "phase": "6",
-        "value": 2157.28,
+        "value": 47966.81,
         "start": "2026-10-12",
         "startedBy": "added",
         "cancelled": false,
@@ -18453,7 +18453,7 @@
       "remake": false,
       "orderDate": "2026-02-13T00:00:00.000Z",
       "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
-      "releasedAt": null,
+      "releasedAt": "2026-11-23T09:48:52.607Z",
       "deliveryDate": "2027-01-11T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -18481,8 +18481,8 @@
       "stage": "Production",
       "phaseId": 920,
       "phaseNumber": "4",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-11-23T09:48:52.607Z",
+      "stageEnteredAt": "2026-11-23T09:48:52.607Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -18512,7 +18512,10 @@
         ],
         "level": "red"
       },
-      "stageDays": null,
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
       "invoiceMarker": "Due",
       "cnc": {
         "status": "todo",
