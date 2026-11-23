@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T12:50:38.707Z",
+  "generatedAt": "2026-11-23T12:55:38.733Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -13297,276 +13297,6 @@
       "invoiceMarker": null
     },
     {
-      "projectId": 1965,
-      "jobNumber": "117763",
-      "projectName": "41 Manchester Street",
-      "companyName": "FMG (Construction) Ltd (Fairmile Homes)",
-      "value": 14892.78,
-      "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "G",
-      "remake": false,
-      "orderDate": "2026-07-31T00:00:00.000Z",
-      "orderTriggeredAt": "2026-07-31T07:35:59.394Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-08-03T00:00:00.000Z",
-      "estimatedSignOff": "2026-11-27T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 8 Frames, 1 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele",
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": "madi",
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Production ticket check complete",
-      "schedulingPosition": "U",
-      "percentComplete": 100,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "quoteRevision": null,
-      "stage": "Scheduling",
-      "phaseId": 1001,
-      "phaseNumber": "1",
-      "sortDate": "2026-08-03T00:00:00.000Z",
-      "stageEnteredAt": "2026-08-05",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 110695,
-            "action": "print off drawings/ schedule for hand over meeting ",
-            "target": null,
-            "assignedTo": "Daniella Jackson",
-            "createdAt": "2026-11-06T13:02:19.446Z",
-            "completeBy": "2026-11-06T00:00:00.000Z",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          }
-        ],
-        "level": "red"
-      },
-      "phaseTimes": {
-        "projectId": 1965,
-        "job": "117763",
-        "project": "41 Manchester Street",
-        "phase": "1",
-        "value": 14892.78,
-        "start": "2026-08-05",
-        "startedBy": "added",
-        "cancelled": false,
-        "scheduling": {
-          "released": null,
-          "running": true,
-          "totalDays": 77,
-          "onHoldClientDays": 0,
-          "onHoldLongdenDays": 0,
-          "activeDays": 77,
-          "totalCalDays": 110,
-          "onHoldClientCalDays": 0,
-          "onHoldLongdenCalDays": 0,
-          "activeCalDays": 110,
-          "waitingOnUsDays": 12,
-          "waitingOnClientDays": 65,
-          "holdsKnown": true
-        },
-        "currentStatus": {
-          "name": "Production ticket check complete",
-          "since": "2026-11-19",
-          "days": 2,
-          "calDays": 4
-        },
-        "stays": [
-          {
-            "status": "Initial RFI Sent",
-            "position": "T",
-            "from": "2026-08-05",
-            "to": "2026-09-14",
-            "days": 27,
-            "calDays": 40
-          },
-          {
-            "status": "Waiting for templates",
-            "position": "T",
-            "from": "2026-09-14",
-            "to": "2026-09-24",
-            "days": 8,
-            "calDays": 10
-          },
-          {
-            "status": "Rev A Drawing in Process",
-            "position": "U",
-            "from": "2026-09-24",
-            "to": "2026-09-30",
-            "days": 4,
-            "calDays": 6
-          },
-          {
-            "status": "First Off Drawing Check",
-            "position": "U",
-            "from": "2026-09-30",
-            "to": "2026-09-30",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "First off drawings check complete",
-            "position": "U",
-            "from": "2026-09-30",
-            "to": "2026-09-30",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Rev A Drawing sent",
-            "position": "T",
-            "from": "2026-09-30",
-            "to": "2026-10-07",
-            "days": 5,
-            "calDays": 7
-          },
-          {
-            "status": "Redrawing following Comments [1]",
-            "position": "U",
-            "from": "2026-10-07",
-            "to": "2026-10-07",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Revised drawings sent [1]",
-            "position": "T",
-            "from": "2026-10-07",
-            "to": "2026-10-16",
-            "days": 7,
-            "calDays": 9
-          },
-          {
-            "status": "Revised drawings sent [2]",
-            "position": "T",
-            "from": "2026-10-16",
-            "to": "2026-10-29",
-            "days": 9,
-            "calDays": 13
-          },
-          {
-            "status": "Waiting for Sign Off",
-            "position": "T",
-            "from": "2026-10-29",
-            "to": "2026-11-02",
-            "days": 2,
-            "calDays": 4
-          },
-          {
-            "status": "Final Approval",
-            "position": "T",
-            "from": "2026-11-02",
-            "to": "2026-11-03",
-            "days": 1,
-            "calDays": 1
-          },
-          {
-            "status": "Comments recieved Redrawing",
-            "position": "U",
-            "from": "2026-11-03",
-            "to": "2026-11-03",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Final Approval",
-            "position": "T",
-            "from": "2026-11-03",
-            "to": "2026-11-06",
-            "days": 3,
-            "calDays": 3
-          },
-          {
-            "status": "Signed off into Production",
-            "position": "U",
-            "from": "2026-11-06",
-            "to": "2026-11-09",
-            "days": 1,
-            "calDays": 3
-          },
-          {
-            "status": "Pre-release handover meeting",
-            "position": "U",
-            "from": "2026-11-09",
-            "to": "2026-11-11",
-            "days": 2,
-            "calDays": 2
-          },
-          {
-            "status": "Redrawing to Templates [2]",
-            "position": "U",
-            "from": "2026-11-11",
-            "to": "2026-11-12",
-            "days": 1,
-            "calDays": 1
-          },
-          {
-            "status": "Producing Templates",
-            "position": "U",
-            "from": "2026-11-12",
-            "to": "2026-11-16",
-            "days": 2,
-            "calDays": 4
-          },
-          {
-            "status": "Final Drawing [6]",
-            "position": "U",
-            "from": "2026-11-16",
-            "to": "2026-11-16",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Final Approval",
-            "position": "T",
-            "from": "2026-11-16",
-            "to": "2026-11-19",
-            "days": 3,
-            "calDays": 3
-          },
-          {
-            "status": "Production ticket check complete",
-            "position": "U",
-            "from": "2026-11-19",
-            "to": null,
-            "days": 2,
-            "calDays": 4
-          }
-        ],
-        "withUs": {
-          "until": null,
-          "how": "running",
-          "days": 77,
-          "calDays": 110
-        }
-      },
-      "jobTimes": {
-        "depositPaid": "2026-08-03",
-        "until": null,
-        "days": 79,
-        "calDays": 112
-      },
-      "stageDays": {
-        "working": 77,
-        "calendar": 110
-      },
-      "invoiceMarker": null
-    },
-    {
       "projectId": 486,
       "jobNumber": "116273",
       "projectName": "26 Gilston Road",
@@ -15755,6 +15485,272 @@
       "jobNumber": "117763",
       "projectName": "41 Manchester Street",
       "companyName": "FMG (Construction) Ltd (Fairmile Homes)",
+      "value": 14892.78,
+      "phaseStatus": "Scheduling WIP",
+      "drawingRevision": "G",
+      "remake": false,
+      "orderDate": "2026-07-31T00:00:00.000Z",
+      "orderTriggeredAt": "2026-07-31T07:35:59.394Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-08-03T00:00:00.000Z",
+      "estimatedSignOff": "2026-11-27T00:00:00.000Z",
+      "jobSummaryText": "9 Leaves, 8 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele",
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": "madi",
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": "Madi Glen",
+      "schedulingStatusName": "Ironmongery Queries Client",
+      "schedulingPosition": "T",
+      "percentComplete": 100,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "quoteRevision": null,
+      "stage": "Scheduling",
+      "phaseId": 1001,
+      "phaseNumber": "1",
+      "sortDate": "2026-08-03T00:00:00.000Z",
+      "stageEnteredAt": "2026-08-05",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [],
+        "level": null
+      },
+      "phaseTimes": {
+        "projectId": 1965,
+        "job": "117763",
+        "project": "41 Manchester Street",
+        "phase": "1",
+        "value": 14892.78,
+        "start": "2026-08-05",
+        "startedBy": "added",
+        "cancelled": false,
+        "scheduling": {
+          "released": null,
+          "running": true,
+          "totalDays": 77,
+          "onHoldClientDays": 0,
+          "onHoldLongdenDays": 0,
+          "activeDays": 77,
+          "totalCalDays": 110,
+          "onHoldClientCalDays": 0,
+          "onHoldLongdenCalDays": 0,
+          "activeCalDays": 110,
+          "waitingOnUsDays": 12,
+          "waitingOnClientDays": 65,
+          "holdsKnown": true
+        },
+        "currentStatus": {
+          "name": "Ironmongery Queries Client",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
+        },
+        "stays": [
+          {
+            "status": "Initial RFI Sent",
+            "position": "T",
+            "from": "2026-08-05",
+            "to": "2026-09-14",
+            "days": 27,
+            "calDays": 40
+          },
+          {
+            "status": "Waiting for templates",
+            "position": "T",
+            "from": "2026-09-14",
+            "to": "2026-09-24",
+            "days": 8,
+            "calDays": 10
+          },
+          {
+            "status": "Rev A Drawing in Process",
+            "position": "U",
+            "from": "2026-09-24",
+            "to": "2026-09-30",
+            "days": 4,
+            "calDays": 6
+          },
+          {
+            "status": "First Off Drawing Check",
+            "position": "U",
+            "from": "2026-09-30",
+            "to": "2026-09-30",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "First off drawings check complete",
+            "position": "U",
+            "from": "2026-09-30",
+            "to": "2026-09-30",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Rev A Drawing sent",
+            "position": "T",
+            "from": "2026-09-30",
+            "to": "2026-10-07",
+            "days": 5,
+            "calDays": 7
+          },
+          {
+            "status": "Redrawing following Comments [1]",
+            "position": "U",
+            "from": "2026-10-07",
+            "to": "2026-10-07",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Revised drawings sent [1]",
+            "position": "T",
+            "from": "2026-10-07",
+            "to": "2026-10-16",
+            "days": 7,
+            "calDays": 9
+          },
+          {
+            "status": "Revised drawings sent [2]",
+            "position": "T",
+            "from": "2026-10-16",
+            "to": "2026-10-29",
+            "days": 9,
+            "calDays": 13
+          },
+          {
+            "status": "Waiting for Sign Off",
+            "position": "T",
+            "from": "2026-10-29",
+            "to": "2026-11-02",
+            "days": 2,
+            "calDays": 4
+          },
+          {
+            "status": "Final Approval",
+            "position": "T",
+            "from": "2026-11-02",
+            "to": "2026-11-03",
+            "days": 1,
+            "calDays": 1
+          },
+          {
+            "status": "Comments recieved Redrawing",
+            "position": "U",
+            "from": "2026-11-03",
+            "to": "2026-11-03",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Final Approval",
+            "position": "T",
+            "from": "2026-11-03",
+            "to": "2026-11-06",
+            "days": 3,
+            "calDays": 3
+          },
+          {
+            "status": "Signed off into Production",
+            "position": "U",
+            "from": "2026-11-06",
+            "to": "2026-11-09",
+            "days": 1,
+            "calDays": 3
+          },
+          {
+            "status": "Pre-release handover meeting",
+            "position": "U",
+            "from": "2026-11-09",
+            "to": "2026-11-11",
+            "days": 2,
+            "calDays": 2
+          },
+          {
+            "status": "Redrawing to Templates [2]",
+            "position": "U",
+            "from": "2026-11-11",
+            "to": "2026-11-12",
+            "days": 1,
+            "calDays": 1
+          },
+          {
+            "status": "Producing Templates",
+            "position": "U",
+            "from": "2026-11-12",
+            "to": "2026-11-16",
+            "days": 2,
+            "calDays": 4
+          },
+          {
+            "status": "Final Drawing [6]",
+            "position": "U",
+            "from": "2026-11-16",
+            "to": "2026-11-16",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Final Approval",
+            "position": "T",
+            "from": "2026-11-16",
+            "to": "2026-11-19",
+            "days": 3,
+            "calDays": 3
+          },
+          {
+            "status": "Production ticket check complete",
+            "position": "U",
+            "from": "2026-11-19",
+            "to": "2026-11-23",
+            "days": 2,
+            "calDays": 4
+          },
+          {
+            "status": "Ironmongery Queries Client",
+            "position": "T",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
+          }
+        ],
+        "withUs": {
+          "until": null,
+          "how": "running",
+          "days": 77,
+          "calDays": 110
+        }
+      },
+      "jobTimes": {
+        "depositPaid": "2026-08-03",
+        "until": null,
+        "days": 79,
+        "calDays": 112
+      },
+      "stageDays": {
+        "working": 77,
+        "calendar": 110
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1965,
+      "jobNumber": "117763",
+      "projectName": "41 Manchester Street",
+      "companyName": "FMG (Construction) Ltd (Fairmile Homes)",
       "value": 5602.5,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": null,
@@ -15778,9 +15774,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Producing Templates",
-      "schedulingPosition": "U",
-      "percentComplete": 48,
+      "schedulingStatusName": "Waiting for Sign Off",
+      "schedulingPosition": "T",
+      "percentComplete": 77,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -15822,19 +15818,27 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Producing Templates",
-          "since": "2026-11-16",
-          "days": 5,
-          "calDays": 7
+          "name": "Waiting for Sign Off",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
             "status": "Producing Templates",
             "position": "U",
             "from": "2026-11-16",
-            "to": null,
+            "to": "2026-11-23",
             "days": 5,
             "calDays": 7
+          },
+          {
+            "status": "Waiting for Sign Off",
+            "position": "T",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
