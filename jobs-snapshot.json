@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T00:00:37.077Z",
+  "generatedAt": "2026-11-23T08:15:38.328Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -4477,17 +4477,6 @@
         "statusFlag": null,
         "statusSince": null,
         "openNotes": [
-          {
-            "id": 183242,
-            "action": "Quote follow-up",
-            "target": null,
-            "assignedTo": "George",
-            "createdAt": "2026-11-19T10:58:16Z",
-            "completeBy": "2026-11-26",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
           {
             "id": "crm-315566",
             "action": "CRM event - The Deluxe Group",
