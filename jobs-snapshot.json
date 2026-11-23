@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T16:15:38.729Z",
+  "generatedAt": "2026-11-23T16:25:39.227Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12596,9 +12596,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Rev A Drawing sent",
+      "schedulingStatusName": "Waiting for Sign Off",
       "schedulingPosition": "T",
-      "percentComplete": 18,
+      "percentComplete": 77,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -12640,19 +12640,27 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Rev A Drawing sent",
-          "since": "2026-11-16",
-          "days": 5,
-          "calDays": 7
+          "name": "Waiting for Sign Off",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
             "status": "Rev A Drawing sent",
             "position": "T",
             "from": "2026-11-16",
-            "to": null,
+            "to": "2026-11-23",
             "days": 5,
             "calDays": 7
+          },
+          {
+            "status": "Waiting for Sign Off",
+            "position": "T",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
