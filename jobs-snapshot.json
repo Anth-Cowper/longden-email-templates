@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:30:38.723Z",
+  "generatedAt": "2026-11-23T15:40:38.732Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -657,84 +657,6 @@
       "stageDays": {
         "working": 6,
         "calendar": 10
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 106570,
-      "jobNumber": "117893",
-      "projectName": "Ebury Street Mews",
-      "companyName": "GPF Lewis PLC (London Office)",
-      "value": 25783.54,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "18 Doors, 15 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-10T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-17T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-17T00:00:00.000Z",
-      "quotedCompanies": [
-        "GPF Lewis PLC (London Office)"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-17T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-10T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169202,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2027-02-23",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-144046",
-            "action": "CRM event - GPF Lewis PLC (London Office)",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-10T14:16:56.524Z",
-            "completeBy": "2027-02-23",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 9,
-        "calendar": 13
       },
       "invoiceMarker": null
     },
@@ -3505,6 +3427,95 @@
       "stageDays": {
         "working": 1,
         "calendar": 3
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 106570,
+      "jobNumber": "117893",
+      "projectName": "Ebury Street Mews",
+      "companyName": "GPF Lewis PLC (London Office)",
+      "value": 25783.54,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-23T15:36:27Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "18 Doors, 15 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-10T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-17T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "GPF Lewis PLC (London Office)"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-10T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-23T15:36:27Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169202,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2027-02-23",
+            "kind": "todo",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": 193553,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-23T15:36:46Z",
+            "completeBy": "2026-11-30",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-144046",
+            "action": "CRM event - GPF Lewis PLC (London Office)",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-10T14:16:56.524Z",
+            "completeBy": "2027-02-23",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
@@ -14682,8 +14693,8 @@
       "schedulerName": "Toe-knee",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Tony Oliver",
-      "schedulingStatusName": "Repricing some Items",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Rev A Drawing sent",
+      "schedulingPosition": "T",
       "percentComplete": 20,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
@@ -14721,24 +14732,24 @@
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
           "activeCalDays": 4,
-          "waitingOnUsDays": 2,
+          "waitingOnUsDays": 0,
           "waitingOnClientDays": 0,
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Repricing some Items",
-          "since": "2026-11-19",
-          "days": 2,
-          "calDays": 4
+          "name": "Rev A Drawing sent",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
-            "status": "Repricing some Items",
-            "position": "U",
-            "from": "2026-11-19",
+            "status": "Rev A Drawing sent",
+            "position": "T",
+            "from": "2026-11-23",
             "to": null,
-            "days": 2,
-            "calDays": 4
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
