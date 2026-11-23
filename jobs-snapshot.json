@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T14:10:38.734Z",
+  "generatedAt": "2026-11-23T14:35:38.719Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14537,7 +14537,7 @@
       "jobNumber": "117438",
       "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
       "companyName": "Gariff Construction Ltd",
-      "value": 62466.82,
+      "value": 65912.65,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "a",
       "remake": false,
@@ -14553,7 +14553,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-03-03T00:00:00.000Z",
       "estimatedSignOff": "2026-12-11T00:00:00.000Z",
-      "jobSummaryText": "5 Leaves, 4 Frames, 17 Miscellaneous",
+      "jobSummaryText": "5 Leaves, 4 Frames, 18 Miscellaneous",
       "materialSummaryText": "Sapele, Flush",
       "estimatorName": "Beef",
       "priceOrder": null,
@@ -14584,7 +14584,7 @@
         "job": "117438",
         "project": "Manchester Town Hall (Our Town Hall - Doorsets)",
         "phase": "5",
-        "value": 62466.82,
+        "value": 65912.65,
         "start": "2026-07-06",
         "startedBy": "added",
         "cancelled": false,
