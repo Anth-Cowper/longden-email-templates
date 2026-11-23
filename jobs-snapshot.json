@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:55:38.728Z",
+  "generatedAt": "2026-11-23T14:00:38.727Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16114,9 +16114,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Revised drawings sent [3]",
-      "schedulingPosition": "T",
-      "percentComplete": 57,
+      "schedulingStatusName": "Signed off into Production",
+      "schedulingPosition": "U",
+      "percentComplete": 93,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -16158,10 +16158,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Revised drawings sent [3]",
-          "since": "2026-11-17",
-          "days": 4,
-          "calDays": 6
+          "name": "Signed off into Production",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -16248,9 +16248,17 @@
             "status": "Revised drawings sent [3]",
             "position": "T",
             "from": "2026-11-17",
-            "to": null,
+            "to": "2026-11-23",
             "days": 4,
             "calDays": 6
+          },
+          {
+            "status": "Signed off into Production",
+            "position": "U",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
