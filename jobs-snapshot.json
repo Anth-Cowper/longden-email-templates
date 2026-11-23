@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T12:55:38.733Z",
+  "generatedAt": "2026-11-23T13:00:38.723Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14316,7 +14316,7 @@
       "schedulerName": "Anth",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Anthony Cowper",
-      "schedulingStatusName": "Stain Samples Client",
+      "schedulingStatusName": "Revised drawings sent [4]",
       "schedulingPosition": "T",
       "percentComplete": 80,
       "quoteDateReceived": null,
@@ -14360,10 +14360,10 @@
           "holdsKnown": false
         },
         "currentStatus": {
-          "name": "Stain Samples Client",
-          "since": "2026-10-08",
-          "days": 32,
-          "calDays": 46
+          "name": "Revised drawings sent [4]",
+          "since": "2026-11-23",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -14394,9 +14394,17 @@
             "status": "Stain Samples Client",
             "position": "T",
             "from": "2026-10-08",
-            "to": null,
+            "to": "2026-11-23",
             "days": 32,
             "calDays": 46
+          },
+          {
+            "status": "Revised drawings sent [4]",
+            "position": "T",
+            "from": "2026-11-23",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
