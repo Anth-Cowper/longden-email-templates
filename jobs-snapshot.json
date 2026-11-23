@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:00:38.745Z",
+  "generatedAt": "2026-11-23T15:05:38.722Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15781,7 +15781,7 @@
       "jobNumber": "117321",
       "projectName": "Pollok Stables",
       "companyName": "Morrison Construction - Central",
-      "value": 73137.74,
+      "value": 68945.99,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "A",
       "remake": false,
@@ -15797,7 +15797,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-08-06T00:00:00.000Z",
       "estimatedSignOff": "2026-12-11T00:00:00.000Z",
-      "jobSummaryText": "15 Leaves, 36 Frames, 1 Miscellaneous",
+      "jobSummaryText": "12 Leaves, 32 Frames, 1 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "priceOrder": null,
@@ -15828,7 +15828,7 @@
         "job": "117321",
         "project": "Pollok Stables",
         "phase": "1",
-        "value": 73137.74,
+        "value": 68945.99,
         "start": "2026-08-06",
         "startedBy": "deposit",
         "cancelled": false,
