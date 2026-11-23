@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T08:55:38.467Z",
+  "generatedAt": "2026-11-23T09:00:38.393Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -170,7 +170,7 @@
       "jobNumber": "117831",
       "projectName": "Blackburn College",
       "companyName": "BAM Construction Ltd - Northern (Salford)",
-      "value": null,
+      "value": 96717.56,
       "phaseStatus": null,
       "drawingRevision": null,
       "remake": false,
@@ -186,7 +186,7 @@
       "quoteDateSent": null,
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "46 Doors, 26 Frames",
       "materialSummaryText": null,
       "estimatorName": "George",
       "priceOrder": null,
