@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T14:40:38.717Z",
+  "generatedAt": "2026-11-23T14:45:38.744Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -19624,7 +19624,7 @@
       "remake": false,
       "orderDate": "2026-02-13T00:00:00.000Z",
       "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
-      "releasedAt": null,
+      "releasedAt": "2026-11-23T14:40:19.030Z",
       "deliveryDate": "2026-11-24T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -19652,8 +19652,8 @@
       "stage": "Production",
       "phaseId": 1021,
       "phaseNumber": "6",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-11-23T14:40:19.030Z",
+      "stageEnteredAt": "2026-11-23T14:40:19.030Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -19672,7 +19672,10 @@
         ],
         "level": "green"
       },
-      "stageDays": null,
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
       "invoiceMarker": "Due",
       "cnc": {
         "status": "todo",
