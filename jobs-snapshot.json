@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T09:00:38.393Z",
+  "generatedAt": "2026-11-23T09:50:38.568Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12793,236 +12793,6 @@
       "invoiceMarker": null
     },
     {
-      "projectId": 1640,
-      "jobNumber": "117438",
-      "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
-      "companyName": "Gariff Construction Ltd",
-      "value": 84929.12,
-      "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "D",
-      "remake": false,
-      "orderDate": "2026-02-13T00:00:00.000Z",
-      "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-03-03T00:00:00.000Z",
-      "estimatedSignOff": "2026-11-16T00:00:00.000Z",
-      "jobSummaryText": "8 Leaves, 5 Frames, 4 Screens, 4 Miscellaneous",
-      "materialSummaryText": "European Oak",
-      "estimatorName": "Beef",
-      "priceOrder": null,
-      "schedulerName": "Beef",
-      "estimatorFullName": "Beth Oliver-Williams",
-      "schedulerFullName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Production ticket check complete",
-      "schedulingPosition": "U",
-      "percentComplete": 100,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "quoteRevision": null,
-      "stage": "Scheduling",
-      "phaseId": 920,
-      "phaseNumber": "4",
-      "sortDate": "2026-03-03T00:00:00.000Z",
-      "stageEnteredAt": "2026-07-06",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 180659,
-            "action": "Tickets handed to Anth ",
-            "target": null,
-            "assignedTo": "Anth",
-            "createdAt": "2026-11-18T10:20:38Z",
-            "completeBy": "2026-11-20",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          }
-        ],
-        "level": "red"
-      },
-      "phaseTimes": {
-        "projectId": 1640,
-        "job": "117438",
-        "project": "Manchester Town Hall (Our Town Hall - Doorsets)",
-        "phase": "4",
-        "value": 84929.12,
-        "start": "2026-07-06",
-        "startedBy": "added",
-        "cancelled": false,
-        "scheduling": {
-          "released": null,
-          "running": true,
-          "totalDays": 99,
-          "onHoldClientDays": 22,
-          "onHoldLongdenDays": 0,
-          "activeDays": 77,
-          "totalCalDays": 140,
-          "onHoldClientCalDays": 32,
-          "onHoldLongdenCalDays": 0,
-          "activeCalDays": 108,
-          "waitingOnUsDays": 46,
-          "waitingOnClientDays": 47,
-          "holdsKnown": true
-        },
-        "currentStatus": {
-          "name": "Production ticket check complete",
-          "since": "2026-11-20",
-          "days": 1,
-          "calDays": 3
-        },
-        "stays": [
-          {
-            "status": "Waiting for templates",
-            "position": "T",
-            "from": "2026-07-14",
-            "to": "2026-07-21",
-            "days": 5,
-            "calDays": 7
-          },
-          {
-            "status": "moulding samples client",
-            "position": "T",
-            "from": "2026-07-21",
-            "to": "2026-07-27",
-            "days": 4,
-            "calDays": 6
-          },
-          {
-            "status": "First Off Drawing Check",
-            "position": "U",
-            "from": "2026-07-27",
-            "to": "2026-07-27",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Rev A Drawing sent",
-            "position": "T",
-            "from": "2026-07-27",
-            "to": "2026-08-05",
-            "days": 7,
-            "calDays": 9
-          },
-          {
-            "status": "Revised drawings sent [2]",
-            "position": "T",
-            "from": "2026-08-05",
-            "to": "2026-08-12",
-            "days": 5,
-            "calDays": 7
-          },
-          {
-            "status": "Signed off into Production",
-            "position": "U",
-            "from": "2026-08-12",
-            "to": "2026-08-28",
-            "days": 12,
-            "calDays": 16
-          },
-          {
-            "status": "Comments recieved Redrawing",
-            "position": "U",
-            "from": "2026-08-28",
-            "to": "2026-09-11",
-            "days": 9,
-            "calDays": 14
-          },
-          {
-            "status": "On Hold Client",
-            "position": "T",
-            "from": "2026-09-11",
-            "to": "2026-10-13",
-            "days": 22,
-            "calDays": 32
-          },
-          {
-            "status": "Final Drawing [6]",
-            "position": "U",
-            "from": "2026-10-13",
-            "to": "2026-10-29",
-            "days": 12,
-            "calDays": 16
-          },
-          {
-            "status": "Signed off into Production",
-            "position": "U",
-            "from": "2026-10-29",
-            "to": "2026-10-29",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Final Approval",
-            "position": "T",
-            "from": "2026-10-29",
-            "to": "2026-11-04",
-            "days": 4,
-            "calDays": 6
-          },
-          {
-            "status": "Pre-release handover meeting",
-            "position": "U",
-            "from": "2026-11-04",
-            "to": "2026-11-12",
-            "days": 6,
-            "calDays": 8
-          },
-          {
-            "status": "Manufacturing Paperwork Produced",
-            "position": "U",
-            "from": "2026-11-12",
-            "to": "2026-11-18",
-            "days": 4,
-            "calDays": 6
-          },
-          {
-            "status": "Production Ticket Check",
-            "position": "U",
-            "from": "2026-11-18",
-            "to": "2026-11-20",
-            "days": 2,
-            "calDays": 2
-          },
-          {
-            "status": "Production ticket check complete",
-            "position": "U",
-            "from": "2026-11-20",
-            "to": null,
-            "days": 1,
-            "calDays": 3
-          }
-        ],
-        "withUs": {
-          "until": null,
-          "how": "running",
-          "days": 99,
-          "calDays": 140
-        }
-      },
-      "jobTimes": {
-        "depositPaid": "2026-03-03",
-        "until": null,
-        "days": 184,
-        "calDays": 265
-      },
-      "stageDays": {
-        "working": 99,
-        "calendar": 140
-      },
-      "invoiceMarker": "Due"
-    },
-    {
       "projectId": 1448,
       "jobNumber": "117245",
       "projectName": "71 Gloucester Place",
@@ -18637,6 +18407,105 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
+        "samplesBy": null
+      }
+    },
+    {
+      "projectId": 1640,
+      "jobNumber": "117438",
+      "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
+      "companyName": "Gariff Construction Ltd",
+      "value": 86403.89,
+      "phaseStatus": "Planning Pool",
+      "drawingRevision": "D",
+      "remake": false,
+      "orderDate": "2026-02-13T00:00:00.000Z",
+      "orderTriggeredAt": "2026-02-13T14:09:12.109Z",
+      "releasedAt": null,
+      "deliveryDate": "2027-01-11T00:00:00.000Z",
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-03-03T00:00:00.000Z",
+      "estimatedSignOff": "2026-11-16T00:00:00.000Z",
+      "jobSummaryText": "8 Leaves, 5 Frames, 4 Screens, 4 Miscellaneous",
+      "materialSummaryText": "European Oak",
+      "estimatorName": "Beef",
+      "priceOrder": null,
+      "schedulerName": "Beef",
+      "estimatorFullName": "Beth Oliver-Williams",
+      "schedulerFullName": "Beth Oliver-Williams",
+      "schedulingStatusName": "Production ticket check complete",
+      "schedulingPosition": "U",
+      "percentComplete": 100,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "quoteRevision": null,
+      "stage": "Production",
+      "phaseId": 920,
+      "phaseNumber": "4",
+      "sortDate": null,
+      "stageEnteredAt": null,
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 180659,
+            "action": "Tickets handed to Anth ",
+            "target": null,
+            "assignedTo": "Anth",
+            "createdAt": "2026-11-18T10:20:38Z",
+            "completeBy": "2026-11-20",
+            "kind": "task",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 193544,
+            "action": "Send delivery arrangements",
+            "target": null,
+            "assignedTo": "Daniella Jackson",
+            "createdAt": "2026-11-23T09:50:34Z",
+            "completeBy": "2026-11-30",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": null,
+      "invoiceMarker": "Due",
+      "cnc": {
+        "status": "todo",
+        "statusLabel": "To do",
+        "waitingOn": null,
+        "waitingOnLabel": null,
+        "note": "",
+        "keeps": null,
+        "keepsLabel": null,
+        "frames": null,
+        "doors": null,
+        "curves": null,
+        "templates": null,
+        "ironmongery": "",
+        "actionId": null,
+        "waitingBy": null,
+        "waitingSince": null,
+        "doneAt": null,
+        "doneBy": null,
+        "updatedAt": null,
+        "updatedBy": null,
+        "samples": null,
+        "samplesLabel": null,
+        "samplesNote": "",
+        "samplesAt": null,
         "samplesBy": null
       }
     },
