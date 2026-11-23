@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T11:00:38.670Z",
+  "generatedAt": "2026-11-23T11:20:38.681Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15001,7 +15001,7 @@
       "jobNumber": "117533",
       "projectName": "Naome Acres",
       "companyName": "O & D Construction Ltd",
-      "value": 0,
+      "value": 4014.49,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": null,
       "remake": false,
@@ -15017,7 +15017,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-05-01T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": "2 Leaves, 2 Frames",
+      "jobSummaryText": "2 Leaves, 2 Frames, 1 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George",
       "priceOrder": null,
@@ -15048,7 +15048,7 @@
         "job": "117533",
         "project": "Naome Acres",
         "phase": "7",
-        "value": 0,
+        "value": 4014.49,
         "start": "2026-11-19",
         "startedBy": "added",
         "cancelled": false,
