@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:40:38.732Z",
+  "generatedAt": "2026-11-23T16:10:38.749Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,160 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 1992,
-      "jobNumber": "117790",
-      "projectName": "38 Portland Place & 9 Cavendish Mews North",
-      "companyName": "Horohoe Construction Ltd",
-      "value": 152828.27,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-07-30T09:34:52.160Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "110 Doors, 93 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "madi",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Madi Glen",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-18T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-10T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-25T00:00:00.000Z",
-      "quotedCompanies": [
-        "Horohoe Construction Ltd"
-      ],
-      "quoteRevision": null,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-10T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-18T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169089,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-18",
-            "kind": "todo",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": "crm-324626",
-            "action": "CRM event - Horohoe Construction Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-18T12:06:44.197Z",
-            "completeBy": "2026-12-01",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 3,
-        "calendar": 5
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1992,
-      "jobNumber": "117790",
-      "projectName": "38 Portland Place & 9 Cavendish Mews North",
-      "companyName": "Quinn London Limited",
-      "value": 152828.27,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-07-30T09:34:52.160Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "110 Doors, 93 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "madi",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Madi Glen",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-18T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-25T00:00:00.000Z",
-      "quotedCompanies": [
-        "Quinn London Limited"
-      ],
-      "quoteRevision": null,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-11T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-18T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169089,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-18",
-            "kind": "todo",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": "crm-324626",
-            "action": "CRM event - Horohoe Construction Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-18T12:06:44.197Z",
-            "completeBy": "2026-12-01",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 3,
-        "calendar": 5
-      },
-      "invoiceMarker": null
-    },
     {
       "projectId": 2033,
       "jobNumber": "117831",
@@ -1337,6 +1183,58 @@
         "working": 5,
         "calendar": 7
       },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 159455,
+      "jobNumber": "117902",
+      "projectName": "60 Marlborough Place",
+      "companyName": null,
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "quoteRevision": null,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": null,
+      "noQuotedCompany": true,
+      "stageEnteredAt": null,
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [],
+        "level": null
+      },
+      "stageDays": null,
       "invoiceMarker": null
     },
     {
@@ -2675,6 +2573,97 @@
       "stageDays": {
         "working": 61,
         "calendar": 88
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1992,
+      "jobNumber": "117790",
+      "projectName": "38 Portland Place & 9 Cavendish Mews North",
+      "companyName": "GPF Lewis PLC (Head Office) · Horohoe Construction Ltd · Quinn London Limited",
+      "value": 152828.27,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-23T16:08:14Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "110 Doors, 93 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "madi",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Madi Glen",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-07-20T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-07-27T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "GPF Lewis PLC (Head Office)",
+        "Horohoe Construction Ltd",
+        "Quinn London Limited"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-07-20T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-23T16:08:14Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169089,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-18",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 193554,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "madi",
+            "createdAt": "2026-11-23T16:08:47Z",
+            "completeBy": null,
+            "kind": "reminder",
+            "level": "amber",
+            "lineTag": null
+          },
+          {
+            "id": "crm-324626",
+            "action": "CRM event - Horohoe Construction Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-18T12:06:44.197Z",
+            "completeBy": "2026-12-01",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
@@ -20114,6 +20103,11 @@
     {
       "jobNumber": "117536",
       "projectName": "London City Lionesses Training Ground",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117902",
+      "projectName": "60 Marlborough Place",
       "companyName": null
     },
     {
