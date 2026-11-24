@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:21:03.023Z",
+  "generatedAt": "2026-11-24T12:01:02.745Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12760,9 +12760,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "Madi Glen",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Final Approval",
-      "schedulingPosition": "T",
-      "percentComplete": 91,
+      "schedulingStatusName": "Pre-release handover meeting",
+      "schedulingPosition": "U",
+      "percentComplete": 93,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -12804,10 +12804,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Final Approval",
-          "since": "2026-11-16",
-          "days": 6,
-          "calDays": 8
+          "name": "Pre-release handover meeting",
+          "since": "2026-11-24",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -12838,9 +12838,33 @@
             "status": "Final Approval",
             "position": "T",
             "from": "2026-11-16",
-            "to": null,
+            "to": "2026-11-24",
             "days": 6,
             "calDays": 8
+          },
+          {
+            "status": "Pre-release handover meeting",
+            "position": "U",
+            "from": "2026-11-24",
+            "to": "2026-11-24",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Signed off into Production",
+            "position": "U",
+            "from": "2026-11-24",
+            "to": "2026-11-24",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Pre-release handover meeting",
+            "position": "U",
+            "from": "2026-11-24",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
