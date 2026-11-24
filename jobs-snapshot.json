@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T08:21:02.679Z",
+  "generatedAt": "2026-11-24T08:36:02.696Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,84 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 1696,
-      "jobNumber": "117494",
-      "projectName": "31 Wilton Place",
-      "companyName": "InteriorLAB",
-      "value": 28928.22,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "19 Doors, 19 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-16T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-23T00:00:00.000Z",
-      "quotedCompanies": [
-        "InteriorLAB"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-11T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-16T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169100,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-24",
-            "kind": "todo",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": "crm-144060",
-            "action": "CRM event - InteriorLAB",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-10T17:07:28.749Z",
-            "completeBy": "2026-11-24",
-            "kind": "crm",
-            "level": "red"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 6,
-        "calendar": 8
-      },
-      "invoiceMarker": null
-    },
     {
       "projectId": 2033,
       "jobNumber": "117831",
@@ -3681,6 +3603,95 @@
       "stageDays": {
         "working": 253,
         "calendar": 365
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1696,
+      "jobNumber": "117494",
+      "projectName": "31 Wilton Place",
+      "companyName": "InteriorLAB",
+      "value": 28928.22,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-24T08:32:00Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "19 Doors, 19 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-16T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "InteriorLAB"
+      ],
+      "quoteRevision": 5,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2025-09-02T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-24T08:32:00Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169100,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-24",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 196125,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-24T08:32:59Z",
+            "completeBy": "2026-12-01",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-144060",
+            "action": "CRM event - InteriorLAB",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-10T17:07:28.749Z",
+            "completeBy": "2026-11-24",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
