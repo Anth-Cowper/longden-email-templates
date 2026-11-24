@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T14:16:02.765Z",
+  "generatedAt": "2026-11-24T15:01:02.770Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16705,9 +16705,9 @@
       "schedulerName": "Beef",
       "estimatorFullName": "Alfie Price",
       "schedulerFullName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Revised drawings sent [4]",
-      "schedulingPosition": "T",
-      "percentComplete": 66,
+      "schedulingStatusName": "Signed off into Production",
+      "schedulingPosition": "U",
+      "percentComplete": 93,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -16749,10 +16749,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Revised drawings sent [4]",
-          "since": "2026-11-18",
-          "days": 4,
-          "calDays": 6
+          "name": "Signed off into Production",
+          "since": "2026-11-24",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -16823,9 +16823,17 @@
             "status": "Revised drawings sent [4]",
             "position": "T",
             "from": "2026-11-18",
-            "to": null,
+            "to": "2026-11-24",
             "days": 4,
             "calDays": 6
+          },
+          {
+            "status": "Signed off into Production",
+            "position": "U",
+            "from": "2026-11-24",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
