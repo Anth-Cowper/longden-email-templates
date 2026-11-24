@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:26:02.752Z",
+  "generatedAt": "2026-11-24T12:36:03.249Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15187,112 +15187,6 @@
       "stageDays": {
         "working": 3,
         "calendar": 5
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1901,
-      "jobNumber": "117699",
-      "projectName": "Marlborough College",
-      "companyName": "Rigg Construction (Southern) Ltd",
-      "value": 2382.02,
-      "phaseStatus": "Scheduling WIP",
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": "2026-04-29T00:00:00.000Z",
-      "orderTriggeredAt": "2026-04-29T14:15:47.450Z",
-      "releasedAt": null,
-      "deliveryDate": "2027-01-31T00:00:00.000Z",
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-05-01T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "1 Leaf, 1 Miscellaneous",
-      "materialSummaryText": "Accoya",
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": "madi",
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "On Hold Client",
-      "schedulingPosition": "T",
-      "percentComplete": 5,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "quoteRevision": null,
-      "stage": "Scheduling",
-      "phaseId": 32616,
-      "phaseNumber": "4",
-      "sortDate": "2026-05-01T00:00:00.000Z",
-      "stageEnteredAt": "2026-10-27",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [],
-        "level": null
-      },
-      "phaseTimes": {
-        "projectId": 1901,
-        "job": "117699",
-        "project": "Marlborough College",
-        "phase": "4",
-        "value": 2382.02,
-        "start": "2026-10-27",
-        "startedBy": "added",
-        "cancelled": false,
-        "scheduling": {
-          "released": null,
-          "running": true,
-          "totalDays": 20,
-          "onHoldClientDays": 17,
-          "onHoldLongdenDays": 0,
-          "activeDays": 3,
-          "totalCalDays": 28,
-          "onHoldClientCalDays": 25,
-          "onHoldLongdenCalDays": 0,
-          "activeCalDays": 3,
-          "waitingOnUsDays": 0,
-          "waitingOnClientDays": 17,
-          "holdsKnown": true
-        },
-        "currentStatus": {
-          "name": "On Hold Client",
-          "since": "2026-10-30",
-          "days": 17,
-          "calDays": 25
-        },
-        "stays": [
-          {
-            "status": "On Hold Client",
-            "position": "T",
-            "from": "2026-10-30",
-            "to": null,
-            "days": 17,
-            "calDays": 25
-          }
-        ],
-        "withUs": {
-          "until": null,
-          "how": "running",
-          "days": 20,
-          "calDays": 28
-        }
-      },
-      "jobTimes": {
-        "depositPaid": "2026-05-01",
-        "until": null,
-        "days": 144,
-        "calDays": 207
-      },
-      "stageDays": {
-        "working": 20,
-        "calendar": 28
       },
       "invoiceMarker": null
     },
