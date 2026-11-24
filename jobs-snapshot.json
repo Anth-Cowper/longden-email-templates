@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:16:02.978Z",
+  "generatedAt": "2026-11-24T16:21:02.965Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1339,9 +1339,9 @@
             "action": "CRM Telephone Call - Tom Cairns",
             "assignedTo": "Saqib Sindhu",
             "createdAt": "2026-11-11T13:22:27.278Z",
-            "completeBy": "2026-11-24",
+            "completeBy": "2026-12-01",
             "kind": "crm",
-            "level": "red"
+            "level": "green"
           }
         ],
         "level": "red"
