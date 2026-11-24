@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:11:03.092Z",
+  "generatedAt": "2026-11-24T10:16:02.681Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -13387,7 +13387,19 @@
       "flagged": {
         "statusFlag": "Production Ticket Check",
         "statusSince": "2026-11-24T10:09:01Z",
-        "openNotes": [],
+        "openNotes": [
+          {
+            "id": 196130,
+            "action": "Drawings/ tickets checks  ",
+            "target": null,
+            "assignedTo": "Anth",
+            "createdAt": "2026-11-24T10:13:05Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          }
+        ],
         "level": "red"
       },
       "phaseTimes": {
