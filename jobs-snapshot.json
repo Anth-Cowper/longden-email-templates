@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:16:02.764Z",
+  "generatedAt": "2026-11-24T11:21:03.023Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12916,17 +12916,6 @@
             "completeBy": "2026-11-24",
             "kind": "task",
             "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": 196133,
-            "action": "Update",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-11-24T11:08:24Z",
-            "completeBy": null,
-            "kind": "task",
-            "level": "amber",
             "lineTag": null
           }
         ],
