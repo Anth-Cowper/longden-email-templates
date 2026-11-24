@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:56:02.780Z",
+  "generatedAt": "2026-11-24T16:16:02.978Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1595,9 +1595,9 @@
             "action": "CRM event - Studio Braw",
             "assignedTo": "Saqib Sindhu",
             "createdAt": "2026-11-16T11:19:56.826Z",
-            "completeBy": "2026-11-24",
+            "completeBy": "2026-12-08",
             "kind": "crm",
-            "level": "red"
+            "level": "green"
           }
         ],
         "level": "red"
@@ -3636,9 +3636,9 @@
             "action": "CRM event - InteriorLAB",
             "assignedTo": "Saqib Sindhu",
             "createdAt": "2026-11-10T17:07:28.749Z",
-            "completeBy": "2026-11-24",
+            "completeBy": "2026-12-02",
             "kind": "crm",
-            "level": "red"
+            "level": "green"
           }
         ],
         "level": "red"
@@ -3792,9 +3792,9 @@
             "action": "CRM event - Messenger Construction Limited",
             "assignedTo": "Saqib Sindhu",
             "createdAt": "2026-04-09T12:58:05.727Z",
-            "completeBy": "2026-11-24",
+            "completeBy": "2026-12-15",
             "kind": "crm",
-            "level": "red"
+            "level": "green"
           }
         ],
         "level": "red"
@@ -20478,11 +20478,6 @@
       "companyName": null
     },
     {
-      "jobNumber": "117876",
-      "projectName": "Flat 33",
-      "companyName": null
-    },
-    {
       "jobNumber": "111924",
       "projectName": "Heathercourt",
       "companyName": "York Building"
@@ -20505,6 +20500,11 @@
     {
       "jobNumber": "117888",
       "projectName": "40 Acre Lane ",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117876",
+      "projectName": "Flat 33",
       "companyName": null
     },
     {
@@ -27973,11 +27973,6 @@
       "companyName": null
     },
     {
-      "jobNumber": "117334",
-      "projectName": "Kings Lynn Guildhall & Arts Hub",
-      "companyName": null
-    },
-    {
       "jobNumber": "117335",
       "projectName": "Mount Pleasant Community Centre",
       "companyName": null
@@ -28015,6 +28010,11 @@
     {
       "jobNumber": "117342",
       "projectName": "Housing Association ",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117334",
+      "projectName": "Kings Lynn Guildhall & Arts Hub",
       "companyName": null
     },
     {
