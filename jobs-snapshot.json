@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:51:02.854Z",
+  "generatedAt": "2026-11-24T14:06:02.774Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -286,10 +286,10 @@
       "estimatedSignOff": null,
       "jobSummaryText": null,
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "George",
       "priceOrder": null,
       "schedulerName": null,
-      "estimatorFullName": null,
+      "estimatorFullName": "George Bramley",
       "schedulerFullName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
@@ -15132,7 +15132,7 @@
       "jobNumber": "117533",
       "projectName": "Naome Acres",
       "companyName": "O & D Construction Ltd",
-      "value": 4014.49,
+      "value": 3181.7,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "A",
       "remake": false,
@@ -15179,7 +15179,7 @@
         "job": "117533",
         "project": "Naome Acres",
         "phase": "7",
-        "value": 4014.49,
+        "value": 3181.7,
         "start": "2026-11-19",
         "startedBy": "added",
         "cancelled": false,
@@ -20239,6 +20239,11 @@
       "companyName": null
     },
     {
+      "jobNumber": "117901",
+      "projectName": "Merchant House",
+      "companyName": null
+    },
+    {
       "jobNumber": "117892",
       "projectName": "Gable Joinery",
       "companyName": null
@@ -20261,11 +20266,6 @@
     {
       "jobNumber": "117755",
       "projectName": "1 Cheyne Gardens",
-      "companyName": null
-    },
-    {
-      "jobNumber": "117901",
-      "projectName": "Merchant House",
       "companyName": null
     },
     {
