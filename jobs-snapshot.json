@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:21:02.805Z",
+  "generatedAt": "2026-11-24T13:26:02.794Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12567,6 +12567,17 @@
             "target": null,
             "assignedTo": "Anth",
             "createdAt": "2026-11-24T13:12:31Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          },
+          {
+            "id": 196141,
+            "action": "A3 rift cut sample to send to xander",
+            "target": null,
+            "assignedTo": "Michael Sichert",
+            "createdAt": "2026-11-24T13:25:49Z",
             "completeBy": null,
             "kind": "task",
             "level": "amber",
