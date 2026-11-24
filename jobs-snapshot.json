@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T00:00:38.761Z",
+  "generatedAt": "2026-11-24T02:35:58.947Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -17747,7 +17747,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -17838,7 +17839,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -17929,7 +17931,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18020,7 +18023,8 @@
         "samplesLabel": "Not here yet",
         "samplesNote": "Wait on Ironmongery samples - J & P",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18111,7 +18115,8 @@
         "samplesLabel": "Some here",
         "samplesNote": "SOME Samples here",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18202,7 +18207,8 @@
         "samplesLabel": "Not here yet",
         "samplesNote": "Wait on Ironmongery samples - J & P",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18293,7 +18299,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18384,7 +18391,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18486,98 +18494,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
-      }
-    },
-    {
-      "projectId": 1843,
-      "jobNumber": "117641",
-      "projectName": "Rustington Convalescent Home",
-      "companyName": "Valley Builders Ltd (VBL)",
-      "value": 39326.12,
-      "phaseStatus": "Manufacture",
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": "2026-05-13T00:00:00.000Z",
-      "orderTriggeredAt": "2026-05-13T11:54:48.308Z",
-      "releasedAt": "2026-08-03T13:53:39.227Z",
-      "deliveryDate": "2026-10-26T00:00:00.000Z",
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": "2026-11-16T00:00:00.000Z",
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-05-15T00:00:00.000Z",
-      "estimatedSignOff": "2026-08-14T00:00:00.000Z",
-      "jobSummaryText": "28 Frames, 29 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": "Toe-knee",
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": "Tony Oliver",
-      "schedulingStatusName": "Signed off into Production",
-      "schedulingPosition": "U",
-      "percentComplete": 95,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "quoteRevision": null,
-      "stage": "Production",
-      "phaseId": 982,
-      "phaseNumber": "2",
-      "sortDate": "2026-08-03T13:53:39.227Z",
-      "stageEnteredAt": "2026-08-03T13:53:39.227Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 183245,
-            "action": "Confirm delivery cost for Delivery Nr. 1 (Phs2) once invoiced.",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-11-19T11:31:39Z",
-            "completeBy": null,
-            "kind": "task",
-            "level": "amber",
-            "lineTag": null
-          }
-        ],
-        "level": "amber"
-      },
-      "stageDays": {
-        "working": 80,
-        "calendar": 113
-      },
-      "invoiceMarker": null,
-      "cnc": {
-        "status": "done",
-        "statusLabel": "CNC complete",
-        "waitingOn": null,
-        "waitingOnLabel": null,
-        "note": "Panel recess pgms complete. Cutter here",
-        "keeps": null,
-        "keepsLabel": null,
-        "frames": 28,
-        "doors": 28,
-        "curves": 0,
-        "templates": 0,
-        "ironmongery": "ZDL7260 Escape Sash lock, wait on keep test for frame pgms - All ironmongery here",
-        "actionId": null,
-        "waitingBy": null,
-        "waitingSince": null,
-        "doneAt": "2026-09-09 12:00:00",
-        "doneBy": null,
-        "updatedAt": "2026-11-17 08:12:35",
-        "updatedBy": null,
-        "samples": "all",
-        "samplesLabel": "All here",
-        "samplesNote": "All ironmongery here",
-        "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18668,7 +18586,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18770,7 +18689,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18849,7 +18769,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -18928,7 +18849,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19007,7 +18929,8 @@
         "samplesLabel": "All here",
         "samplesNote": "SAMPLES HERE, same as Phase 1",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19086,7 +19009,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19165,7 +19089,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19244,7 +19169,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19323,7 +19249,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19402,7 +19329,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19481,7 +19409,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19560,7 +19489,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19639,7 +19569,8 @@
         "samplesLabel": "All here",
         "samplesNote": "",
         "samplesAt": "2026-11-17 08:12:35",
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19730,7 +19661,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -19927,7 +19859,8 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
     },
     {
@@ -20018,8 +19951,74 @@
         "samplesLabel": null,
         "samplesNote": "",
         "samplesAt": null,
-        "samplesBy": null
+        "samplesBy": null,
+        "early": false
       }
+    },
+    {
+      "projectId": 1843,
+      "jobNumber": "117641",
+      "projectName": "Rustington Convalescent Home",
+      "companyName": "Valley Builders Ltd (VBL)",
+      "value": 39326.12,
+      "phaseStatus": "Manufacture",
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": "2026-05-13T00:00:00.000Z",
+      "orderTriggeredAt": "2026-05-13T11:54:48.308Z",
+      "releasedAt": "2026-08-03T13:53:39.227Z",
+      "deliveryDate": "2026-10-26T00:00:00.000Z",
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": "2026-11-16T00:00:00.000Z",
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-05-15T00:00:00.000Z",
+      "estimatedSignOff": "2026-08-14T00:00:00.000Z",
+      "jobSummaryText": "28 Frames, 29 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": "Toe-knee",
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": "Tony Oliver",
+      "schedulingStatusName": "Signed off into Production",
+      "schedulingPosition": "U",
+      "percentComplete": 95,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "quoteRevision": null,
+      "stage": "Post production/delivery",
+      "phaseId": 982,
+      "phaseNumber": "2",
+      "sortDate": "2026-05-15T00:00:00.000Z",
+      "stageEnteredAt": "2026-10-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 183245,
+            "action": "Confirm delivery cost for Delivery Nr. 1 (Phs2) once invoiced.",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-19T11:31:39Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          }
+        ],
+        "level": "amber"
+      },
+      "stageDays": {
+        "working": 21,
+        "calendar": 29
+      },
+      "invoiceMarker": null
     },
     {
       "projectId": 1998,
