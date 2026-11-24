@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T14:06:02.774Z",
+  "generatedAt": "2026-11-24T14:16:02.765Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15132,7 +15132,7 @@
       "jobNumber": "117533",
       "projectName": "Naome Acres",
       "companyName": "O & D Construction Ltd",
-      "value": 3181.7,
+      "value": 3295.94,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "A",
       "remake": false,
@@ -15179,7 +15179,7 @@
         "job": "117533",
         "project": "Naome Acres",
         "phase": "7",
-        "value": 3181.7,
+        "value": 3295.94,
         "start": "2026-11-19",
         "startedBy": "added",
         "cancelled": false,
