@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:56:02.771Z",
+  "generatedAt": "2026-11-24T13:01:02.749Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12623,7 +12623,7 @@
       "jobNumber": "117462",
       "projectName": "The Barracks Watton",
       "companyName": "PMA Services Ltd",
-      "value": 175.43,
+      "value": 0.11,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "A",
       "remake": true,
@@ -12670,7 +12670,7 @@
         "job": "117462",
         "project": "The Barracks Watton",
         "phase": "5",
-        "value": 175.43,
+        "value": 0.11,
         "start": "2026-11-10",
         "startedBy": "added",
         "cancelled": false,
