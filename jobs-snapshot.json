@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:21:03.048Z",
+  "generatedAt": "2026-11-24T10:51:02.837Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -19050,7 +19050,7 @@
         "working": 36,
         "calendar": 50
       },
-      "invoiceMarker": "Overdue",
+      "invoiceMarker": null,
       "cnc": {
         "status": "done",
         "statusLabel": "CNC complete",
