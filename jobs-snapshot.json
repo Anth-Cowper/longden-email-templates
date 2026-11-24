@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T09:31:02.667Z",
+  "generatedAt": "2026-11-24T09:56:02.688Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -86,84 +86,6 @@
       "stageDays": {
         "working": 3,
         "calendar": 5
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1882,
-      "jobNumber": "117680",
-      "projectName": "1 Elia Street",
-      "companyName": "Stella Rossa",
-      "value": 12652.38,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "10 Doors, 5 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-10T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-14T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-17T00:00:00.000Z",
-      "quotedCompanies": [
-        "Stella Rossa"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-14T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-10T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169175,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2027-01-26",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-369994",
-            "action": "CRM event - Stella Rossa",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-23T10:58:02.643Z",
-            "completeBy": "2026-12-15",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 10,
-        "calendar": 14
       },
       "invoiceMarker": null
     },
@@ -9570,6 +9492,95 @@
       "stageDays": {
         "working": 157,
         "calendar": 224
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1882,
+      "jobNumber": "117680",
+      "projectName": "1 Elia Street",
+      "companyName": "Stella Rossa",
+      "value": 12652.38,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-24T09:51:06Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "10 Doors, 5 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-10T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-14T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Stella Rossa"
+      ],
+      "quoteRevision": 1,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-03-31T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-24T09:51:06Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169175,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2027-01-26",
+            "kind": "todo",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": 196129,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-24T09:51:59Z",
+            "completeBy": "2026-12-01",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-369994",
+            "action": "CRM event - Stella Rossa",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-23T10:58:02.643Z",
+            "completeBy": "2026-12-15",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
