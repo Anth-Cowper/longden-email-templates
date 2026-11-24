@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:41:02.959Z",
+  "generatedAt": "2026-11-24T15:46:02.765Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12985,124 +12985,6 @@
       "invoiceMarker": null
     },
     {
-      "projectId": 1400,
-      "jobNumber": "117197",
-      "projectName": "28 Bruton Street",
-      "companyName": "Contrakt Limited",
-      "value": 2109,
-      "phaseStatus": "Scheduling WIP",
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": "2024-10-24T00:00:00.000Z",
-      "orderTriggeredAt": "2024-10-24T15:23:21.124Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2024-10-29T00:00:00.000Z",
-      "estimatedSignOff": null,
-      "jobSummaryText": "1 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "Matthew Thomas",
-      "priceOrder": null,
-      "schedulerName": "Toe-knee",
-      "estimatorFullName": "Matthew Thomas",
-      "schedulerFullName": "Tony Oliver",
-      "schedulingStatusName": "Waiting for Structural Openings",
-      "schedulingPosition": "T",
-      "percentComplete": 11,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "quoteRevision": null,
-      "stage": "Scheduling",
-      "phaseId": 81213,
-      "phaseNumber": "3",
-      "sortDate": "2024-10-29T00:00:00.000Z",
-      "stageEnteredAt": "2026-11-24",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 196135,
-            "action": "RFI required",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-11-24T11:10:57Z",
-            "completeBy": "2026-11-24",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          }
-        ],
-        "level": "red"
-      },
-      "phaseTimes": {
-        "projectId": 1400,
-        "job": "117197",
-        "project": "28 Bruton Street",
-        "phase": "3",
-        "value": 2109,
-        "start": "2026-11-24",
-        "startedBy": "added",
-        "cancelled": false,
-        "scheduling": {
-          "released": null,
-          "running": true,
-          "totalDays": 0,
-          "onHoldClientDays": 0,
-          "onHoldLongdenDays": 0,
-          "activeDays": 0,
-          "totalCalDays": 0,
-          "onHoldClientCalDays": 0,
-          "onHoldLongdenCalDays": 0,
-          "activeCalDays": 0,
-          "waitingOnUsDays": 0,
-          "waitingOnClientDays": 0,
-          "holdsKnown": true
-        },
-        "currentStatus": {
-          "name": "Waiting for Structural Openings",
-          "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
-        },
-        "stays": [
-          {
-            "status": "Waiting for Structural Openings",
-            "position": "T",
-            "from": "2026-11-24",
-            "to": null,
-            "days": 0,
-            "calDays": 0
-          }
-        ],
-        "withUs": {
-          "until": null,
-          "how": "running",
-          "days": 0,
-          "calDays": 0
-        }
-      },
-      "jobTimes": {
-        "depositPaid": "2024-10-29",
-        "until": null,
-        "days": 524,
-        "calDays": 756
-      },
-      "stageDays": {
-        "working": 0,
-        "calendar": 0
-      },
-      "invoiceMarker": null
-    },
-    {
       "projectId": 1448,
       "jobNumber": "117245",
       "projectName": "71 Gloucester Place",
@@ -14105,6 +13987,112 @@
       "stageDays": {
         "working": 252,
         "calendar": 364
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1400,
+      "jobNumber": "117197",
+      "projectName": "28 Bruton Street",
+      "companyName": "Contrakt Limited",
+      "value": 2109,
+      "phaseStatus": "Scheduling WIP",
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": "2024-10-24T00:00:00.000Z",
+      "orderTriggeredAt": "2024-10-24T15:23:21.124Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2024-10-29T00:00:00.000Z",
+      "estimatedSignOff": null,
+      "jobSummaryText": "1 Miscellaneous",
+      "materialSummaryText": null,
+      "estimatorName": "Matthew Thomas",
+      "priceOrder": null,
+      "schedulerName": "Toe-knee",
+      "estimatorFullName": "Matthew Thomas",
+      "schedulerFullName": "Tony Oliver",
+      "schedulingStatusName": "Rev A Drawing in Process",
+      "schedulingPosition": "U",
+      "percentComplete": 16,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "quoteRevision": null,
+      "stage": "Scheduling",
+      "phaseId": 81213,
+      "phaseNumber": "3",
+      "sortDate": "2024-10-29T00:00:00.000Z",
+      "stageEnteredAt": "2026-11-24",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [],
+        "level": null
+      },
+      "phaseTimes": {
+        "projectId": 1400,
+        "job": "117197",
+        "project": "28 Bruton Street",
+        "phase": "3",
+        "value": 2109,
+        "start": "2026-11-24",
+        "startedBy": "added",
+        "cancelled": false,
+        "scheduling": {
+          "released": null,
+          "running": true,
+          "totalDays": 0,
+          "onHoldClientDays": 0,
+          "onHoldLongdenDays": 0,
+          "activeDays": 0,
+          "totalCalDays": 0,
+          "onHoldClientCalDays": 0,
+          "onHoldLongdenCalDays": 0,
+          "activeCalDays": 0,
+          "waitingOnUsDays": 0,
+          "waitingOnClientDays": 0,
+          "holdsKnown": true
+        },
+        "currentStatus": {
+          "name": "Rev A Drawing in Process",
+          "since": "2026-11-24",
+          "days": 0,
+          "calDays": 0
+        },
+        "stays": [
+          {
+            "status": "Rev A Drawing in Process",
+            "position": "U",
+            "from": "2026-11-24",
+            "to": null,
+            "days": 0,
+            "calDays": 0
+          }
+        ],
+        "withUs": {
+          "until": null,
+          "how": "running",
+          "days": 0,
+          "calDays": 0
+        }
+      },
+      "jobTimes": {
+        "depositPaid": "2024-10-29",
+        "until": null,
+        "days": 524,
+        "calDays": 756
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
@@ -17124,9 +17112,9 @@
       "schedulerName": "Toe-knee",
       "estimatorFullName": "Alfie Price",
       "schedulerFullName": "Tony Oliver",
-      "schedulingStatusName": "Revised drawings sent [2]",
-      "schedulingPosition": "T",
-      "percentComplete": 45,
+      "schedulingStatusName": "Redrawing With Mouldings [3]",
+      "schedulingPosition": "U",
+      "percentComplete": 55,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -17168,10 +17156,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Revised drawings sent [2]",
-          "since": "2026-11-20",
-          "days": 2,
-          "calDays": 4
+          "name": "Redrawing With Mouldings [3]",
+          "since": "2026-11-24",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -17290,9 +17278,17 @@
             "status": "Revised drawings sent [2]",
             "position": "T",
             "from": "2026-11-20",
-            "to": null,
+            "to": "2026-11-24",
             "days": 2,
             "calDays": 4
+          },
+          {
+            "status": "Redrawing With Mouldings [3]",
+            "position": "U",
+            "from": "2026-11-24",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
