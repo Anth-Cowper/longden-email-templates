@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T02:41:02.634Z",
+  "generatedAt": "2026-11-24T07:26:02.672Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -18750,7 +18750,7 @@
         "statusLabel": "To do",
         "waitingOn": null,
         "waitingOnLabel": null,
-        "note": "FRAME PGMS DONE",
+        "note": "FRAME PGMS DONE\nArched head & bead pgms complete.",
         "keeps": "done",
         "keepsLabel": "Done",
         "frames": 19,
@@ -18763,8 +18763,8 @@
         "waitingSince": null,
         "doneAt": null,
         "doneBy": null,
-        "updatedAt": "2026-11-17 08:12:35",
-        "updatedBy": null,
+        "updatedAt": "2026-11-24 07:21:51",
+        "updatedBy": "Duane Beagle",
         "samples": "all",
         "samplesLabel": "All here",
         "samplesNote": "",
