@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T08:41:02.730Z",
+  "generatedAt": "2026-11-24T08:56:02.695Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -86,63 +86,6 @@
       "stageDays": {
         "working": 3,
         "calendar": 5
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 106576,
-      "jobNumber": "117894",
-      "projectName": "Garden Cottage",
-      "companyName": "Heritage Limited",
-      "value": 60390.54,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "16 Doors, 13 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-10T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-10T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-17T00:00:00.000Z",
-      "quotedCompanies": [
-        "Heritage Limited"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-10T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-10T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [],
-        "level": null
-      },
-      "stageDays": {
-        "working": 10,
-        "calendar": 14
       },
       "invoiceMarker": null
     },
@@ -4160,6 +4103,75 @@
       "stageDays": {
         "working": 1,
         "calendar": 1
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 106576,
+      "jobNumber": "117894",
+      "projectName": "Garden Cottage",
+      "companyName": "Heritage Limited",
+      "value": 60390.54,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-24T08:52:05Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "16 Doors, 13 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-10T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-10T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Heritage Limited"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-10T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-24T08:52:05Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 196127,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-24T08:52:59Z",
+            "completeBy": "2026-12-01",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
