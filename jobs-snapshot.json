@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T08:01:02.668Z",
+  "generatedAt": "2026-11-24T08:11:02.670Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -307,7 +307,7 @@
       "jobNumber": "117680",
       "projectName": "1 Elia Street",
       "companyName": "Stella Rossa",
-      "value": null,
+      "value": 12652.38,
       "phaseStatus": null,
       "drawingRevision": null,
       "remake": false,
@@ -323,7 +323,7 @@
       "quoteDateSent": null,
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "10 Doors, 5 Frames",
       "materialSummaryText": null,
       "estimatorName": null,
       "priceOrder": null,
@@ -2888,17 +2888,6 @@
             "completeBy": "2026-11-18",
             "kind": "todo",
             "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": 193554,
-            "action": "Quote follow-up",
-            "target": null,
-            "assignedTo": "madi",
-            "createdAt": "2026-11-23T16:08:47Z",
-            "completeBy": null,
-            "kind": "reminder",
-            "level": "amber",
             "lineTag": null
           },
           {
