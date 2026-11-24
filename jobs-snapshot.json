@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:16:02.785Z",
+  "generatedAt": "2026-11-24T13:21:02.805Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -185,8 +185,20 @@
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
-        "openNotes": [],
-        "level": null
+        "openNotes": [
+          {
+            "id": 196139,
+            "action": "Awaiting response ",
+            "target": null,
+            "assignedTo": "George",
+            "createdAt": "2026-11-24T13:16:44.231Z",
+            "completeBy": null,
+            "kind": "reminder",
+            "level": "amber",
+            "lineTag": null
+          }
+        ],
+        "level": "amber"
       },
       "stageDays": {
         "working": 6,
