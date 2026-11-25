@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:15:15.300Z",
+  "generatedAt": "2026-11-25T13:00:15.304Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14392,10 +14392,10 @@
       "orderDate": "2025-11-24T00:00:00.000Z",
       "orderTriggeredAt": "2025-11-24T17:21:01.299Z",
       "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
+      "deliveryDate": "2027-05-07T00:00:00.000Z",
+      "deliveryDateConfirmed": true,
+      "deliveryDateConfirmedBy": "Anth",
+      "deliveryDateConfirmedAt": "2026-11-25T12:59:56.889Z",
       "expectedCompletionDate": null,
       "disputedOn": null,
       "quoteDateSent": null,
