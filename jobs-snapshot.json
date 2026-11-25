@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T09:55:24.117Z",
+  "generatedAt": "2026-11-25T10:05:23.962Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -13012,7 +13012,7 @@
       "schedulerName": "Beef",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Production Ticket Check",
+      "schedulingStatusName": "Production ticket check complete",
       "schedulingPosition": "U",
       "percentComplete": 100,
       "quoteDateReceived": null,
@@ -13026,8 +13026,8 @@
       "sortDate": "2026-07-07T00:00:00.000Z",
       "stageEnteredAt": "2026-09-07",
       "flagged": {
-        "statusFlag": "Production Ticket Check",
-        "statusSince": "2026-11-23T08:48:21Z",
+        "statusFlag": null,
+        "statusSince": null,
         "openNotes": [
           {
             "id": 193541,
@@ -13068,10 +13068,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Production Ticket Check",
-          "since": "2026-11-23",
-          "days": 2,
-          "calDays": 2
+          "name": "Production ticket check complete",
+          "since": "2026-11-25",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -13198,9 +13198,17 @@
             "status": "Production Ticket Check",
             "position": "U",
             "from": "2026-11-23",
-            "to": null,
+            "to": "2026-11-25",
             "days": 2,
             "calDays": 2
+          },
+          {
+            "status": "Production ticket check complete",
+            "position": "U",
+            "from": "2026-11-25",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
