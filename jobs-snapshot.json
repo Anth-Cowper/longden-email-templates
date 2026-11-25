@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T16:21:02.965Z",
+  "generatedAt": "2026-11-25T00:01:02.799Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -73,8 +73,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
       },
       "invoiceMarker": null
     },
@@ -142,8 +142,8 @@
         "level": "amber"
       },
       "stageDays": {
-        "working": 10,
-        "calendar": 14
+        "working": 11,
+        "calendar": 15
       },
       "invoiceMarker": null
     },
@@ -199,8 +199,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 3,
-        "calendar": 5
+        "working": 4,
+        "calendar": 6
       },
       "invoiceMarker": null
     },
@@ -266,8 +266,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 5,
-        "calendar": 7
+        "working": 6,
+        "calendar": 8
       },
       "invoiceMarker": null
     },
@@ -323,8 +323,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
       },
       "invoiceMarker": null
     },
@@ -380,8 +380,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 8,
-        "calendar": 12
+        "working": 9,
+        "calendar": 13
       },
       "invoiceMarker": null
     },
@@ -437,8 +437,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
       },
       "invoiceMarker": null
     },
@@ -494,8 +494,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 7,
-        "calendar": 11
+        "working": 8,
+        "calendar": 12
       },
       "invoiceMarker": null
     },
@@ -551,8 +551,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 12,
-        "calendar": 18
+        "working": 13,
+        "calendar": 19
       },
       "invoiceMarker": null
     },
@@ -608,8 +608,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 32,
-        "calendar": 46
+        "working": 33,
+        "calendar": 47
       },
       "invoiceMarker": null
     },
@@ -686,8 +686,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 30,
-        "calendar": 42
+        "working": 31,
+        "calendar": 43
       },
       "invoiceMarker": null
     },
@@ -743,8 +743,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 33,
-        "calendar": 47
+        "working": 34,
+        "calendar": 48
       },
       "invoiceMarker": null
     },
@@ -821,8 +821,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 64,
-        "calendar": 91
+        "working": 65,
+        "calendar": 92
       },
       "invoiceMarker": null
     },
@@ -878,8 +878,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 73,
-        "calendar": 104
+        "working": 74,
+        "calendar": 105
       },
       "invoiceMarker": null
     },
@@ -935,8 +935,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 6,
-        "calendar": 8
+        "working": 7,
+        "calendar": 9
       },
       "invoiceMarker": null
     },
@@ -1013,8 +1013,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 2,
-        "calendar": 4
+        "working": 3,
+        "calendar": 5
       },
       "invoiceMarker": null
     },
@@ -1102,8 +1102,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
       },
       "invoiceMarker": null
     },
@@ -1191,8 +1191,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 8,
-        "calendar": 12
+        "working": 9,
+        "calendar": 13
       },
       "invoiceMarker": null
     },
@@ -1269,8 +1269,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 8,
-        "calendar": 12
+        "working": 9,
+        "calendar": 13
       },
       "invoiceMarker": null
     },
@@ -1347,8 +1347,86 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 8,
-        "calendar": 12
+        "working": 9,
+        "calendar": 13
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 89636,
+      "jobNumber": "117883",
+      "projectName": "Stoneleigh Abbey",
+      "companyName": "Messenger Construction Limited",
+      "value": 31698.01,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-05T10:32:01.077Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "18 Doors, 13 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Toe-knee",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Tony Oliver",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-04T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-05T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Messenger Construction Limited"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-04T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-05T10:32:01.077Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169109,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-71977",
+            "action": "CRM event - Messenger Construction Limited",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-04T11:25:14.789Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 14,
+        "calendar": 20
       },
       "invoiceMarker": null
     },
@@ -1425,8 +1503,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 16,
-        "calendar": 22
+        "working": 17,
+        "calendar": 23
       },
       "invoiceMarker": null
     },
@@ -1514,8 +1592,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 5,
-        "calendar": 7
+        "working": 6,
+        "calendar": 8
       },
       "invoiceMarker": null
     },
@@ -1603,8 +1681,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 6,
-        "calendar": 8
+        "working": 7,
+        "calendar": 9
       },
       "invoiceMarker": null
     },
@@ -1681,8 +1759,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 23,
-        "calendar": 33
+        "working": 24,
+        "calendar": 34
       },
       "invoiceMarker": null
     },
@@ -1761,8 +1839,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 25,
-        "calendar": 35
+        "working": 26,
+        "calendar": 36
       },
       "invoiceMarker": null
     },
@@ -1839,8 +1917,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 26,
-        "calendar": 36
+        "working": 27,
+        "calendar": 37
       },
       "invoiceMarker": null
     },
@@ -1930,8 +2008,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 5,
-        "calendar": 7
+        "working": 6,
+        "calendar": 8
       },
       "invoiceMarker": null
     },
@@ -2008,8 +2086,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 48,
-        "calendar": 68
+        "working": 49,
+        "calendar": 69
       },
       "invoiceMarker": null
     },
@@ -2097,8 +2175,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
       },
       "invoiceMarker": null
     },
@@ -2175,8 +2253,86 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 52,
-        "calendar": 74
+        "working": 53,
+        "calendar": 75
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 2024,
+      "jobNumber": "117822",
+      "projectName": "47 Banbury Road",
+      "companyName": "Benfield & Loxley (Oxford)",
+      "value": 19365.83,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-16T07:15:54.780Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "21 Doors, 20 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Alfie Price",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-09-16T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Benfield & Loxley (Oxford)"
+      ],
+      "quoteRevision": 1,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-08-21T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-16T07:15:54.780Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169108,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8931",
+            "action": "CRM event - Benfield & Loxley (Oxford)",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-10-16T07:39:01.049Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 50,
+        "calendar": 70
       },
       "invoiceMarker": null
     },
@@ -2254,8 +2410,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 59,
-        "calendar": 83
+        "working": 60,
+        "calendar": 84
       },
       "invoiceMarker": null
     },
@@ -2354,8 +2510,86 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 45,
-        "calendar": 63
+        "working": 46,
+        "calendar": 64
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 2010,
+      "jobNumber": "117808",
+      "projectName": "Cygnet Health Care",
+      "companyName": "Jupiter Construction",
+      "value": 16809.17,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-09-15T13:33:57.620Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "9 Doors",
+      "materialSummaryText": null,
+      "estimatorName": "Toe-knee",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Tony Oliver",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-09-14T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-09-11T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Jupiter Construction"
+      ],
+      "quoteRevision": 1,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-08-11T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-09-15T13:33:57.620Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169110,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-162104",
+            "action": "CRM event - Jupiter Construction",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-11T11:27:37.614Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 51,
+        "calendar": 71
       },
       "invoiceMarker": null
     },
@@ -2432,8 +2666,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 76,
-        "calendar": 109
+        "working": 77,
+        "calendar": 110
       },
       "invoiceMarker": null
     },
@@ -2510,8 +2744,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 75,
-        "calendar": 106
+        "working": 76,
+        "calendar": 107
       },
       "invoiceMarker": null
     },
@@ -2610,8 +2844,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 62,
-        "calendar": 89
+        "working": 63,
+        "calendar": 90
       },
       "invoiceMarker": null
     },
@@ -2690,8 +2924,86 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1966,
+      "jobNumber": "117764",
+      "projectName": "Harley House",
+      "companyName": "Watts Group Ltd",
+      "value": 9572.48,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-06-22T07:50:59.000Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "2 Doors, 2 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-06-17T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-05-28T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Watts Group Ltd"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-06-17T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-06-22T07:50:59.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169106,
+            "action": "Telephone Call",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8653",
+            "action": "CRM Telephone Call - Watts Group Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-08-03T08:08:15.358Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 111,
+        "calendar": 156
       },
       "invoiceMarker": null
     },
@@ -2768,8 +3080,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 92,
-        "calendar": 131
+        "working": 93,
+        "calendar": 132
       },
       "invoiceMarker": null
     },
@@ -2868,8 +3180,87 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 12,
-        "calendar": 18
+        "working": 13,
+        "calendar": 19
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1919,
+      "jobNumber": "117717",
+      "projectName": "55 Broadway (Skirting & Architrave)",
+      "companyName": "Curtis Furniture Ltd · McAleer & Rushe Contracts UK Ltd",
+      "value": 2447.76,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-05-22T11:39:50.953Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Alfie Price",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-05-22T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Curtis Furniture Ltd",
+        "McAleer & Rushe Contracts UK Ltd"
+      ],
+      "quoteRevision": 5,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-05-11T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-05-22T11:39:50.953Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169104,
+            "action": "Telephone Call",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8463",
+            "action": "CRM Telephone Call - McAleer & Rushe Contracts UK Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-08-19T11:52:07.581Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 131,
+        "calendar": 187
       },
       "invoiceMarker": null
     },
@@ -2946,8 +3337,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 149,
-        "calendar": 214
+        "working": 150,
+        "calendar": 215
       },
       "invoiceMarker": null
     },
@@ -3026,8 +3417,86 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 30,
-        "calendar": 42
+        "working": 31,
+        "calendar": 43
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1870,
+      "jobNumber": "117668",
+      "projectName": "Malleny House",
+      "companyName": "John Dennis & Company (Scotland) Ltd",
+      "value": 27332.03,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-04-10T09:12:33.450Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "12 Doors, 11 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-03-18T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-04-16T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "John Dennis & Company (Scotland) Ltd"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-03-18T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-04-10T09:12:33.450Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169107,
+            "action": "Telephone Call",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8696",
+            "action": "CRM Telephone Call - John Dennis & Company (Scotland) Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-08-10T10:47:10.188Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 160,
+        "calendar": 229
       },
       "invoiceMarker": null
     },
@@ -3127,8 +3596,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 150,
-        "calendar": 215
+        "working": 151,
+        "calendar": 216
       },
       "invoiceMarker": null
     },
@@ -3216,8 +3685,86 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1826,
+      "jobNumber": "117624",
+      "projectName": "55 Broadway (Doorsets)",
+      "companyName": "McAleer & Rushe Contracts UK Ltd",
+      "value": 7266.37,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-05-15T08:20:19.737Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "1 Doors, 1 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Alfie Price",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Alfie Price",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-05-15T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "McAleer & Rushe Contracts UK Ltd"
+      ],
+      "quoteRevision": 3,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-02-10T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-05-15T08:20:19.737Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169105,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8547",
+            "action": "CRM event - McAleer & Rushe Contracts UK Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-08-19T11:53:29.187Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 136,
+        "calendar": 194
       },
       "invoiceMarker": null
     },
@@ -3294,8 +3841,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 205,
-        "calendar": 294
+        "working": 206,
+        "calendar": 295
       },
       "invoiceMarker": null
     },
@@ -3377,8 +3924,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 17,
-        "calendar": 25
+        "working": 18,
+        "calendar": 26
       },
       "invoiceMarker": null
     },
@@ -3477,8 +4024,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 238,
-        "calendar": 344
+        "working": 239,
+        "calendar": 345
       },
       "invoiceMarker": null
     },
@@ -3555,8 +4102,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 253,
-        "calendar": 365
+        "working": 254,
+        "calendar": 366
       },
       "invoiceMarker": null
     },
@@ -3644,8 +4191,87 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1634,
+      "jobNumber": "117432",
+      "projectName": "9 The Little Boltons",
+      "companyName": "4M Interior Solutions Ltd · GPF Lewis PLC (Head Office)",
+      "value": 52381.12,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2025-09-03T10:46:44.793Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "25 Doors, 23 Frames, 3 Miscellaneous",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2025-09-03T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "4M Interior Solutions Ltd",
+        "GPF Lewis PLC (Head Office)"
+      ],
+      "quoteRevision": 2,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2025-07-03T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2025-09-03T10:46:44.793Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169103,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-25",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8090",
+            "action": "CRM event - 4M Interior Solutions Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-03-23T15:31:50.416Z",
+            "completeBy": "2026-11-25",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 312,
+        "calendar": 448
       },
       "invoiceMarker": null
     },
@@ -3722,8 +4348,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 378,
-        "calendar": 543
+        "working": 379,
+        "calendar": 544
       },
       "invoiceMarker": null
     },
@@ -3800,8 +4426,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 405,
-        "calendar": 586
+        "working": 406,
+        "calendar": 587
       },
       "invoiceMarker": null
     },
@@ -3900,8 +4526,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 433,
-        "calendar": 624
+        "working": 434,
+        "calendar": 625
       },
       "invoiceMarker": null
     },
@@ -4012,8 +4638,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 2,
-        "calendar": 4
+        "working": 3,
+        "calendar": 5
       },
       "invoiceMarker": null
     },
@@ -4101,8 +4727,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
       },
       "invoiceMarker": null
     },
@@ -4170,8 +4796,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
       },
       "invoiceMarker": null
     },
@@ -4248,8 +4874,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 8,
-        "calendar": 12
+        "working": 9,
+        "calendar": 13
       },
       "invoiceMarker": null
     },
@@ -4303,84 +4929,6 @@
         "statusSince": null,
         "openNotes": [],
         "level": null
-      },
-      "stageDays": {
-        "working": 12,
-        "calendar": 18
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 89636,
-      "jobNumber": "117883",
-      "projectName": "Stoneleigh Abbey",
-      "companyName": "Messenger Construction Limited",
-      "value": 31698.01,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-11-05T10:32:01.077Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "18 Doors, 13 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Toe-knee",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Tony Oliver",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-04T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-05T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Messenger Construction Limited"
-      ],
-      "quoteRevision": 0,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-04T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-05T10:32:01.077Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169109,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-71977",
-            "action": "CRM event - Messenger Construction Limited",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-04T11:25:14.789Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
       },
       "stageDays": {
         "working": 13,
@@ -4440,8 +4988,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 14,
-        "calendar": 20
+        "working": 15,
+        "calendar": 21
       },
       "invoiceMarker": null
     },
@@ -4518,8 +5066,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 14,
-        "calendar": 20
+        "working": 15,
+        "calendar": 21
       },
       "invoiceMarker": null
     },
@@ -4575,8 +5123,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 16,
-        "calendar": 22
+        "working": 17,
+        "calendar": 23
       },
       "invoiceMarker": null
     },
@@ -4642,8 +5190,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 16,
-        "calendar": 22
+        "working": 17,
+        "calendar": 23
       },
       "invoiceMarker": null
     },
@@ -4699,8 +5247,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 21,
-        "calendar": 29
+        "working": 22,
+        "calendar": 30
       },
       "invoiceMarker": null
     },
@@ -4777,8 +5325,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 21,
-        "calendar": 29
+        "working": 22,
+        "calendar": 30
       },
       "invoiceMarker": null
     },
@@ -4855,8 +5403,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 23,
-        "calendar": 33
+        "working": 24,
+        "calendar": 34
       },
       "invoiceMarker": null
     },
@@ -4933,8 +5481,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 21,
-        "calendar": 29
+        "working": 22,
+        "calendar": 30
       },
       "invoiceMarker": null
     },
@@ -5024,8 +5572,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
       },
       "invoiceMarker": null
     },
@@ -5091,8 +5639,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 3,
-        "calendar": 5
+        "working": 4,
+        "calendar": 6
       },
       "invoiceMarker": null
     },
@@ -5148,8 +5696,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 23,
-        "calendar": 33
+        "working": 24,
+        "calendar": 34
       },
       "invoiceMarker": null
     },
@@ -5226,8 +5774,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 22,
-        "calendar": 32
+        "working": 23,
+        "calendar": 33
       },
       "invoiceMarker": null
     },
@@ -5283,8 +5831,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 23,
-        "calendar": 33
+        "working": 24,
+        "calendar": 34
       },
       "invoiceMarker": null
     },
@@ -5361,8 +5909,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 25,
-        "calendar": 35
+        "working": 26,
+        "calendar": 36
       },
       "invoiceMarker": null
     },
@@ -5439,8 +5987,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 26,
-        "calendar": 36
+        "working": 27,
+        "calendar": 37
       },
       "invoiceMarker": null
     },
@@ -5517,8 +6065,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 36,
-        "calendar": 50
+        "working": 37,
+        "calendar": 51
       },
       "invoiceMarker": null
     },
@@ -5595,8 +6143,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 31,
-        "calendar": 43
+        "working": 32,
+        "calendar": 44
       },
       "invoiceMarker": null
     },
@@ -5673,8 +6221,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 40,
-        "calendar": 56
+        "working": 41,
+        "calendar": 57
       },
       "invoiceMarker": null
     },
@@ -5751,8 +6299,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 33,
-        "calendar": 47
+        "working": 34,
+        "calendar": 48
       },
       "invoiceMarker": null
     },
@@ -5829,8 +6377,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 33,
-        "calendar": 47
+        "working": 34,
+        "calendar": 48
       },
       "invoiceMarker": null
     },
@@ -5886,8 +6434,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 37,
-        "calendar": 53
+        "working": 38,
+        "calendar": 54
       },
       "invoiceMarker": null
     },
@@ -5965,8 +6513,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 36,
-        "calendar": 50
+        "working": 37,
+        "calendar": 51
       },
       "invoiceMarker": null
     },
@@ -6043,8 +6591,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 45,
-        "calendar": 63
+        "working": 46,
+        "calendar": 64
       },
       "invoiceMarker": null
     },
@@ -6121,8 +6669,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 49,
-        "calendar": 69
+        "working": 50,
+        "calendar": 70
       },
       "invoiceMarker": null
     },
@@ -6199,8 +6747,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 16,
-        "calendar": 22
+        "working": 17,
+        "calendar": 23
       },
       "invoiceMarker": null
     },
@@ -6277,8 +6825,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 43,
-        "calendar": 61
+        "working": 44,
+        "calendar": 62
       },
       "invoiceMarker": null
     },
@@ -6355,8 +6903,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 28,
-        "calendar": 40
+        "working": 29,
+        "calendar": 41
       },
       "invoiceMarker": null
     },
@@ -6433,8 +6981,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 46,
-        "calendar": 64
+        "working": 47,
+        "calendar": 65
       },
       "invoiceMarker": null
     },
@@ -6511,8 +7059,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 49,
-        "calendar": 69
+        "working": 50,
+        "calendar": 70
       },
       "invoiceMarker": null
     },
@@ -6589,8 +7137,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 54,
-        "calendar": 76
+        "working": 55,
+        "calendar": 77
       },
       "invoiceMarker": null
     },
@@ -6667,8 +7215,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 47,
-        "calendar": 67
+        "working": 48,
+        "calendar": 68
       },
       "invoiceMarker": null
     },
@@ -6745,8 +7293,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 57,
-        "calendar": 81
+        "working": 58,
+        "calendar": 82
       },
       "invoiceMarker": null
     },
@@ -6828,86 +7376,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 55,
-        "calendar": 77
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 2024,
-      "jobNumber": "117822",
-      "projectName": "47 Banbury Road",
-      "companyName": "Benfield & Loxley (Oxford)",
-      "value": 19365.83,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-16T07:15:54.780Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "21 Doors, 20 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Alfie Price",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-09-16T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Benfield & Loxley (Oxford)"
-      ],
-      "quoteRevision": 1,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-21T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-16T07:15:54.780Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169108,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8931",
-            "action": "CRM event - Benfield & Loxley (Oxford)",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-10-16T07:39:01.049Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 49,
-        "calendar": 69
+        "working": 56,
+        "calendar": 78
       },
       "invoiceMarker": null
     },
@@ -6984,8 +7454,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 57,
-        "calendar": 81
+        "working": 58,
+        "calendar": 82
       },
       "invoiceMarker": null
     },
@@ -7062,8 +7532,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 57,
-        "calendar": 81
+        "working": 58,
+        "calendar": 82
       },
       "invoiceMarker": null
     },
@@ -7140,8 +7610,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 49,
-        "calendar": 69
+        "working": 50,
+        "calendar": 70
       },
       "invoiceMarker": null
     },
@@ -7218,8 +7688,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 56,
-        "calendar": 78
+        "working": 57,
+        "calendar": 79
       },
       "invoiceMarker": null
     },
@@ -7297,8 +7767,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 56,
-        "calendar": 78
+        "working": 57,
+        "calendar": 79
       },
       "invoiceMarker": null
     },
@@ -7375,86 +7845,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 65,
-        "calendar": 92
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 2010,
-      "jobNumber": "117808",
-      "projectName": "Cygnet Health Care",
-      "companyName": "Jupiter Construction",
-      "value": 16809.17,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-09-15T13:33:57.620Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "9 Doors",
-      "materialSummaryText": null,
-      "estimatorName": "Toe-knee",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Tony Oliver",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-09-14T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-09-11T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Jupiter Construction"
-      ],
-      "quoteRevision": 1,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-08-11T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-09-15T13:33:57.620Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169110,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-162104",
-            "action": "CRM event - Jupiter Construction",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-11T11:27:37.614Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 50,
-        "calendar": 70
+        "working": 66,
+        "calendar": 93
       },
       "invoiceMarker": null
     },
@@ -7531,8 +7923,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 67,
-        "calendar": 96
+        "working": 68,
+        "calendar": 97
       },
       "invoiceMarker": null
     },
@@ -7609,8 +8001,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 72,
-        "calendar": 103
+        "working": 73,
+        "calendar": 104
       },
       "invoiceMarker": null
     },
@@ -7687,8 +8079,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 50,
-        "calendar": 70
+        "working": 51,
+        "calendar": 71
       },
       "invoiceMarker": null
     },
@@ -7765,8 +8157,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 87,
-        "calendar": 124
+        "working": 88,
+        "calendar": 125
       },
       "invoiceMarker": null
     },
@@ -7844,8 +8236,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 79,
-        "calendar": 112
+        "working": 80,
+        "calendar": 113
       },
       "invoiceMarker": null
     },
@@ -7923,8 +8315,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 31,
-        "calendar": 43
+        "working": 32,
+        "calendar": 44
       },
       "invoiceMarker": null
     },
@@ -8002,8 +8394,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 80,
-        "calendar": 113
+        "working": 81,
+        "calendar": 114
       },
       "invoiceMarker": null
     },
@@ -8080,8 +8472,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 85,
-        "calendar": 120
+        "working": 86,
+        "calendar": 121
       },
       "invoiceMarker": null
     },
@@ -8159,8 +8551,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 89,
-        "calendar": 126
+        "working": 90,
+        "calendar": 127
       },
       "invoiceMarker": null
     },
@@ -8238,8 +8630,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 82,
-        "calendar": 117
+        "working": 83,
+        "calendar": 118
       },
       "invoiceMarker": null
     },
@@ -8316,8 +8708,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 95,
-        "calendar": 134
+        "working": 96,
+        "calendar": 135
       },
       "invoiceMarker": null
     },
@@ -8394,8 +8786,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 73,
-        "calendar": 104
+        "working": 74,
+        "calendar": 105
       },
       "invoiceMarker": null
     },
@@ -8472,8 +8864,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 100,
-        "calendar": 141
+        "working": 101,
+        "calendar": 142
       },
       "invoiceMarker": null
     },
@@ -8550,86 +8942,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 95,
-        "calendar": 134
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1966,
-      "jobNumber": "117764",
-      "projectName": "Harley House",
-      "companyName": "Watts Group Ltd",
-      "value": 9572.48,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-06-22T07:50:59.000Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "2 Doors, 2 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-06-17T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-05-28T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Watts Group Ltd"
-      ],
-      "quoteRevision": 0,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-06-17T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-06-22T07:50:59.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169106,
-            "action": "Telephone Call",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8653",
-            "action": "CRM Telephone Call - Watts Group Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-08-03T08:08:15.358Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 110,
-        "calendar": 155
+        "working": 96,
+        "calendar": 135
       },
       "invoiceMarker": null
     },
@@ -8707,8 +9021,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 110,
-        "calendar": 155
+        "working": 111,
+        "calendar": 156
       },
       "invoiceMarker": null
     },
@@ -8785,8 +9099,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 127,
-        "calendar": 180
+        "working": 128,
+        "calendar": 181
       },
       "invoiceMarker": null
     },
@@ -8863,8 +9177,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 131,
-        "calendar": 187
+        "working": 132,
+        "calendar": 188
       },
       "invoiceMarker": null
     },
@@ -8941,8 +9255,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 117,
-        "calendar": 166
+        "working": 118,
+        "calendar": 167
       },
       "invoiceMarker": null
     },
@@ -9019,87 +9333,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 133,
-        "calendar": 189
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1919,
-      "jobNumber": "117717",
-      "projectName": "55 Broadway (Skirting & Architrave)",
-      "companyName": "Curtis Furniture Ltd · McAleer & Rushe Contracts UK Ltd",
-      "value": 2447.76,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-05-22T11:39:50.953Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Alfie Price",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-05-22T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Curtis Furniture Ltd",
-        "McAleer & Rushe Contracts UK Ltd"
-      ],
-      "quoteRevision": 5,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-05-11T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-05-22T11:39:50.953Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169104,
-            "action": "Telephone Call",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8463",
-            "action": "CRM Telephone Call - McAleer & Rushe Contracts UK Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-08-19T11:52:07.581Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 130,
-        "calendar": 186
+        "working": 134,
+        "calendar": 190
       },
       "invoiceMarker": null
     },
@@ -9176,8 +9411,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 75,
-        "calendar": 106
+        "working": 76,
+        "calendar": 107
       },
       "invoiceMarker": null
     },
@@ -9255,8 +9490,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 148,
-        "calendar": 211
+        "working": 149,
+        "calendar": 212
       },
       "invoiceMarker": null
     },
@@ -9333,8 +9568,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 42,
-        "calendar": 60
+        "working": 43,
+        "calendar": 61
       },
       "invoiceMarker": null
     },
@@ -9411,8 +9646,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 147,
-        "calendar": 210
+        "working": 148,
+        "calendar": 211
       },
       "invoiceMarker": null
     },
@@ -9489,8 +9724,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 157,
-        "calendar": 224
+        "working": 158,
+        "calendar": 225
       },
       "invoiceMarker": null
     },
@@ -9568,8 +9803,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 157,
-        "calendar": 224
+        "working": 158,
+        "calendar": 225
       },
       "invoiceMarker": null
     },
@@ -9657,8 +9892,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
       },
       "invoiceMarker": null
     },
@@ -9735,86 +9970,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 163,
-        "calendar": 236
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1870,
-      "jobNumber": "117668",
-      "projectName": "Malleny House",
-      "companyName": "John Dennis & Company (Scotland) Ltd",
-      "value": 27332.03,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-04-10T09:12:33.450Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "12 Doors, 11 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-03-18T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-04-16T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "John Dennis & Company (Scotland) Ltd"
-      ],
-      "quoteRevision": 0,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-03-18T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-04-10T09:12:33.450Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169107,
-            "action": "Telephone Call",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8696",
-            "action": "CRM Telephone Call - John Dennis & Company (Scotland) Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-08-10T10:47:10.188Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 159,
-        "calendar": 228
+        "working": 164,
+        "calendar": 237
       },
       "invoiceMarker": null
     },
@@ -9891,8 +10048,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 167,
-        "calendar": 242
+        "working": 168,
+        "calendar": 243
       },
       "invoiceMarker": null
     },
@@ -9969,8 +10126,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 69,
-        "calendar": 98
+        "working": 70,
+        "calendar": 99
       },
       "invoiceMarker": null
     },
@@ -10047,8 +10204,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 91,
-        "calendar": 130
+        "working": 92,
+        "calendar": 131
       },
       "invoiceMarker": null
     },
@@ -10125,8 +10282,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 69,
-        "calendar": 98
+        "working": 70,
+        "calendar": 99
       },
       "invoiceMarker": null
     },
@@ -10203,8 +10360,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 141,
-        "calendar": 201
+        "working": 142,
+        "calendar": 202
       },
       "invoiceMarker": null
     },
@@ -10281,8 +10438,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 20,
-        "calendar": 28
+        "working": 21,
+        "calendar": 29
       },
       "invoiceMarker": null
     },
@@ -10359,8 +10516,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 134,
-        "calendar": 190
+        "working": 135,
+        "calendar": 191
       },
       "invoiceMarker": null
     },
@@ -10438,8 +10595,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 153,
-        "calendar": 218
+        "working": 154,
+        "calendar": 219
       },
       "invoiceMarker": null
     },
@@ -10516,8 +10673,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 187,
-        "calendar": 270
+        "working": 188,
+        "calendar": 271
       },
       "invoiceMarker": null
     },
@@ -10595,8 +10752,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 186,
-        "calendar": 267
+        "working": 187,
+        "calendar": 268
       },
       "invoiceMarker": null
     },
@@ -10673,8 +10830,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 191,
-        "calendar": 274
+        "working": 192,
+        "calendar": 275
       },
       "invoiceMarker": null
     },
@@ -10751,86 +10908,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 193,
-        "calendar": 278
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1826,
-      "jobNumber": "117624",
-      "projectName": "55 Broadway (Doorsets)",
-      "companyName": "McAleer & Rushe Contracts UK Ltd",
-      "value": 7266.37,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-05-15T08:20:19.737Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "1 Doors, 1 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Alfie Price",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-05-15T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "McAleer & Rushe Contracts UK Ltd"
-      ],
-      "quoteRevision": 3,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-02-10T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-05-15T08:20:19.737Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169105,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8547",
-            "action": "CRM event - McAleer & Rushe Contracts UK Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-08-19T11:53:29.187Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 135,
-        "calendar": 193
+        "working": 194,
+        "calendar": 279
       },
       "invoiceMarker": null
     },
@@ -10907,8 +10986,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 183,
-        "calendar": 264
+        "working": 184,
+        "calendar": 265
       },
       "invoiceMarker": null
     },
@@ -10985,8 +11064,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 201,
-        "calendar": 288
+        "working": 202,
+        "calendar": 289
       },
       "invoiceMarker": null
     },
@@ -11063,8 +11142,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 180,
-        "calendar": 259
+        "working": 181,
+        "calendar": 260
       },
       "invoiceMarker": null
     },
@@ -11141,8 +11220,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 42,
-        "calendar": 60
+        "working": 43,
+        "calendar": 61
       },
       "invoiceMarker": null
     },
@@ -11219,8 +11298,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 56,
-        "calendar": 78
+        "working": 57,
+        "calendar": 79
       },
       "invoiceMarker": null
     },
@@ -11297,8 +11376,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 153,
-        "calendar": 218
+        "working": 154,
+        "calendar": 219
       },
       "invoiceMarker": null
     },
@@ -11375,8 +11454,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 225,
-        "calendar": 322
+        "working": 226,
+        "calendar": 323
       },
       "invoiceMarker": null
     },
@@ -11453,8 +11532,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 248,
-        "calendar": 358
+        "working": 249,
+        "calendar": 359
       },
       "invoiceMarker": null
     },
@@ -11531,8 +11610,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 46,
-        "calendar": 64
+        "working": 47,
+        "calendar": 65
       },
       "invoiceMarker": null
     },
@@ -11609,8 +11688,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 260,
-        "calendar": 376
+        "working": 261,
+        "calendar": 377
       },
       "invoiceMarker": null
     },
@@ -11687,8 +11766,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 273,
-        "calendar": 393
+        "working": 274,
+        "calendar": 394
       },
       "invoiceMarker": null
     },
@@ -11765,8 +11844,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 311,
-        "calendar": 447
+        "working": 312,
+        "calendar": 448
       },
       "invoiceMarker": null
     },
@@ -11843,8 +11922,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 321,
-        "calendar": 462
+        "working": 322,
+        "calendar": 463
       },
       "invoiceMarker": null
     },
@@ -11921,8 +12000,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 324,
-        "calendar": 467
+        "working": 325,
+        "calendar": 468
       },
       "invoiceMarker": null
     },
@@ -12000,87 +12079,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 183,
-        "calendar": 264
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1634,
-      "jobNumber": "117432",
-      "projectName": "9 The Little Boltons",
-      "companyName": "4M Interior Solutions Ltd · GPF Lewis PLC (Head Office)",
-      "value": 52381.12,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2025-09-03T10:46:44.793Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "25 Doors, 23 Frames, 3 Miscellaneous",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2025-09-03T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "4M Interior Solutions Ltd",
-        "GPF Lewis PLC (Head Office)"
-      ],
-      "quoteRevision": 2,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2025-07-03T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2025-09-03T10:46:44.793Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169103,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-25",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8090",
-            "action": "CRM event - 4M Interior Solutions Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-03-23T15:31:50.416Z",
-            "completeBy": "2026-11-25",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 311,
-        "calendar": 447
+        "working": 184,
+        "calendar": 265
       },
       "invoiceMarker": null
     },
@@ -12157,8 +12157,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 50,
-        "calendar": 70
+        "working": 51,
+        "calendar": 71
       },
       "invoiceMarker": null
     },
@@ -12235,8 +12235,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 399,
-        "calendar": 574
+        "working": 400,
+        "calendar": 575
       },
       "invoiceMarker": null
     },
@@ -12313,8 +12313,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 258,
-        "calendar": 372
+        "working": 259,
+        "calendar": 373
       },
       "invoiceMarker": null
     },
@@ -12391,8 +12391,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 14,
-        "calendar": 20
+        "working": 15,
+        "calendar": 21
       },
       "invoiceMarker": null
     },
@@ -12488,8 +12488,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 148,
-        "calendar": 211
+        "working": 149,
+        "calendar": 212
       },
       "invoiceMarker": null
     },
@@ -12566,8 +12566,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 536,
-        "calendar": 774
+        "working": 537,
+        "calendar": 775
       },
       "invoiceMarker": null
     },
@@ -12653,23 +12653,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 14,
+          "totalDays": 15,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 14,
-          "totalCalDays": 20,
+          "activeDays": 15,
+          "totalCalDays": 21,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 20,
-          "waitingOnUsDays": 3,
+          "activeCalDays": 21,
+          "waitingOnUsDays": 4,
           "waitingOnClientDays": 10,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Production Ticket Check",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -12733,26 +12733,26 @@
             "position": "U",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 14,
-          "calDays": 20
+          "days": 15,
+          "calDays": 21
         }
       },
       "jobTimes": {
         "depositPaid": "2026-01-14",
         "until": null,
-        "days": 219,
-        "calDays": 314
+        "days": 220,
+        "calDays": 315
       },
       "stageDays": {
-        "working": 14,
-        "calendar": 20
+        "working": 15,
+        "calendar": 21
       },
       "invoiceMarker": null
     },
@@ -12815,23 +12815,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 48,
+          "totalDays": 49,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 48,
-          "totalCalDays": 68,
+          "activeDays": 49,
+          "totalCalDays": 69,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 68,
+          "activeCalDays": 69,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 44,
+          "waitingOnClientDays": 45,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting Client Response",
           "since": "2026-10-14",
-          "days": 29,
-          "calDays": 41
+          "days": 30,
+          "calDays": 42
         },
         "stays": [
           {
@@ -12847,26 +12847,26 @@
             "position": "T",
             "from": "2026-10-14",
             "to": null,
-            "days": 29,
-            "calDays": 41
+            "days": 30,
+            "calDays": 42
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 48,
-          "calDays": 68
+          "days": 49,
+          "calDays": 69
         }
       },
       "jobTimes": {
         "depositPaid": "2025-10-03",
         "until": null,
-        "days": 289,
-        "calDays": 417
+        "days": 290,
+        "calDays": 418
       },
       "stageDays": {
-        "working": 48,
-        "calendar": 68
+        "working": 49,
+        "calendar": 69
       },
       "invoiceMarker": null
     },
@@ -12929,23 +12929,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 10,
+          "totalDays": 11,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 10,
-          "totalCalDays": 14,
+          "activeDays": 11,
+          "totalCalDays": 15,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 14,
+          "activeCalDays": 15,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 6,
+          "waitingOnClientDays": 7,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting for Sign Off",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -12961,26 +12961,26 @@
             "position": "T",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 10,
-          "calDays": 14
+          "days": 11,
+          "calDays": 15
         }
       },
       "jobTimes": {
         "depositPaid": "2025-11-20",
         "until": null,
-        "days": 255,
-        "calDays": 369
+        "days": 256,
+        "calDays": 370
       },
       "stageDays": {
-        "working": 10,
-        "calendar": 14
+        "working": 11,
+        "calendar": 15
       },
       "invoiceMarker": null
     },
@@ -13055,23 +13055,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 56,
+          "totalDays": 57,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 56,
-          "totalCalDays": 78,
+          "activeDays": 57,
+          "totalCalDays": 79,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 78,
-          "waitingOnUsDays": 14,
+          "activeCalDays": 79,
+          "waitingOnUsDays": 15,
           "waitingOnClientDays": 42,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Production Ticket Check",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -13199,26 +13199,26 @@
             "position": "U",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 56,
-          "calDays": 78
+          "days": 57,
+          "calDays": 79
         }
       },
       "jobTimes": {
         "depositPaid": "2026-07-07",
         "until": null,
-        "days": 99,
-        "calDays": 140
+        "days": 100,
+        "calDays": 141
       },
       "stageDays": {
-        "working": 56,
-        "calendar": 78
+        "working": 57,
+        "calendar": 79
       },
       "invoiceMarker": null
     },
@@ -13293,23 +13293,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 95,
+          "totalDays": 96,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 95,
-          "totalCalDays": 134,
+          "activeDays": 96,
+          "totalCalDays": 135,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 134,
-          "waitingOnUsDays": 30,
+          "activeCalDays": 135,
+          "waitingOnUsDays": 31,
           "waitingOnClientDays": 65,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Production Ticket Check",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -13453,26 +13453,26 @@
             "position": "U",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 95,
-          "calDays": 134
+          "days": 96,
+          "calDays": 135
         }
       },
       "jobTimes": {
         "depositPaid": "2026-07-07",
         "until": null,
-        "days": 99,
-        "calDays": 140
+        "days": 100,
+        "calDays": 141
       },
       "stageDays": {
-        "working": 95,
-        "calendar": 134
+        "working": 96,
+        "calendar": 135
       },
       "invoiceMarker": null
     },
@@ -13547,23 +13547,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 55,
+          "totalDays": 56,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 55,
-          "totalCalDays": 77,
+          "activeDays": 56,
+          "totalCalDays": 78,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 77,
-          "waitingOnUsDays": 8,
+          "activeCalDays": 78,
+          "waitingOnUsDays": 9,
           "waitingOnClientDays": 47,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Production Ticket Check",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -13683,26 +13683,26 @@
             "position": "U",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 55,
-          "calDays": 77
+          "days": 56,
+          "calDays": 78
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-07",
         "until": null,
-        "days": 56,
-        "calDays": 78
+        "days": 57,
+        "calDays": 79
       },
       "stageDays": {
-        "working": 55,
-        "calendar": 77
+        "working": 56,
+        "calendar": 78
       },
       "invoiceMarker": null
     },
@@ -13765,23 +13765,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 240,
+          "totalDays": 241,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 240,
-          "totalCalDays": 348,
+          "activeDays": 241,
+          "totalCalDays": 349,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 348,
+          "activeCalDays": 349,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 172,
+          "waitingOnClientDays": 173,
           "holdsKnown": false
         },
         "currentStatus": {
           "name": "Revised drawings sent [1]",
           "since": "2026-03-20",
-          "days": 172,
-          "calDays": 249
+          "days": 173,
+          "calDays": 250
         },
         "stays": [
           {
@@ -13789,26 +13789,26 @@
             "position": "T",
             "from": "2026-03-20",
             "to": null,
-            "days": 172,
-            "calDays": 249
+            "days": 173,
+            "calDays": 250
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 240,
-          "calDays": 348
+          "days": 241,
+          "calDays": 349
         }
       },
       "jobTimes": {
         "depositPaid": "2024-02-29",
         "until": null,
-        "days": 692,
-        "calDays": 999
+        "days": 693,
+        "calDays": 1000
       },
       "stageDays": {
-        "working": 240,
-        "calendar": 348
+        "working": 241,
+        "calendar": 349
       },
       "invoiceMarker": null
     },
@@ -13871,23 +13871,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 252,
+          "totalDays": 253,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 252,
-          "totalCalDays": 364,
+          "activeDays": 253,
+          "totalCalDays": 365,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 364,
+          "activeCalDays": 365,
           "waitingOnUsDays": 6,
-          "waitingOnClientDays": 114,
+          "waitingOnClientDays": 115,
           "holdsKnown": false
         },
         "currentStatus": {
           "name": "Revised drawings sent [5]",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -13967,26 +13967,26 @@
             "position": "T",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 252,
-          "calDays": 364
+          "days": 253,
+          "calDays": 365
         }
       },
       "jobTimes": {
         "depositPaid": "2024-02-29",
         "until": null,
-        "days": 692,
-        "calDays": 999
+        "days": 693,
+        "calDays": 1000
       },
       "stageDays": {
-        "working": 252,
-        "calendar": 364
+        "working": 253,
+        "calendar": 365
       },
       "invoiceMarker": null
     },
@@ -14049,23 +14049,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 0,
+          "totalDays": 1,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 0,
-          "totalCalDays": 0,
+          "activeDays": 1,
+          "totalCalDays": 1,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 0,
-          "waitingOnUsDays": 0,
+          "activeCalDays": 1,
+          "waitingOnUsDays": 1,
           "waitingOnClientDays": 0,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Rev A Drawing in Process",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -14073,26 +14073,26 @@
             "position": "U",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         }
       },
       "jobTimes": {
         "depositPaid": "2024-10-29",
         "until": null,
-        "days": 524,
-        "calDays": 756
+        "days": 525,
+        "calDays": 757
       },
       "stageDays": {
-        "working": 0,
-        "calendar": 0
+        "working": 1,
+        "calendar": 1
       },
       "invoiceMarker": null
     },
@@ -14155,23 +14155,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 88,
-          "onHoldClientDays": 75,
+          "totalDays": 89,
+          "onHoldClientDays": 76,
           "onHoldLongdenDays": 0,
           "activeDays": 13,
-          "totalCalDays": 125,
-          "onHoldClientCalDays": 106,
+          "totalCalDays": 126,
+          "onHoldClientCalDays": 107,
           "onHoldLongdenCalDays": 0,
           "activeCalDays": 19,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 75,
+          "waitingOnClientDays": 76,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "On Hold Client",
           "since": "2026-08-10",
-          "days": 75,
-          "calDays": 106
+          "days": 76,
+          "calDays": 107
         },
         "stays": [
           {
@@ -14179,26 +14179,26 @@
             "position": "T",
             "from": "2026-08-10",
             "to": null,
-            "days": 75,
-            "calDays": 106
+            "days": 76,
+            "calDays": 107
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 88,
-          "calDays": 125
+          "days": 89,
+          "calDays": 126
         }
       },
       "jobTimes": {
         "depositPaid": "2025-02-14",
         "until": null,
-        "days": 449,
-        "calDays": 648
+        "days": 450,
+        "calDays": 649
       },
       "stageDays": {
-        "working": 88,
-        "calendar": 125
+        "working": 89,
+        "calendar": 126
       },
       "invoiceMarker": null
     },
@@ -14261,23 +14261,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 238,
-          "onHoldClientDays": 206,
+          "totalDays": 239,
+          "onHoldClientDays": 207,
           "onHoldLongdenDays": 0,
           "activeDays": 32,
-          "totalCalDays": 344,
-          "onHoldClientCalDays": 295,
+          "totalCalDays": 345,
+          "onHoldClientCalDays": 296,
           "onHoldLongdenCalDays": 0,
           "activeCalDays": 49,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 206,
+          "waitingOnClientDays": 207,
           "holdsKnown": false
         },
         "currentStatus": {
           "name": "On Hold Client",
           "since": "2026-02-02",
-          "days": 206,
-          "calDays": 295
+          "days": 207,
+          "calDays": 296
         },
         "stays": [
           {
@@ -14285,26 +14285,26 @@
             "position": "T",
             "from": "2026-02-02",
             "to": null,
-            "days": 206,
-            "calDays": 295
+            "days": 207,
+            "calDays": 296
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 238,
-          "calDays": 344
+          "days": 239,
+          "calDays": 345
         }
       },
       "jobTimes": {
         "depositPaid": "2025-06-05",
         "until": null,
-        "days": 374,
-        "calDays": 537
+        "days": 375,
+        "calDays": 538
       },
       "stageDays": {
-        "working": 238,
-        "calendar": 344
+        "working": 239,
+        "calendar": 345
       },
       "invoiceMarker": null
     },
@@ -14367,23 +14367,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 38,
+          "totalDays": 39,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 38,
-          "totalCalDays": 54,
+          "activeDays": 39,
+          "totalCalDays": 55,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 54,
+          "activeCalDays": 55,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 37,
+          "waitingOnClientDays": 38,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Pricing sent",
           "since": "2026-10-02",
-          "days": 37,
-          "calDays": 53
+          "days": 38,
+          "calDays": 54
         },
         "stays": [
           {
@@ -14391,26 +14391,26 @@
             "position": "T",
             "from": "2026-10-02",
             "to": null,
-            "days": 37,
-            "calDays": 53
+            "days": 38,
+            "calDays": 54
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 38,
-          "calDays": 54
+          "days": 39,
+          "calDays": 55
         }
       },
       "jobTimes": {
         "depositPaid": "2025-07-07",
         "until": null,
-        "days": 352,
-        "calDays": 505
+        "days": 353,
+        "calDays": 506
       },
       "stageDays": {
-        "working": 38,
-        "calendar": 54
+        "working": 39,
+        "calendar": 55
       },
       "invoiceMarker": null
     },
@@ -14473,23 +14473,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 340,
+          "totalDays": 341,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 340,
-          "totalCalDays": 489,
+          "activeDays": 341,
+          "totalCalDays": 490,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 489,
+          "activeCalDays": 490,
           "waitingOnUsDays": 30,
-          "waitingOnClientDays": 155,
+          "waitingOnClientDays": 156,
           "holdsKnown": false
         },
         "currentStatus": {
           "name": "Waiting Client Response",
           "since": "2026-09-18",
-          "days": 47,
-          "calDays": 67
+          "days": 48,
+          "calDays": 68
         },
         "stays": [
           {
@@ -14585,26 +14585,26 @@
             "position": "T",
             "from": "2026-09-18",
             "to": null,
-            "days": 47,
-            "calDays": 67
+            "days": 48,
+            "calDays": 68
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 340,
-          "calDays": 489
+          "days": 341,
+          "calDays": 490
         }
       },
       "jobTimes": {
         "depositPaid": "2025-07-11",
         "until": null,
-        "days": 348,
-        "calDays": 501
+        "days": 349,
+        "calDays": 502
       },
       "stageDays": {
-        "working": 340,
-        "calendar": 489
+        "working": 341,
+        "calendar": 490
       },
       "invoiceMarker": null
     },
@@ -14667,14 +14667,14 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 80,
+          "totalDays": 81,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 80,
-          "totalCalDays": 113,
+          "activeDays": 81,
+          "totalCalDays": 114,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 113,
+          "activeCalDays": 114,
           "waitingOnUsDays": 0,
           "waitingOnClientDays": 0,
           "holdsKnown": true
@@ -14684,19 +14684,19 @@
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 80,
-          "calDays": 113
+          "days": 81,
+          "calDays": 114
         }
       },
       "jobTimes": {
         "depositPaid": "2025-08-21",
         "until": null,
-        "days": 319,
-        "calDays": 460
+        "days": 320,
+        "calDays": 461
       },
       "stageDays": {
-        "working": 80,
-        "calendar": 113
+        "working": 81,
+        "calendar": 114
       },
       "invoiceMarker": null
     },
@@ -14771,14 +14771,14 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 30,
+          "totalDays": 31,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 30,
-          "totalCalDays": 42,
+          "activeDays": 31,
+          "totalCalDays": 43,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 42,
+          "activeCalDays": 43,
           "waitingOnUsDays": 0,
           "waitingOnClientDays": 0,
           "holdsKnown": true
@@ -14788,19 +14788,19 @@
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 30,
-          "calDays": 42
+          "days": 31,
+          "calDays": 43
         }
       },
       "jobTimes": {
         "depositPaid": "2025-08-21",
         "until": null,
-        "days": 319,
-        "calDays": 460
+        "days": 320,
+        "calDays": 461
       },
       "stageDays": {
-        "working": 30,
-        "calendar": 42
+        "working": 31,
+        "calendar": 43
       },
       "invoiceMarker": null
     },
@@ -14863,23 +14863,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 237,
+          "totalDays": 238,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 237,
-          "totalCalDays": 343,
+          "activeDays": 238,
+          "totalCalDays": 344,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 343,
+          "activeCalDays": 344,
           "waitingOnUsDays": 99,
-          "waitingOnClientDays": 106,
+          "waitingOnClientDays": 107,
           "holdsKnown": false
         },
         "currentStatus": {
           "name": "Revised drawings sent [4]",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -14919,26 +14919,26 @@
             "position": "T",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 237,
-          "calDays": 343
+          "days": 238,
+          "calDays": 344
         }
       },
       "jobTimes": {
         "depositPaid": "2025-12-04",
         "until": null,
-        "days": 245,
-        "calDays": 355
+        "days": 246,
+        "calDays": 356
       },
       "stageDays": {
-        "working": 237,
-        "calendar": 343
+        "working": 238,
+        "calendar": 344
       },
       "invoiceMarker": null
     },
@@ -15001,23 +15001,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 63,
-          "onHoldClientDays": 63,
+          "totalDays": 64,
+          "onHoldClientDays": 64,
           "onHoldLongdenDays": 0,
           "activeDays": 0,
-          "totalCalDays": 90,
-          "onHoldClientCalDays": 90,
+          "totalCalDays": 91,
+          "onHoldClientCalDays": 91,
           "onHoldLongdenCalDays": 0,
           "activeCalDays": 0,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 63,
+          "waitingOnClientDays": 64,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "On Hold Client",
           "since": "2026-08-26",
-          "days": 63,
-          "calDays": 90
+          "days": 64,
+          "calDays": 91
         },
         "stays": [
           {
@@ -15025,26 +15025,26 @@
             "position": "T",
             "from": "2026-08-26",
             "to": null,
-            "days": 63,
-            "calDays": 90
+            "days": 64,
+            "calDays": 91
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 63,
-          "calDays": 90
+          "days": 64,
+          "calDays": 91
         }
       },
       "jobTimes": {
         "depositPaid": "2026-01-29",
         "until": null,
-        "days": 208,
-        "calDays": 299
+        "days": 209,
+        "calDays": 300
       },
       "stageDays": {
-        "working": 63,
-        "calendar": 90
+        "working": 64,
+        "calendar": 91
       },
       "invoiceMarker": null
     },
@@ -15107,23 +15107,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 100,
+          "totalDays": 101,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 32,
-          "activeDays": 68,
-          "totalCalDays": 141,
+          "activeDays": 69,
+          "totalCalDays": 142,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 44,
-          "activeCalDays": 97,
+          "activeCalDays": 98,
           "waitingOnUsDays": 42,
-          "waitingOnClientDays": 52,
+          "waitingOnClientDays": 53,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting Client Response",
           "since": "2026-09-11",
-          "days": 52,
-          "calDays": 74
+          "days": 53,
+          "calDays": 75
         },
         "stays": [
           {
@@ -15147,26 +15147,26 @@
             "position": "T",
             "from": "2026-09-11",
             "to": null,
-            "days": 52,
-            "calDays": 74
+            "days": 53,
+            "calDays": 75
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 100,
-          "calDays": 141
+          "days": 101,
+          "calDays": 142
         }
       },
       "jobTimes": {
         "depositPaid": "2026-03-03",
         "until": null,
-        "days": 185,
-        "calDays": 266
+        "days": 186,
+        "calDays": 267
       },
       "stageDays": {
-        "working": 100,
-        "calendar": 141
+        "working": 101,
+        "calendar": 142
       },
       "invoiceMarker": "Due"
     },
@@ -15229,23 +15229,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 3,
+          "totalDays": 4,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 3,
-          "totalCalDays": 5,
+          "activeDays": 4,
+          "totalCalDays": 6,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 5,
+          "activeCalDays": 6,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 1,
+          "waitingOnClientDays": 2,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Rev A Drawing sent",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -15253,26 +15253,26 @@
             "position": "T",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 3,
-          "calDays": 5
+          "days": 4,
+          "calDays": 6
         }
       },
       "jobTimes": {
         "depositPaid": "2026-05-01",
         "until": null,
-        "days": 144,
-        "calDays": 207
+        "days": 145,
+        "calDays": 208
       },
       "stageDays": {
-        "working": 3,
-        "calendar": 5
+        "working": 4,
+        "calendar": 6
       },
       "invoiceMarker": null
     },
@@ -15335,23 +15335,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 116,
+          "totalDays": 117,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 116,
-          "totalCalDays": 165,
+          "activeDays": 117,
+          "totalCalDays": 166,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 165,
+          "activeCalDays": 166,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 115,
+          "waitingOnClientDays": 116,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting Client Response",
           "since": "2026-11-10",
-          "days": 10,
-          "calDays": 14
+          "days": 11,
+          "calDays": 15
         },
         "stays": [
           {
@@ -15399,26 +15399,26 @@
             "position": "T",
             "from": "2026-11-10",
             "to": null,
-            "days": 10,
-            "calDays": 14
+            "days": 11,
+            "calDays": 15
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 116,
-          "calDays": 165
+          "days": 117,
+          "calDays": 166
         }
       },
       "jobTimes": {
         "depositPaid": "2026-06-12",
         "until": null,
-        "days": 116,
-        "calDays": 165
+        "days": 117,
+        "calDays": 166
       },
       "stageDays": {
-        "working": 116,
-        "calendar": 165
+        "working": 117,
+        "calendar": 166
       },
       "invoiceMarker": null
     },
@@ -15481,23 +15481,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 108,
+          "totalDays": 109,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 108,
-          "totalCalDays": 153,
+          "activeDays": 109,
+          "totalCalDays": 154,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 153,
+          "activeCalDays": 154,
           "waitingOnUsDays": 2,
-          "waitingOnClientDays": 103,
+          "waitingOnClientDays": 104,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Revised drawings sent [1]",
           "since": "2026-11-03",
-          "days": 15,
-          "calDays": 21
+          "days": 16,
+          "calDays": 22
         },
         "stays": [
           {
@@ -15569,26 +15569,26 @@
             "position": "T",
             "from": "2026-11-03",
             "to": null,
-            "days": 15,
-            "calDays": 21
+            "days": 16,
+            "calDays": 22
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 108,
-          "calDays": 153
+          "days": 109,
+          "calDays": 154
         }
       },
       "jobTimes": {
         "depositPaid": "2026-06-25",
         "until": null,
-        "days": 107,
-        "calDays": 152
+        "days": 108,
+        "calDays": 153
       },
       "stageDays": {
-        "working": 108,
-        "calendar": 153
+        "working": 109,
+        "calendar": 154
       },
       "invoiceMarker": null
     },
@@ -15663,23 +15663,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 56,
+          "totalDays": 57,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 56,
-          "totalCalDays": 78,
+          "activeDays": 57,
+          "totalCalDays": 79,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 78,
-          "waitingOnUsDays": 14,
+          "activeCalDays": 79,
+          "waitingOnUsDays": 15,
           "waitingOnClientDays": 42,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Manufacturing Paperwork Produced",
           "since": "2026-11-18",
-          "days": 4,
-          "calDays": 6
+          "days": 5,
+          "calDays": 7
         },
         "stays": [
           {
@@ -15783,26 +15783,26 @@
             "position": "U",
             "from": "2026-11-18",
             "to": null,
-            "days": 4,
-            "calDays": 6
+            "days": 5,
+            "calDays": 7
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 56,
-          "calDays": 78
+          "days": 57,
+          "calDays": 79
         }
       },
       "jobTimes": {
         "depositPaid": "2026-07-07",
         "until": null,
-        "days": 99,
-        "calDays": 140
+        "days": 100,
+        "calDays": 141
       },
       "stageDays": {
-        "working": 56,
-        "calendar": 78
+        "working": 57,
+        "calendar": 79
       },
       "invoiceMarker": null
     },
@@ -15865,23 +15865,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 78,
+          "totalDays": 79,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 78,
-          "totalCalDays": 111,
+          "activeDays": 79,
+          "totalCalDays": 112,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 111,
+          "activeCalDays": 112,
           "waitingOnUsDays": 12,
-          "waitingOnClientDays": 66,
+          "waitingOnClientDays": 67,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Design Query Client",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -16057,26 +16057,26 @@
             "position": "T",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 78,
-          "calDays": 111
+          "days": 79,
+          "calDays": 112
         }
       },
       "jobTimes": {
         "depositPaid": "2026-08-03",
         "until": null,
-        "days": 80,
-        "calDays": 113
+        "days": 81,
+        "calDays": 114
       },
       "stageDays": {
-        "working": 78,
-        "calendar": 111
+        "working": 79,
+        "calendar": 112
       },
       "invoiceMarker": null
     },
@@ -16139,23 +16139,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 6,
+          "totalDays": 7,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 6,
-          "totalCalDays": 8,
+          "activeDays": 7,
+          "totalCalDays": 9,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 8,
+          "activeCalDays": 9,
           "waitingOnUsDays": 5,
-          "waitingOnClientDays": 1,
+          "waitingOnClientDays": 2,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting for Sign Off",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -16171,26 +16171,26 @@
             "position": "T",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 6,
-          "calDays": 8
+          "days": 7,
+          "calDays": 9
         }
       },
       "jobTimes": {
         "depositPaid": "2026-08-03",
         "until": null,
-        "days": 80,
-        "calDays": 113
+        "days": 81,
+        "calDays": 114
       },
       "stageDays": {
-        "working": 6,
-        "calendar": 8
+        "working": 7,
+        "calendar": 9
       },
       "invoiceMarker": null
     },
@@ -16253,23 +16253,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 77,
+          "totalDays": 78,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 77,
-          "totalCalDays": 110,
+          "activeDays": 78,
+          "totalCalDays": 111,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 110,
+          "activeCalDays": 111,
           "waitingOnUsDays": 10,
-          "waitingOnClientDays": 63,
+          "waitingOnClientDays": 64,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Revised drawings sent [2]",
           "since": "2026-11-23",
-          "days": 1,
-          "calDays": 1
+          "days": 2,
+          "calDays": 2
         },
         "stays": [
           {
@@ -16397,26 +16397,26 @@
             "position": "T",
             "from": "2026-11-23",
             "to": null,
-            "days": 1,
-            "calDays": 1
+            "days": 2,
+            "calDays": 2
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 77,
-          "calDays": 110
+          "days": 78,
+          "calDays": 111
         }
       },
       "jobTimes": {
         "depositPaid": "2026-08-06",
         "until": null,
-        "days": 77,
-        "calDays": 110
+        "days": 78,
+        "calDays": 111
       },
       "stageDays": {
-        "working": 77,
-        "calendar": 110
+        "working": 78,
+        "calendar": 111
       },
       "invoiceMarker": null
     },
@@ -16479,23 +16479,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 11,
+          "totalDays": 12,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 11,
-          "totalCalDays": 15,
+          "activeDays": 12,
+          "totalCalDays": 16,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 15,
+          "activeCalDays": 16,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 11,
+          "waitingOnClientDays": 12,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting Client Response",
           "since": "2026-11-09",
-          "days": 11,
-          "calDays": 15
+          "days": 12,
+          "calDays": 16
         },
         "stays": [
           {
@@ -16503,26 +16503,26 @@
             "position": "T",
             "from": "2026-11-09",
             "to": null,
-            "days": 11,
-            "calDays": 15
+            "days": 12,
+            "calDays": 16
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 11,
-          "calDays": 15
+          "days": 12,
+          "calDays": 16
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-07",
         "until": null,
-        "days": 56,
-        "calDays": 78
+        "days": 57,
+        "calDays": 79
       },
       "stageDays": {
-        "working": 11,
-        "calendar": 15
+        "working": 12,
+        "calendar": 16
       },
       "invoiceMarker": null
     },
@@ -16585,23 +16585,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 52,
+          "totalDays": 53,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 52,
-          "totalCalDays": 74,
+          "activeDays": 53,
+          "totalCalDays": 75,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 74,
-          "waitingOnUsDays": 1,
+          "activeCalDays": 75,
+          "waitingOnUsDays": 2,
           "waitingOnClientDays": 51,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Signed off into Production",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -16697,26 +16697,26 @@
             "position": "U",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 52,
-          "calDays": 74
+          "days": 53,
+          "calDays": 75
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-09",
         "until": null,
-        "days": 54,
-        "calDays": 76
+        "days": 55,
+        "calDays": 77
       },
       "stageDays": {
-        "working": 52,
-        "calendar": 74
+        "working": 53,
+        "calendar": 75
       },
       "invoiceMarker": null
     },
@@ -16779,23 +16779,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 45,
+          "totalDays": 46,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 45,
-          "totalCalDays": 63,
+          "activeDays": 46,
+          "totalCalDays": 64,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 63,
-          "waitingOnUsDays": 4,
+          "activeCalDays": 64,
+          "waitingOnUsDays": 5,
           "waitingOnClientDays": 29,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Signed off into Production",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -16875,26 +16875,26 @@
             "position": "U",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 45,
-          "calDays": 63
+          "days": 46,
+          "calDays": 64
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-18",
         "until": null,
-        "days": 47,
-        "calDays": 67
+        "days": 48,
+        "calDays": 68
       },
       "stageDays": {
-        "working": 45,
-        "calendar": 63
+        "working": 46,
+        "calendar": 64
       },
       "invoiceMarker": null
     },
@@ -16957,23 +16957,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 44,
+          "totalDays": 45,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 44,
-          "totalCalDays": 62,
+          "activeDays": 45,
+          "totalCalDays": 63,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 62,
+          "activeCalDays": 63,
           "waitingOnUsDays": 5,
-          "waitingOnClientDays": 39,
+          "waitingOnClientDays": 40,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Rev A Drawing sent",
           "since": "2026-11-17",
-          "days": 5,
-          "calDays": 7
+          "days": 6,
+          "calDays": 8
         },
         "stays": [
           {
@@ -17061,26 +17061,26 @@
             "position": "T",
             "from": "2026-11-17",
             "to": null,
-            "days": 5,
-            "calDays": 7
+            "days": 6,
+            "calDays": 8
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 44,
-          "calDays": 62
+          "days": 45,
+          "calDays": 63
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-22",
         "until": null,
-        "days": 45,
-        "calDays": 63
+        "days": 46,
+        "calDays": 64
       },
       "stageDays": {
-        "working": 44,
-        "calendar": 62
+        "working": 45,
+        "calendar": 63
       },
       "invoiceMarker": null
     },
@@ -17143,23 +17143,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 42,
+          "totalDays": 43,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 42,
-          "totalCalDays": 60,
+          "activeDays": 43,
+          "totalCalDays": 61,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 60,
-          "waitingOnUsDays": 6,
+          "activeCalDays": 61,
+          "waitingOnUsDays": 7,
           "waitingOnClientDays": 36,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Redrawing With Mouldings [3]",
           "since": "2026-11-24",
-          "days": 0,
-          "calDays": 0
+          "days": 1,
+          "calDays": 1
         },
         "stays": [
           {
@@ -17287,26 +17287,26 @@
             "position": "U",
             "from": "2026-11-24",
             "to": null,
-            "days": 0,
-            "calDays": 0
+            "days": 1,
+            "calDays": 1
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 42,
-          "calDays": 60
+          "days": 43,
+          "calDays": 61
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-25",
         "until": null,
-        "days": 42,
-        "calDays": 60
+        "days": 43,
+        "calDays": 61
       },
       "stageDays": {
-        "working": 42,
-        "calendar": 60
+        "working": 43,
+        "calendar": 61
       },
       "invoiceMarker": null
     },
@@ -17369,23 +17369,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 39,
+          "totalDays": 40,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 39,
-          "totalCalDays": 55,
+          "activeDays": 40,
+          "totalCalDays": 56,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 55,
+          "activeCalDays": 56,
           "waitingOnUsDays": 8,
-          "waitingOnClientDays": 31,
+          "waitingOnClientDays": 32,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Rev A Drawing sent",
           "since": "2026-11-17",
-          "days": 5,
-          "calDays": 7
+          "days": 6,
+          "calDays": 8
         },
         "stays": [
           {
@@ -17481,26 +17481,26 @@
             "position": "T",
             "from": "2026-11-17",
             "to": null,
-            "days": 5,
-            "calDays": 7
+            "days": 6,
+            "calDays": 8
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 39,
-          "calDays": 55
+          "days": 40,
+          "calDays": 56
         }
       },
       "jobTimes": {
         "depositPaid": "2026-09-25",
         "until": null,
-        "days": 42,
-        "calDays": 60
+        "days": 43,
+        "calDays": 61
       },
       "stageDays": {
-        "working": 39,
-        "calendar": 55
+        "working": 40,
+        "calendar": 56
       },
       "invoiceMarker": null
     },
@@ -17563,23 +17563,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 23,
+          "totalDays": 24,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 23,
-          "totalCalDays": 33,
+          "activeDays": 24,
+          "totalCalDays": 34,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 33,
+          "activeCalDays": 34,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 23,
+          "waitingOnClientDays": 24,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Rev A Drawing sent",
           "since": "2026-10-29",
-          "days": 18,
-          "calDays": 26
+          "days": 19,
+          "calDays": 27
         },
         "stays": [
           {
@@ -17603,26 +17603,26 @@
             "position": "T",
             "from": "2026-10-29",
             "to": null,
-            "days": 18,
-            "calDays": 26
+            "days": 19,
+            "calDays": 27
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 23,
-          "calDays": 33
+          "days": 24,
+          "calDays": 34
         }
       },
       "jobTimes": {
         "depositPaid": "2026-10-19",
         "until": null,
-        "days": 26,
-        "calDays": 36
+        "days": 27,
+        "calDays": 37
       },
       "stageDays": {
-        "working": 23,
-        "calendar": 33
+        "working": 24,
+        "calendar": 34
       },
       "invoiceMarker": null
     },
@@ -17685,23 +17685,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 13,
+          "totalDays": 14,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 13,
-          "totalCalDays": 19,
+          "activeDays": 14,
+          "totalCalDays": 20,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 19,
+          "activeCalDays": 20,
           "waitingOnUsDays": 5,
-          "waitingOnClientDays": 8,
+          "waitingOnClientDays": 9,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Rev A Drawing sent",
           "since": "2026-11-19",
-          "days": 3,
-          "calDays": 5
+          "days": 4,
+          "calDays": 6
         },
         "stays": [
           {
@@ -17741,26 +17741,26 @@
             "position": "T",
             "from": "2026-11-19",
             "to": null,
-            "days": 3,
-            "calDays": 5
+            "days": 4,
+            "calDays": 6
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 13,
-          "calDays": 19
+          "days": 14,
+          "calDays": 20
         }
       },
       "jobTimes": {
         "depositPaid": "2026-10-30",
         "until": null,
-        "days": 17,
-        "calDays": 25
+        "days": 18,
+        "calDays": 26
       },
       "stageDays": {
-        "working": 13,
-        "calendar": 19
+        "working": 14,
+        "calendar": 20
       },
       "invoiceMarker": null
     },
@@ -17823,23 +17823,23 @@
         "scheduling": {
           "released": null,
           "running": true,
-          "totalDays": 14,
+          "totalDays": 15,
           "onHoldClientDays": 0,
           "onHoldLongdenDays": 0,
-          "activeDays": 14,
-          "totalCalDays": 20,
+          "activeDays": 15,
+          "totalCalDays": 21,
           "onHoldClientCalDays": 0,
           "onHoldLongdenCalDays": 0,
-          "activeCalDays": 20,
+          "activeCalDays": 21,
           "waitingOnUsDays": 0,
-          "waitingOnClientDays": 14,
+          "waitingOnClientDays": 15,
           "holdsKnown": true
         },
         "currentStatus": {
           "name": "Waiting for Structural Openings",
           "since": "2026-11-17",
-          "days": 5,
-          "calDays": 7
+          "days": 6,
+          "calDays": 8
         },
         "stays": [
           {
@@ -17863,26 +17863,26 @@
             "position": "T",
             "from": "2026-11-17",
             "to": null,
-            "days": 5,
-            "calDays": 7
+            "days": 6,
+            "calDays": 8
           }
         ],
         "withUs": {
           "until": null,
           "how": "running",
-          "days": 14,
-          "calDays": 20
+          "days": 15,
+          "calDays": 21
         }
       },
       "jobTimes": {
         "depositPaid": "2026-10-30",
         "until": null,
-        "days": 17,
-        "calDays": 25
+        "days": 18,
+        "calDays": 26
       },
       "stageDays": {
-        "working": 14,
-        "calendar": 20
+        "working": 15,
+        "calendar": 21
       },
       "invoiceMarker": null
     },
@@ -17946,8 +17946,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 78,
-        "calendar": 111
+        "working": 79,
+        "calendar": 112
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18038,8 +18038,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 72,
-        "calendar": 103
+        "working": 73,
+        "calendar": 104
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18130,8 +18130,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 63,
-        "calendar": 90
+        "working": 64,
+        "calendar": 91
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18222,8 +18222,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 34,
-        "calendar": 48
+        "working": 35,
+        "calendar": 49
       },
       "invoiceMarker": "Overdue",
       "cnc": {
@@ -18314,8 +18314,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 33,
-        "calendar": 47
+        "working": 34,
+        "calendar": 48
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18406,8 +18406,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 24,
-        "calendar": 34
+        "working": 25,
+        "calendar": 35
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18498,8 +18498,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 12,
-        "calendar": 18
+        "working": 13,
+        "calendar": 19
       },
       "invoiceMarker": "Due",
       "cnc": {
@@ -18601,8 +18601,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
       },
       "invoiceMarker": "Due",
       "cnc": {
@@ -18693,8 +18693,8 @@
         "level": "amber"
       },
       "stageDays": {
-        "working": 59,
-        "calendar": 83
+        "working": 60,
+        "calendar": 84
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18796,8 +18796,8 @@
         "level": "amber"
       },
       "stageDays": {
-        "working": 55,
-        "calendar": 77
+        "working": 56,
+        "calendar": 78
       },
       "invoiceMarker": "Overdue",
       "cnc": {
@@ -18876,8 +18876,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 46,
-        "calendar": 64
+        "working": 47,
+        "calendar": 65
       },
       "invoiceMarker": null,
       "cnc": {
@@ -18956,8 +18956,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 40,
-        "calendar": 56
+        "working": 41,
+        "calendar": 57
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19036,8 +19036,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 39,
-        "calendar": 55
+        "working": 40,
+        "calendar": 56
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19116,8 +19116,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 39,
-        "calendar": 55
+        "working": 40,
+        "calendar": 56
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19196,8 +19196,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 36,
-        "calendar": 50
+        "working": 37,
+        "calendar": 51
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19276,8 +19276,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 35,
-        "calendar": 49
+        "working": 36,
+        "calendar": 50
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19356,8 +19356,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 29,
-        "calendar": 41
+        "working": 30,
+        "calendar": 42
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19436,8 +19436,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 28,
-        "calendar": 40
+        "working": 29,
+        "calendar": 41
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19516,8 +19516,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 24,
-        "calendar": 34
+        "working": 25,
+        "calendar": 35
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19596,8 +19596,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 23,
-        "calendar": 33
+        "working": 24,
+        "calendar": 34
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19676,8 +19676,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 20,
-        "calendar": 28
+        "working": 21,
+        "calendar": 29
       },
       "invoiceMarker": "Due",
       "cnc": {
@@ -19756,8 +19756,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 19,
-        "calendar": 27
+        "working": 20,
+        "calendar": 28
       },
       "invoiceMarker": null,
       "cnc": {
@@ -19848,8 +19848,8 @@
         "level": "green"
       },
       "stageDays": {
-        "working": 1,
-        "calendar": 1
+        "working": 2,
+        "calendar": 2
       },
       "invoiceMarker": "Due",
       "cnc": {
@@ -19928,8 +19928,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 55,
-        "calendar": 77
+        "working": 56,
+        "calendar": 78
       },
       "invoiceMarker": null
     },
@@ -19981,8 +19981,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 55,
-        "calendar": 77
+        "working": 56,
+        "calendar": 78
       },
       "invoiceMarker": null
     },
@@ -20046,8 +20046,8 @@
         "level": "red"
       },
       "stageDays": {
-        "working": 3,
-        "calendar": 5
+        "working": 4,
+        "calendar": 6
       },
       "invoiceMarker": null,
       "cnc": {
@@ -20138,8 +20138,8 @@
         "level": "amber"
       },
       "stageDays": {
-        "working": 107,
-        "calendar": 152
+        "working": 108,
+        "calendar": 153
       },
       "invoiceMarker": null,
       "cnc": {
@@ -20230,8 +20230,8 @@
         "level": "amber"
       },
       "stageDays": {
-        "working": 21,
-        "calendar": 29
+        "working": 22,
+        "calendar": 30
       },
       "invoiceMarker": null
     },
@@ -20285,8 +20285,8 @@
         "level": null
       },
       "stageDays": {
-        "working": 27,
-        "calendar": 39
+        "working": 28,
+        "calendar": 40
       },
       "invoiceMarker": null
     }
