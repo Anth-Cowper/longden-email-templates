@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T10:05:23.962Z",
+  "generatedAt": "2026-11-25T10:10:24.523Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12989,252 +12989,6 @@
       "jobNumber": "117245",
       "projectName": "71 Gloucester Place",
       "companyName": "GD Construction Ltd",
-      "value": 10296.3,
-      "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "D",
-      "remake": false,
-      "orderDate": "2026-07-06T00:00:00.000Z",
-      "orderTriggeredAt": "2026-07-06T16:26:55.777Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": "2026-07-07T00:00:00.000Z",
-      "estimatedSignOff": "2026-11-16T00:00:00.000Z",
-      "jobSummaryText": "10 Leaves, 9 Frames, 1 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood)",
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": "Beef",
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": "Beth Oliver-Williams",
-      "schedulingStatusName": "Production ticket check complete",
-      "schedulingPosition": "U",
-      "percentComplete": 100,
-      "quoteDateReceived": null,
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [],
-      "quoteRevision": null,
-      "stage": "Scheduling",
-      "phaseId": 1005,
-      "phaseNumber": "2",
-      "sortDate": "2026-07-07T00:00:00.000Z",
-      "stageEnteredAt": "2026-09-07",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 193541,
-            "action": "re-run through claude",
-            "target": null,
-            "assignedTo": "Anth",
-            "createdAt": "2026-11-23T08:48:51Z",
-            "completeBy": "2026-11-24",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          }
-        ],
-        "level": "red"
-      },
-      "phaseTimes": {
-        "projectId": 1448,
-        "job": "117245",
-        "project": "71 Gloucester Place",
-        "phase": "2",
-        "value": 10296.3,
-        "start": "2026-09-07",
-        "startedBy": "added",
-        "cancelled": false,
-        "scheduling": {
-          "released": null,
-          "running": true,
-          "totalDays": 57,
-          "onHoldClientDays": 0,
-          "onHoldLongdenDays": 0,
-          "activeDays": 57,
-          "totalCalDays": 79,
-          "onHoldClientCalDays": 0,
-          "onHoldLongdenCalDays": 0,
-          "activeCalDays": 79,
-          "waitingOnUsDays": 15,
-          "waitingOnClientDays": 42,
-          "holdsKnown": true
-        },
-        "currentStatus": {
-          "name": "Production ticket check complete",
-          "since": "2026-11-25",
-          "days": 0,
-          "calDays": 0
-        },
-        "stays": [
-          {
-            "status": "Rev A Drawing in Process",
-            "position": "U",
-            "from": "2026-09-07",
-            "to": "2026-09-10",
-            "days": 3,
-            "calDays": 3
-          },
-          {
-            "status": "Rev A Drawing sent",
-            "position": "T",
-            "from": "2026-09-10",
-            "to": "2026-09-29",
-            "days": 13,
-            "calDays": 19
-          },
-          {
-            "status": "Redrawing following Comments [1]",
-            "position": "U",
-            "from": "2026-09-29",
-            "to": "2026-09-29",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Revised drawings sent [1]",
-            "position": "T",
-            "from": "2026-09-29",
-            "to": "2026-10-28",
-            "days": 21,
-            "calDays": 29
-          },
-          {
-            "status": "Redrawing to Templates [2]",
-            "position": "U",
-            "from": "2026-10-28",
-            "to": "2026-10-28",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Revised drawings sent [2]",
-            "position": "T",
-            "from": "2026-10-28",
-            "to": "2026-11-04",
-            "days": 5,
-            "calDays": 7
-          },
-          {
-            "status": "Redrawing With Mouldings [3]",
-            "position": "U",
-            "from": "2026-11-04",
-            "to": "2026-11-06",
-            "days": 2,
-            "calDays": 2
-          },
-          {
-            "status": "Revised drawings sent [3]",
-            "position": "T",
-            "from": "2026-11-06",
-            "to": "2026-11-09",
-            "days": 1,
-            "calDays": 3
-          },
-          {
-            "status": "Final Approval",
-            "position": "T",
-            "from": "2026-11-09",
-            "to": "2026-11-11",
-            "days": 2,
-            "calDays": 2
-          },
-          {
-            "status": "Signed off into Production",
-            "position": "U",
-            "from": "2026-11-11",
-            "to": "2026-11-17",
-            "days": 4,
-            "calDays": 6
-          },
-          {
-            "status": "Manufacturing Paperwork Produced",
-            "position": "U",
-            "from": "2026-11-17",
-            "to": "2026-11-17",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Pre-release handover meeting",
-            "position": "U",
-            "from": "2026-11-17",
-            "to": "2026-11-18",
-            "days": 1,
-            "calDays": 1
-          },
-          {
-            "status": "Manufacturing Paperwork Produced",
-            "position": "U",
-            "from": "2026-11-18",
-            "to": "2026-11-18",
-            "days": 0,
-            "calDays": 0
-          },
-          {
-            "status": "Production Ticket Check",
-            "position": "U",
-            "from": "2026-11-18",
-            "to": "2026-11-20",
-            "days": 2,
-            "calDays": 2
-          },
-          {
-            "status": "Production ticket check complete",
-            "position": "U",
-            "from": "2026-11-20",
-            "to": "2026-11-23",
-            "days": 1,
-            "calDays": 3
-          },
-          {
-            "status": "Production Ticket Check",
-            "position": "U",
-            "from": "2026-11-23",
-            "to": "2026-11-25",
-            "days": 2,
-            "calDays": 2
-          },
-          {
-            "status": "Production ticket check complete",
-            "position": "U",
-            "from": "2026-11-25",
-            "to": null,
-            "days": 0,
-            "calDays": 0
-          }
-        ],
-        "withUs": {
-          "until": null,
-          "how": "running",
-          "days": 57,
-          "calDays": 79
-        }
-      },
-      "jobTimes": {
-        "depositPaid": "2026-07-07",
-        "until": null,
-        "days": 100,
-        "calDays": 141
-      },
-      "stageDays": {
-        "working": 57,
-        "calendar": 79
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1448,
-      "jobNumber": "117245",
-      "projectName": "71 Gloucester Place",
-      "companyName": "GD Construction Ltd",
       "value": 28226.18,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "F",
@@ -13274,19 +13028,7 @@
       "flagged": {
         "statusFlag": "Production Ticket Check",
         "statusSince": "2026-11-23T08:28:44Z",
-        "openNotes": [
-          {
-            "id": 193539,
-            "action": "Re-run through Claude",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-11-23T08:29:18Z",
-            "completeBy": "2026-11-24",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          }
-        ],
+        "openNotes": [],
         "level": "red"
       },
       "phaseTimes": {
@@ -15793,6 +15535,240 @@
             "to": null,
             "days": 5,
             "calDays": 7
+          }
+        ],
+        "withUs": {
+          "until": null,
+          "how": "running",
+          "days": 57,
+          "calDays": 79
+        }
+      },
+      "jobTimes": {
+        "depositPaid": "2026-07-07",
+        "until": null,
+        "days": 100,
+        "calDays": 141
+      },
+      "stageDays": {
+        "working": 57,
+        "calendar": 79
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1448,
+      "jobNumber": "117245",
+      "projectName": "71 Gloucester Place",
+      "companyName": "GD Construction Ltd",
+      "value": 10296.3,
+      "phaseStatus": "Scheduling WIP",
+      "drawingRevision": "D",
+      "remake": false,
+      "orderDate": "2026-07-06T00:00:00.000Z",
+      "orderTriggeredAt": "2026-07-06T16:26:55.777Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": "2026-07-07T00:00:00.000Z",
+      "estimatedSignOff": "2026-11-16T00:00:00.000Z",
+      "jobSummaryText": "10 Leaves, 9 Frames, 1 Miscellaneous",
+      "materialSummaryText": "Poplar (Tulipwood)",
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": "Beef",
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": "Beth Oliver-Williams",
+      "schedulingStatusName": "Production ticket check complete",
+      "schedulingPosition": "U",
+      "percentComplete": 100,
+      "quoteDateReceived": null,
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [],
+      "quoteRevision": null,
+      "stage": "Scheduling",
+      "phaseId": 1005,
+      "phaseNumber": "2",
+      "sortDate": "2026-07-07T00:00:00.000Z",
+      "stageEnteredAt": "2026-09-07",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [],
+        "level": null
+      },
+      "phaseTimes": {
+        "projectId": 1448,
+        "job": "117245",
+        "project": "71 Gloucester Place",
+        "phase": "2",
+        "value": 10296.3,
+        "start": "2026-09-07",
+        "startedBy": "added",
+        "cancelled": false,
+        "scheduling": {
+          "released": null,
+          "running": true,
+          "totalDays": 57,
+          "onHoldClientDays": 0,
+          "onHoldLongdenDays": 0,
+          "activeDays": 57,
+          "totalCalDays": 79,
+          "onHoldClientCalDays": 0,
+          "onHoldLongdenCalDays": 0,
+          "activeCalDays": 79,
+          "waitingOnUsDays": 15,
+          "waitingOnClientDays": 42,
+          "holdsKnown": true
+        },
+        "currentStatus": {
+          "name": "Production ticket check complete",
+          "since": "2026-11-25",
+          "days": 0,
+          "calDays": 0
+        },
+        "stays": [
+          {
+            "status": "Rev A Drawing in Process",
+            "position": "U",
+            "from": "2026-09-07",
+            "to": "2026-09-10",
+            "days": 3,
+            "calDays": 3
+          },
+          {
+            "status": "Rev A Drawing sent",
+            "position": "T",
+            "from": "2026-09-10",
+            "to": "2026-09-29",
+            "days": 13,
+            "calDays": 19
+          },
+          {
+            "status": "Redrawing following Comments [1]",
+            "position": "U",
+            "from": "2026-09-29",
+            "to": "2026-09-29",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Revised drawings sent [1]",
+            "position": "T",
+            "from": "2026-09-29",
+            "to": "2026-10-28",
+            "days": 21,
+            "calDays": 29
+          },
+          {
+            "status": "Redrawing to Templates [2]",
+            "position": "U",
+            "from": "2026-10-28",
+            "to": "2026-10-28",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Revised drawings sent [2]",
+            "position": "T",
+            "from": "2026-10-28",
+            "to": "2026-11-04",
+            "days": 5,
+            "calDays": 7
+          },
+          {
+            "status": "Redrawing With Mouldings [3]",
+            "position": "U",
+            "from": "2026-11-04",
+            "to": "2026-11-06",
+            "days": 2,
+            "calDays": 2
+          },
+          {
+            "status": "Revised drawings sent [3]",
+            "position": "T",
+            "from": "2026-11-06",
+            "to": "2026-11-09",
+            "days": 1,
+            "calDays": 3
+          },
+          {
+            "status": "Final Approval",
+            "position": "T",
+            "from": "2026-11-09",
+            "to": "2026-11-11",
+            "days": 2,
+            "calDays": 2
+          },
+          {
+            "status": "Signed off into Production",
+            "position": "U",
+            "from": "2026-11-11",
+            "to": "2026-11-17",
+            "days": 4,
+            "calDays": 6
+          },
+          {
+            "status": "Manufacturing Paperwork Produced",
+            "position": "U",
+            "from": "2026-11-17",
+            "to": "2026-11-17",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Pre-release handover meeting",
+            "position": "U",
+            "from": "2026-11-17",
+            "to": "2026-11-18",
+            "days": 1,
+            "calDays": 1
+          },
+          {
+            "status": "Manufacturing Paperwork Produced",
+            "position": "U",
+            "from": "2026-11-18",
+            "to": "2026-11-18",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Production Ticket Check",
+            "position": "U",
+            "from": "2026-11-18",
+            "to": "2026-11-20",
+            "days": 2,
+            "calDays": 2
+          },
+          {
+            "status": "Production ticket check complete",
+            "position": "U",
+            "from": "2026-11-20",
+            "to": "2026-11-23",
+            "days": 1,
+            "calDays": 3
+          },
+          {
+            "status": "Production Ticket Check",
+            "position": "U",
+            "from": "2026-11-23",
+            "to": "2026-11-25",
+            "days": 2,
+            "calDays": 2
+          },
+          {
+            "status": "Production ticket check complete",
+            "position": "U",
+            "from": "2026-11-25",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
