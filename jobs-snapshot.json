@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T14:55:15.338Z",
+  "generatedAt": "2026-11-25T15:00:15.362Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16360,7 +16360,7 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Manufacturing Paperwork Produced",
+      "schedulingStatusName": "Pre-release handover meeting",
       "schedulingPosition": "U",
       "percentComplete": 95,
       "quoteDateReceived": null,
@@ -16404,7 +16404,7 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Manufacturing Paperwork Produced",
+          "name": "Pre-release handover meeting",
           "since": "2026-11-25",
           "days": 0,
           "calDays": 0
@@ -16516,6 +16516,14 @@
           },
           {
             "status": "Manufacturing Paperwork Produced",
+            "position": "U",
+            "from": "2026-11-25",
+            "to": "2026-11-25",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Pre-release handover meeting",
             "position": "U",
             "from": "2026-11-25",
             "to": null,
