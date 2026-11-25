@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T10:10:24.523Z",
+  "generatedAt": "2026-11-25T10:30:24.230Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -17776,9 +17776,9 @@
       "schedulerName": "Toe-knee",
       "estimatorFullName": "Alfie Price",
       "schedulerFullName": "Tony Oliver",
-      "schedulingStatusName": "Waiting for Structural Openings",
-      "schedulingPosition": "T",
-      "percentComplete": 11,
+      "schedulingStatusName": "Rev A Drawing in Process",
+      "schedulingPosition": "U",
+      "percentComplete": 16,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -17820,10 +17820,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Waiting for Structural Openings",
-          "since": "2026-11-17",
-          "days": 6,
-          "calDays": 8
+          "name": "Rev A Drawing in Process",
+          "since": "2026-11-25",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -17846,9 +17846,17 @@
             "status": "Waiting for Structural Openings",
             "position": "T",
             "from": "2026-11-17",
-            "to": null,
+            "to": "2026-11-25",
             "days": 6,
             "calDays": 8
+          },
+          {
+            "status": "Rev A Drawing in Process",
+            "position": "U",
+            "from": "2026-11-25",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
