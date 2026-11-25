@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T11:05:15.305Z",
+  "generatedAt": "2026-11-25T11:25:15.749Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -18665,6 +18665,17 @@
             "target": null,
             "assignedTo": null,
             "createdAt": "2026-11-11T15:27:31Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          },
+          {
+            "id": 203870,
+            "action": "Pallet 3_rev1 ready for delivery (Phs1) - 16 items, sent by Glenda Bousfield",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-25T11:23:35Z",
             "completeBy": null,
             "kind": "task",
             "level": "amber",
