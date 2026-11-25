@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T11:25:15.749Z",
+  "generatedAt": "2026-11-25T11:40:15.324Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -19523,7 +19523,7 @@
       "projectName": "Manchester Town Hall (Our Town Hall - Doorsets)",
       "companyName": "Gariff Construction Ltd",
       "value": 119188.38,
-      "phaseStatus": "Planning Pool",
+      "phaseStatus": "Manufacture",
       "drawingRevision": "C",
       "remake": false,
       "orderDate": "2026-02-13T00:00:00.000Z",
