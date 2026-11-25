@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T09:05:23.903Z",
+  "generatedAt": "2026-11-25T09:55:24.117Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16547,7 +16547,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-09T00:00:00.000Z",
       "estimatedSignOff": "2026-11-24T00:00:00.000Z",
-      "jobSummaryText": "4 Leaves, 1 Overpanel, 4 Frames, 1 Miscellaneous",
+      "jobSummaryText": "4 Leaves, 1 Overpanel, 4 Frames, 2 Miscellaneous",
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George",
       "priceOrder": null,
