@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T11:55:15.731Z",
+  "generatedAt": "2026-11-25T12:00:15.515Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,6 +11,62 @@
     "Disputed"
   ],
   "boardRows": [
+    {
+      "projectId": 1974,
+      "jobNumber": "117772",
+      "projectName": "Barry Dock Office",
+      "companyName": "Alwyn Jones Architects",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-06-23T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-05T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-06-30T00:00:00.000Z",
+      "quotedCompanies": [
+        "Alwyn Jones Architects"
+      ],
+      "quoteRevision": null,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-05T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-06-23T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [],
+        "level": null
+      },
+      "stageDays": {
+        "working": 110,
+        "calendar": 155
+      },
+      "invoiceMarker": null
+    },
     {
       "projectId": 161596,
       "jobNumber": "117903",
@@ -233,6 +289,62 @@
       "stageDays": {
         "working": 2,
         "calendar": 2
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1974,
+      "jobNumber": "117772",
+      "projectName": "Barry Dock Office",
+      "companyName": "Knox & Wells",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-25T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-15T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-02T00:00:00.000Z",
+      "quotedCompanies": [
+        "Knox & Wells"
+      ],
+      "quoteRevision": null,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-15T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-25T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [],
+        "level": null
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
