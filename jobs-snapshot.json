@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:36:40.235Z",
+  "generatedAt": "2026-11-26T15:56:40.103Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16320,7 +16320,7 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Revised drawings sent [6]",
+      "schedulingStatusName": "Final Approval",
       "schedulingPosition": "T",
       "percentComplete": 95,
       "quoteDateReceived": null,
@@ -16364,7 +16364,7 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Revised drawings sent [6]",
+          "name": "Final Approval",
           "since": "2026-11-26",
           "days": 0,
           "calDays": 0
@@ -16500,6 +16500,14 @@
           },
           {
             "status": "Revised drawings sent [6]",
+            "position": "T",
+            "from": "2026-11-26",
+            "to": "2026-11-26",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Final Approval",
             "position": "T",
             "from": "2026-11-26",
             "to": null,
@@ -18997,7 +19005,7 @@
         "working": 30,
         "calendar": 42
       },
-      "invoiceMarker": null,
+      "invoiceMarker": "Invoiced",
       "cnc": {
         "status": "done",
         "statusLabel": "CNC complete",
