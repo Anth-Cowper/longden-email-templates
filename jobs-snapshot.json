@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:21:40.011Z",
+  "generatedAt": "2026-11-26T10:36:40.036Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16427,7 +16427,7 @@
       "jobNumber": "117730",
       "projectName": "12A St Vincent Street",
       "companyName": "Invicta Construction Ltd",
-      "value": 12200.52,
+      "value": 12200.51,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "C",
       "remake": false,
@@ -16474,7 +16474,7 @@
         "job": "117730",
         "project": "12A St Vincent Street",
         "phase": "1",
-        "value": 12200.52,
+        "value": 12200.51,
         "start": "2026-09-11",
         "startedBy": "added",
         "cancelled": false,
