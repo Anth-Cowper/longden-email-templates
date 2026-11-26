@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:41:40.049Z",
+  "generatedAt": "2026-11-26T09:26:40.037Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14178,7 +14178,7 @@
       "jobNumber": "117072",
       "projectName": "38 Chelsea Square",
       "companyName": "Verve Concepts",
-      "value": 43885.91,
+      "value": 43486.23,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "G",
       "remake": false,
@@ -14194,7 +14194,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2025-12-04T00:00:00.000Z",
       "estimatedSignOff": "2026-11-27T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 19 Frames, 1 Miscellaneous",
+      "jobSummaryText": "18 Frames, 1 Miscellaneous",
       "materialSummaryText": "European Oak, Poplar (Tulipwood), Flush",
       "estimatorName": "George",
       "priceOrder": null,
@@ -14225,7 +14225,7 @@
         "job": "117072",
         "project": "38 Chelsea Square",
         "phase": "1",
-        "value": 43885.91,
+        "value": 43486.23,
         "start": "2025-12-16",
         "startedBy": "added",
         "cancelled": false,
