@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T12:36:40.154Z",
+  "generatedAt": "2026-11-26T12:56:40.004Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -12919,7 +12919,7 @@
       "jobNumber": "117578",
       "projectName": "Little Blunts Farm",
       "companyName": "Southern Contract Services",
-      "value": 0,
+      "value": 0.02,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": null,
       "remake": true,
@@ -12978,7 +12978,7 @@
         "job": "117578",
         "project": "Little Blunts Farm",
         "phase": "8",
-        "value": 0,
+        "value": 0.02,
         "start": "2026-11-26",
         "startedBy": "added",
         "cancelled": false,
@@ -13359,7 +13359,7 @@
       "companyName": "Spratley & Partners",
       "value": 25941.88,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "M",
+      "drawingRevision": "O",
       "remake": false,
       "orderDate": "2024-02-27T00:00:00.000Z",
       "orderTriggeredAt": "2024-02-27T10:40:16.930Z",
