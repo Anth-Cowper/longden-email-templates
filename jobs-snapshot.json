@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:56:40.000Z",
+  "generatedAt": "2026-11-26T10:01:40.012Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -17009,7 +17009,7 @@
       "jobNumber": "117827",
       "projectName": "5 Denmark Street",
       "companyName": "Sterling Property Holdings Ltd",
-      "value": 24447.85,
+      "value": 22479.4,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "C",
       "remake": false,
@@ -17025,7 +17025,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-25T00:00:00.000Z",
       "estimatedSignOff": "2026-12-04T00:00:00.000Z",
-      "jobSummaryText": "2 Leaves, 17 Frames, 1 Miscellaneous",
+      "jobSummaryText": "2 Leaves, 16 Frames, 1 Miscellaneous",
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "Alfie Price",
       "priceOrder": null,
@@ -17056,7 +17056,7 @@
         "job": "117827",
         "project": "5 Denmark Street",
         "phase": "1",
-        "value": 24447.85,
+        "value": 22479.4,
         "start": "2026-09-25",
         "startedBy": "deposit",
         "cancelled": false,
