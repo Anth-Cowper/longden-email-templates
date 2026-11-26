@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:46:40.283Z",
+  "generatedAt": "2026-11-26T14:56:40.387Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -14351,7 +14351,7 @@
       "companyName": "Verve Concepts",
       "value": 43486.23,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "G",
+      "drawingRevision": "H",
       "remake": false,
       "orderDate": "2025-11-24T00:00:00.000Z",
       "orderTriggeredAt": "2025-11-24T17:21:01.299Z",
