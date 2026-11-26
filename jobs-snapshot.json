@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:31:40.050Z",
+  "generatedAt": "2026-11-26T15:36:40.235Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,73 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 1998,
-      "jobNumber": "117796",
-      "projectName": "34 Berkeley Square",
-      "companyName": "Urban Interior Solutions",
-      "value": null,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": "2026-10-16T10:02:52.003Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": null,
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-20T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
-      "quotedCompanies": [
-        "Urban Interior Solutions"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-10-20T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": "crm-8936",
-            "action": "CRM Telephone Call - Urban Interior Solutions",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-10-16T10:02:52.003Z",
-            "completeBy": "2026-10-23",
-            "kind": "crm",
-            "level": "red"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 0,
-        "calendar": 0
-      },
-      "invoiceMarker": null
-    },
     {
       "projectId": 98060,
       "jobNumber": "117886",
@@ -146,6 +79,73 @@
             "completeBy": "2026-12-09",
             "kind": "crm",
             "level": "green"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1998,
+      "jobNumber": "117796",
+      "projectName": "34 Berkeley Square",
+      "companyName": "Urban Interior Solutions",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": "2026-10-16T10:02:52.003Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-12T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
+      "quotedCompanies": [
+        "Urban Interior Solutions"
+      ],
+      "quoteRevision": null,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-12T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": "crm-8936",
+            "action": "CRM Telephone Call - Urban Interior Solutions",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-10-16T10:02:52.003Z",
+            "completeBy": "2026-10-23",
+            "kind": "crm",
+            "level": "red"
           }
         ],
         "level": "red"
@@ -242,6 +242,84 @@
       "stageDays": {
         "working": 3,
         "calendar": 3
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1848,
+      "jobNumber": "117646",
+      "projectName": "55-57 Onslow Square",
+      "companyName": "LDB Construction UK Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-12T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
+      "quotedCompanies": [
+        "LDB Construction UK Ltd"
+      ],
+      "quoteRevision": null,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-12T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169120,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-12-02",
+            "kind": "todo",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8705",
+            "action": "CRM event - LDB Construction UK Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-08-19T07:57:59.561Z",
+            "completeBy": "2026-12-02",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
@@ -10520,84 +10598,6 @@
       "stageDays": {
         "working": 143,
         "calendar": 203
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1848,
-      "jobNumber": "117646",
-      "projectName": "55-57 Onslow Square",
-      "companyName": "LDB Construction UK Ltd",
-      "value": 92816.52,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-10-27T09:35:11.417Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "43 Doors, 27 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "madi",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Madi Glen",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-10-27T00:00:00.000Z",
-      "quoteEstReturnDate": null,
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "LDB Construction UK Ltd"
-      ],
-      "quoteRevision": 2,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-03-05T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-10-27T09:35:11.417Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169120,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-12-02",
-            "kind": "todo",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8705",
-            "action": "CRM event - LDB Construction UK Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-08-19T07:57:59.561Z",
-            "completeBy": "2026-12-02",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 22,
-        "calendar": 30
       },
       "invoiceMarker": null
     },
