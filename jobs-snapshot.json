@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T02:36:35.900Z",
+  "generatedAt": "2026-11-26T02:41:39.976Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16353,7 +16353,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-09T00:00:00.000Z",
       "estimatedSignOff": "2026-11-24T00:00:00.000Z",
-      "jobSummaryText": "4 Leaves, 1 Overpanel, 4 Frames, 2 Miscellaneous",
+      "jobSummaryText": "4 Leaves, 4 Frames, 3 Miscellaneous",
       "materialSummaryText": "Accoya, Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": "George",
       "priceOrder": null,
@@ -19729,7 +19729,7 @@
       "remake": false,
       "orderDate": "2026-07-06T00:00:00.000Z",
       "orderTriggeredAt": "2026-07-06T16:26:55.777Z",
-      "releasedAt": null,
+      "releasedAt": "2026-11-25T14:37:42.030Z",
       "deliveryDate": "2027-01-11T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -19757,8 +19757,8 @@
       "stage": "Production",
       "phaseId": 843,
       "phaseNumber": "1",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-11-25T14:37:42.030Z",
+      "stageEnteredAt": "2026-11-25T14:37:42.030Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -19777,7 +19777,10 @@
         ],
         "level": "green"
       },
-      "stageDays": null,
+      "stageDays": {
+        "working": 1,
+        "calendar": 1
+      },
       "invoiceMarker": null,
       "cnc": {
         "status": "todo",
