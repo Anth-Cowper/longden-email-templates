@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:36:40.142Z",
+  "generatedAt": "2026-11-26T09:56:40.000Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,6 +11,73 @@
     "Disputed"
   ],
   "boardRows": [
+    {
+      "projectId": 1998,
+      "jobNumber": "117796",
+      "projectName": "34 Berkeley Square",
+      "companyName": "Urban Interior Solutions",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": "2026-10-16T10:02:52.003Z",
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-10-20T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
+      "quotedCompanies": [
+        "Urban Interior Solutions"
+      ],
+      "quoteRevision": null,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-10-20T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": "crm-8936",
+            "action": "CRM Telephone Call - Urban Interior Solutions",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-10-16T10:02:52.003Z",
+            "completeBy": "2026-10-23",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
+      "invoiceMarker": null
+    },
     {
       "projectId": 106584,
       "jobNumber": "117895",
@@ -20187,61 +20254,6 @@
         "calendar": 31
       },
       "invoiceMarker": null
-    },
-    {
-      "projectId": 1998,
-      "jobNumber": "117796",
-      "projectName": "34 Berkeley Square",
-      "companyName": "Urban Interior Solutions",
-      "value": 15543.21,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": "2026-10-16T00:00:00.000Z",
-      "orderTriggeredAt": "2026-10-16T10:02:52.003Z",
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-10-09T11:24:02.910Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "8 Leaves, 4 Frames, 7 Miscellaneous",
-      "materialSummaryText": "Poplar (Tulipwood), Sapele",
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-07-29T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-10-08T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Urban Interior Solutions"
-      ],
-      "quoteRevision": 0,
-      "stage": "Orders",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-10-16T00:00:00.000Z",
-      "stageEnteredAt": "2026-10-16T10:02:52.003Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [],
-        "level": null
-      },
-      "stageDays": {
-        "working": 29,
-        "calendar": 41
-      },
-      "invoiceMarker": null
     }
   ],
   "allJobs": [
@@ -29606,11 +29618,6 @@
       "companyName": null
     },
     {
-      "jobNumber": "117796",
-      "projectName": "34 Berkeley Square",
-      "companyName": "Urban Interior Solutions"
-    },
-    {
       "jobNumber": "117797",
       "projectName": "South Hill House",
       "companyName": null
@@ -29628,6 +29635,11 @@
     {
       "jobNumber": "117790",
       "projectName": "38 Portland Place & 9 Cavendish Mews North",
+      "companyName": null
+    },
+    {
+      "jobNumber": "117796",
+      "projectName": "34 Berkeley Square",
       "companyName": null
     },
     {
