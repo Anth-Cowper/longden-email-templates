@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:26:40.062Z",
+  "generatedAt": "2026-11-26T14:36:40.490Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -18814,8 +18814,20 @@
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
-        "openNotes": [],
-        "level": null
+        "openNotes": [
+          {
+            "id": 206459,
+            "action": "Pallet 2 ready for delivery (Phs1) - 32 items, sent by Glenda Bousfield",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-26T14:36:15Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          }
+        ],
+        "level": "amber"
       },
       "stageDays": {
         "working": 38,
