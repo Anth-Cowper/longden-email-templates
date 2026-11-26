@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:26:40.039Z",
+  "generatedAt": "2026-11-26T08:36:40.170Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,73 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 161596,
-      "jobNumber": "117903",
-      "projectName": "46 South Eaton Place",
-      "companyName": "Leconfield Property Group",
-      "value": 35846.95,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "24 Doors, 16 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Toe-knee",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Tony Oliver",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-24T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-15T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-12-01T00:00:00.000Z",
-      "quotedCompanies": [
-        "Leconfield Property Group"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-15T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-24T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": "crm-379045",
-            "action": "CRM event - Leconfield Property Group",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-24T15:30:23.341Z",
-            "completeBy": "2026-12-03",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 2,
-        "calendar": 2
-      },
-      "invoiceMarker": null
-    },
     {
       "projectId": 106584,
       "jobNumber": "117895",
@@ -4651,6 +4584,84 @@
       "stageDays": {
         "working": 4,
         "calendar": 6
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 161596,
+      "jobNumber": "117903",
+      "projectName": "46 South Eaton Place",
+      "companyName": "Leconfield Property Group",
+      "value": 35846.95,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-26T08:34:00Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "24 Doors, 16 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "Toe-knee",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "Tony Oliver",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-24T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-15T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Leconfield Property Group"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-24T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T08:34:00Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 206449,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-26T08:34:36Z",
+            "completeBy": "2026-12-03",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-379045",
+            "action": "CRM event - Leconfield Property Group",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-24T15:30:23.341Z",
+            "completeBy": "2026-12-03",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
