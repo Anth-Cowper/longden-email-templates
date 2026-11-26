@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:16:39.994Z",
+  "generatedAt": "2026-11-26T08:26:40.039Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -425,6 +425,95 @@
       "stageDays": {
         "working": 3,
         "calendar": 3
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 2033,
+      "jobNumber": "117831",
+      "projectName": "Blackburn College",
+      "companyName": "BAM Construction Ltd - Northern (Salford)",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
+      "quoteEstReturnDate": null,
+      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
+      "quotedCompanies": [
+        "BAM Construction Ltd - Northern (Salford)"
+      ],
+      "quoteRevision": 1,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": null,
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169078,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-09-17",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 196132,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-24T11:02:59Z",
+            "completeBy": "2026-12-01",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-8895",
+            "action": "CRM event - BAM Construction Ltd - Northern (Salford)",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-09-11T12:33:48.386Z",
+            "completeBy": "2026-11-24",
+            "kind": "crm",
+            "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
@@ -2099,95 +2188,6 @@
       "stageDays": {
         "working": 50,
         "calendar": 70
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 2033,
-      "jobNumber": "117831",
-      "projectName": "Blackburn College",
-      "companyName": "BAM Construction Ltd - Northern (Salford)",
-      "value": 96717.56,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-11-24T11:02:53Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "46 Doors, 26 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-19T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "BAM Construction Ltd - Northern (Salford)"
-      ],
-      "quoteRevision": 1,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-09-08T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-24T11:02:53Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169078,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-09-17",
-            "kind": "todo",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": 196132,
-            "action": "Quote follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-24T11:02:59Z",
-            "completeBy": "2026-12-01",
-            "kind": "task",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-8895",
-            "action": "CRM event - BAM Construction Ltd - Northern (Salford)",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-09-11T12:33:48.386Z",
-            "completeBy": "2026-11-24",
-            "kind": "crm",
-            "level": "red"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 2,
-        "calendar": 2
       },
       "invoiceMarker": null
     },
