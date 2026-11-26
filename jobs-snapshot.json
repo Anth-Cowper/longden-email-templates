@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:26:40.052Z",
+  "generatedAt": "2026-11-26T15:31:40.050Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -79,6 +79,173 @@
       "invoiceMarker": null
     },
     {
+      "projectId": 98060,
+      "jobNumber": "117886",
+      "projectName": "31 and 32 Charles II Place",
+      "companyName": "Celine Interior Design Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
+      "quotedCompanies": [
+        "Celine Interior Design Ltd"
+      ],
+      "quoteRevision": null,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-11T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169086,
+            "action": "Telephone Call",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-16",
+            "kind": "task",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-134971",
+            "action": "CRM Telephone Call - Celine Interior Design Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": null,
+            "completeBy": "2026-12-09",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 98109,
+      "jobNumber": "117890",
+      "projectName": "Kings Hall Leisure Centre",
+      "companyName": "Trinity Renovations",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-23T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-10T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-11-30T00:00:00.000Z",
+      "quotedCompanies": [
+        "Trinity Renovations"
+      ],
+      "quoteRevision": 1,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-10T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-23T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169131,
+            "action": "Telephone Call",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-12-02",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": 185820,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-20T08:32:25Z",
+            "completeBy": "2026-11-27",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          },
+          {
+            "id": "crm-134972",
+            "action": "CRM Telephone Call - Trinity Renovations",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": null,
+            "completeBy": "2026-12-02",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 3,
+        "calendar": 3
+      },
+      "invoiceMarker": null
+    },
+    {
       "projectId": 106584,
       "jobNumber": "117895",
       "projectName": "1 Wyndham Yard",
@@ -144,95 +311,6 @@
       "stageDays": {
         "working": 12,
         "calendar": 16
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 98109,
-      "jobNumber": "117890",
-      "projectName": "Kings Hall Leisure Centre",
-      "companyName": "Trinity Renovations",
-      "value": null,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": null,
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-23T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-15T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-30T00:00:00.000Z",
-      "quotedCompanies": [
-        "Trinity Renovations"
-      ],
-      "quoteRevision": 1,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-15T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-23T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169131,
-            "action": "Telephone Call",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-12-02",
-            "kind": "task",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": 185820,
-            "action": "Quote follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-20T08:32:25Z",
-            "completeBy": "2026-11-27",
-            "kind": "task",
-            "level": "green",
-            "lineTag": null
-          },
-          {
-            "id": "crm-134972",
-            "action": "CRM Telephone Call - Trinity Renovations",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": null,
-            "completeBy": "2026-12-02",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "green"
-      },
-      "stageDays": {
-        "working": 3,
-        "calendar": 3
       },
       "invoiceMarker": null
     },
@@ -1195,84 +1273,6 @@
             "assignedTo": "Saqib Sindhu",
             "createdAt": null,
             "completeBy": "2026-12-01",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 10,
-        "calendar": 14
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 98060,
-      "jobNumber": "117886",
-      "projectName": "31 and 32 Charles II Place",
-      "companyName": "Celine Interior Design Ltd",
-      "value": 25667.94,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-11-12T15:38:38.277Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "18 Doors, 16 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-12T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-09T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "Celine Interior Design Ltd"
-      ],
-      "quoteRevision": 1,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-06T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-12T15:38:38.277Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169086,
-            "action": "Telephone Call",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-16",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": "crm-134971",
-            "action": "CRM Telephone Call - Celine Interior Design Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": null,
-            "completeBy": "2026-12-09",
             "kind": "crm",
             "level": "green"
           }
@@ -20336,14 +20336,14 @@
       "companyName": null
     },
     {
-      "jobNumber": "117902",
-      "projectName": "60 Marlborough Place",
-      "companyName": "Griggs Homes"
-    },
-    {
       "jobNumber": "117886",
       "projectName": "31 and 32 Charles II Place",
       "companyName": null
+    },
+    {
+      "jobNumber": "117902",
+      "projectName": "60 Marlborough Place",
+      "companyName": "Griggs Homes"
     },
     {
       "jobNumber": "117878",
