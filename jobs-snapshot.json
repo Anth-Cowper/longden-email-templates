@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:41:40.024Z",
+  "generatedAt": "2026-11-26T14:46:40.283Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16299,7 +16299,7 @@
       "companyName": "Invicta Construction Ltd",
       "value": 12200.51,
       "phaseStatus": "Scheduling WIP",
-      "drawingRevision": "C",
+      "drawingRevision": "D",
       "remake": false,
       "orderDate": "2026-08-28T00:00:00.000Z",
       "orderTriggeredAt": "2026-08-28T10:28:27.349Z",
@@ -16320,8 +16320,8 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Pre-release handover meeting",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Revised drawings sent [6]",
+      "schedulingPosition": "T",
       "percentComplete": 95,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
@@ -16364,10 +16364,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Pre-release handover meeting",
-          "since": "2026-11-25",
-          "days": 1,
-          "calDays": 1
+          "name": "Revised drawings sent [6]",
+          "since": "2026-11-26",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -16486,9 +16486,25 @@
             "status": "Pre-release handover meeting",
             "position": "U",
             "from": "2026-11-25",
-            "to": null,
+            "to": "2026-11-26",
             "days": 1,
             "calDays": 1
+          },
+          {
+            "status": "Final Alterations",
+            "position": "U",
+            "from": "2026-11-26",
+            "to": "2026-11-26",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Revised drawings sent [6]",
+            "position": "T",
+            "from": "2026-11-26",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
