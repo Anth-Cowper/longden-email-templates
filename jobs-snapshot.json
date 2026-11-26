@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T02:41:39.976Z",
+  "generatedAt": "2026-11-26T08:16:39.994Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16,7 +16,7 @@
       "jobNumber": "117903",
       "projectName": "46 South Eaton Place",
       "companyName": "Leconfield Property Group",
-      "value": null,
+      "value": 35846.95,
       "phaseStatus": null,
       "drawingRevision": null,
       "remake": false,
@@ -32,7 +32,7 @@
       "quoteDateSent": null,
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "24 Doors, 16 Frames",
       "materialSummaryText": null,
       "estimatorName": "Toe-knee",
       "priceOrder": null,
@@ -301,63 +301,6 @@
       "stageDays": {
         "working": 1,
         "calendar": 1
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 150906,
-      "jobNumber": "117901",
-      "projectName": "Merchant House",
-      "companyName": "Tavener (CT & S) Joinery Ltd",
-      "value": 45259.66,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "37 Doors, 34 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "George",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "George Bramley",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-19T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-19T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-11-26T00:00:00.000Z",
-      "quotedCompanies": [
-        "Tavener (CT & S) Joinery Ltd"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-19T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-19T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [],
-        "level": null
-      },
-      "stageDays": {
-        "working": 5,
-        "calendar": 7
       },
       "invoiceMarker": null
     },
@@ -4708,6 +4651,75 @@
       "stageDays": {
         "working": 4,
         "calendar": 6
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 150906,
+      "jobNumber": "117901",
+      "projectName": "Merchant House",
+      "companyName": "Tavener (CT & S) Joinery Ltd",
+      "value": 45259.66,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": "2026-11-26T08:13:12Z",
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": "37 Doors, 34 Frames",
+      "materialSummaryText": null,
+      "estimatorName": "George",
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": "George Bramley",
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-19T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-19T00:00:00.000Z",
+      "quoteCustomerReturn": null,
+      "quotedCompanies": [
+        "Tavener (CT & S) Joinery Ltd"
+      ],
+      "quoteRevision": 0,
+      "clientRevision": false,
+      "stage": "Estimating",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-19T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T08:13:12Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 206448,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-26T08:13:36Z",
+            "completeBy": "2026-12-03",
+            "kind": "task",
+            "level": "green",
+            "lineTag": null
+          }
+        ],
+        "level": "green"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
