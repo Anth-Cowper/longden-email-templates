@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T16:21:40.545Z",
+  "generatedAt": "2026-11-26T16:26:40.111Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -110,7 +110,7 @@
       "schedulingPosition": null,
       "percentComplete": null,
       "quoteDateReceived": "2026-11-26T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-12T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-15T00:00:00.000Z",
       "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
       "quotedCompanies": [
         "Celine Interior Design Ltd"
@@ -120,7 +120,7 @@
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-11-12T00:00:00.000Z",
+      "sortDate": "2026-11-15T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-11-26T00:00:00.000Z",
       "flagged": {
