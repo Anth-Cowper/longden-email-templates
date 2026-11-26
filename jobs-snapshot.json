@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:56:40.387Z",
+  "generatedAt": "2026-11-26T15:01:40.066Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -13147,7 +13147,7 @@
       "jobNumber": "116573",
       "projectName": "King's Theatre",
       "companyName": "MMM Joinery",
-      "value": 0,
+      "value": 1279.63,
       "phaseStatus": "Quotation",
       "drawingRevision": null,
       "remake": false,
@@ -13163,7 +13163,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2025-03-17T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "2 Miscellaneous",
       "materialSummaryText": null,
       "estimatorName": "Matthew Thomas",
       "priceOrder": null,
@@ -13206,7 +13206,7 @@
         "job": "116573",
         "project": "King's Theatre",
         "phase": "8",
-        "value": 0,
+        "value": 1279.63,
         "start": "2026-11-26",
         "startedBy": "added",
         "cancelled": false,
