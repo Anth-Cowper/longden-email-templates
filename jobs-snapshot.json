@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:16:40.054Z",
+  "generatedAt": "2026-11-26T15:26:40.052Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2608,7 +2608,7 @@
       "projectId": 2003,
       "jobNumber": "117801",
       "projectName": "MOD Donnington",
-      "companyName": "Concept Building Services (Southern) Ltd",
+      "companyName": "Concept Property Services Ltd",
       "value": 11291.16,
       "phaseStatus": null,
       "drawingRevision": null,
@@ -2639,7 +2639,7 @@
       "quoteEstReturnDate": "2026-08-05T00:00:00.000Z",
       "quoteCustomerReturn": null,
       "quotedCompanies": [
-        "Concept Building Services (Southern) Ltd"
+        "Concept Property Services Ltd"
       ],
       "quoteRevision": 0,
       "clientRevision": false,
@@ -2666,7 +2666,7 @@
           },
           {
             "id": "crm-3627",
-            "action": "CRM Telephone Call - Concept Building Services (Southern) Ltd",
+            "action": "CRM Telephone Call - Concept Property Services Ltd",
             "assignedTo": "Craig Shellard",
             "createdAt": "2026-08-21T08:59:27.104Z",
             "completeBy": "2026-08-24",
