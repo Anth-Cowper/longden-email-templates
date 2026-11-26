@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:26:40.037Z",
+  "generatedAt": "2026-11-26T09:36:40.142Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -13186,7 +13186,7 @@
       "jobNumber": "116273",
       "projectName": "26 Gilston Road",
       "companyName": "Spratley & Partners",
-      "value": 26329.38,
+      "value": 25941.88,
       "phaseStatus": "Scheduling WIP",
       "drawingRevision": "M",
       "remake": false,
@@ -13202,7 +13202,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2024-02-29T00:00:00.000Z",
       "estimatedSignOff": "2026-11-27T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 9 Frames, 21 Miscellaneous",
+      "jobSummaryText": "9 Leaves, 9 Frames, 24 Miscellaneous",
       "materialSummaryText": "Sapele",
       "estimatorName": "Jon Wass",
       "priceOrder": null,
@@ -13233,7 +13233,7 @@
         "job": "116273",
         "project": "26 Gilston Road",
         "phase": "2",
-        "value": 26329.38,
+        "value": 25941.88,
         "start": "2025-11-25",
         "startedBy": "added",
         "cancelled": false,
