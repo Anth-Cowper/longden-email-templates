@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:01:40.066Z",
+  "generatedAt": "2026-11-26T15:16:40.054Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2107,7 +2107,7 @@
       "jobNumber": "117831",
       "projectName": "Blackburn College",
       "companyName": "BAM Construction Ltd - Northern (Salford)",
-      "value": 96888.21,
+      "value": 96958.06,
       "phaseStatus": null,
       "drawingRevision": null,
       "remake": false,
@@ -2120,7 +2120,7 @@
       "deliveryDateConfirmedAt": null,
       "expectedCompletionDate": null,
       "disputedOn": null,
-      "quoteDateSent": "2026-11-26T12:33:31Z",
+      "quoteDateSent": "2026-11-26T15:15:04Z",
       "depositPaidAt": null,
       "estimatedSignOff": null,
       "jobSummaryText": "46 Doors, 26 Frames",
@@ -2139,14 +2139,14 @@
       "quotedCompanies": [
         "BAM Construction Ltd - Northern (Salford)"
       ],
-      "quoteRevision": 2,
+      "quoteRevision": 3,
       "clientRevision": false,
       "stage": "Estimating",
       "phaseId": null,
       "phaseNumber": null,
       "sortDate": "2026-09-08T00:00:00.000Z",
       "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-26T12:33:31Z",
+      "stageEnteredAt": "2026-11-26T15:15:04Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -2163,11 +2163,11 @@
             "lineTag": null
           },
           {
-            "id": 206454,
+            "id": 206463,
             "action": "Quote follow-up",
             "target": null,
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-26T12:33:37Z",
+            "createdAt": "2026-11-26T15:15:37Z",
             "completeBy": "2026-12-03",
             "kind": "task",
             "level": "green",
