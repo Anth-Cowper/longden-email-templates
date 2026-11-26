@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T16:16:40.126Z",
+  "generatedAt": "2026-11-26T16:21:40.545Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -11,84 +11,6 @@
     "Disputed"
   ],
   "boardRows": [
-    {
-      "projectId": 98060,
-      "jobNumber": "117886",
-      "projectName": "31 and 32 Charles II Place",
-      "companyName": "Celine Interior Design Ltd",
-      "value": null,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": null,
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
-      "estimatorName": null,
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": null,
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
-      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
-      "quotedCompanies": [
-        "Celine Interior Design Ltd"
-      ],
-      "quoteRevision": null,
-      "clientRevision": false,
-      "stage": "Quoting",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2026-11-11T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 169086,
-            "action": "Telephone Call",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-16",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": "crm-134971",
-            "action": "CRM Telephone Call - Celine Interior Design Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": null,
-            "completeBy": "2026-12-09",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 0,
-        "calendar": 0
-      },
-      "invoiceMarker": null
-    },
     {
       "projectId": 1998,
       "jobNumber": "117796",
@@ -121,7 +43,7 @@
       "schedulingPosition": null,
       "percentComplete": null,
       "quoteDateReceived": "2026-11-26T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-11-12T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-11T00:00:00.000Z",
       "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
       "quotedCompanies": [
         "Urban Interior Solutions"
@@ -131,7 +53,7 @@
       "stage": "Quoting",
       "phaseId": null,
       "phaseNumber": null,
-      "sortDate": "2026-11-12T00:00:00.000Z",
+      "sortDate": "2026-11-11T00:00:00.000Z",
       "noQuotedCompany": false,
       "stageEnteredAt": "2026-11-26T00:00:00.000Z",
       "flagged": {
@@ -146,6 +68,84 @@
             "completeBy": "2026-10-23",
             "kind": "crm",
             "level": "red"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 98060,
+      "jobNumber": "117886",
+      "projectName": "31 and 32 Charles II Place",
+      "companyName": "Celine Interior Design Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-26T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-12T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-03T00:00:00.000Z",
+      "quotedCompanies": [
+        "Celine Interior Design Ltd"
+      ],
+      "quoteRevision": null,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-12T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-26T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 169086,
+            "action": "Telephone Call",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-16",
+            "kind": "task",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-134971",
+            "action": "CRM Telephone Call - Celine Interior Design Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": null,
+            "completeBy": "2026-12-09",
+            "kind": "crm",
+            "level": "green"
           }
         ],
         "level": "red"
