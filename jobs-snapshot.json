@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:36:40.028Z",
+  "generatedAt": "2026-11-27T12:46:39.646Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15597,8 +15597,8 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Final Alterations",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Design Query Client",
+      "schedulingPosition": "T",
       "percentComplete": 100,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
@@ -15613,8 +15613,20 @@
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
-        "openNotes": [],
-        "level": null
+        "openNotes": [
+          {
+            "id": 209045,
+            "action": "changes made to S/Os/ curved door omitted/ double door to become a pocket door?",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-27T12:44:25Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          }
+        ],
+        "level": "amber"
       },
       "phaseTimes": {
         "projectId": 1965,
@@ -15641,7 +15653,7 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Final Alterations",
+          "name": "Design Query Client",
           "since": "2026-11-27",
           "days": 0,
           "calDays": 0
@@ -15827,6 +15839,14 @@
             "status": "Final Alterations",
             "position": "U",
             "from": "2026-11-27",
+            "to": "2026-11-27",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Design Query Client",
+            "position": "T",
+            "from": "2026-11-27",
             "to": null,
             "days": 0,
             "calDays": 0
@@ -15879,8 +15899,8 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Final Alterations",
-      "schedulingPosition": "U",
+      "schedulingStatusName": "Design Query Client",
+      "schedulingPosition": "T",
       "percentComplete": 91,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
@@ -15923,7 +15943,7 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Final Alterations",
+          "name": "Design Query Client",
           "since": "2026-11-27",
           "days": 0,
           "calDays": 0
@@ -15956,6 +15976,14 @@
           {
             "status": "Final Alterations",
             "position": "U",
+            "from": "2026-11-27",
+            "to": "2026-11-27",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Design Query Client",
+            "position": "T",
             "from": "2026-11-27",
             "to": null,
             "days": 0,
