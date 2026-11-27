@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:26:39.518Z",
+  "generatedAt": "2026-11-27T09:46:39.544Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -19558,13 +19558,13 @@
       "jobNumber": "117785",
       "projectName": "51 Greencroft Gardens",
       "companyName": "GMM Builders Ltd",
-      "value": 11545.67,
+      "value": 11545.97,
       "phaseStatus": "Planning Pool",
       "drawingRevision": "C",
       "remake": false,
       "orderDate": "2026-08-25T14:22:24.000Z",
       "orderTriggeredAt": "2026-09-03T07:52:30.485Z",
-      "releasedAt": null,
+      "releasedAt": "2026-11-27T08:22:57.290Z",
       "deliveryDate": "2027-02-05T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -19592,8 +19592,8 @@
       "stage": "Production",
       "phaseId": 1007,
       "phaseNumber": "1",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-11-27T08:22:57.290Z",
+      "stageEnteredAt": "2026-11-27T08:22:57.290Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -19612,7 +19612,10 @@
         ],
         "level": "green"
       },
-      "stageDays": null,
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
+      },
       "invoiceMarker": null,
       "cnc": {
         "status": "todo",
