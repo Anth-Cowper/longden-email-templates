@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T14:56:39.519Z",
+  "generatedAt": "2026-11-27T17:36:39.502Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3245,11 +3245,11 @@
             "lineTag": null
           },
           {
-            "id": "crm-424333",
+            "id": "crm-424346",
             "action": "CRM Telephone Call - LDB Construction UK Ltd",
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-27T11:58:39.744Z",
-            "completeBy": "2026-11-30",
+            "createdAt": "2026-11-27T17:35:05.200Z",
+            "completeBy": "2026-12-14",
             "kind": "crm",
             "level": "green"
           }
