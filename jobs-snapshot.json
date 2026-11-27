@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:01:39.371Z",
+  "generatedAt": "2026-11-27T12:11:39.383Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -242,6 +242,117 @@
       "stageDays": {
         "working": 1,
         "calendar": 1
+      },
+      "invoiceMarker": null
+    },
+    {
+      "projectId": 1152,
+      "jobNumber": "116948",
+      "projectName": "The George Hotel",
+      "companyName": "West End Joiners & Builders Ltd",
+      "value": null,
+      "phaseStatus": null,
+      "drawingRevision": null,
+      "remake": false,
+      "orderDate": null,
+      "orderTriggeredAt": null,
+      "releasedAt": null,
+      "deliveryDate": null,
+      "deliveryDateConfirmed": false,
+      "deliveryDateConfirmedBy": null,
+      "deliveryDateConfirmedAt": null,
+      "expectedCompletionDate": null,
+      "disputedOn": null,
+      "quoteDateSent": null,
+      "depositPaidAt": null,
+      "estimatedSignOff": null,
+      "jobSummaryText": null,
+      "materialSummaryText": null,
+      "estimatorName": null,
+      "priceOrder": null,
+      "schedulerName": null,
+      "estimatorFullName": null,
+      "schedulerFullName": null,
+      "schedulingStatusName": null,
+      "schedulingPosition": null,
+      "percentComplete": null,
+      "quoteDateReceived": "2026-11-27T00:00:00.000Z",
+      "quoteEstReturnDate": "2026-11-16T00:00:00.000Z",
+      "quoteCustomerReturn": "2026-12-04T00:00:00.000Z",
+      "quotedCompanies": [
+        "West End Joiners & Builders Ltd"
+      ],
+      "quoteRevision": 9,
+      "clientRevision": false,
+      "stage": "Quoting",
+      "phaseId": null,
+      "phaseNumber": null,
+      "sortDate": "2026-11-16T00:00:00.000Z",
+      "noQuotedCompany": false,
+      "stageEnteredAt": "2026-11-27T00:00:00.000Z",
+      "flagged": {
+        "statusFlag": null,
+        "statusSince": null,
+        "openNotes": [
+          {
+            "id": 120790,
+            "action": "Chase",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-11T02:34:25Z",
+            "completeBy": "2026-11-10",
+            "kind": "task",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 120800,
+            "action": "Chase",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-11T02:34:25Z",
+            "completeBy": "2026-11-10",
+            "kind": "task",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 169082,
+            "action": "Follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-17T08:14:51Z",
+            "completeBy": "2026-11-03",
+            "kind": "todo",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": 185824,
+            "action": "Quote follow-up",
+            "target": null,
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-20T12:25:26Z",
+            "completeBy": "2026-11-27",
+            "kind": "task",
+            "level": "red",
+            "lineTag": null
+          },
+          {
+            "id": "crm-424329",
+            "action": "CRM event - West End Joiners & Builders Ltd",
+            "assignedTo": "Saqib Sindhu",
+            "createdAt": "2026-11-27T11:07:05.291Z",
+            "completeBy": "2026-12-15",
+            "kind": "crm",
+            "level": "green"
+          }
+        ],
+        "level": "red"
+      },
+      "stageDays": {
+        "working": 0,
+        "calendar": 0
       },
       "invoiceMarker": null
     },
@@ -4674,118 +4785,6 @@
       "stageDays": {
         "working": 436,
         "calendar": 627
-      },
-      "invoiceMarker": null
-    },
-    {
-      "projectId": 1152,
-      "jobNumber": "116948",
-      "projectName": "The George Hotel",
-      "companyName": "V & E Joiners Ltd · West End Joiners & Builders Ltd",
-      "value": 229835.77,
-      "phaseStatus": null,
-      "drawingRevision": null,
-      "remake": false,
-      "orderDate": null,
-      "orderTriggeredAt": null,
-      "releasedAt": null,
-      "deliveryDate": null,
-      "deliveryDateConfirmed": false,
-      "deliveryDateConfirmedBy": null,
-      "deliveryDateConfirmedAt": null,
-      "expectedCompletionDate": null,
-      "disputedOn": null,
-      "quoteDateSent": "2026-11-20T12:25:05Z",
-      "depositPaidAt": null,
-      "estimatedSignOff": null,
-      "jobSummaryText": "424 Doors, 356 Frames",
-      "materialSummaryText": null,
-      "estimatorName": "Alfie Price",
-      "priceOrder": null,
-      "schedulerName": null,
-      "estimatorFullName": "Alfie Price",
-      "schedulerFullName": null,
-      "schedulingStatusName": null,
-      "schedulingPosition": null,
-      "percentComplete": null,
-      "quoteDateReceived": "2026-08-27T00:00:00.000Z",
-      "quoteEstReturnDate": "2026-08-18T00:00:00.000Z",
-      "quoteCustomerReturn": null,
-      "quotedCompanies": [
-        "V & E Joiners Ltd",
-        "West End Joiners & Builders Ltd"
-      ],
-      "quoteRevision": 9,
-      "clientRevision": false,
-      "stage": "Estimating",
-      "phaseId": null,
-      "phaseNumber": null,
-      "sortDate": "2024-02-01T00:00:00.000Z",
-      "noQuotedCompany": false,
-      "stageEnteredAt": "2026-11-20T12:25:05Z",
-      "flagged": {
-        "statusFlag": null,
-        "statusSince": null,
-        "openNotes": [
-          {
-            "id": 120790,
-            "action": "Chase",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-11-11T02:34:25Z",
-            "completeBy": "2026-11-10",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": 120800,
-            "action": "Chase",
-            "target": null,
-            "assignedTo": null,
-            "createdAt": "2026-11-11T02:34:25Z",
-            "completeBy": "2026-11-10",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": 169082,
-            "action": "Follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-17T08:14:51Z",
-            "completeBy": "2026-11-03",
-            "kind": "todo",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": 185824,
-            "action": "Quote follow-up",
-            "target": null,
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-20T12:25:26Z",
-            "completeBy": "2026-11-27",
-            "kind": "task",
-            "level": "red",
-            "lineTag": null
-          },
-          {
-            "id": "crm-424329",
-            "action": "CRM event - West End Joiners & Builders Ltd",
-            "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-27T11:07:05.291Z",
-            "completeBy": "2026-12-15",
-            "kind": "crm",
-            "level": "green"
-          }
-        ],
-        "level": "red"
-      },
-      "stageDays": {
-        "working": 5,
-        "calendar": 7
       },
       "invoiceMarker": null
     },
@@ -20331,11 +20330,6 @@
       "companyName": null
     },
     {
-      "jobNumber": "116948",
-      "projectName": "The George Hotel",
-      "companyName": null
-    },
-    {
       "jobNumber": "117871",
       "projectName": "Radlett House",
       "companyName": null
@@ -20348,6 +20342,11 @@
     {
       "jobNumber": "117889",
       "projectName": "Walton Park",
+      "companyName": null
+    },
+    {
+      "jobNumber": "116948",
+      "projectName": "The George Hotel",
       "companyName": null
     },
     {
