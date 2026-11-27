@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T02:36:35.093Z",
+  "generatedAt": "2026-11-27T02:41:39.440Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -2260,10 +2260,10 @@
       "estimatedSignOff": null,
       "jobSummaryText": "46 Doors, 26 Frames",
       "materialSummaryText": null,
-      "estimatorName": null,
+      "estimatorName": "George",
       "priceOrder": null,
       "schedulerName": null,
-      "estimatorFullName": null,
+      "estimatorFullName": "George Bramley",
       "schedulerFullName": null,
       "schedulingStatusName": null,
       "schedulingPosition": null,
@@ -14422,7 +14422,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2025-12-04T00:00:00.000Z",
       "estimatedSignOff": "2026-11-27T00:00:00.000Z",
-      "jobSummaryText": "18 Frames, 1 Miscellaneous",
+      "jobSummaryText": "2 Leaves, 19 Frames, 1 Miscellaneous",
       "materialSummaryText": "European Oak, Poplar (Tulipwood), Flush",
       "estimatorName": "George",
       "priceOrder": null,
@@ -19698,7 +19698,7 @@
       "remake": false,
       "orderDate": "2026-07-06T00:00:00.000Z",
       "orderTriggeredAt": "2026-07-06T16:26:55.777Z",
-      "releasedAt": null,
+      "releasedAt": "2026-11-26T14:19:48.860Z",
       "deliveryDate": "2027-01-18T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -19726,8 +19726,8 @@
       "stage": "Production",
       "phaseId": 1005,
       "phaseNumber": "2",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-11-26T14:19:48.860Z",
+      "stageEnteredAt": "2026-11-26T14:19:48.860Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": null,
@@ -19746,7 +19746,10 @@
         ],
         "level": "green"
       },
-      "stageDays": null,
+      "stageDays": {
+        "working": 1,
+        "calendar": 1
+      },
       "invoiceMarker": null,
       "cnc": {
         "status": "todo",
@@ -19995,8 +19998,8 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-01-29T00:00:00.000Z",
       "estimatedSignOff": null,
-      "jobSummaryText": null,
-      "materialSummaryText": null,
+      "jobSummaryText": "1 Leaf, 1 Frame",
+      "materialSummaryText": "Poplar (Tulipwood)",
       "estimatorName": "George",
       "priceOrder": null,
       "schedulerName": "Beef",
