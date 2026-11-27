@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T10:41:39.351Z",
+  "generatedAt": "2026-11-27T10:46:39.361Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -17307,7 +17307,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-10-30T00:00:00.000Z",
-      "estimatedSignOff": "2026-12-04T00:00:00.000Z",
+      "estimatedSignOff": "2026-12-18T00:00:00.000Z",
       "jobSummaryText": "4 Leaves, 4 Miscellaneous",
       "materialSummaryText": "European Oak",
       "estimatorName": "George",
