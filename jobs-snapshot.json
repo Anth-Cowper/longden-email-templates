@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:16:39.295Z",
+  "generatedAt": "2026-11-27T08:21:39.395Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16038,7 +16038,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-09-07T00:00:00.000Z",
       "estimatedSignOff": "2026-11-24T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 1 Miscellaneous",
+      "jobSummaryText": "9 Leaves, 4 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George",
       "priceOrder": null,
