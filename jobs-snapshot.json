@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T13:31:39.487Z",
+  "generatedAt": "2026-11-27T14:06:39.562Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -10662,11 +10662,11 @@
             "lineTag": null
           },
           {
-            "id": "crm-8705",
+            "id": "crm-424337",
             "action": "CRM event - LDB Construction UK Ltd",
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-08-19T07:57:59.561Z",
-            "completeBy": "2026-12-02",
+            "createdAt": "2026-11-27T14:02:53.406Z",
+            "completeBy": "2027-01-13",
             "kind": "crm",
             "level": "green"
           }
