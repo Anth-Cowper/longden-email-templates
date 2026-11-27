@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T10:46:39.361Z",
+  "generatedAt": "2026-11-27T10:51:39.510Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -1481,11 +1481,11 @@
             "lineTag": null
           },
           {
-            "id": "crm-180146",
+            "id": "crm-424327",
             "action": "CRM Telephone Call - Tom Cairns",
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-11T13:22:27.278Z",
-            "completeBy": "2026-12-01",
+            "createdAt": "2026-11-27T10:51:20.573Z",
+            "completeBy": "2027-01-27",
             "kind": "crm",
             "level": "green"
           }
@@ -17185,7 +17185,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-10-19T00:00:00.000Z",
-      "estimatedSignOff": "2026-12-18T00:00:00.000Z",
+      "estimatedSignOff": "2027-01-08T00:00:00.000Z",
       "jobSummaryText": "6 Leaves, 9 Frames, 1 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele, Flush",
       "estimatorName": null,
@@ -17445,7 +17445,7 @@
       "disputedOn": null,
       "quoteDateSent": null,
       "depositPaidAt": "2026-10-30T00:00:00.000Z",
-      "estimatedSignOff": "2026-12-18T00:00:00.000Z",
+      "estimatedSignOff": "2027-01-08T00:00:00.000Z",
       "jobSummaryText": "11 Leaves, 2 Overpanels, 11 Frames, 1 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "Alfie Price",
@@ -20498,11 +20498,6 @@
       "companyName": "Essex Heritage Properties Limited"
     },
     {
-      "jobNumber": "117885",
-      "projectName": "7 Bathgate Road",
-      "companyName": null
-    },
-    {
       "jobNumber": "112186",
       "projectName": "Rookwood",
       "companyName": "Total Support Services"
@@ -20566,6 +20561,11 @@
       "jobNumber": "116113",
       "projectName": "Brick End",
       "companyName": "Mr Peter Davey"
+    },
+    {
+      "jobNumber": "117885",
+      "projectName": "7 Bathgate Road",
+      "companyName": null
     },
     {
       "jobNumber": "117895",
