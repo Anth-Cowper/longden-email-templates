@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T02:41:39.440Z",
+  "generatedAt": "2026-11-27T08:16:39.295Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -16,7 +16,7 @@
       "jobNumber": "117890",
       "projectName": "Kings Hall Leisure Centre",
       "companyName": "Trinity Renovations",
-      "value": null,
+      "value": 70776.2,
       "phaseStatus": null,
       "drawingRevision": null,
       "remake": false,
@@ -32,7 +32,7 @@
       "quoteDateSent": null,
       "depositPaidAt": null,
       "estimatedSignOff": null,
-      "jobSummaryText": null,
+      "jobSummaryText": "40 Doors, 40 Frames",
       "materialSummaryText": null,
       "estimatorName": null,
       "priceOrder": null,
