@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T14:26:39.522Z",
+  "generatedAt": "2026-11-27T14:31:39.508Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -3013,11 +3013,11 @@
             "lineTag": null
           },
           {
-            "id": "crm-324626",
+            "id": "crm-424342",
             "action": "CRM event - Horohoe Construction Ltd",
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-18T12:06:44.197Z",
-            "completeBy": "2026-12-01",
+            "createdAt": "2026-11-27T14:27:09.096Z",
+            "completeBy": "2027-01-07",
             "kind": "crm",
             "level": "green"
           }
