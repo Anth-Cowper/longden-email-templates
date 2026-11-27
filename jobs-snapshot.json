@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:21:39.608Z",
+  "generatedAt": "2026-11-27T12:26:39.603Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -339,10 +339,10 @@
             "lineTag": null
           },
           {
-            "id": "crm-424329",
+            "id": "crm-424335",
             "action": "CRM event - West End Joiners & Builders Ltd",
             "assignedTo": "Saqib Sindhu",
-            "createdAt": "2026-11-27T11:07:05.291Z",
+            "createdAt": "2026-11-27T12:22:23.374Z",
             "completeBy": "2026-12-15",
             "kind": "crm",
             "level": "green"
@@ -13232,7 +13232,19 @@
       "flagged": {
         "statusFlag": "Production Ticket Check",
         "statusSince": "2026-11-27T12:20:42Z",
-        "openNotes": [],
+        "openNotes": [
+          {
+            "id": 209042,
+            "action": "final ticket checks sent to anth ",
+            "target": null,
+            "assignedTo": "Anth",
+            "createdAt": "2026-11-27T12:25:13Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          }
+        ],
         "level": "red"
       },
       "phaseTimes": {
@@ -15574,8 +15586,8 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Design Query Client",
-      "schedulingPosition": "T",
+      "schedulingStatusName": "Final Alterations",
+      "schedulingPosition": "U",
       "percentComplete": 100,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
@@ -15618,10 +15630,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Design Query Client",
-          "since": "2026-11-24",
-          "days": 3,
-          "calDays": 3
+          "name": "Final Alterations",
+          "since": "2026-11-27",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -15796,9 +15808,17 @@
             "status": "Design Query Client",
             "position": "T",
             "from": "2026-11-24",
-            "to": null,
+            "to": "2026-11-27",
             "days": 3,
             "calDays": 3
+          },
+          {
+            "status": "Final Alterations",
+            "position": "U",
+            "from": "2026-11-27",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
@@ -15848,9 +15868,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Waiting for Sign Off",
-      "schedulingPosition": "T",
-      "percentComplete": 77,
+      "schedulingStatusName": "Final Alterations",
+      "schedulingPosition": "U",
+      "percentComplete": 91,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -15892,10 +15912,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Waiting for Sign Off",
-          "since": "2026-11-23",
-          "days": 4,
-          "calDays": 4
+          "name": "Final Alterations",
+          "since": "2026-11-27",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -15910,9 +15930,25 @@
             "status": "Waiting for Sign Off",
             "position": "T",
             "from": "2026-11-23",
-            "to": null,
+            "to": "2026-11-27",
             "days": 4,
             "calDays": 4
+          },
+          {
+            "status": "Final Approval",
+            "position": "T",
+            "from": "2026-11-27",
+            "to": "2026-11-27",
+            "days": 0,
+            "calDays": 0
+          },
+          {
+            "status": "Final Alterations",
+            "position": "U",
+            "from": "2026-11-27",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
@@ -20338,6 +20374,11 @@
       "companyName": null
     },
     {
+      "jobNumber": "116948",
+      "projectName": "The George Hotel",
+      "companyName": null
+    },
+    {
       "jobNumber": "117871",
       "projectName": "Radlett House",
       "companyName": null
@@ -20350,11 +20391,6 @@
     {
       "jobNumber": "117889",
       "projectName": "Walton Park",
-      "companyName": null
-    },
-    {
-      "jobNumber": "116948",
-      "projectName": "The George Hotel",
       "companyName": null
     },
     {
