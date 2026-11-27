@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T10:51:39.510Z",
+  "generatedAt": "2026-11-27T11:01:39.371Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -13097,7 +13097,7 @@
       "orderDate": "2025-10-31T00:00:00.000Z",
       "orderTriggeredAt": "2025-10-31T16:45:30.892Z",
       "releasedAt": null,
-      "deliveryDate": null,
+      "deliveryDate": "2027-02-04T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
       "deliveryDateConfirmedAt": null,
@@ -13113,9 +13113,9 @@
       "schedulerName": "madi",
       "estimatorFullName": "George Bramley",
       "schedulerFullName": "Madi Glen",
-      "schedulingStatusName": "Waiting for Sign Off",
-      "schedulingPosition": "T",
-      "percentComplete": 77,
+      "schedulingStatusName": "Manufacturing Paperwork Produced",
+      "schedulingPosition": "U",
+      "percentComplete": 95,
       "quoteDateReceived": null,
       "quoteEstReturnDate": null,
       "quoteCustomerReturn": null,
@@ -13157,10 +13157,10 @@
           "holdsKnown": true
         },
         "currentStatus": {
-          "name": "Waiting for Sign Off",
-          "since": "2026-11-23",
-          "days": 4,
-          "calDays": 4
+          "name": "Manufacturing Paperwork Produced",
+          "since": "2026-11-27",
+          "days": 0,
+          "calDays": 0
         },
         "stays": [
           {
@@ -13175,9 +13175,17 @@
             "status": "Waiting for Sign Off",
             "position": "T",
             "from": "2026-11-23",
-            "to": null,
+            "to": "2026-11-27",
             "days": 4,
             "calDays": 4
+          },
+          {
+            "status": "Manufacturing Paperwork Produced",
+            "position": "U",
+            "from": "2026-11-27",
+            "to": null,
+            "days": 0,
+            "calDays": 0
           }
         ],
         "withUs": {
