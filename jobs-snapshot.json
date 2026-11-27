@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:56:39.486Z",
+  "generatedAt": "2026-11-27T13:31:39.487Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -589,6 +589,17 @@
             "lineTag": null
           },
           {
+            "id": 209046,
+            "action": "FD60 Door. Will have to be flush ",
+            "target": null,
+            "assignedTo": null,
+            "createdAt": "2026-11-27T13:27:21Z",
+            "completeBy": null,
+            "kind": "task",
+            "level": "amber",
+            "lineTag": null
+          },
+          {
             "id": "crm-44973",
             "action": "CRM Telephone Call - Optimum Carpentry & Joinery Ltd",
             "assignedTo": "Saqib Sindhu",
@@ -598,7 +609,7 @@
             "level": "green"
           }
         ],
-        "level": "green"
+        "level": "amber"
       },
       "stageDays": {
         "working": 67,
