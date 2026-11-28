@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T02:37:10.813Z",
+  "generatedAt": "2026-11-28T02:42:14.964Z",
   "stageOrder": [
     "Quoting",
     "Estimating",
@@ -15863,7 +15863,7 @@
       "quoteDateSent": null,
       "depositPaidAt": "2026-08-03T00:00:00.000Z",
       "estimatedSignOff": "2026-12-11T00:00:00.000Z",
-      "jobSummaryText": "9 Leaves, 8 Frames, 1 Miscellaneous",
+      "jobSummaryText": "10 Leaves, 9 Frames, 1 Miscellaneous",
       "materialSummaryText": "Poplar (Tulipwood), Sapele",
       "estimatorName": "George",
       "priceOrder": null,
@@ -20327,7 +20327,7 @@
       "remake": true,
       "orderDate": "2025-10-31T00:00:00.000Z",
       "orderTriggeredAt": "2025-10-31T16:45:30.892Z",
-      "releasedAt": null,
+      "releasedAt": "2026-11-27T11:09:28.573Z",
       "deliveryDate": "2027-02-04T00:00:00.000Z",
       "deliveryDateConfirmed": false,
       "deliveryDateConfirmedBy": null,
@@ -20355,15 +20355,18 @@
       "stage": "Remedial",
       "phaseId": 53681,
       "phaseNumber": "5",
-      "sortDate": null,
-      "stageEnteredAt": null,
+      "sortDate": "2026-11-27T11:09:28.573Z",
+      "stageEnteredAt": "2026-11-27T11:09:28.573Z",
       "flagged": {
         "statusFlag": null,
         "statusSince": "2026-11-27T11:03:24Z",
         "openNotes": [],
         "level": null
       },
-      "stageDays": null,
+      "stageDays": {
+        "working": 0,
+        "calendar": 1
+      },
       "invoiceMarker": null,
       "paymentMarker": null,
       "cnc": {
